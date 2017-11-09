@@ -89,6 +89,7 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+*env/
 
 # Spyder project settings
 .spyderproject
@@ -98,7 +99,7 @@ ENV/
 .ropeproject
 
 # mkdocs documentation
-/site
+*/site
 
 # mypy
 .mypy_cache/
@@ -107,13 +108,15 @@ ENV/
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+*/node_modules
+mathviz_hopper/webpage/mathviz-js-components/node_modules/
+
 
 # testing
-/coverage
+*/coverage
 
 # production
-/build
+*/build
 
 # misc
 .DS_Store
