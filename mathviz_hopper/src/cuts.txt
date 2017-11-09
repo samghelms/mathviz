@@ -1,0 +1,68 @@
+def TableRequestHandlerFactory(index, converter, docs, settings):
+    '''
+    Factory so that we can pass an index to the TableRequestHandler
+    (TableRequestHandler is just overriding SimpleHTTPRequestHandler
+    to allow modified get requests)
+    @ args index: a gensim index model (TODO: add exact class)
+    '''
+    class TableRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler, object):
+        '''
+        Overrides the SimpleHTTPRequestHandler to allow custom get request
+        behavior.
+        '''
+        def __init__(self, *args, **kwargs):
+             self.index = index
+             self.converter = converter
+             self.docs = docs
+             self.settings = settings
+             super(TableRequestHandler, self).__init__(*args, **kwargs)
+
+        def query_handler(self):
+
+            try:
+                print "handling"
+                self.data_string = self.rfile.read(int(self.headers['Content-Length']))
+                print "test"
+                data = json.loads(self.data_string)
+                
+                if "query" not in data.keys():
+                    self.wfile.write(json.dumps(["incorrect input"]))
+                else:
+                    query = self.converter(data["query"])
+                    sims = self.index[query]
+                    neighbors = sorted(sims, key=lambda item: -item[1])
+                    neighbors = {"neighbors":[{"neighbor": self.docs[n[0]], "similarity_score": float(n[1])} for n in neighbors]}
+                    self.wfile.write(json.dumps(neighbors))
+
+            except:
+                self.wfile.write(json.dumps(["no json paramaters"]))
+
+        def settings_handler(self):
+            print self.settings
+            self.wfile.write(json.dumps(self.settings)) 
+        
+        def do_POST(self):
+            '''
+            Queries the gensim similarity index for the index given.
+            '''
+            self.send_response(200, 'OK')
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+
+            # data = json.loads(self.data_string)
+
+            
+            route = self.path[1:] if len(self.path) > 0 else ""
+            print route
+            if route == "query":
+                self.query_handler()
+
+            if route == "settings":
+                # self.wfile.write(json.dumps({"test": "test"}))
+                self.settings_handler()
+
+        def end_headers (self):
+            self.send_header('Access-Control-Allow-Origin', '*')
+            SimpleHTTPServer.SimpleHTTPRequestHandler.end_headers(self)
+
+    return TableRequestHandler
