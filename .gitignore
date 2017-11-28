@@ -111,7 +111,6 @@ ENV/
 */node_modules
 mathviz_hopper/webpage/mathviz-js-components/node_modules/
 
-
 # testing
 */coverage
 

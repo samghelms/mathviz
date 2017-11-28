@@ -12,14 +12,38 @@ import sys
 import threading
 import re
 
-from IPython.display import display, HTML
-
 from helpers import find_free_port, construct_trie, get_cur_path
 from bottle import Bottle, run
 from server import Server
 
 
 class Table:
+    """This function does something.
+
+    Args:
+       name (str):  The name to use.
+
+    Kwargs:
+       state (bool): Current state to be in.
+
+    Returns:
+       int.  The return code::
+
+          0 -- Success!
+          1 -- No good.
+          2 -- Try again.
+
+    Raises:
+       AttributeError, KeyError
+
+    A really great idea.  A way you might use me is
+
+    >>> print public_fn_with_googley_docstring(name='foo', state=None)
+    0
+
+    BTW, this always returns 0.  **NEVER** use with :class:`MyPublicClass`.
+
+    """
     '''
     @ param index: a lambda function that takes some input and returns k nearest neighbors
     @ param converter: converts values to the format needed by the index 
@@ -28,23 +52,21 @@ class Table:
       the index function
     @ writes a visualization to disk
     '''
-    def __init__(self, index, converter, docs, port = 8081):
+    def __init__(self, index, port = 8081):
         '''
         Constructor. Creates indices if passed data
         @ param 
             index: gensim index object (TODO: implement this for dataframes)
-            words: list of strings representing words in the vocabulary
+            data: any data you want to 
         '''
         # TODO: make this memory efficient
         self.index = index
-        self.converter = converter
-        self.docs = docs
         self.server = None
         self.port = port if port else find_free_port()
-        print self.port
-        self.settings = None
+        self.settings = index.columns
+        self.docs = index.docs
         self._create_settings()
-        self.html_path = '/Users/sam/Documents/fall17/mathviz/mathviz_hopper/webpage/mathviz-js-components/build/'
+        self.html_path = get_cur_path()+'/html/build/'
 
         # set to true if we want to delete the viz directory
         self.cleanup_flag = False
@@ -53,14 +75,13 @@ class Table:
         # self.html_path = "/mathviz_hopper/src/html/build"
 
     def __del__(self):
-        self.server.shutdown()
+        del self.server
 
         if self.cleanup_flag:
             shutil.rmtree('viz')
 
     def shutdown(self):
-        self.server.shutdown()
-
+        del self.server
 
     def _create_settings(self):
         '''
@@ -71,33 +92,11 @@ class Table:
             index: gensim index object (TODO: implement this for dataframes)
             words: list of strings representing words in the vocabulary
         '''
-        # {
-        #                 "Header": "Word",
-        #                 "accessor": "word"
-        #             },
-        #             {
-        #                 "Header": "Similarity",
-        #                 "accessor": "sim"
-        #             }
-
         self.settings = {
-            "columns": [{"Header": "Word","accessor": "word"}, {"Header": "Similarity","accessor": "sim"} ],
+            "columns": [{"Header": s, "accessor": s} for s in self.settings],
             "port": self.port,
             "docs": construct_trie(self.docs)
         }
-
-
-    def _create_index(self, index, converter):
-        '''
-        TODO: add this as another interface
-        Creates an index (can be used to initialize the index if not
-        passed in the consturctor)
-        @ param 
-            index: gensim index object (TODO: implement this for dataframes)
-            words: list of strings representing words in the vocabulary
-        '''
-        self.index = index
-        self.converter = converter
 
     def print_html(self):
         '''
@@ -127,13 +126,12 @@ class Table:
         And initializes listening on a port to serve data to the viz.
         '''
         # _print_html()
+        from IPython.display import display, HTML
         self._listen()
         try: shutil.rmtree('viz')
         except: None
 
         # TODO: assign this path intelligently
-        base_path = get_cur_path()
-        print base_path
         shutil.copytree(self.html_path, 'viz')
         pth = "viz/index.html"
         html = open(pth).read()
@@ -171,5 +169,12 @@ class Table:
         '''
 
 if __name__ == '__main__':
+    import pandas as pd
+    import numpy as np
+    from notebooks.utils import read_file, tokenize_latex
+    df = read_file("notebooks/data/1601/*")
+    df["processed"] = df["text"].apply(lambda x: tokenize_latex(x))
+
+
     t = Table([], lambda x: True, [])
     t.run_server()
