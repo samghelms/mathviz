@@ -13,6 +13,7 @@ gh-pages:
 	git checkout gh-pages
 	rm -rf *
 	git rm -rf *
+	touch .nojekyll
 	git checkout dev $(GH_PAGES_SOURCES)
 	cd docs; make html; mv -fv build/html/* ../
 	rm -rf $(GH_PAGES_SOURCES) build
