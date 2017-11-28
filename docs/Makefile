@@ -7,7 +7,7 @@ SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = MathvizHopper
 SOURCEDIR     = source
 BUILDDIR      = build
-GH_PAGES_SOURCES = source code libuv Makefile
+GH_PAGES_SOURCES = source Makefile
 
 gh-pages:
 	git checkout gh-pages
