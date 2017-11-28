@@ -68,14 +68,6 @@ mathviz\_hopper\.src\.test module
     :undoc-members:
     :show-inheritance:
 
-mathviz\_hopper\.src\.test\_Table module
-----------------------------------------
-
-.. automodule:: mathviz_hopper.src.test_Table
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 
 Module contents
 ---------------
