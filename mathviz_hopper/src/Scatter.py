@@ -8,6 +8,6 @@ embeddings (probably using TSNE)
 '''
 
 class Scatter:
-    def __init__(self, data, ):
+    def __init__(self, data):
         None
 

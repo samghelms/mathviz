@@ -4,14 +4,6 @@ mathviz\_hopper\.src package
 Submodules
 ----------
 
-mathviz\_hopper\.src\.Scatter module
-------------------------------------
-
-.. automodule:: mathviz_hopper.src.Scatter
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 mathviz\_hopper\.src\.bottle module
 -----------------------------------
 
@@ -32,6 +24,14 @@ mathviz\_hopper\.src\.index module
 ----------------------------------
 
 .. automodule:: mathviz_hopper.src.index
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+mathviz\_hopper\.src\.scatter module
+------------------------------------
+
+.. automodule:: mathviz_hopper.src.scatter
     :members:
     :undoc-members:
     :show-inheritance:
