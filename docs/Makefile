@@ -7,11 +7,11 @@ SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = MathvizHopper
 SOURCEDIR     = source
 BUILDDIR      = build
-GH_PAGES_SOURCES = source Makefile
+GH_PAGES_SOURCES = docs/source docs/Makefile
 
 gh-pages:
 	git checkout gh-pages
-	rm -rf build _sources _static
+	cd ..
 	git checkout dev $(GH_PAGES_SOURCES)
 	git reset HEAD
 	make html
