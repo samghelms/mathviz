@@ -11,8 +11,9 @@ GH_PAGES_SOURCES = docs/
 
 gh-pages:
 	git checkout gh-pages
+	rm -rf *
+	git rm -rf *
 	git checkout dev $(GH_PAGES_SOURCES)
-	git reset HEAD
 	cd docs; make html; mv -fv build/html/* ../
 	rm -rf $(GH_PAGES_SOURCES) build
 	git add .
