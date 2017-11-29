@@ -39,14 +39,15 @@
           <div class="body" role="main">
             
   <h1>Source code for mathviz_hopper.src.table</h1><div class="highlight"><pre>
-<span></span><span class="sd">&#39;&#39;&#39;</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Author: Sam Helms</span>
+
 <span class="sd">Date: Nov 1</span>
 
-<span class="sd">This class creates an html table that can display math</span>
-<span class="sd">equations.</span>
+<span class="sd">This module implements an interactive table that can display word embeddings.</span>
+<span class="sd">It can also render mathematics using KaTeX.</span>
 
-<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">shutil</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -59,22 +60,30 @@
 
 
 <div class="viewcode-block" id="Table"><a class="viewcode-back" href="../../../mathviz_hopper.src.html#mathviz_hopper.src.table.Table">[docs]</a><span class="k">class</span> <span class="nc">Table</span><span class="p">:</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    @ param index: a lambda function that takes some input and returns k nearest neighbors</span>
-<span class="sd">    @ param converter: converts values to the format needed by the index </span>
-<span class="sd">      (for example, it would convert a word to a vector)</span>
-<span class="sd">    @ param docs: a vector (list) of documents mapping to the index parameters returned by</span>
-<span class="sd">      the index function</span>
-<span class="sd">    @ writes a visualization to disk</span>
-<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class creates a server and a sets up an interactive </span>
+<span class="sd">    javascript table for inspecting word embeddings.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">8081</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Constructor. Creates indices if passed data</span>
-<span class="sd">        @ param </span>
-<span class="sd">            index: gensim index object (TODO: implement this for dataframes)</span>
-<span class="sd">            data: any data you want to </span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="c1"># TODO: make this memory efficient</span>
+        <span class="sd">&quot;&quot;&quot; Table Constructor</span>
+
+<span class="sd">        todo::make sure this is memory efficient</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">           Index (Index):  An Index object with a valid .query method </span>
+<span class="sd">                           and a .columns attribute.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">           A table object</span>
+
+<span class="sd">        Usage example</span>
+
+<span class="sd">        &gt;&gt;&gt; Table(ind)</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
         <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">index</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span> <span class="k">if</span> <span class="n">port</span> <span class="k">else</span> <span class="n">find_free_port</span><span class="p">()</span>
@@ -86,27 +95,31 @@
         <span class="c1"># set to true if we want to delete the viz directory</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">cleanup_flag</span> <span class="o">=</span> <span class="kc">False</span>
 
-        <span class="c1"># path for the jupyter notebook TODO: change this to work with a package</span>
-        <span class="c1"># self.html_path = &quot;/mathviz_hopper/src/html/build&quot;</span>
-
     <span class="k">def</span> <span class="nf">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Class destructor</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">server</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cleanup_flag</span><span class="p">:</span>
             <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Table.shutdown"><a class="viewcode-back" href="../../../mathviz_hopper.src.html#mathviz_hopper.src.table.Table.shutdown">[docs]</a>    <span class="k">def</span> <span class="nf">shutdown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Shuts the server down</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
         <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">server</span></div>
 
     <span class="k">def</span> <span class="nf">_create_settings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        TODO: add this as another interface</span>
-<span class="sd">        Creates an index (can be used to initialize the index if not</span>
-<span class="sd">        passed in the consturctor)</span>
-<span class="sd">        @ param </span>
-<span class="sd">            index: gensim index object (TODO: implement this for dataframes)</span>
-<span class="sd">            words: list of strings representing words in the vocabulary</span>
-<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">        Creates the settings object that will be sent </span>
+<span class="sd">        to the frontend vizualization</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
         <span class="bp">self</span><span class="o">.</span><span class="n">settings</span> <span class="o">=</span> <span class="p">{</span>
             <span class="s2">&quot;columns&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;Header&quot;</span><span class="p">:</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot;accessor&quot;</span><span class="p">:</span> <span class="n">s</span><span class="p">}</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">settings</span><span class="p">],</span>
             <span class="s2">&quot;port&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">,</span>
@@ -118,70 +131,56 @@
 <span class="sd">        &quot;prints&quot; a javascript visualization that can be run in the browser</span>
 <span class="sd">        (or TODO: a jupyter notebook cell) and initializes listening on a</span>
 <span class="sd">        port to serve data to the viz.</span>
+
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="c1"># _print_html()</span>
+
         <span class="bp">self</span><span class="o">.</span><span class="n">_listen</span><span class="p">()</span></div>
 
 <div class="viewcode-block" id="Table.run_server"><a class="viewcode-back" href="../../../mathviz_hopper.src.html#mathviz_hopper.src.table.Table.run_server">[docs]</a>    <span class="k">def</span> <span class="nf">run_server</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        &quot;prints&quot; a javascript visualization that can be run in the browser</span>
-<span class="sd">        (or TODO: a jupyter notebook cell) and initializes listening on a</span>
-<span class="sd">        port to serve data to the viz.</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="c1"># _print_html()</span>
-        <span class="c1"># handler = TableRequestHandlerFactory(self.index, self.converter, self.docs, self.settings)</span>
-        <span class="c1"># self.server = HTTPServer((&#39;&#39;, self.port), handler)</span>
-        <span class="c1"># self.server.serve_forever()</span>
+        <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">        Runs a server to handle queries to the index without creating the </span>
+<span class="sd">        javascript table.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">app</span> <span class="o">=</span> <span class="n">build_app</span><span class="p">()</span>
         <span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Table.print_ipython"><a class="viewcode-back" href="../../../mathviz_hopper.src.html#mathviz_hopper.src.table.Table.print_ipython">[docs]</a>    <span class="k">def</span> <span class="nf">print_ipython</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        &quot;prints&quot; a javascript visualization to a jupyter/ipython notebook cell</span>
-<span class="sd">        And initializes listening on a port to serve data to the viz.</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="c1"># _print_html()</span>
+        <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">        Renders the javascript table to a jupyter/ipython notebook cell</span>
+
+<span class="sd">        Usage example:</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; t = Table(ind)</span>
+<span class="sd">        &gt;&gt;&gt; t.print_ipython()</span>
+<span class="sd">        ... renders the table to notebook cell</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_listen</span><span class="p">()</span>
         <span class="k">try</span><span class="p">:</span> <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">)</span>
         <span class="k">except</span><span class="p">:</span> <span class="kc">None</span>
 
-        <span class="c1"># TODO: assign this path intelligently</span>
         <span class="n">shutil</span><span class="o">.</span><span class="n">copytree</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">html_path</span><span class="p">,</span> <span class="s1">&#39;viz&#39;</span><span class="p">)</span>
         <span class="n">pth</span> <span class="o">=</span> <span class="s2">&quot;viz/index.html&quot;</span>
         <span class="n">html</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pth</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
         <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">html</span><span class="p">))</span></div>
 
-    <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Wraps gensim&#39;s query functionality. </span>
-<span class="sd">        @ param q: a query string</span>
-<span class="sd">        @ returns list of nearest neighbor strings and their distances</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-
     <span class="k">def</span> <span class="nf">_listen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
+        <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Initializing listening on a socket to serve data to the javascript</span>
 <span class="sd">        table.</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="c1"># TODO: write a method to deal with socket conflicts</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="n">Server</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
-        <span class="nb">print</span> <span class="s1">&#39;listening&#39;</span>
-
     <span class="k">def</span> <span class="nf">_print_html</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Creates an interactive table for viewing in the browser.</span>
-<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Internal method to call the javascript/html table.</span>
+<span class="sd">        </span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">cur_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-        <span class="n">shutil</span><span class="o">.</span><span class="n">copytree</span><span class="p">(</span><span class="n">cur_path</span><span class="o">+</span><span class="s1">&#39;webpage/template/&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-
-<div class="viewcode-block" id="Table.bundle"><a class="viewcode-back" href="../../../mathviz_hopper.src.html#mathviz_hopper.src.table.Table.bundle">[docs]</a>    <span class="k">def</span> <span class="nf">bundle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        bundles the table and the model to a folder of javascript, html,</span>
-<span class="sd">        and css files that can be shared via email, github pages, or some</span>
-<span class="sd">        other service.</span>
-<span class="sd">        &#39;&#39;&#39;</span></div></div>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">copytree</span><span class="p">(</span><span class="n">cur_path</span><span class="o">+</span><span class="s1">&#39;webpage/template/&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></div>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>

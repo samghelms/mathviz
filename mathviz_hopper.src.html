@@ -43,8 +43,17 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="mathviz-hopper-src-scatter-module">
-<h2>mathviz_hopper.src.Scatter module<a class="headerlink" href="#mathviz-hopper-src-scatter-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-mathviz_hopper.src.Scatter">
+<span id="mathviz-hopper-src-scatter-module"></span><h2>mathviz_hopper.src.Scatter module<a class="headerlink" href="#module-mathviz_hopper.src.Scatter" title="Permalink to this headline">¶</a></h2>
+<p>Author: Sam Helms
+Date: Nov 1</p>
+<p>This class creates an scatter plot for visualizing
+embeddings (probably using TSNE)</p>
+<dl class="class">
+<dt id="mathviz_hopper.src.Scatter.Scatter">
+<em class="property">class </em><code class="descclassname">mathviz_hopper.src.Scatter.</code><code class="descname">Scatter</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/Scatter.html#Scatter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.Scatter.Scatter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 <div class="section" id="module-mathviz_hopper.src.bottle">
 <span id="mathviz-hopper-src-bottle-module"></span><h2>mathviz_hopper.src.bottle module<a class="headerlink" href="#module-mathviz_hopper.src.bottle" title="Permalink to this headline">¶</a></h2>
@@ -2300,7 +2309,7 @@ be used as a decorator or called directly</p>
 
 <dl class="data">
 <dt id="mathviz_hopper.src.bottle.ext">
-<code class="descclassname">mathviz_hopper.src.bottle.</code><code class="descname">ext</code><em class="property"> = &lt;module 'mathviz_hopper.src.bottle.ext' from '/Users/sam/Documents/fall17/mathviz-install-test/env/lib/python2.7/site-packages/mathviz_hopper/src/bottle.pyc'&gt;</em><a class="headerlink" href="#mathviz_hopper.src.bottle.ext" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">mathviz_hopper.src.bottle.</code><code class="descname">ext</code><em class="property"> = &lt;module 'mathviz_hopper.src.bottle.ext' from '/Users/sam/Documents/fall17/mathviz/mathviz_hopper/src/bottle.py'&gt;</em><a class="headerlink" href="#mathviz_hopper.src.bottle.ext" title="Permalink to this definition">¶</a></dt>
 <dd><p>A virtual package that redirects import statements.
 Example: <code class="docutils literal"><span class="pre">import</span> <span class="pre">bottle.ext.sqlite</span></code> actually imports <cite>bottle_sqlite</cite>.</p>
 </dd></dl>
@@ -2773,30 +2782,15 @@ Date: Nov 1</p>
 </div>
 <div class="section" id="module-mathviz_hopper.src.table">
 <span id="mathviz-hopper-src-table-module"></span><h2>mathviz_hopper.src.table module<a class="headerlink" href="#module-mathviz_hopper.src.table" title="Permalink to this headline">¶</a></h2>
-<p>Author: Sam Helms
-Date: Nov 1</p>
-<p>This class creates an html table that can display math
-equations.</p>
+<p>Author: Sam Helms</p>
+<p>Date: Nov 1</p>
+<p>This module implements an interactive table that can display word embeddings.
+It can also render mathematics using KaTeX.</p>
 <dl class="class">
 <dt id="mathviz_hopper.src.table.Table">
 <em class="property">class </em><code class="descclassname">mathviz_hopper.src.table.</code><code class="descname">Table</code><span class="sig-paren">(</span><em>index</em>, <em>port=8081</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/table.html#Table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.table.Table" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#64; param index: a lambda function that takes some input and returns k nearest neighbors
-&#64; param converter: converts values to the format needed by the index</p>
-<blockquote>
-<div>(for example, it would convert a word to a vector)</div></blockquote>
-<dl class="docutils">
-<dt>&#64; param docs: a vector (list) of documents mapping to the index parameters returned by</dt>
-<dd>the index function</dd>
-</dl>
-<p>&#64; writes a visualization to disk</p>
-<dl class="method">
-<dt id="mathviz_hopper.src.table.Table.bundle">
-<code class="descname">bundle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/table.html#Table.bundle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.table.Table.bundle" title="Permalink to this definition">¶</a></dt>
-<dd><p>bundles the table and the model to a folder of javascript, html,
-and css files that can be shared via email, github pages, or some
-other service.</p>
-</dd></dl>
-
+<dd><p>This class creates a server and a sets up an interactive 
+javascript table for inspecting word embeddings.</p>
 <dl class="method">
 <dt id="mathviz_hopper.src.table.Table.print_html">
 <code class="descname">print_html</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/table.html#Table.print_html"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.table.Table.print_html" title="Permalink to this definition">¶</a></dt>
@@ -2808,22 +2802,27 @@ port to serve data to the viz.</p>
 <dl class="method">
 <dt id="mathviz_hopper.src.table.Table.print_ipython">
 <code class="descname">print_ipython</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/table.html#Table.print_ipython"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.table.Table.print_ipython" title="Permalink to this definition">¶</a></dt>
-<dd><p>“prints” a javascript visualization to a jupyter/ipython notebook cell
-And initializes listening on a port to serve data to the viz.</p>
+<dd><p>Renders the javascript table to a jupyter/ipython notebook cell</p>
+<p>Usage example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">print_ipython</span><span class="p">()</span>
+<span class="gp">... </span><span class="n">renders</span> <span class="n">the</span> <span class="n">table</span> <span class="n">to</span> <span class="n">notebook</span> <span class="n">cell</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
 <dt id="mathviz_hopper.src.table.Table.run_server">
 <code class="descname">run_server</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/table.html#Table.run_server"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.table.Table.run_server" title="Permalink to this definition">¶</a></dt>
-<dd><p>“prints” a javascript visualization that can be run in the browser
-(or TODO: a jupyter notebook cell) and initializes listening on a
-port to serve data to the viz.</p>
+<dd><p>Runs a server to handle queries to the index without creating the 
+javascript table.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="mathviz_hopper.src.table.Table.shutdown">
 <code class="descname">shutdown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mathviz_hopper/src/table.html#Table.shutdown"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mathviz_hopper.src.table.Table.shutdown" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Shuts the server down</p>
+</dd></dl>
 
 </dd></dl>
 
