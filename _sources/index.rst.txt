@@ -1,10 +1,10 @@
-.. Mathviz Hopper documentation master file, created by
-   sphinx-quickstart on Tue Nov 28 15:43:10 2017.
+.. Mathviz documentation master file, created by
+   sphinx-quickstart on Tue Nov 28 21:51:25 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Mathviz Hopper's documentation!
-==========================================
+Welcome to Mathviz's documentation!
+===================================
 
 .. toctree::
    :maxdepth: 2
