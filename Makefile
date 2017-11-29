@@ -14,7 +14,6 @@ gh-pages:
 	rm -rf *
 	git rm -rf *
 	git checkout dev $(GH_PAGES_SOURCES)
-	mkdir page
 	cd docs; make html
 	mv -fv docs/build/html/* .
 	rm -rf $(GH_PAGES_SOURCES)
