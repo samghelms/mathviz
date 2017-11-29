@@ -15,7 +15,7 @@ gh-pages:
 	git rm -rf *
 	touch .nojekyll
 	git checkout dev $(GH_PAGES_SOURCES)
-	cd docs; sphinx-apidoc -f -o source/ ../python_documentation/; make html
+	cd docs; make html
 	mv -fv docs/build/html/* .
 	rm -rf $(GH_PAGES_SOURCES)
 	git add .
