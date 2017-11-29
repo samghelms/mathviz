@@ -1,5 +1,6 @@
 """
 Author: Sam Helms
+
 Date: Nov 1
 
 This module implements an interactive table that can display word embeddings.
@@ -26,7 +27,9 @@ class Table:
 
     def __init__(self, index, port = 8081):
        """ Table Constructor
+
         todo::make sure this is memory efficient
+
         Args:
            Index (Index):  An Index object with a valid .query method 
                            and a .columns attribute.
@@ -86,7 +89,6 @@ class Table:
         port to serve data to the viz.
 
         '''
-        # _print_html()
         self._listen()
 
     def run_server(self):
@@ -101,7 +103,9 @@ class Table:
     def print_ipython(self):
         """ 
         Renders the javascript table to a jupyter/ipython notebook cell
+
         Usage example:
+        
         >>> t = Table(ind)
         >>> t.print_ipython()
         ... renders the table to notebook cell
