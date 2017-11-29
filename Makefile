@@ -7,7 +7,7 @@ SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = MathvizHopper
 SOURCEDIR     = docs/source
 BUILDDIR      = docs/build
-GH_PAGES_SOURCES = ./docs
+GH_PAGES_SOURCES = docs/
 
 gh-pages:
 	git checkout gh-pages
@@ -17,7 +17,7 @@ gh-pages:
 	git checkout dev $(GH_PAGES_SOURCES)
 	mkdir page
 	cd docs; make html
-	mv -fv ./docs/build/html/* ./page
+	mv -fv docs/build/html/* page/
 	rm -rf $(GH_PAGES_SOURCES)
 	git add -A
 	git commit -m "Generated gh-pages for `git log dev -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout dev
