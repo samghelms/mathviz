@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Mathviz Hopper documentation build configuration file, created by
-# sphinx-quickstart on Tue Nov 28 15:43:10 2017.
+# Mathviz documentation build configuration file, created by
+# sphinx-quickstart on Tue Nov 28 21:51:25 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -16,9 +16,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../mathviz_hopper'))
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- General configuration ------------------------------------------------
@@ -31,10 +31,10 @@ sys.path.insert(0, os.path.abspath('../mathviz_hopper'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
     'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax']
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Mathviz Hopper'
+project = u'Mathviz'
 copyright = u'2017, Samuel Helms'
 author = u'Samuel Helms'
 
@@ -58,7 +58,7 @@ author = u'Samuel Helms'
 # built documents.
 #
 # The short X.Y version.
-version = u'0.1'
+version = u'0.`'
 # The full version, including alpha/beta/rc tags.
 release = u'0.1'
 
@@ -115,7 +115,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'MathvizHopperdoc'
+htmlhelp_basename = 'Mathvizdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -142,7 +142,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'MathvizHopper.tex', u'Mathviz Hopper Documentation',
+    (master_doc, 'Mathviz.tex', u'Mathviz Documentation',
      u'Samuel Helms', 'manual'),
 ]
 
@@ -152,7 +152,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mathvizhopper', u'Mathviz Hopper Documentation',
+    (master_doc, 'mathviz', u'Mathviz Documentation',
      [author], 1)
 ]
 
@@ -163,8 +163,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MathvizHopper', u'Mathviz Hopper Documentation',
-     author, 'MathvizHopper', 'One line description of project.',
+    (master_doc, 'Mathviz', u'Mathviz Documentation',
+     author, 'Mathviz', 'One line description of project.',
      'Miscellaneous'),
 ]
 
