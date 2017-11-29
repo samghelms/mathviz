@@ -9,6 +9,15 @@ Install dependencies with pip and then run the jupyter notebook for an example o
 
 `pip install mathviz_hopper`
 
+## Running examples
+
+git clone this repository, navigate to the repository, then:
+
+1. `cd examples`
+2. `pip install -r requirements.txt`
+3. `jupyter notebook`
+4. Open the `example.ipynb` file and run the example code. Make sure your kernel has the package in it (you might need to switch kernels from `env` to `python 2`)
+
 ## Building the docs
 
 ### for local use
@@ -19,6 +28,6 @@ Run `make gh-pages` in the root directory of the repository
 
 ## distributing 
 
-Run `setup.py sdist`
+Run `python setup.py sdist`
 and then
-`twine upload dist/*`
+`twine upload dist/<dist>`
