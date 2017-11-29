@@ -20,8 +20,6 @@ class Index:
         # TODO: make this memory efficient
         self.lookup_function = lookup_function
         self.columns = columns
-        self.server = None
-        self.docs = docs
 
     def query(self, query):
         return self.lookup_function(query)
@@ -71,14 +69,37 @@ class GensimMathIndex(Index):
         lookup_function = self._query
         Index.__init__(self, lookup_function, self.columns)
 
-    def _tokenize_latex(exp):
+    def _get_next_token(self, string):
+        """
+        "eats" up the string until it hits an ending character to get valid leaf expressions.
+        For example, given \\Phi_{z}(L) = \\sum_{i=1}^{N} \\frac{1}{C_{i} \\times V_{\\rm max, i}},
+        this function would pull out \\Phi, stopping at _
+        @ string: str
+        returns a tuple of (expression [ex: \\Phi], remaining_chars [ex: _{z}(L) = \\sum_{i=1}^{N}...])
+        """
+        STOP_CHARS = "_ {}^ \n ,()="
+        UNARY_CHARS = "^_"
+        # ^ and _ are valid leaf expressions--just ones that should be handled on their own
+        if string[0] in STOP_CHARS:
+            return string[0], string[1:]
+        
+        expression = []
+        for i, c in enumerate(string):
+            if c in STOP_CHARS:
+                break
+            else:
+                expression.append(c)
+        
+        return "".join(expression), string[i:]
+
+    def _tokenize_latex(self, exp):
         """
         Internal method to tokenize latex
         """
         tokens = []
         prevexp = ""
         while exp:
-            t, exp = get_next_token(exp)
+            t, exp = self._get_next_token(exp)
             if t.strip() != "":
                 tokens.append(t)
             if prevexp == exp:

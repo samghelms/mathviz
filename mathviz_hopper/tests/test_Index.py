@@ -1,5 +1,6 @@
 from mathviz_hopper.src.indices import GensimMathIndex
 from setup_test_data import Data
+import json
 
 class TestGensimMathIndex:
  
@@ -13,5 +14,5 @@ class TestGensimMathIndex:
  
     def test_query(self):
         print 'test_query()'
-        print index.query("\\frac")
-        assert index.query("\\frac")
+        print self.index.query("\\frac")
+        assert "sum_{g=1}^" in json.dumps(self.index.query("\\frac"))

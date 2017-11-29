@@ -1,17 +1,18 @@
 from mathviz_hopper.src.table import Table
+from mathviz_hopper.src.indices import GensimMathIndex
 from setup_test_data import Data
 
 class TestTable:
  
     def __init__(self):
     	self.data = Data()
-        self.table = None
+    	self.index = GensimMathIndex(self.data.index, self.data.docs, self.data.dictionary)
+        self.table = Table(self.index)
  
     def test_init(self):
         print 'test_init()'
-        # t = Table()
-        assert 
+        assert self.table.index
  
-    def test_strings_b_2(self):
-        print 'test_strings_b_2()  <============================ actual test code'
-        assert multiply('b',2) == 'bb'
+    def test_(self):
+        print 'test_() '
+        

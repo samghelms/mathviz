@@ -10,9 +10,12 @@ from gensim import similarities
 import glob
 import os
 
+def get_file_dir():
+    return os.path.dirname(os.path.realpath(__file__))
+
 def read_file(file):
     df_li = []
-    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dir_path = get_file_dir()
     for f in glob.glob(dir_path+"/"+file):
         try:
             df_li.append(pd.read_json(f))
@@ -76,7 +79,8 @@ def get_tfidf_corpus(corpus):
     return corpus_tfidf
 
 def get_index(corpus_tfidf, dictionary):
-    index = similarities.MatrixSimilarity(corpus_tfidf)
+    dir_path = get_file_dir()
+    index = similarities.Similarity(dir_path+"/data/index", corpus_tfidf, len(dictionary.keys()), num_best = 100)
     return index
 
 def get_docs(df):
