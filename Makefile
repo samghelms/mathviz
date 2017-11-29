@@ -15,7 +15,7 @@ gh-pages:
 	git rm -rf *
 	touch .nojekyll
 	git checkout dev $(GH_PAGES_SOURCES)
-	cd docs; make html
+	cd docs; sphinx-apidoc -f -o source/ ../mathviz_hopper/; make html
 	mv -fv docs/build/html/* .
 	rm -rf $(GH_PAGES_SOURCES)
 	git add .
