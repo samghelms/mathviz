@@ -18,7 +18,7 @@ gh-pages:
 	sphinx-apidoc -f -o docs/source/ mathviz_hopper/
 	cd docs; make html
 	mv -fv docs/build/html/* ./
-	rm -rf $(GH_PAGES_SOURCES)
+	# rm -rf $(GH_PAGES_SOURCES)
 	git add .
 	git commit -m "Generated gh-pages for `git log dev -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout dev
 
