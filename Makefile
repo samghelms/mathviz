@@ -11,16 +11,17 @@ GH_PAGES_SOURCES = docs/
 
 gh-pages:
 	sphinx-apidoc -f -o docs/source/ mathviz_hopper/
+	cd docs; make html
 	git checkout gh-pages
 	rm -rf *
 	git rm -rf *
 	touch .nojekyll
 	git checkout dev $(GH_PAGES_SOURCES)
-	cd docs; make html
 	mv -fv docs/build/html/* ./
-	# rm -rf $(GH_PAGES_SOURCES)
+	rm -rf $(GH_PAGES_SOURCES)
 	git add .
 	git commit -m "Generated gh-pages for `git log dev -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout dev
+	git rm -rf docs/build
 
 # Put it first so that "make" without argument is like "make help".
 help:
