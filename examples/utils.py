@@ -45,3 +45,4 @@ def tokenize_latex(exp):
             break
         prevexp = exp
     return tokens
+

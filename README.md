@@ -31,3 +31,5 @@ Run `make gh-pages` in the root directory of the repository
 Run `python setup.py sdist`
 and then
 `twine upload dist/<dist>`
+
+	

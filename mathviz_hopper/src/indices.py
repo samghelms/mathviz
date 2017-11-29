@@ -34,7 +34,7 @@ class GensimMathIndex(Index):
     An index that allows querying gensim-based vector space models.
     You can use this as an example for how to create your own index.
     """
-    def __init__(self, index, docs, dictionary, cols):
+    def __init__(self, index, docs, dictionary):
         """ GensimMathIndex Constructor
 
         Args:
@@ -45,8 +45,6 @@ class GensimMathIndex(Index):
                 to the gensim index.
             dictionary (gensim.corpora.dictionary.Dictionary):
                 The same dictionary used to create the gensim index
-            cols (list): 
-                A list of string columns names
 
         Returns:
            A table object
@@ -68,7 +66,7 @@ class GensimMathIndex(Index):
         self.index = index
         self.docs = docs
         self.dictionary = dictionary
-        self.columns = cols
+        self.columns = ["neighbor", "similarity_score"]
 
         lookup_function = self._query
         Index.__init__(self, lookup_function, self.columns)
