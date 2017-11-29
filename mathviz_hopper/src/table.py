@@ -37,6 +37,7 @@ class Table:
         Usage example
 
         >>> Table(ind)
+
         """
         self.index = index
         self.server = None
@@ -52,6 +53,7 @@ class Table:
     def __del__(self):
         """
         Class destructor
+
         """
         del self.server
 
@@ -61,6 +63,7 @@ class Table:
     def shutdown(self):
         """
         Shuts the server down
+
         """
         del self.server
 
@@ -68,6 +71,7 @@ class Table:
         """ 
         Creates the settings object that will be sent 
         to the frontend vizualization
+
         """
         self.settings = {
             "columns": [{"Header": s, "accessor": s} for s in self.settings],
@@ -80,6 +84,7 @@ class Table:
         "prints" a javascript visualization that can be run in the browser
         (or TODO: a jupyter notebook cell) and initializes listening on a
         port to serve data to the viz.
+
         '''
         # _print_html()
         self._listen()
@@ -88,6 +93,7 @@ class Table:
         """ 
         Runs a server to handle queries to the index without creating the 
         javascript table.
+
         """
         app = build_app()
         run(app, host='localhost', port=self.port)
@@ -99,6 +105,7 @@ class Table:
         >>> t = Table(ind)
         >>> t.print_ipython()
         ... renders the table to notebook cell
+
         """
         from IPython.display import display, HTML
         self._listen()
@@ -114,12 +121,14 @@ class Table:
         """
         Initializing listening on a socket to serve data to the javascript
         table.
+
         """
         self.server = Server(self)
 
     def _print_html(self):
         """
         Internal method to call the javascript/html table.
+        
         """
         cur_path = os.path.dirname(os.path.realpath(sys.argv[0]))
         shutil.copytree(cur_path+'webpage/template/', '')
