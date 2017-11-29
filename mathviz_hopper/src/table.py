@@ -49,7 +49,7 @@ class Table:
         self.settings = index.columns
         self.docs = index.docs
         self._create_settings()
-        self.html_path = get_cur_path()+'/html/build/'
+        self.html_path = get_cur_path()+'/data/table/'
 
         # set to true if we want to delete the viz directory
         self.cleanup_flag = False
