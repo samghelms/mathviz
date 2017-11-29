@@ -19,7 +19,7 @@ gh-pages:
 	cd docs; make html
 	mv -fv docs/build/html/* page/
 	rm -rf $(GH_PAGES_SOURCES)
-	git add -A
+	git add .
 	git commit -m "Generated gh-pages for `git log dev -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout dev
 
 # Put it first so that "make" without argument is like "make help".
