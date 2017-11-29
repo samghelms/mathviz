@@ -10,7 +10,7 @@ BUILDDIR      = docs/build
 GH_PAGES_SOURCES = docs/
 
 gh-pages:
-	sphinx-apidoc -f -o source/ ../mathviz_hopper/
+	sphinx-apidoc -f -o source/ mathviz_hopper/
 	git checkout gh-pages
 	rm -rf *
 	git rm -rf *
