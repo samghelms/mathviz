@@ -10,12 +10,13 @@ BUILDDIR      = docs/build
 GH_PAGES_SOURCES = docs/
 
 gh-pages:
+	sphinx-apidoc -f -o source/ ../mathviz_hopper/
 	git checkout gh-pages
 	rm -rf *
 	git rm -rf *
 	touch .nojekyll
 	git checkout dev $(GH_PAGES_SOURCES)
-	cd docs; sphinx-apidoc -f -o source/ ../mathviz_hopper/; make html
+	cd docs; make html
 	mv -fv docs/build/html/* .
 	rm -rf $(GH_PAGES_SOURCES)
 	git add .
