@@ -19,4 +19,6 @@ Run `make gh-pages` in the root directory of the repository
 
 ## distributing 
 
-Run `setup.py ...`
+Run `setup.py sdist`
+and then
+`twine upload dist/*`
