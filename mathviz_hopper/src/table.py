@@ -26,7 +26,7 @@ class Table:
     """
 
     def __init__(self, index, port = 8081):
-       """ Table Constructor
+        """ Table Constructor
 
         todo::make sure this is memory efficient
 
@@ -42,6 +42,7 @@ class Table:
         >>> Table(ind)
 
         """
+
         self.index = index
         self.server = None
         self.port = port if port else find_free_port()
@@ -68,6 +69,7 @@ class Table:
         Shuts the server down
 
         """
+
         del self.server
 
     def _create_settings(self):
@@ -76,6 +78,7 @@ class Table:
         to the frontend vizualization
 
         """
+
         self.settings = {
             "columns": [{"Header": s, "accessor": s} for s in self.settings],
             "port": self.port,
@@ -89,6 +92,7 @@ class Table:
         port to serve data to the viz.
 
         '''
+
         self._listen()
 
     def run_server(self):
