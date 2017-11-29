@@ -13,11 +13,11 @@ gh-pages:
 	git checkout gh-pages
 	rm -rf *
 	git rm -rf *
-	# touch .nojekyll
+	touch .nojekyll
 	git checkout dev $(GH_PAGES_SOURCES)
 	mkdir page
 	cd docs; make html
-	mv -fv docs/build/html/* page/
+	mv -fv docs/build/html/* .
 	rm -rf $(GH_PAGES_SOURCES)
 	git add .
 	git commit -m "Generated gh-pages for `git log dev -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout dev
