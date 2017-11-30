@@ -29,7 +29,6 @@ class Server:
         def query():
             query=json.loads(request.body.read()).get("query")
             return_val = self.index.query(query)
-            print return_val
             response.headers['Access-Control-Allow-Origin'] = '*'
             response.headers['Access-Control-Allow-Methods'] = 'POST'
             response.headers['Access-Control-Allow-Headers'] = 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token'
