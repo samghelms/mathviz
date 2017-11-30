@@ -3,6 +3,10 @@ A python package for examining mathematics equation embeddings.
 
 Documentation: https://samghelms.github.io/mathviz/
 
+This has a sister repository that contains the javascript used to develop the visualizations:
+
+https://github.com/samghelms/mathviz-js-components
+
 # Instructions
 
 Install dependencies with pip and then run the jupyter notebook for an example of how to use the table tool.
@@ -35,5 +39,4 @@ Run `make gh-pages` in the root directory of the repository
 Run `python setup.py sdist`
 and then
 `twine upload dist/<dist>`
-
 	

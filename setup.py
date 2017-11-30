@@ -3,10 +3,10 @@ from setuptools import setup, find_packages
 # files = ["src"]
 # package_data={'templates':['*'],'static':['*'],'docs':['*'],},
 setup(
-  name = 'mathviz_hopper_dev',
+  name = 'mathviz_hopper',
   packages = ['mathviz_hopper'], # this must be the same as the name above
   package_data = {'mathviz_hopper' : ["src/*", "src/*/*", "src/*/*/*", "src/*/*/*/*", "src/*/*/*/*/*"] },
-  version = '0.2.2',
+  version = '0.2',
   description = 'A word vector visualization library',
   author = 'Samuel Helms',
   author_email = 'samuel.helms@yale.edu',
