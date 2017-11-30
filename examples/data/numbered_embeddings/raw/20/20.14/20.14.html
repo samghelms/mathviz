@@ -1,0 +1,183 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 20.14 Methods of Computation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/20.14";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./20#PT4" title="Computation ‣ Chapter 20 Theta Functions">
+<link rel="up up" href="./20" title="Chapter 20 Theta Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./20.13" title="§20.13 Physical Applications ‣ Applications ‣ Chapter 20 Theta Functions">
+<link rel="next" href="./20.15" title="§20.15 Tables ‣ Computation ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.1" title="§20.1 Special Notation ‣ Notation ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.2" title="§20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.3" title="§20.3 Graphics ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.4" title="§20.4 Values at z = 0 ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.5" title="§20.5 Infinite Products and Related Results ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.6" title="§20.6 Power Series ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.7" title="§20.7 Identities ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.8" title="§20.8 Watson’s Expansions ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.9" title="§20.9 Relations to Other Functions ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.10" title="§20.10 Integrals ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.11" title="§20.11 Generalizations and Analogs ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.12" title="§20.12 Mathematical Applications ‣ Applications ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.13" title="§20.13 Physical Applications ‣ Applications ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.15" title="§20.15 Tables ‣ Computation ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.16" title="§20.16 Software ‣ Computation ‣ Chapter 20 Theta Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="computation, theta functions">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./20" title="Chapter 20 Theta Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20 </span>Theta Functions</span></a><a href="./20#PT4" title="Computation ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./20.13" title="§20.13 Physical Applications ‣ Applications ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.13 </span>Physical Applications</span></a><a href="./20.15" title="§20.15 Tables ‣ Computation ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.15 </span>Tables</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§20.14 </span>Methods of Computation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/T#thetafunctions">theta functions</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./22.20#SS1.p1" title="§22.20(i) Via Theta Functions ‣ §22.20 Methods of Computation ‣ Computation ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.20(i)</span></a>,
+<a href="./22.20#SS4.p1" title="§22.20(iv) Lattice Calculations ‣ §22.20 Methods of Computation ‣ Computation ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.20(iv)</span></a>,
+<a href="./22.20#SS6.p2" title="§22.20(vi) Related Functions ‣ §22.20 Methods of Computation ‣ Computation ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.20(vi)</span></a>,
+<a href="./23.22#SS1.p1" title="§23.22(i) Function Values ‣ §23.22 Methods of Computation ‣ Computation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.22(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./20.14" title="" class="ltx_ref">http://dlmf.nist.gov/20.14</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./20#info" title="Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The Fourier series of §<a href="./20.2#i" title="§20.2(i) Fourier Series ‣ §20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.2(i)</span></a> usually converge rapidly because of
+the factors <math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-6px" altimg-width="69px" alttext="q^{(n+\frac{1}{2})^{2}}" display="inline"><msup><mi href="./20.1#p2.t1.r4">q</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./20.1#p2.t1.r2">n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></msup></math> or <math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-6px" altimg-width="33px" alttext="q^{n^{2}}" display="inline"><msup><mi href="./20.1#p2.t1.r4">q</mi><msup><mi href="./20.1#p2.t1.r2">n</mi><mn>2</mn></msup></msup></math>, and provide a convenient way
+of calculating values of
+<math class="ltx_Math" altimg="m10.png" altimg-height="24px" altimg-valign="-8px" altimg-width="64px" alttext="\mathop{\theta_{j}\/}\nolimits\!\left(z\middle|\tau\right)" display="inline"><mrow><msub><mi href="./20.2#i">θ</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./20.1#p2.t1.r3">z</mi><mo>|</mo><mi href="./20.1#p2.t1.r4">τ</mi><mo>)</mo></mrow></mrow></math>. Similarly, their <math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./20.1#p2.t1.r3">z</mi></math>-differentiated forms
+provide a convenient way of calculating the corresponding derivatives. For
+instance, the first three terms of (<a href="./20.2#E1" title="(20.2.1) ‣ §20.2(i) Fourier Series ‣ §20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.2.1</span></a>) give the value of
+<math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="92px" alttext="\mathop{\theta_{1}\/}\nolimits\!\left(2-i\middle|i\right)" display="inline"><mrow><msub><mi href="./20.2#i">θ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>-</mo><mi mathvariant="normal">i</mi></mrow><mo>|</mo><mi mathvariant="normal">i</mi><mo>)</mo></mrow></mrow></math> (<math class="ltx_Math" altimg="m2.png" altimg-height="24px" altimg-valign="-7px" altimg-width="142px" alttext="=\mathop{\theta_{1}\/}\nolimits\!\left(2-i,e^{-\pi}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./20.2#i">θ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>-</mo><mi mathvariant="normal">i</mi></mrow><mo>,</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mi>π</mi></mrow></msup><mo>)</mo></mrow></mrow></mrow></math>) to 12
+decimal places.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">For values of <math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-7px" altimg-width="25px" alttext="\left|q\right|" display="inline"><mrow><mo>|</mo><mi href="./20.1#p2.t1.r4">q</mi><mo>|</mo></mrow></math> near <math class="ltx_Math" altimg="m1.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math> the transformations of
+§<a href="./20.7#viii" title="§20.7(viii) Transformations of Lattice Parameter ‣ §20.7 Identities ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.7(viii)</span></a> can be used to replace <math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\tau" display="inline"><mi href="./20.1#p2.t1.r4">τ</mi></math> with a value that has a
+larger imaginary part and hence a smaller value of <math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-7px" altimg-width="25px" alttext="\left|q\right|" display="inline"><mrow><mo>|</mo><mi href="./20.1#p2.t1.r4">q</mi><mo>|</mo></mrow></math>. For instance, to find
+<math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="83px" alttext="\mathop{\theta_{3}\/}\nolimits\!\left(z,0.9\right)" display="inline"><mrow><msub><mi href="./20.2#i">θ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./20.1#p2.t1.r3">z</mi><mo>,</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math> we use (<a href="./20.7#E32" title="(20.7.32) ‣ §20.7(viii) Transformations of Lattice Parameter ‣ §20.7 Identities ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.7.32</span></a>) with <math class="ltx_Math" altimg="m16.png" altimg-height="24px" altimg-valign="-6px" altimg-width="127px" alttext="q=0.9=e^{i\pi\tau}" display="inline"><mrow><mi href="./20.1#p2.t1.r4">q</mi><mo>=</mo><mn>0.9</mn><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi href="./20.1#p2.t1.r4">τ</mi></mrow></msup></mrow></math>, <math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="150px" alttext="\tau=-i\mathop{\ln\/}\nolimits\!\left(0.9\right)/\pi" display="inline"><mrow><mi href="./20.1#p2.t1.r4">τ</mi><mo>=</mo><mrow><mo>-</mo><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></mrow><mo>/</mo><mi>π</mi></mrow></mrow></mrow></math>. Then <math class="ltx_Math" altimg="m15.png" altimg-height="24px" altimg-valign="-7px" altimg-width="226px" alttext="\tau^{\prime}=-1/\tau=-i\pi/\mathop{\ln\/}\nolimits\!\left(0.9\right)" display="inline"><mrow><msup><mi href="./20.1#p2.t1.r4">τ</mi><mo>′</mo></msup><mo>=</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./20.1#p2.t1.r4">τ</mi></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="29px" altimg-valign="-9px" altimg-width="434px" alttext="q^{\prime}=e^{i\pi\tau^{\prime}}=\mathop{\exp\/}\nolimits\!\left(\pi^{2}/%
+\mathop{\ln\/}\nolimits\!\left(0.9\right)\right)=(2.07\dots)\times 10^{-41}" display="inline"><mrow><msup><mi href="./20.1#p2.t1.r4">q</mi><mo>′</mo></msup><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi href="./20.1#p2.t1.r4">τ</mi><mo>′</mo></msup></mrow></msup><mo>=</mo><mrow><mi href="./4.2#E19">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi>π</mi><mn>2</mn></msup><mo>/</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2.07</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>41</mn></mrow></msup></mrow></mrow></math>. Hence the first term of the series
+(<a href="./20.2#E3" title="(20.2.3) ‣ §20.2(i) Fourier Series ‣ §20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.2.3</span></a>) for <math class="ltx_Math" altimg="m9.png" altimg-height="24px" altimg-valign="-7px" altimg-width="87px" alttext="\mathop{\theta_{3}\/}\nolimits\!\left(z\tau^{\prime}\middle|\tau^{\prime}\right)" display="inline"><mrow><msub><mi href="./20.2#i">θ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./20.1#p2.t1.r3">z</mi><mo>⁢</mo><msup><mi href="./20.1#p2.t1.r4">τ</mi><mo>′</mo></msup></mrow><mo>|</mo><msup><mi href="./20.1#p2.t1.r4">τ</mi><mo>′</mo></msup><mo>)</mo></mrow></mrow></math> suffices for
+most purposes. In theory, starting from any value of <math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\tau" display="inline"><mi href="./20.1#p2.t1.r4">τ</mi></math>, a finite number
+of applications of the transformations <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-4px" altimg-width="92px" alttext="\tau\to\tau+1" display="inline"><mrow><mi href="./20.1#p2.t1.r4">τ</mi><mo>→</mo><mrow><mi href="./20.1#p2.t1.r4">τ</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="93px" alttext="\tau\to-1/\tau" display="inline"><mrow><mi href="./20.1#p2.t1.r4">τ</mi><mo>→</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./20.1#p2.t1.r4">τ</mi></mrow></mrow></mrow></math> will result in a value of <math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\tau" display="inline"><mi href="./20.1#p2.t1.r4">τ</mi></math> with
+<math class="ltx_Math" altimg="m4.png" altimg-height="27px" altimg-valign="-7px" altimg-width="103px" alttext="\imagpart{\tau}\geq\sqrt{3}/2" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℑ</mi><mo>⁡</mo><mi href="./20.1#p2.t1.r4">τ</mi></mrow><mo>≥</mo><mrow><msqrt><mn>3</mn></msqrt><mo>/</mo><mn>2</mn></mrow></mrow></math>; see §<a href="./23.18" title="§23.18 Modular Transformations ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">23.18</span></a>. In practice a
+value with, say, <math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-7px" altimg-width="86px" alttext="\imagpart{\tau}\geq 1/2" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℑ</mi><mo>⁡</mo><mi href="./20.1#p2.t1.r4">τ</mi></mrow><mo>≥</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="77px" alttext="\left|q\right|\leq 0.2" display="inline"><mrow><mrow><mo>|</mo><mi href="./20.1#p2.t1.r4">q</mi><mo>|</mo></mrow><mo>≤</mo><mn>0.2</mn></mrow></math>, is
+found quickly and is satisfactory for numerical evaluation.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./20.13" title="§20.13 Physical Applications ‣ Applications ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.13 </span>Physical Applications</span></a><a href="./20.15" title="§20.15 Tables ‣ Computation ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.15 </span>Tables</span></a>
+</div>
+</div>
+</body>
+</html>

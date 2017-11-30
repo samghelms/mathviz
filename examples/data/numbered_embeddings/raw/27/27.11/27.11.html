@@ -1,0 +1,859 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 27.11 Asymptotic Formulas: Partial Sums</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/27.11";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="up up" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="next" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.13" title="§27.13 Functions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.18" title="§27.18 Methods of Computation: Primes ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.19" title="§27.19 Methods of Computation: Factorization ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.20" title="§27.20 Methods of Computation: Other Number-Theoretic Functions ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.22" title="§27.22 Software ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Dirichlet divisor problem, Dirichlet’s divisor problem, Dirichlet’s theorem, in arithmetic progressions, number theory, number-theoretic functions, prime number theorem, prime numbers, prime numbers in arithmetic progression">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./27" title="Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27 </span>Functions of Number Theory</span></a><a href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Multiplicative Number Theory</span></a><a href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.10 </span>Periodic Number-Theoretic Functions</span></a><a href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.12 </span>Asymptotic Formulas: Primes</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§27.11 </span>Asymptotic Formulas: Partial Sums</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib114" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, Chapters 3, 4)</cite>. For (<a href="./27.11#E12" title="(27.11.12) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.12</span></a>),
+(<a href="./27.11#E14" title="(27.11.14) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.14</span></a>), and (<a href="./27.11#E15" title="(27.11.15) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.15</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Prachar (<a href="./bib/P#bib1892" title="Primzahlverteilung" class="ltx_ref">1957</a>, pp. 71–74)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/D#Dirichletsdivisorproblem">Dirichlet’s divisor problem</a>, <a class="ltx_keyword" href="./idx/D#Dirichletstheorem">Dirichlet’s theorem</a>, <a class="ltx_keyword" href="./idx/N#numbertheory">number theory</a>, <a class="ltx_keyword" href="./idx/N#numbertheoreticfunctions">number-theoretic functions</a>, <a class="ltx_keyword" href="./idx/P#primenumbertheorem">prime number theorem</a>, <a class="ltx_keyword" href="./idx/P#primenumbers">prime numbers</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./25.15#SS2.p2" title="§25.15(ii) Zeros ‣ §25.15 Dirichlet L -functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11" title="" class="ltx_ref">http://dlmf.nist.gov/27.11</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27#info" title="Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The behavior of a number-theoretic function <math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="f(n)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></math> for large <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> is often
+difficult to determine because the function values can fluctuate considerably
+as <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> increases. It is more fruitful to study partial sums and seek
+asymptotic formulas
+of the form</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="55px" altimg-valign="-30px" altimg-width="255px" alttext="\sum_{n\leq x}f(n)=F(x)+\mathop{O\/}\nolimits\!\left(g(x)\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E1" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E1.tex">TeX</a>, <a href="./27.11.E1.pmml">pMML</a>, <a href="./27.11.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="F(x)" display="inline"><mrow><mi>F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a known function of <math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>, and <math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="73px" alttext="\mathop{O\/}\nolimits\!\left(g(x)\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math> represents the
+error, a function of smaller order than <math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="F(x)" display="inline"><mrow><mi>F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow></math> for all <math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math> in some prescribed
+range. For example, <cite class="ltx_cite ltx_citemacro_citet">Dirichlet (<a href="./bib/D#bib670" title="Über die Bestimmung der mittleren Werthe in der Zahlentheorie" class="ltx_ref">1849</a>)</cite> proves that for all <math class="ltx_Math" altimg="m44.png" altimg-height="19px" altimg-valign="-5px" altimg-width="52px" alttext="x\geq 1" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>≥</mo><mn>1</mn></mrow></math>,</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="55px" altimg-valign="-30px" altimg-width="358px" alttext="\sum_{n\leq x}\mathop{d\/}\nolimits\!\left(n\right)=x\mathop{\ln\/}\nolimits x%
++(2\EulerConstant-1)x+\mathop{O\/}\nolimits\!\left(\sqrt{x}\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./5.2#E3">γ</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><msqrt><mi href="./27.1#p2.t1.r9">x</mi></msqrt><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./5.2#E3" title="(5.2.3) ‣ §5.2(ii) Euler’s Constant ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="16px" alttext="\EulerConstant" display="inline"><mi href="./5.2#E3">γ</mi></math>: Euler’s constant</a>,
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{d_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">d</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: divisor function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.3 III</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.11#p1" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E2" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E2.tex">TeX</a>, <a href="./27.11.E2.pmml">pMML</a>, <a href="./27.11.E2.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="16px" alttext="\EulerConstant" display="inline"><mi href="./5.2#E3">γ</mi></math> is Euler’s constant (§<a href="./5.2#ii" title="§5.2(ii) Euler’s Constant ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.2(ii)</span></a>).
+<em class="ltx_emph">Dirichlet’s divisor problem</em>
+(unsolved in 2009) is to determine
+the least number <math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-5px" altimg-width="23px" alttext="\theta_{0}" display="inline"><msub><mi>θ</mi><mn>0</mn></msub></math> such
+that the error term in (<a href="./27.11#E2" title="(27.11.2) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.2</span></a>) is <math class="ltx_Math" altimg="m20.png" altimg-height="27px" altimg-valign="-9px" altimg-width="59px" alttext="\mathop{O\/}\nolimits\!\left(x^{\theta}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mi>θ</mi></msup><mo>)</mo></mrow></mrow></math> for all
+<math class="ltx_Math" altimg="m29.png" altimg-height="21px" altimg-valign="-5px" altimg-width="59px" alttext="\theta&gt;\theta_{0}" display="inline"><mrow><mi>θ</mi><mo>&gt;</mo><msub><mi>θ</mi><mn>0</mn></msub></mrow></math>. <cite class="ltx_cite ltx_citemacro_citet">Kolesnik (<a href="./bib/K#bib1314" title="An improvement of the remainder term in the divisor problem" class="ltx_ref">1969</a>)</cite> proves that
+<math class="ltx_Math" altimg="m31.png" altimg-height="27px" altimg-valign="-9px" altimg-width="70px" alttext="\theta_{0}\leq\frac{12}{37}" display="inline"><mrow><msub><mi>θ</mi><mn>0</mn></msub><mo>≤</mo><mfrac><mn>12</mn><mn>37</mn></mfrac></mrow></math>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Equations (<a href="./27.11#E3" title="(27.11.3) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.3</span></a>)–(<a href="./27.11#E11" title="(27.11.11) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.11</span></a>) list further
+asymptotic formulas related to some of the functions listed in
+§<a href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2</span></a>. They are valid for all <math class="ltx_Math" altimg="m45.png" altimg-height="19px" altimg-valign="-5px" altimg-width="52px" alttext="x\geq 2" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>≥</mo><mn>2</mn></mrow></math>. The error terms given
+here are not necessarily the best known.</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="62px" altimg-valign="-30px" altimg-width="340px" alttext="\sum_{n\leq x}\frac{\mathop{d\/}\nolimits\!\left(n\right)}{n}=\frac{1}{2}(%
+\mathop{\ln\/}\nolimits x)^{2}+2\EulerConstant\mathop{\ln\/}\nolimits x+%
+\mathop{O\/}\nolimits\!\left(1\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mfrac><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mi href="./27.1#p2.t1.r1">n</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./5.2#E3">γ</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./5.2#E3" title="(5.2.3) ‣ §5.2(ii) Euler’s Constant ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="16px" alttext="\EulerConstant" display="inline"><mi href="./5.2#E3">γ</mi></math>: Euler’s constant</a>,
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{d_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">d</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: divisor function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.11#p2" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E3" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E3.tex">TeX</a>, <a href="./27.11.E3.pmml">pMML</a>, <a href="./27.11.E3.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="16px" alttext="\EulerConstant" display="inline"><mi href="./5.2#E3">γ</mi></math> again is Euler’s constant.</p>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="55px" altimg-valign="-30px" altimg-width="93px" alttext="\displaystyle\sum_{n\leq x}\mathop{\sigma_{1}\/}\nolimits\!\left(n\right)" display="inline"><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder></mstyle><mrow><msub><mi href="./27.2#E10">σ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="49px" altimg-valign="-16px" altimg-width="184px" alttext="\displaystyle=\frac{\pi^{2}}{12}x^{2}+\mathop{O\/}\nolimits\!\left(x\mathop{%
+\ln\/}\nolimits x\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>12</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.2#E10" title="(27.2.10) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\mathop{\sigma_{\NVar{\alpha}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E10">σ</mi><mi class="ltx_nvar" href="./27.2#SS1.p4">α</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of divisors of <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.3 III</span> (in slightly different form)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E4" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E4.tex">TeX</a>, <a href="./27.11.E4.pmml">pMML</a>, <a href="./27.11.E4.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="55px" altimg-valign="-30px" altimg-width="95px" alttext="\displaystyle\sum_{n\leq x}\mathop{\sigma_{\alpha}\/}\nolimits\!\left(n\right)" display="inline"><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder></mstyle><mrow><msub><mi href="./27.2#E10">σ</mi><mi>α</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="49px" altimg-valign="-17px" altimg-width="237px" alttext="\displaystyle=\frac{\mathop{\zeta\/}\nolimits\!\left(\alpha+1\right)}{\alpha+1%
+}x^{\alpha+1}+\mathop{O\/}\nolimits\!\left(x^{\beta}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mi href="./25.2#E1">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mi>β</mi></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m14.png" altimg-height="17px" altimg-valign="-3px" altimg-width="54px" alttext="\alpha&gt;0" display="inline"><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m15.png" altimg-height="21px" altimg-valign="-6px" altimg-width="54px" alttext="\alpha\neq 1" display="inline"><mrow><mi>α</mi><mo>≠</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="127px" alttext="\beta=\max(1,\alpha)" display="inline"><mrow><mi>β</mi><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./25.2#E1" title="(25.2.1) ‣ §25.2(i) Definition ‣ §25.2 Definition and Expansions ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="39px" alttext="\mathop{\zeta\/}\nolimits\!\left(\NVar{s}\right)" display="inline"><mrow><mi href="./25.2#E1">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#p2.t1.r5">s</mi><mo>)</mo></mrow></mrow></math>: Riemann zeta function</a>,
+<a href="./27.2#E10" title="(27.2.10) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\mathop{\sigma_{\NVar{\alpha}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E10">σ</mi><mi class="ltx_nvar" href="./27.2#SS1.p4">α</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of divisors of <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E5" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E5.tex">TeX</a>, <a href="./27.11.E5.pmml">pMML</a>, <a href="./27.11.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="55px" altimg-valign="-30px" altimg-width="85px" alttext="\displaystyle\sum_{n\leq x}\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder></mstyle><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="46px" altimg-valign="-16px" altimg-width="184px" alttext="\displaystyle=\frac{3}{\pi^{2}}x^{2}+\mathop{O\/}\nolimits\!\left(x\mathop{\ln%
+\/}\nolimits x\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><msup><mi>π</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.2 III</span> (in slightly different form)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E6" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E6.tex">TeX</a>, <a href="./27.11.E6.pmml">pMML</a>, <a href="./27.11.E6.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="62px" altimg-valign="-30px" altimg-width="89px" alttext="\displaystyle\sum_{n\leq x}\frac{\mathop{\phi\/}\nolimits\!\left(n\right)}{n}" display="inline"><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder></mstyle><mstyle displaystyle="true"><mfrac><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mi href="./27.1#p2.t1.r1">n</mi></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="46px" altimg-valign="-16px" altimg-width="160px" alttext="\displaystyle=\frac{6}{\pi^{2}}x+\mathop{O\/}\nolimits\!\left(\mathop{\ln\/}%
+\nolimits x\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>6</mn><msup><mi>π</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E7" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E7.tex">TeX</a>, <a href="./27.11.E7.pmml">pMML</a>, <a href="./27.11.E7.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="63px" altimg-valign="-31px" altimg-width="290px" alttext="\sum_{p\leq x}\frac{1}{p}=\mathop{\ln\/}\nolimits\mathop{\ln\/}\nolimits x+A+%
+\mathop{O\/}\nolimits\!\left(\frac{1}{\mathop{\ln\/}\nolimits x}\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mfrac><mn>1</mn><mi href="./27.1#p2.t1.r7">p</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo>+</mo><mi href="./27.11#p2">A</mi><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a>,
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a> and
+<a href="./27.11#p2" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="A" display="inline"><mi href="./27.11#p2">A</mi></math>: constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E8" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E8.tex">TeX</a>, <a href="./27.11.E8.pmml">pMML</a>, <a href="./27.11.E8.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="A" display="inline"><mi href="./27.11#p2">A</mi></math> is a constant.</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="79px" altimg-valign="-47px" altimg-width="393px" alttext="\sum_{\begin{subarray}{c}p\leq x\\
+p\equiv h\!\!\!\!\!\pmod{k}\end{subarray}}\frac{1}{p}=\frac{1}{\mathop{\phi\/}%
+\nolimits\!\left(k\right)}\mathop{\ln\/}\nolimits\mathop{\ln\/}\nolimits x+B+%
+\mathop{O\/}\nolimits\!\left(\frac{1}{\mathop{\ln\/}\nolimits x}\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mtable class="ltx_align_c" rowspacing="0.0pt"><mtr><mtd><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≡</mo><mrow><mpadded width="-8.5pt"><mi>h</mi></mpadded><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></munder><mfrac><mn>1</mn><mi href="./27.1#p2.t1.r7">p</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow></mrow><mo>+</mo><mi>B</mi><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.11#p3" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E9" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E9.tex">TeX</a>, <a href="./27.11.E9.pmml">pMML</a>, <a href="./27.11.E9.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(h,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi>h</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-3px" altimg-width="52px" alttext="k&gt;0" display="inline"><mrow><mi href="./27.1#p2.t1.r1">k</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, and <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="B" display="inline"><mi>B</mi></math> is a constant depending on <math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi>h</mi></math> and
+<math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>.</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="61px" altimg-valign="-31px" altimg-width="211px" alttext="\sum_{p\leq x}\frac{\mathop{\ln\/}\nolimits p}{p}=\mathop{\ln\/}\nolimits x+%
+\mathop{O\/}\nolimits\!\left(1\right)." display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mfrac><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r7">p</mi></mrow><mi href="./27.1#p2.t1.r7">p</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E10" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E10.tex">TeX</a>, <a href="./27.11.E10.pmml">pMML</a>, <a href="./27.11.E10.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="77px" altimg-valign="-47px" altimg-width="313px" alttext="\sum_{\begin{subarray}{c}p\leq x\\
+p\equiv h\!\!\!\!\!\pmod{k}\end{subarray}}\frac{\mathop{\ln\/}\nolimits p}{p}=%
+\frac{1}{\mathop{\phi\/}\nolimits\!\left(k\right)}\mathop{\ln\/}\nolimits x+%
+\mathop{O\/}\nolimits\!\left(1\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mtable class="ltx_align_c" rowspacing="0.0pt"><mtr><mtd><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≡</mo><mrow><mpadded width="-8.5pt"><mi>h</mi></mpadded><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></munder><mfrac><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r7">p</mi></mrow><mi href="./27.1#p2.t1.r7">p</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.11#p2" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a>,
+<a href="./27.11#p3" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E11" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E11.tex">TeX</a>, <a href="./27.11.E11.pmml">pMML</a>, <a href="./27.11.E11.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(h,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi>h</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-3px" altimg-width="52px" alttext="k&gt;0" display="inline"><mrow><mi href="./27.1#p2.t1.r1">k</mi><mo>&gt;</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Letting <math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="67px" alttext="x\to\infty" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math> in (<a href="./27.11#E9" title="(27.11.9) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.9</span></a>) or in
+(<a href="./27.11#E11" title="(27.11.11) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.11</span></a>) we see that there are infinitely many primes
+<math class="ltx_Math" altimg="m40.png" altimg-height="23px" altimg-valign="-7px" altimg-width="133px" alttext="p\equiv h\pmod{k}" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≡</mo><mrow><mi>h</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> if <math class="ltx_Math" altimg="m34.png" altimg-height="21px" altimg-valign="-6px" altimg-width="36px" alttext="h,k" display="inline"><mrow><mi>h</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow></math> are coprime; this is <em class="ltx_emph">Dirichlet’s theorem
+on primes in arithmetic progressions</em>.</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="57px" altimg-valign="-30px" altimg-width="244px" alttext="\sum_{n\leq x}\mathop{\mu\/}\nolimits\!\left(n\right)=\mathop{O\/}\nolimits\!%
+\left(xe^{-C\sqrt{\mathop{\ln\/}\nolimits x}}\right)," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi href="./27.11#p3">C</mi><mo>⁢</mo><msqrt><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></msqrt></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="67px" alttext="x\to\infty" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a> and
+<a href="./27.11#p3" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./27.11#p3">C</mi></math>: constant</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 III</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E12" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E12.tex">TeX</a>, <a href="./27.11.E12.pmml">pMML</a>, <a href="./27.11.E12.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">for some positive constant <math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./27.11#p3">C</mi></math>,</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="60px" altimg-valign="-30px" altimg-width="195px" alttext="\lim_{x\to\infty}\frac{1}{x}\sum_{n\leq x}\mathop{\mu\/}\nolimits\!\left(n%
+\right)=0," display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><mi href="./27.1#p2.t1.r9">x</mi></mfrac><mo>⁢</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.11#p4" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E13" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E13.tex">TeX</a>, <a href="./27.11.E13.pmml">pMML</a>, <a href="./27.11.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="62px" altimg-valign="-30px" altimg-width="180px" alttext="\lim_{x\to\infty}\sum_{n\leq x}\frac{\mathop{\mu\/}\nolimits\!\left(n\right)}{%
+n}=0," display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mfrac><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mi href="./27.1#p2.t1.r1">n</mi></mfrac></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 III</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E14" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E14.tex">TeX</a>, <a href="./27.11.E14.pmml">pMML</a>, <a href="./27.11.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.11.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="62px" altimg-valign="-30px" altimg-width="231px" alttext="\lim_{x\to\infty}\sum_{n\leq x}\frac{\mathop{\mu\/}\nolimits\!\left(n\right)%
+\mathop{\ln\/}\nolimits n}{n}=-1." display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mfrac><mrow><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></mrow><mi href="./27.1#p2.t1.r1">n</mi></mfrac></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 III</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a>,
+<a href="./27.11#p4" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.11.E15" title="" class="ltx_ref">http://dlmf.nist.gov/27.11.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.11.E15.tex">TeX</a>, <a href="./27.11.E15.pmml">pMML</a>, <a href="./27.11.E15.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.11#info" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Each of (<a href="./27.11#E13" title="(27.11.13) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.13</span></a>)–(<a href="./27.11#E15" title="(27.11.15) ‣ §27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11.15</span></a>) is equivalent to the
+prime number theorem (<a href="./27.2#E3" title="(27.2.3) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.3</span></a>). <em class="ltx_emph">The prime number theorem for
+arithmetic progressions</em>—an extension of (<a href="./27.2#E3" title="(27.2.3) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.3</span></a>) and first proved
+in <cite class="ltx_cite ltx_citemacro_citet">de la Vallée Poussin (<a href="./bib/D#bib640" title="Recherches analytiques sur la théorie des nombres premiers. Première partie. La fonction ζ ( s ) de Riemann et les nombres premiers en général, suivi d’un Appendice sur des réflexions applicables à une formule donnée par Riemann" class="ltx_ref">1896a</a>, <a href="./bib/D#bib641" title="Recherches analytiques sur la théorie des nombres premiers. Deuxième partie. Les fonctions de Dirichlet et les nombres premiers de la forme linéaire + ⁢ M x N" class="ltx_ref">b</a>)</cite>—states that
+if <math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(h,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi>h</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>, then the number of primes <math class="ltx_Math" altimg="m41.png" altimg-height="20px" altimg-valign="-6px" altimg-width="52px" alttext="p\leq x" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></math> with
+<math class="ltx_Math" altimg="m40.png" altimg-height="23px" altimg-valign="-7px" altimg-width="133px" alttext="p\equiv h\pmod{k}" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≡</mo><mrow><mi>h</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is asymptotic to
+<math class="ltx_Math" altimg="m42.png" altimg-height="23px" altimg-valign="-7px" altimg-width="114px" alttext="x/(\mathop{\phi\/}\nolimits\!\left(k\right)\mathop{\ln\/}\nolimits x)" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="67px" alttext="x\to\infty" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>.
+</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.10 </span>Periodic Number-Theoretic Functions</span></a><a href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.12 </span>Asymptotic Formulas: Primes</span></a>
+</div>
+</div>
+</body>
+</html>

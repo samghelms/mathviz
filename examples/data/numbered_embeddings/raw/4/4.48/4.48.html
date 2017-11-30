@@ -1,0 +1,414 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 4.48 Software</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/4.48";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./4#PT6" title="Computation ‣ Chapter 4 Elementary Functions">
+<link rel="up up" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="next" href="./5" title="Chapter 5 Gamma Function">
+<link rel="section" href="./4.1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.2" title="§4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.3" title="§4.3 Graphics ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.4" title="§4.4 Special Values and Limits ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.5" title="§4.5 Inequalities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.7" title="§4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.9" title="§4.9 Continued Fractions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.10" title="§4.10 Integrals ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.11" title="§4.11 Sums ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.13" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.15" title="§4.15 Graphics ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.16" title="§4.16 Elementary Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.17" title="§4.17 Special Values and Limits ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.18" title="§4.18 Inequalities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.19" title="§4.19 Maclaurin Series and Laurent Series ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.20" title="§4.20 Derivatives and Differential Equations ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.21" title="§4.21 Identities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.22" title="§4.22 Infinite Products and Partial Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.23" title="§4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.24" title="§4.24 Inverse Trigonometric Functions: Further Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.26" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.28" title="§4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.29" title="§4.29 Graphics ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.30" title="§4.30 Elementary Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.31" title="§4.31 Special Values and Limits ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.32" title="§4.32 Inequalities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.33" title="§4.33 Maclaurin Series and Laurent Series ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.34" title="§4.34 Derivatives and Differential Equations ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.35" title="§4.35 Identities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.36" title="§4.36 Infinite Products and Partial Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.37" title="§4.37 Inverse Hyperbolic Functions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.38" title="§4.38 Inverse Hyperbolic Functions: Further Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.39" title="§4.39 Continued Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.40" title="§4.40 Integrals ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.41" title="§4.41 Sums ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.42" title="§4.42 Solution of Triangles ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.43" title="§4.43 Cubic Equations ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.44" title="§4.44 Other Applications ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.45" title="§4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.46" title="§4.46 Tables ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./4" title="Chapter 4 Elementary Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Elementary Functions</span></a><a href="./4#PT6" title="Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.47 </span>Approximations</span></a><a href="./5" title="Chapter 5 Gamma Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Gamma Function</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§4.48 </span>Software</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./4.48" title="" class="ltx_ref">http://dlmf.nist.gov/4.48</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4#info" title="Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§4.48(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§4.48(ii) </span>Interval Arithmetic</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§4.48(iii) </span>General Precision</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§4.48(iv) </span>Lambert <math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="W" display="inline"><mi>W</mi></math>-Function</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§4.48(v) </span>Testing</a></li>
+</ul>
+<div id="p1" class="ltx_para">
+</div>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.48(i) </span>Introduction</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./4.48.i" title="" class="ltx_ref">http://dlmf.nist.gov/4.48.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.48#info" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.48</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">All scientific programming languages, libraries, and systems support computation of at least
+some of the elementary functions in standard floating-point arithmetic
+(§<a href="./3.1#i" title="§3.1(i) Floating-Point Arithmetic ‣ §3.1 Arithmetics and Error Measures ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1(i)</span></a>). These will not be listed here.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Here we provide links to the research literature describing
+the implementation of algorithms in software for the evaluation of
+functions described in this chapter when the arithmetic is nonstandard.
+Links to research literature for the Lambert <math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="W" display="inline"><mi>W</mi></math>-function and for
+test software are included also.
+Citations in bulleted lists refer
+to papers for which research software has been made available and
+can be downloaded via the Web. References to research software that is
+available in other ways is listed separately.</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">A more complete list of available software for computing these functions
+is found in the <a href="./software/" title="Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_title">Software Index</span></a>; again, software that uses only standard
+floating-point arithmetic is excluded.
+For another listing of Web-accessible
+software for the functions in this chapter, see <a href="http://gams.nist.gov/serve.cgi/Class/C4/">GAMS Class C4</a>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.48(ii) </span>Interval Arithmetic</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r5" title="§ Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.48.ii" title="" class="ltx_ref">http://dlmf.nist.gov/4.48.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.48#info" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.48</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Kearfott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib1237" title="Algorithm 737: INTLIB: A portable Fortran 77 interval standard-function library" class="ltx_ref">1994</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Kearfott (<a href="./bib/K#bib1236" title="Algorithm 763: INTERVAL_ARITHMETIC: A Fortran 90 module for an interval data type" class="ltx_ref">1996</a>)</cite>. Fortran 90.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Neher (<a href="./bib/N#bib2502" title="Complex standard functions and their implementation in the CoStLy library" class="ltx_ref">2007</a>)</cite>. C<span class="ltx_text ltx_font_typewriter">++</span>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">See also <cite class="ltx_cite ltx_citemacro_citet">Loenko (<a href="./bib/L#bib1440" title="Evaluating elementary functions with guaranteed precision" class="ltx_ref">2001</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Yohe (<a href="./bib/Y#bib2463" title="Software for interval arithmetic: A reasonably portable package" class="ltx_ref">1979</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.48(iii) </span>General Precision</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r6" title="§ Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.48.iii" title="" class="ltx_ref">http://dlmf.nist.gov/4.48.iii</a></dd>
+<dt>Addition (effective with 1.0.9):</dt>
+<dd>
+The reference to <cite class="ltx_cite ltx_citemacro_citet">Smith (<a href="./bib/S#bib2785" title="Algorithm 911: multiple-precision exponential integral and related functions" class="ltx_ref">2011</a>)</cite> has been added in this subsection.
+
+<p><span class="ltx_font_italic">Reported 2014-07-10</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.48#info" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.48</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Brent (<a href="./bib/B#bib345" title="A Fortran multiple-precision arithmetic package" class="ltx_ref">1978a</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Smith (<a href="./bib/S#bib2115" title="Algorithm 693: A FORTRAN package for floating-point multiple-precision arithmetic" class="ltx_ref">1991</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Bailey (<a href="./bib/B#bib170" title="Algorithm 719: Multiprecision translation and execution of Fortran programs" class="ltx_ref">1993</a>)</cite>. Fortran.
+</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Smith (<a href="./bib/S#bib2116" title="Algorithm 786: Multiple-precision complex arithmetic and functions" class="ltx_ref">1998</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i5.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Smith (<a href="./bib/S#bib2785" title="Algorithm 911: multiple-precision exponential integral and related functions" class="ltx_ref">2011</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">See also <cite class="ltx_cite ltx_citemacro_citet">Bailey (<a href="./bib/B#bib171" title="A Fortran-90 based multiprecision system" class="ltx_ref">1995</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Hull and Abrham (<a href="./bib/H#bib1107" title="Variable precision exponential function" class="ltx_ref">1986</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Xu and Li (<a href="./bib/X#bib2456" title="Variable precision computation of elementary functions" class="ltx_ref">1994</a>)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.48(iv) </span>Lambert <math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="W" display="inline"><mi>W</mi></math>-Function</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./errata/#Sx5.I8.I1.i5.p1" title="Other Changes ‣ Version 1.0.9 (August 29, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>,
+<a href="./software/#S1.t1.r7" title="§ Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Software Cross Index</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.48.iv" title="" class="ltx_ref">http://dlmf.nist.gov/4.48.iv</a></dd>
+<dt>Addition (effective with 1.0.9):</dt>
+<dd>
+The reference to <cite class="ltx_cite ltx_citemacro_citet">Lawrence<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/L#bib2788" title="Algorithm 917: complex double-precision evaluation of the Wright ω function" class="ltx_ref">2012</a>)</cite> has been added in this subsection.
+
+<p><span class="ltx_font_italic">Reported 2014-07-14</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.48#info" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.48</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Barry<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib204" title="Algorithm 743: WAPR: A Fortran routine for calculating real values of the W -function" class="ltx_ref">1995a</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Lawrence<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/L#bib2788" title="Algorithm 917: complex double-precision evaluation of the Wright ω function" class="ltx_ref">2012</a>)</cite>. C.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">See also <cite class="ltx_cite ltx_citemacro_citet">Fritsch<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib842" title="Solution of the transcendental equation = ⁢ w e w x" class="ltx_ref">1973</a>)</cite>.</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.48(v) </span>Testing</h2>
+<div id="SS5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r8" title="§ Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.48.v" title="" class="ltx_ref">http://dlmf.nist.gov/4.48.v</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.48#info" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.48</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS5.p1" class="ltx_para">
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I4.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Cody (<a href="./bib/C#bib544" title="Algorithm 714: CELEFUNT – A portable test package for complex elementary functions" class="ltx_ref">1993a</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.47 </span>Approximations</span></a><a href="./5" title="Chapter 5 Gamma Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Gamma Function</span></a>
+</div>
+</div>
+</body>
+</html>

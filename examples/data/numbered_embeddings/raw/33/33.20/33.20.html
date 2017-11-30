@@ -1,0 +1,661 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 33.20 Expansions for Small |ϵ|</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/33.20";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./33#PT3" title="Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="up up" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./33.19" title="§33.19 Power-Series Expansions in r ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="next" href="./33.21" title="§33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.2" title="§33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.3" title="§33.3 Graphics ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.4" title="§33.4 Recurrence Relations and Derivatives ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.5" title="§33.5 Limiting Forms for Small ρ , Small | η | , or Large ℓ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.6" title="§33.6 Power-Series Expansions in ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.7" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.8" title="§33.8 Continued Fractions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.9" title="§33.9 Expansions in Series of Bessel Functions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.10" title="§33.10 Limiting Forms for Large ρ or Large | η | ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.11" title="§33.11 Asymptotic Expansions for Large ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.12" title="§33.12 Asymptotic Expansions for Large η ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.13" title="§33.13 Complex Variable and Parameters ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.14" title="§33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.15" title="§33.15 Graphics ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.16" title="§33.16 Connection Formulas ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.17" title="§33.17 Recurrence Relations and Derivatives ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.18" title="§33.18 Limiting Forms for Large ℓ ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.19" title="§33.19 Power-Series Expansions in r ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.21" title="§33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.22" title="§33.22 Particle Scattering and Atomic and Molecular Spectra ‣ Physical Applications ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.23" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.24" title="§33.24 Tables ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.25" title="§33.25 Approximations ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.26" title="§33.26 Software ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Coulomb functions: variables , Coulomb functions: variables , Coulomb functions: variables , asymptotic expansions as , case , expansions in Airy functions, expansions in Bessel functions, expansions in modified Bessel functions, power-series expansions in , uniform">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./33" title="Chapter 33 Coulomb Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33 </span>Coulomb Functions</span></a><a href="./33#PT3" title="Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Variables <math class="ltx_Math" altimg="m45.png" altimg-height="16px" altimg-valign="-6px" altimg-width="30px" alttext="r,\epsilon" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">ϵ</mi></mrow></math></span></a><a href="./33.19" title="§33.19 Power-Series Expansions in r ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.19 </span>Power-Series Expansions in <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math></span></a><a href="./33.21" title="§33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.21 </span>Asymptotic Approximations for Large <math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="25px" alttext="|r|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></math></span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§33.20 </span>Expansions for Small <math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="23px" alttext="|\epsilon|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo stretchy="false">|</mo></mrow></math>
+</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./33.20" title="" class="ltx_ref">http://dlmf.nist.gov/33.20</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§33.20(i) </span>Case <math class="ltx_Math" altimg="m18.png" altimg-height="17px" altimg-valign="-2px" altimg-width="49px" alttext="\epsilon=0" display="inline"><mrow><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>=</mo><mn>0</mn></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§33.20(ii) </span>Power-Series in <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="12px" alttext="\epsilon" display="inline"><mi href="./33.1#p1.t1.r4">ϵ</mi></math> for the Regular
+Solution</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§33.20(iii) </span>Asymptotic Expansion for the Irregular Solution</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§33.20(iv) </span>Uniform Asymptotic Expansions</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.20(i) </span>Case <math class="ltx_Math" altimg="m18.png" altimg-height="17px" altimg-valign="-2px" altimg-width="49px" alttext="\epsilon=0" display="inline"><mrow><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>=</mo><mn>0</mn></mrow></math>
+</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Seaton (<a href="./bib/S#bib2028" title="Coulomb functions for attractive and repulsive potentials and for positive and negative energies" class="ltx_ref">2002a</a>, Eqs. 96, 98, 100, 102(corrected))</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#Coulombfunctionsvariablesr">Coulomb functions: variables <math class="ltx_Math" altimg="m45.png" altimg-height="16px" altimg-valign="-6px" altimg-width="30px" alttext="r,\epsilon" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">ϵ</mi></mrow></math></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.i" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#info" title="§33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">33.20.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="\displaystyle\mathop{f\/}\nolimits\!\left(0,\ell;r\right)" display="inline"><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="41px" altimg-valign="-15px" altimg-width="206px" alttext="\displaystyle=(2r)^{1/2}\mathop{J_{2\ell+1}\/}\nolimits\!\left(\sqrt{8r}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./10.2#E2">J</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="\displaystyle\mathop{h\/}\nolimits\!\left(0,\ell;r\right)" display="inline"><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m4.png" altimg-height="41px" altimg-valign="-15px" altimg-width="213px" alttext="\displaystyle=-(2r)^{1/2}\mathop{Y_{2\ell+1}\/}\nolimits\!\left(\sqrt{8r}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./10.2#E3">Y</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m47.png" altimg-height="17px" altimg-valign="-3px" altimg-width="50px" alttext="r&gt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>&gt;</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{J_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E2">J</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the first kind</a>,
+<a href="./10.2#E3" title="(10.2.3) ‣ Bessel Function of the Second Kind (Weber’s Function) ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{Y_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E3">Y</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the second kind</a>,
+<a href="./33.14#E4" title="(33.14.4) ‣ §33.14(ii) Regular Solution f ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{f\/}\nolimits\!\left(\NVar{\epsilon},\NVar{\ell};\NVar{r}\right)" display="inline"><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math>: regular Coulomb function</a>,
+<a href="./33.14#E7" title="(33.14.7) ‣ §33.14(iii) Irregular Solution h ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{h\/}\nolimits\!\left(\NVar{\epsilon},\NVar{\ell};\NVar{r}\right)" display="inline"><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math>: irregular Coulomb function</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a> and
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.21#I1.i3.p1" title="(c) ‣ §33.21(i) Limiting Forms ‣ §33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(c)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E1" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E1a.tex">TeX</a>, <a href="./33.20.E1b.tex">TeX</a>, <a href="./33.20.E1a.pmml">pMML</a>, <a href="./33.20.E1b.pmml">pMML</a>, <a href="./33.20.E1a.png">png</a>, <a href="./33.20.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS1.info" title="§33.20(i) Case = ϵ 0 ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">33.20.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="\displaystyle\mathop{f\/}\nolimits\!\left(0,\ell;r\right)" display="inline"><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="41px" altimg-valign="-15px" altimg-width="298px" alttext="\displaystyle=(-1)^{\ell+1}(2|r|)^{1/2}\mathop{I_{2\ell+1}\/}\nolimits\!\left(%
+\sqrt{8|r|}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./10.25#E2">I</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="\displaystyle\mathop{h\/}\nolimits\!\left(0,\ell;r\right)" display="inline"><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m2.png" altimg-height="41px" altimg-valign="-15px" altimg-width="325px" alttext="\displaystyle=(-1)^{\ell}(2/\pi)(2|r|)^{1/2}\mathop{K_{2\ell+1}\/}\nolimits\!%
+\left(\sqrt{8|r|}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>/</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./10.25#E3">K</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-3px" altimg-width="50px" alttext="r&lt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>&lt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.14#E4" title="(33.14.4) ‣ §33.14(ii) Regular Solution f ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{f\/}\nolimits\!\left(\NVar{\epsilon},\NVar{\ell};\NVar{r}\right)" display="inline"><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math>: regular Coulomb function</a>,
+<a href="./33.14#E7" title="(33.14.7) ‣ §33.14(iii) Irregular Solution h ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{h\/}\nolimits\!\left(\NVar{\epsilon},\NVar{\ell};\NVar{r}\right)" display="inline"><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math>: irregular Coulomb function</a>,
+<a href="./10.25#E2" title="(10.25.2) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{I_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E2">I</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the first kind</a>,
+<a href="./10.25#E3" title="(10.25.3) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{K_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E3">K</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the second kind</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a> and
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.21#I1.i3.p1" title="(c) ‣ §33.21(i) Limiting Forms ‣ §33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(c)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E2" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E2a.tex">TeX</a>, <a href="./33.20.E2b.tex">TeX</a>, <a href="./33.20.E2a.pmml">pMML</a>, <a href="./33.20.E2b.pmml">pMML</a>, <a href="./33.20.E2a.png">png</a>, <a href="./33.20.E2b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS1.info" title="§33.20(i) Case = ϵ 0 ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">For the functions <math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\mathop{J\/}\nolimits" display="inline"><mi href="./10.2#E2">J</mi></math>, <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="\mathop{Y\/}\nolimits" display="inline"><mi href="./10.2#E3">Y</mi></math>, <math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\mathop{I\/}\nolimits" display="inline"><mi href="./10.25#E2">I</mi></math>, and <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="\mathop{K\/}\nolimits" display="inline"><mi href="./10.25#E3">K</mi></math>
+see §§<a href="./10.2#ii" title="§10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2(ii)</span></a>, <a href="./10.25#ii" title="§10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.25(ii)</span></a>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.20(ii) </span>Power-Series in <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="12px" alttext="\epsilon" display="inline"><mi href="./33.1#p1.t1.r4">ϵ</mi></math> for the Regular
+Solution</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Seaton (<a href="./bib/S#bib2028" title="Coulomb functions for attractive and repulsive potentials and for positive and negative energies" class="ltx_ref">2002a</a>, Eqs. 58, 64, 67, 68)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#Coulombfunctionsvariablesr">Coulomb functions: variables <math class="ltx_Math" altimg="m45.png" altimg-height="16px" altimg-valign="-6px" altimg-width="30px" alttext="r,\epsilon" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">ϵ</mi></mrow></math></a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.14#SS2.p2" title="§33.14(ii) Regular Solution f ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.14(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.ii" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#info" title="§33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.20.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="64px" altimg-valign="-28px" altimg-width="223px" alttext="\mathop{f\/}\nolimits\!\left(\epsilon,\ell;r\right)=\sum_{k=0}^{\infty}%
+\epsilon^{k}{\sf F}_{k}(\ell;r)," display="block"><mrow><mrow><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi href="./33.1#p1.t1.r4">ϵ</mi><mi href="./33.1#p1.t1.r1">k</mi></msup><mo>⁢</mo><mrow><msub><mi href="./33.20#SS2.p1" mathvariant="sans-serif">F</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.14#E4" title="(33.14.4) ‣ §33.14(ii) Regular Solution f ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{f\/}\nolimits\!\left(\NVar{\epsilon},\NVar{\ell};\NVar{r}\right)" display="inline"><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math>: regular Coulomb function</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>,
+<a href="./33.1#p1.t1.r4" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="12px" alttext="\epsilon" display="inline"><mi href="./33.1#p1.t1.r4">ϵ</mi></math>: real parameter</a> and
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathsf{F}_{k}(\ell;r)" display="inline"><mrow><msub><mi href="./33.20#SS2.p1" mathvariant="sans-serif">F</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficient</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.20(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E3" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E3.tex">TeX</a>, <a href="./33.20.E3.pmml">pMML</a>, <a href="./33.20.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS2.info" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where
+</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.20.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="71px" altimg-valign="-31px" altimg-width="402px" alttext="{\sf F}_{k}(\ell;r)=\sum_{p=2k}^{3k}(2r)^{(p+1)/2}C_{k,p}\mathop{J_{2\ell+1+p}%
+\/}\nolimits\!\left(\sqrt{8r}\right)," display="block"><mrow><mrow><mrow><msub><mi href="./33.20#SS2.p1" mathvariant="sans-serif">F</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub><mo>⁢</mo><mrow><msub><mi href="./10.2#E2">J</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mi>p</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m47.png" altimg-height="17px" altimg-valign="-3px" altimg-width="50px" alttext="r&gt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>&gt;</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{J_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E2">J</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the first kind</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>,
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathsf{F}_{k}(\ell;r)" display="inline"><mrow><msub><mi href="./33.20#SS2.p1" mathvariant="sans-serif">F</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficient</a> and
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math>: coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E4" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E4.tex">TeX</a>, <a href="./33.20.E4.pmml">pMML</a>, <a href="./33.20.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS2.info" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.20.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="71px" altimg-valign="-31px" altimg-width="515px" alttext="{\sf F}_{k}(\ell;r)=\sum_{p=2k}^{3k}(-1)^{\ell+1+p}(2|r|)^{(p+1)/2}C_{k,p}%
+\mathop{I_{2\ell+1+p}\/}\nolimits\!\left(\sqrt{8|r|}\right)," display="block"><mrow><mrow><mrow><msub><mi href="./33.20#SS2.p1" mathvariant="sans-serif">F</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>p</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub><mo>⁢</mo><mrow><msub><mi href="./10.25#E2">I</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mi>p</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-3px" altimg-width="50px" alttext="r&lt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>&lt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.25#E2" title="(10.25.2) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{I_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E2">I</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the first kind</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>,
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathsf{F}_{k}(\ell;r)" display="inline"><mrow><msub><mi href="./33.20#SS2.p1" mathvariant="sans-serif">F</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficient</a> and
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math>: coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E5" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E5.tex">TeX</a>, <a href="./33.20.E5.pmml">pMML</a>, <a href="./33.20.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS2.info" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">The functions <math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\mathop{J\/}\nolimits" display="inline"><mi href="./10.2#E2">J</mi></math> and <math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\mathop{I\/}\nolimits" display="inline"><mi href="./10.25#E2">I</mi></math> are as in §§<a href="./10.2#ii" title="§10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2(ii)</span></a>,
+<a href="./10.25#ii" title="§10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.25(ii)</span></a>, and the coefficients <math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math> are given by
+<math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-8px" altimg-width="77px" alttext="C_{0,0}=1" display="inline"><mrow><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-8px" altimg-width="77px" alttext="C_{1,0}=0" display="inline"><mrow><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>, and
+</p>
+<table id="E6" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">33.20.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-8px" altimg-width="43px" alttext="\displaystyle C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m43.png" altimg-height="21px" altimg-valign="-6px" altimg-width="62px" alttext="p&lt;2k" display="inline"><mrow><mi>p</mi><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow></math> or <math class="ltx_Math" altimg="m44.png" altimg-height="21px" altimg-valign="-6px" altimg-width="62px" alttext="p&gt;3k" display="inline"><mrow><mi>p</mi><mo>&gt;</mo><mrow><mn>3</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow></math>,</span></td></tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-8px" altimg-width="43px" alttext="\displaystyle C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="26px" altimg-valign="-8px" altimg-width="360px" alttext="\displaystyle=\left(-(2\ell+p)C_{k-1,p-2}+C_{k-1,p-3}\right)/(4p)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>p</mi><mo>-</mo><mn>2</mn></mrow></mrow></msub></mrow></mrow><mo>+</mo><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>p</mi><mo>-</mo><mn>3</mn></mrow></mrow></msub></mrow><mo>)</mo></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>⁢</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-3px" altimg-width="52px" alttext="k&gt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="21px" altimg-valign="-6px" altimg-width="109px" alttext="2k\leq p\leq 3k" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow><mo>≤</mo><mi>p</mi><mo>≤</mo><mrow><mn>3</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a> and
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math>: coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.20#SS3.p1" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.20(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E6" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E6a.tex">TeX</a>, <a href="./33.20.E6b.tex">TeX</a>, <a href="./33.20.E6a.pmml">pMML</a>, <a href="./33.20.E6b.pmml">pMML</a>, <a href="./33.20.E6a.png">png</a>, <a href="./33.20.E6b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS2.info" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">The series (<a href="./33.20#E3" title="(33.20.3) ‣ §33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20.3</span></a>) converges for all <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math> and <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="12px" alttext="\epsilon" display="inline"><mi href="./33.1#p1.t1.r4">ϵ</mi></math>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.20(iii) </span>Asymptotic Expansion for the Irregular Solution</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Seaton (<a href="./bib/S#bib2028" title="Coulomb functions for attractive and repulsive potentials and for positive and negative energies" class="ltx_ref">2002a</a>, Eqs. 59, 69, 70)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#Coulombfunctionsvariablesr">Coulomb functions: variables <math class="ltx_Math" altimg="m45.png" altimg-height="16px" altimg-valign="-6px" altimg-width="30px" alttext="r,\epsilon" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">ϵ</mi></mrow></math></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.iii" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#info" title="§33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m21.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="\epsilon\to 0" display="inline"><mrow><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>→</mo><mn>0</mn></mrow></math> with <math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math> and <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math> fixed,</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.20.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="64px" altimg-valign="-28px" altimg-width="300px" alttext="\mathop{h\/}\nolimits\!\left(\epsilon,\ell;r\right)\sim-A(\epsilon,\ell)\sum_{%
+k=0}^{\infty}\epsilon^{k}{\sf H}_{k}(\ell;r)," display="block"><mrow><mrow><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow><mo href="./2.1#SS3.p1">∼</mo><mrow><mo>-</mo><mrow><mrow><mi href="./33.14#E11">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi href="./33.1#p1.t1.r4">ϵ</mi><mi href="./33.1#p1.t1.r1">k</mi></msup><mo>⁢</mo><mrow><msub><mi href="./33.20#SS3.p1" mathvariant="sans-serif">H</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.14#E7" title="(33.14.7) ‣ §33.14(iii) Irregular Solution h ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{h\/}\nolimits\!\left(\NVar{\epsilon},\NVar{\ell};\NVar{r}\right)" display="inline"><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math>: irregular Coulomb function</a>,
+<a href="./2.1#SS3.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#SS3.p1">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>,
+<a href="./33.1#p1.t1.r4" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="12px" alttext="\epsilon" display="inline"><mi href="./33.1#p1.t1.r4">ϵ</mi></math>: real parameter</a>,
+<a href="./33.14#E11" title="(33.14.11) ‣ §33.14(iv) Solutions s ( ϵ , ℓ ; r ) and c ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="60px" alttext="A(\epsilon,\ell)" display="inline"><mrow><mi href="./33.14#E11">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo stretchy="false">)</mo></mrow></mrow></math>: function</a> and
+<a href="./33.20#SS3.p1" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="\mathsf{H}_{k}(\ell;r)" display="inline"><mrow><msub><mi href="./33.20#SS3.p1" mathvariant="sans-serif">H</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficient</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E7" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E7.tex">TeX</a>, <a href="./33.20.E7.pmml">pMML</a>, <a href="./33.20.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS3.info" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="60px" alttext="A(\epsilon,\ell)" display="inline"><mrow><mi href="./33.14#E11">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo stretchy="false">)</mo></mrow></mrow></math> is given by (<a href="./33.14#E11" title="(33.14.11) ‣ §33.14(iv) Solutions s ( ϵ , ℓ ; r ) and c ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.14.11</span></a>),
+(<a href="./33.14#E12" title="(33.14.12) ‣ §33.14(iv) Solutions s ( ϵ , ℓ ; r ) and c ( ϵ , ℓ ; r ) ‣ §33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.14.12</span></a>), and
+</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.20.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="71px" altimg-valign="-31px" altimg-width="406px" alttext="{\sf H}_{k}(\ell;r)=\sum_{p=2k}^{3k}(2r)^{(p+1)/2}C_{k,p}\mathop{Y_{2\ell+1+p}%
+\/}\nolimits\!\left(\sqrt{8r}\right)," display="block"><mrow><mrow><mrow><msub><mi href="./33.20#SS3.p1" mathvariant="sans-serif">H</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub><mo>⁢</mo><mrow><msub><mi href="./10.2#E3">Y</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mi>p</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r2">r</mi></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m47.png" altimg-height="17px" altimg-valign="-3px" altimg-width="50px" alttext="r&gt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>&gt;</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E3" title="(10.2.3) ‣ Bessel Function of the Second Kind (Weber’s Function) ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{Y_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E3">Y</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the second kind</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>,
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math>: coefficients</a> and
+<a href="./33.20#SS3.p1" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="\mathsf{H}_{k}(\ell;r)" display="inline"><mrow><msub><mi href="./33.20#SS3.p1" mathvariant="sans-serif">H</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficient</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E8" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E8.tex">TeX</a>, <a href="./33.20.E8.pmml">pMML</a>, <a href="./33.20.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS3.info" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.20.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="71px" altimg-valign="-31px" altimg-width="526px" alttext="{\sf H}_{k}(\ell;r)=(-1)^{\ell+1}\frac{2}{\pi}\sum_{p=2k}^{3k}(2|r|)^{(p+1)/2}%
+C_{k,p}\mathop{K_{2\ell+1+p}\/}\nolimits\!\left(\sqrt{8|r|}\right)," display="block"><mrow><mrow><mrow><msub><mi href="./33.20#SS3.p1" mathvariant="sans-serif">H</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mfrac><mn>2</mn><mi>π</mi></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1">k</mi></mrow></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub><mo>⁢</mo><mrow><msub><mi href="./10.25#E3">K</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mi>p</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-3px" altimg-width="50px" alttext="r&lt;0" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>&lt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.25#E3" title="(10.25.3) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{K_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E3">K</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the second kind</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./33.1#p1.t1.r1">k</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r2" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>: real variable</a>,
+<a href="./33.20#SS2.p1" title="§33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math>: coefficients</a> and
+<a href="./33.20#SS3.p1" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="\mathsf{H}_{k}(\ell;r)" display="inline"><mrow><msub><mi href="./33.20#SS3.p1" mathvariant="sans-serif">H</mi><mi href="./33.1#p1.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficient</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.E9" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.20.E9.tex">TeX</a>, <a href="./33.20.E9.pmml">pMML</a>, <a href="./33.20.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#SS3.info" title="§33.20(iii) Asymptotic Expansion for the Irregular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">The functions <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="\mathop{Y\/}\nolimits" display="inline"><mi href="./10.2#E3">Y</mi></math> and <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="\mathop{K\/}\nolimits" display="inline"><mi href="./10.25#E3">K</mi></math> are as in §§<a href="./10.2#ii" title="§10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2(ii)</span></a>,
+<a href="./10.25#ii" title="§10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.25(ii)</span></a>, and the coefficients <math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-8px" altimg-width="41px" alttext="C_{k,p}" display="inline"><msub><mi href="./33.20#SS2.p1">C</mi><mrow><mi href="./33.1#p1.t1.r1">k</mi><mo>,</mo><mi>p</mi></mrow></msub></math> are given by
+(<a href="./33.20#E6" title="(33.20.6) ‣ §33.20(ii) Power-Series in ϵ for the Regular Solution ‣ §33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20.6</span></a>).</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.20(iv) </span>Uniform Asymptotic Expansions</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#Coulombfunctionsvariablesr">Coulomb functions: variables <math class="ltx_Math" altimg="m45.png" altimg-height="16px" altimg-valign="-6px" altimg-width="30px" alttext="r,\epsilon" display="inline"><mrow><mi href="./33.1#p1.t1.r2">r</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">ϵ</mi></mrow></math></a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./2.8#SS3.p6" title="§2.8(iii) Case II: Simple Turning Point ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iii)</span></a>,
+<a href="./2.8#SS4.p8" title="§2.8(iv) Case III: Simple Pole ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iv)</span></a>,
+<a href="./33.12#SS2.p4" title="§33.12(ii) Uniform Expansions ‣ §33.12 Asymptotic Expansions for Large η ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.12(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.20.iv" title="" class="ltx_ref">http://dlmf.nist.gov/33.20.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.20#info" title="§33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">For a comprehensive collection of asymptotic expansions that cover
+<math class="ltx_Math" altimg="m34.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{f\/}\nolimits\!\left(\epsilon,\ell;r\right)" display="inline"><mrow><mi href="./33.14#E4">f</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m36.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="\mathop{h\/}\nolimits\!\left(\epsilon,\ell;r\right)" display="inline"><mrow><mi href="./33.14#E7">h</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>;</mo><mi href="./33.1#p1.t1.r2">r</mi><mo>)</mo></mrow></mrow></math> as
+<math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-4px" altimg-width="69px" alttext="\epsilon\to 0\pm" display="inline"><mrow><mi href="./33.1#p1.t1.r4">ϵ</mi><mo>→</mo><mrow><mn>0</mn><mo>±</mo></mrow></mrow></math> and are uniform in <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math>, including unbounded values, see
+<cite class="ltx_cite ltx_citemacro_citet">Curtis (<a href="./bib/C#bib603" title="Coulomb Wave Functions" class="ltx_ref">1964a</a>, §7)</cite>. These expansions are in terms of elementary
+functions, Airy functions, and Bessel functions of orders <math class="ltx_Math" altimg="m10.png" altimg-height="19px" altimg-valign="-4px" altimg-width="57px" alttext="2\ell+1" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow></math> and
+<math class="ltx_Math" altimg="m11.png" altimg-height="19px" altimg-valign="-4px" altimg-width="57px" alttext="2\ell+2" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>2</mn></mrow></math>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./33.19" title="§33.19 Power-Series Expansions in r ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.19 </span>Power-Series Expansions in <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2">r</mi></math></span></a><a href="./33.21" title="§33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.21 </span>Asymptotic Approximations for Large <math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="25px" alttext="|r|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2">r</mi><mo stretchy="false">|</mo></mrow></math></span></a>
+</div>
+</div>
+</body>
+</html>

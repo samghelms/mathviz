@@ -18,6 +18,10 @@ git clone this repository, navigate to the repository, then:
 3. `jupyter notebook`
 4. Open the `example.ipynb` file and run the example code. Make sure your kernel has the package in it (you might need to switch kernels from `env` to `python 2`)
 
+## Running on a server
+
+TODO: add a public address feature to table and server
+
 ## Building the docs
 
 ### for local use

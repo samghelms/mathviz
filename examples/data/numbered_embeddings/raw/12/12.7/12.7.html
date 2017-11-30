@@ -1,0 +1,854 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 12.7 Relations to Other Functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/12.7";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./12#PT2" title="Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="up up" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./12.6" title="§12.6 Continued Fraction ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="next" href="./12.8" title="§12.8 Recurrence Relations and Derivatives ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.1" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.2" title="§12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.3" title="§12.3 Graphics ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.4" title="§12.4 Power-Series Expansions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.5" title="§12.5 Integral Representations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.6" title="§12.6 Continued Fraction ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.8" title="§12.8 Recurrence Relations and Derivatives ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.9" title="§12.9 Asymptotic Expansions for Large Variable ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.10" title="§12.10 Uniform Asymptotic Expansions for Large Parameter ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.11" title="§12.11 Zeros ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.12" title="§12.12 Integrals ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.13" title="§12.13 Sums ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.14" title="§12.14 The Function W ( a , x ) ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.15" title="§12.15 Generalized Parabolic Cylinder Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.16" title="§12.16 Mathematical Applications ‣ Applications ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.17" title="§12.17 Physical Applications ‣ Applications ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.18" title="§12.18 Methods of Computation ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.19" title="§12.19 Tables ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.20" title="§12.20 Approximations ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="section" href="./12.21" title="§12.21 Software ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Dawson’s integral, Hermite polynomial case, Hermite polynomials, confluent hypergeometric functions, error and related functions, error functions, modified Bessel functions, parabolic cylinder functions, probability functions, relation to parabolic cylinder functions, relations to other functions, repeated integrals of the complementary error function">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./12" title="Chapter 12 Parabolic Cylinder Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12 </span>Parabolic Cylinder Functions</span></a><a href="./12#PT2" title="Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./12.6" title="§12.6 Continued Fraction ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12.6 </span>Continued Fraction</span></a><a href="./12.8" title="§12.8 Recurrence Relations and Derivatives ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12.8 </span>Recurrence Relations and Derivatives</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§12.7 </span>Relations to Other Functions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./12.7" title="" class="ltx_ref">http://dlmf.nist.gov/12.7</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12#info" title="Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§12.7(i) </span>Hermite Polynomials</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§12.7(ii) </span>Error Functions, Dawson’s Integral,
+and Probability Function</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§12.7(iii) </span>Modified Bessel Functions</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§12.7(iv) </span>Confluent Hypergeometric Functions</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§12.7(i) </span>Hermite Polynomials</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1616" title="Tables of Weber Parabolic Cylinder Functions" class="ltx_ref">1955</a>, pp. 41, 74)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/H#Hermitepolynomials">Hermite polynomials</a>, <a class="ltx_keyword" href="./idx/P#paraboliccylinderfunctions">parabolic cylinder functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./13.6#SS5.info" title="§13.6(v) Orthogonal Polynomials ‣ §13.6 Relations to Other Functions ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.6(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.i" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#info" title="§12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">For the notation see §<a href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.3</span></a>.</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="33px" altimg-valign="-9px" altimg-width="247px" alttext="\mathop{U\/}\nolimits\!\left(-\tfrac{1}{2},z\right)=\mathop{D_{0}\/}\nolimits%
+\!\left(z\right)=e^{-\frac{1}{4}z^{2}}," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./12.1#p3">D</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./12.1#p3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{D_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./12.1#p3">D</mi><mi class="ltx_nvar" href="./12.1#p1.t1.r4">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E1" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E1.tex">TeX</a>, <a href="./12.7.E1.pmml">pMML</a>, <a href="./12.7.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS1.info" title="§12.7(i) Hermite Polynomials ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="41px" altimg-valign="-15px" altimg-width="581px" alttext="\mathop{U\/}\nolimits\!\left(-n-\tfrac{1}{2},z\right)=\mathop{D_{n}\/}%
+\nolimits\!\left(z\right)=e^{-\frac{1}{4}z^{2}}\mathop{\mathit{He}_{n}\/}%
+\nolimits\!\left(z\right)=2^{-n/2}e^{-\frac{1}{4}z^{2}}\mathop{H_{n}\/}%
+\nolimits\!\left(z/\sqrt{2}\right)," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mi href="./12.1#p1.t1.r3">n</mi></mrow><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./12.1#p3">D</mi><mi href="./12.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./18.3#T1.t1.r14" mathvariant="italic">He</mi><mi href="./12.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mn>2</mn><mrow><mo>-</mo><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi href="./12.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m42.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math> ,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.3#T1.t1.r13" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="\mathop{H_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Hermite polynomial</a>,
+<a href="./18.3#T1.t1.r14" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathit{He}_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r14" mathvariant="italic">He</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Hermite polynomial</a>,
+<a href="./12.1#p3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{D_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./12.1#p3">D</mi><mi class="ltx_nvar" href="./12.1#p1.t1.r4">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./12.1#p1.t1.r3">n</mi></math>: nonnegative integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.13.1</span> (modification of)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E2" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E2.tex">TeX</a>, <a href="./12.7.E2.pmml">pMML</a>, <a href="./12.7.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS1.info" title="§12.7(i) Hermite Polynomials ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="41px" altimg-valign="-15px" altimg-width="672px" alttext="\mathop{V\/}\nolimits\!\left(n+\tfrac{1}{2},z\right)=\sqrt{2/\pi}e^{\frac{1}{4%
+}z^{2}}(-i)^{n}\mathop{\mathit{He}_{n}\/}\nolimits\!\left(iz\right)=\sqrt{2/%
+\pi}e^{\frac{1}{4}z^{2}}(-i)^{n}2^{-\frac{1}{2}n}\mathop{H_{n}\/}\nolimits\!%
+\left(iz/\sqrt{2}\right)," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">V</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msqrt><mrow><mn>2</mn><mo>/</mo><mi>π</mi></mrow></msqrt><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi mathvariant="normal">i</mi></mrow><mo stretchy="false">)</mo></mrow><mi href="./12.1#p1.t1.r3">n</mi></msup><mo>⁢</mo><mrow><msub><mi href="./18.3#T1.t1.r14" mathvariant="italic">He</mi><mi href="./12.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./12.1#p1.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msqrt><mrow><mn>2</mn><mo>/</mo><mi>π</mi></mrow></msqrt><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi mathvariant="normal">i</mi></mrow><mo stretchy="false">)</mo></mrow><mi href="./12.1#p1.t1.r3">n</mi></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./12.1#p1.t1.r3">n</mi></mrow></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi href="./12.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./12.1#p1.t1.r2">z</mi></mrow><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m42.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.3#T1.t1.r13" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="\mathop{H_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Hermite polynomial</a>,
+<a href="./18.3#T1.t1.r14" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathit{He}_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r14" mathvariant="italic">He</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Hermite polynomial</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{V\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">V</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./12.1#p1.t1.r3">n</mi></math>: nonnegative integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.13.2</span> (corrected)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E3" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E3.tex">TeX</a>, <a href="./12.7.E3.pmml">pMML</a>, <a href="./12.7.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS1.info" title="§12.7(i) Hermite Polynomials ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§12.7(ii) </span>Error Functions, Dawson’s Integral,
+and Probability Function</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1616" title="Tables of Weber Parabolic Cylinder Functions" class="ltx_ref">1955</a>, p. 76)</cite>.
+For (<a href="./12.7#E7" title="(12.7.7) ‣ §12.7(ii) Error Functions, Dawson’s Integral, and Probability Function ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7.7</span></a>) combine (<a href="./7.18#E11" title="(7.18.11) ‣ Parabolic Cylinder Functions ‣ §7.18(iv) Relations to Other Functions ‣ §7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.18.11</span></a>) and
+(<a href="./7.18#E12" title="(7.18.12) ‣ Probability Functions ‣ §7.18(iv) Relations to Other Functions ‣ §7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.18.12</span></a>).</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/D#Dawsonsintegral">Dawson’s integral</a>, <a class="ltx_keyword" href="./idx/E#errorfunctions">error functions</a>, <a class="ltx_keyword" href="./idx/P#paraboliccylinderfunctions">parabolic cylinder functions</a>, <a class="ltx_keyword" href="./idx/P#probabilityfunctions">probability functions</a>, <a class="ltx_keyword" href="./idx/R#repeatedintegralsofthecomplementaryerrorfunction">repeated integrals of the complementary error function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.ii" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#info" title="§12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">For the notation see §§<a href="./7.2" title="§7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.2</span></a> and <a href="./7.18" title="§7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.18</span></a>.</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="41px" altimg-valign="-15px" altimg-width="324px" alttext="\mathop{V\/}\nolimits\!\left(-\tfrac{1}{2},z\right)=(\ifrac{2}{\sqrt{\pi}}\,)e%
+^{\frac{1}{4}z^{2}}\mathop{F\/}\nolimits\!\left(z/\sqrt{2}\right)," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">V</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mpadded width="+1.7pt"><mrow><mn>2</mn><mo>/</mo><msqrt><mi>π</mi></msqrt></mrow></mpadded><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi href="./7.2#E5">F</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./7.2#E5" title="(7.2.5) ‣ §7.2(ii) Dawson’s Integral ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="\mathop{F\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./7.2#E5">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: Dawson’s integral</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{V\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">V</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E4" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E4.tex">TeX</a>, <a href="./12.7.E4.pmml">pMML</a>, <a href="./12.7.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS2.info" title="§12.7(ii) Error Functions, Dawson’s Integral, and Probability Function ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="44px" altimg-valign="-15px" altimg-width="389px" alttext="\mathop{U\/}\nolimits\!\left(\tfrac{1}{2},z\right)=\mathop{D_{-1}\/}\nolimits%
+\!\left(z\right)=\sqrt{\tfrac{1}{2}\pi}\,e^{\frac{1}{4}z^{2}}\mathop{\mathrm{%
+erfc}\/}\nolimits\!\left(z/\sqrt{2}\right)," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./12.1#p3">D</mi><mrow><mo>-</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msqrt><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>π</mi></mrow></msqrt></mpadded><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi href="./7.2#E2">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./12.1#p3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{D_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./12.1#p3">D</mi><mi class="ltx_nvar" href="./12.1#p1.t1.r4">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./7.2#E2" title="(7.2.2) ‣ §7.2(i) Error Functions ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="49px" alttext="\mathop{\mathrm{erfc}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./7.2#E2">erfc</mi><mo>⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2">z</mi></mrow></math>: complementary error function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./12.11#SS2.p2" title="§12.11(ii) Asymptotic Expansions of Large Zeros ‣ §12.11 Zeros ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.11(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E5" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E5.tex">TeX</a>, <a href="./12.7.E5.pmml">pMML</a>, <a href="./12.7.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS2.info" title="§12.7(ii) Error Functions, Dawson’s Integral, and Probability Function ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="67px" altimg-valign="-20px" altimg-width="587px" alttext="\mathop{U\/}\nolimits\!\left(n+\tfrac{1}{2},z\right)=\mathop{D_{-n-1}\/}%
+\nolimits\!\left(z\right)=\sqrt{\frac{\pi}{2}}\frac{(-1)^{n}}{n!}e^{-\frac{1}{%
+4}z^{2}}\frac{{d}^{n}\left(e^{\frac{1}{2}z^{2}}\mathop{\mathrm{erfc}\/}%
+\nolimits\!\left(z/\sqrt{2}\right)\right)}{{dz}^{n}}," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./12.1#p3">D</mi><mrow><mrow><mo>-</mo><mi href="./12.1#p1.t1.r3">n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msqrt><mfrac><mi>π</mi><mn>2</mn></mfrac></msqrt><mo>⁢</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./12.1#p1.t1.r3">n</mi></msup><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></mfrac><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mfrac><mrow><mpadded lspace="-1.7pt" width="-4.5pt"><msup><mo href="./1.4#E4">d</mo><mi href="./12.1#p1.t1.r3">n</mi></msup></mpadded><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi href="./7.2#E2">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><msup><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./12.1#p1.t1.r2">z</mi></mrow><mi href="./1.4#E4">n</mi></msup></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m42.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./12.1#p3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{D_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./12.1#p3">D</mi><mi class="ltx_nvar" href="./12.1#p1.t1.r4">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./7.2#E2" title="(7.2.2) ‣ §7.2(i) Error Functions ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="49px" alttext="\mathop{\mathrm{erfc}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./7.2#E2">erfc</mi><mo>⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2">z</mi></mrow></math>: complementary error function</a>,
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./12.1#p1.t1.r3">n</mi></math>: nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E6" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E6.tex">TeX</a>, <a href="./12.7.E6.pmml">pMML</a>, <a href="./12.7.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS2.info" title="§12.7(ii) Error Functions, Dawson’s Integral, and Probability Function ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="41px" altimg-valign="-15px" altimg-width="531px" alttext="\mathop{U\/}\nolimits\!\left(n+\tfrac{1}{2},z\right)=e^{\frac{1}{4}z^{2}}%
+\mathop{\mathit{Hh}_{n}\/}\nolimits\!\left(z\right)=\sqrt{\pi}\,2^{\frac{1}{2}%
+(n-1)}e^{\frac{1}{4}z^{2}}\mathop{\mathrm{i}^{n}\mathrm{erfc}\/}\nolimits\!%
+\left(z/\sqrt{2}\right)," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./7.18#E12" mathvariant="italic">Hh</mi><mi href="./12.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msqrt><mi>π</mi></msqrt><mo>⁢</mo><msup><mn> 2</mn><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mrow><msup><mi href="./7.18#E2" mathvariant="normal">i</mi><mi href="./12.1#p1.t1.r3">n</mi></msup><mo href="./7.18#E2">⁢</mo><mi href="./7.18#E2">erfc</mi></mrow><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m41.png" altimg-height="20px" altimg-valign="-6px" altimg-width="138px" alttext="n=-1,0,1,\dots" display="inline"><mrow><mi href="./12.1#p1.t1.r3">n</mi><mo>=</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./7.18#E12" title="(7.18.12) ‣ Probability Functions ‣ §7.18(iv) Relations to Other Functions ‣ §7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="67px" alttext="\mathop{\mathit{Hh}_{\NVar{n}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./7.18#E12" mathvariant="italic">Hh</mi><mi class="ltx_nvar" href="./7.1#p1.t1.r3">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: probability function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./7.18#E2" title="(7.18.2) ‣ §7.18(i) Definition ‣ §7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="78px" alttext="\mathop{\mathrm{i}^{\NVar{n}}\mathrm{erfc}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mrow><msup><mi href="./7.18#E2" mathvariant="normal">i</mi><mi class="ltx_nvar" href="./7.1#p1.t1.r3">n</mi></msup><mo href="./7.18#E2">⁢</mo><mi href="./7.18#E2">erfc</mi></mrow><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: repeated integrals of the complementary error function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r3" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./12.1#p1.t1.r3">n</mi></math>: nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./12.7#SS2.info" title="§12.7(ii) Error Functions, Dawson’s Integral, and Probability Function ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.7(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E7" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E7.tex">TeX</a>, <a href="./12.7.E7.pmml">pMML</a>, <a href="./12.7.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS2.info" title="§12.7(ii) Error Functions, Dawson’s Integral, and Probability Function ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§12.7(iii) </span>Modified Bessel Functions</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1616" title="Tables of Weber Parabolic Cylinder Functions" class="ltx_ref">1955</a>, pp. 42–43, 77–79)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/M#modifiedBesselfunctions">modified Bessel functions</a>, <a class="ltx_keyword" href="./idx/P#paraboliccylinderfunctions">parabolic cylinder functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.iii" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#info" title="§12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">For the notation see §<a href="./10.25#ii" title="§10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.25(ii)</span></a>.</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="55px" altimg-valign="-21px" altimg-width="505px" alttext="\mathop{U\/}\nolimits\!\left(-2,z\right)=\frac{z^{5/2}}{4\sqrt{2\pi}}\left(2\!%
+\mathop{K_{\frac{1}{4}}\/}\nolimits\!\left(\tfrac{1}{4}z^{2}\right)+3\!\mathop%
+{K_{\frac{3}{4}}\/}\nolimits\!\left(\tfrac{1}{4}z^{2}\right)-\mathop{K_{\frac{%
+5}{4}}\/}\nolimits\!\left(\tfrac{1}{4}z^{2}\right)\right)," display="block"><mrow><mrow><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi href="./12.1#p1.t1.r2">z</mi><mrow><mn>5</mn><mo>/</mo><mn>2</mn></mrow></msup><mrow><mn>4</mn><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mpadded width="-1.7pt"><mn>2</mn></mpadded><mo>⁢</mo><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>1</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mpadded width="-1.7pt"><mn>3</mn></mpadded><mo>⁢</mo><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>3</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>-</mo><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>5</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.25#E3" title="(10.25.3) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{K_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E3">K</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the second kind</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.15.11</span> (modification of)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E8" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E8.tex">TeX</a>, <a href="./12.7.E8.pmml">pMML</a>, <a href="./12.7.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS3.info" title="§12.7(iii) Modified Bessel Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="\displaystyle\mathop{U\/}\nolimits\!\left(-1,z\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="55px" altimg-valign="-21px" altimg-width="300px" alttext="\displaystyle=\frac{z^{3/2}}{2\sqrt{2\pi}}\left(\mathop{K_{\frac{1}{4}}\/}%
+\nolimits\!\left(\tfrac{1}{4}z^{2}\right)+\mathop{K_{\frac{3}{4}}\/}\nolimits%
+\!\left(\tfrac{1}{4}z^{2}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi href="./12.1#p1.t1.r2">z</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>1</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>3</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.25#E3" title="(10.25.3) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{K_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E3">K</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the second kind</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.15.10</span> (modification of)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E9" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E9.tex">TeX</a>, <a href="./12.7.E9.pmml">pMML</a>, <a href="./12.7.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS3.info" title="§12.7(iii) Modified Bessel Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="\displaystyle\mathop{U\/}\nolimits\!\left(0,z\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="54px" altimg-valign="-20px" altimg-width="166px" alttext="\displaystyle=\sqrt{\frac{z}{2\pi}}\mathop{K_{\frac{1}{4}}\/}\nolimits\!\left(%
+\tfrac{1}{4}z^{2}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msqrt><mstyle displaystyle="true"><mfrac><mi href="./12.1#p1.t1.r2">z</mi><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac></mstyle></msqrt><mo>⁢</mo><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>1</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.25#E3" title="(10.25.3) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{K_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E3">K</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the second kind</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.15.9</span> (modification of)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E10" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E10.tex">TeX</a>, <a href="./12.7.E10.pmml">pMML</a>, <a href="./12.7.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS3.info" title="§12.7(iii) Modified Bessel Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="\displaystyle\mathop{U\/}\nolimits\!\left(1,z\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="55px" altimg-valign="-21px" altimg-width="290px" alttext="\displaystyle=\frac{z^{3/2}}{\sqrt{2\pi}}\left(\mathop{K_{\frac{3}{4}}\/}%
+\nolimits\!\left(\tfrac{1}{4}z^{2}\right)-\mathop{K_{\frac{1}{4}}\/}\nolimits%
+\!\left(\tfrac{1}{4}z^{2}\right)\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi href="./12.1#p1.t1.r2">z</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>3</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow><mo>-</mo><mrow><msub><mi href="./10.25#E3">K</mi><mfrac><mn>1</mn><mn>4</mn></mfrac></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.25#E3" title="(10.25.3) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{K_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E3">K</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the second kind</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a> and
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.15.3</span> (modification of)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E11" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E11.tex">TeX</a>, <a href="./12.7.E11.pmml">pMML</a>, <a href="./12.7.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS3.info" title="§12.7(iii) Modified Bessel Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">For these, the corresponding results for <math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(a,z\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> with <math class="ltx_Math" altimg="m36.png" altimg-height="17px" altimg-valign="-2px" altimg-width="51px" alttext="a=2" display="inline"><mrow><mi href="./12.1#p1.t1.r4">a</mi><mo>=</mo><mn>2</mn></mrow></math>, <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-4px" altimg-width="30px" alttext="\pm 3" display="inline"><mrow><mo>±</mo><mn>3</mn></mrow></math>,
+<math class="ltx_Math" altimg="m8.png" altimg-height="27px" altimg-valign="-9px" altimg-width="33px" alttext="-\tfrac{1}{2}" display="inline"><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, <math class="ltx_Math" altimg="m9.png" altimg-height="27px" altimg-valign="-9px" altimg-width="33px" alttext="-\tfrac{3}{2}" display="inline"><mrow><mo>-</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></math>, <math class="ltx_Math" altimg="m10.png" altimg-height="27px" altimg-valign="-9px" altimg-width="33px" alttext="-\tfrac{5}{2}" display="inline"><mrow><mo>-</mo><mfrac><mn>5</mn><mn>2</mn></mfrac></mrow></math>, and the corresponding results
+for <math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{V\/}\nolimits\!\left(a,z\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">V</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> with <math class="ltx_Math" altimg="m35.png" altimg-height="17px" altimg-valign="-2px" altimg-width="51px" alttext="a=0" display="inline"><mrow><mi href="./12.1#p1.t1.r4">a</mi><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-4px" altimg-width="30px" alttext="\pm 1" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-4px" altimg-width="30px" alttext="\pm 2" display="inline"><mrow><mo>±</mo><mn>2</mn></mrow></math>, <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-4px" altimg-width="30px" alttext="\pm 3" display="inline"><mrow><mo>±</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m32.png" altimg-height="27px" altimg-valign="-9px" altimg-width="17px" alttext="\tfrac{1}{2}" display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>,
+<math class="ltx_Math" altimg="m33.png" altimg-height="27px" altimg-valign="-9px" altimg-width="17px" alttext="\tfrac{3}{2}" display="inline"><mfrac><mn>3</mn><mn>2</mn></mfrac></math>, <math class="ltx_Math" altimg="m34.png" altimg-height="27px" altimg-valign="-9px" altimg-width="17px" alttext="\tfrac{5}{2}" display="inline"><mfrac><mn>5</mn><mn>2</mn></mfrac></math>, see <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1616" title="Tables of Weber Parabolic Cylinder Functions" class="ltx_ref">1955</a>, pp. 42–43 and 77–79)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§12.7(iv) </span>Confluent Hypergeometric Functions</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1616" title="Tables of Weber Parabolic Cylinder Functions" class="ltx_ref">1955</a>, pp. 40, 73)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/C#confluenthypergeometricfunctions">confluent hypergeometric functions</a>, <a class="ltx_keyword" href="./idx/P#paraboliccylinderfunctions">parabolic cylinder functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.iv" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#info" title="§12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">For the notation see §§<a href="./13.2#i" title="§13.2(i) Differential Equation ‣ §13.2 Definitions and Basic Properties ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.2(i)</span></a> and <a href="./13.14#i" title="§13.14(i) Differential Equation ‣ §13.14 Definitions and Basic Properties ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.14(i)</span></a>.
+</p>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">The even and odd solutions of (<a href="./12.2#E2" title="(12.2.2) ‣ §12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.2.2</span></a>) (see (<a href="./12.4#E3" title="(12.4.3) ‣ §12.4 Power-Series Expansions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.4.3</span></a>)–(<a href="./12.4#E6" title="(12.4.6) ‣ §12.4 Power-Series Expansions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.4.6</span></a>))
+are given by</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="38px" altimg-valign="-9px" altimg-width="586px" alttext="u_{1}(a,z)=e^{-\tfrac{1}{4}z^{2}}\mathop{M\/}\nolimits\!\left(\tfrac{1}{2}a+%
+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=e^{\tfrac{1}{4}z^{2}}%
+\mathop{M\/}\nolimits\!\left(-\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},-\tfrac{%
+1}{2}z^{2}\right)," display="block"><mrow><mrow><mrow><msub><mi href="./12.7#E12">u</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./13.2#E2">M</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi href="./13.2#E2">M</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m44.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="u_{1}(a,z)" display="inline"><mrow><msub><mi href="./12.7#E12">u</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: solution (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./13.2#E2" title="(13.2.2) ‣ Standard Solutions ‣ §13.2(i) Differential Equation ‣ §13.2 Definitions and Basic Properties ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{a},\NVar{b},\NVar{z}\right)" display="inline"><mrow><mi href="./13.2#E2">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar" href="./13.1#p1.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Kummer confluent hypergeometric function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r4" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./12.1#p1.t1.r4">a</mi></math>: real or complex parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.2.2</span> (modification of)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./12.20#p1" title="§12.20 Approximations ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.20</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E12" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E12.tex">TeX</a>, <a href="./12.7.E12.pmml">pMML</a>, <a href="./12.7.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS4.info" title="§12.7(iv) Confluent Hypergeometric Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="38px" altimg-valign="-9px" altimg-width="606px" alttext="u_{2}(a,z)=ze^{-\tfrac{1}{4}z^{2}}\mathop{M\/}\nolimits\!\left(\tfrac{1}{2}a+%
+\tfrac{3}{4},\tfrac{3}{2},\tfrac{1}{2}z^{2}\right)=ze^{\tfrac{1}{4}z^{2}}%
+\mathop{M\/}\nolimits\!\left(-\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},-\tfrac{%
+1}{2}z^{2}\right)." display="block"><mrow><mrow><mrow><msub><mi href="./12.7#E13">u</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./13.2#E2">M</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></mrow><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi href="./12.1#p1.t1.r2">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi href="./13.2#E2">M</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></mrow><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m45.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="u_{2}(a,z)" display="inline"><mrow><msub><mi href="./12.7#E13">u</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: solution (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./13.2#E2" title="(13.2.2) ‣ Standard Solutions ‣ §13.2(i) Differential Equation ‣ §13.2 Definitions and Basic Properties ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{a},\NVar{b},\NVar{z}\right)" display="inline"><mrow><mi href="./13.2#E2">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar" href="./13.1#p1.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Kummer confluent hypergeometric function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r4" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./12.1#p1.t1.r4">a</mi></math>: real or complex parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.2.4</span> (modification of)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./12.20#p1" title="§12.20 Approximations ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.20</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E13" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E13.tex">TeX</a>, <a href="./12.7.E13.pmml">pMML</a>, <a href="./12.7.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS4.info" title="§12.7(iv) Confluent Hypergeometric Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Also,</p>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">12.7.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\mathop{U\/}\nolimits\!\left(a,z\right)=2^{-\frac{1}{4}-\frac{1}{2}a}e^{-\frac%
+{1}{4}z^{2}}\mathop{U\/}\nolimits\!\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{%
+2},\tfrac{1}{2}z^{2}\right)=2^{-\frac{3}{4}-\frac{1}{2}a}ze^{-\frac{1}{4}z^{2}%
+}\mathop{U\/}\nolimits\!\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},\tfrac{1%
+}{2}z^{2}\right)=2^{-\frac{1}{2}a}z^{-\frac{1}{2}}\mathop{W_{-\frac{1}{2}a,\pm%
+\frac{1}{4}}\/}\nolimits\!\left(\tfrac{1}{2}z^{2}\right)." display="block"><mrow><mtable align="baseline 1" columnalign="left" columnspacing="0.1em" displaystyle="true"><mtr><mtd><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./12.1#p1.t1.r4">a</mi><mo>,</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo><mrow><msup><mn>2</mn><mrow><mrow><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./13.2#E6">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo><mrow><msup><mn>2</mn><mrow><mrow><mo>-</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow></mrow></msup><mo>⁢</mo><mi href="./12.1#p1.t1.r2">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./13.2#E6">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></mrow><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mn>2</mn><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./13.14#E3">W</mi><mrow><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./12.1#p1.t1.r4">a</mi></mrow></mrow><mo href="./13.14#E3">,</mo><mrow><mo>±</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./12.1#p1.t1.r2">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./13.2#E6" title="(13.2.6) ‣ Standard Solutions ‣ §13.2(i) Differential Equation ‣ §13.2 Definitions and Basic Properties ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="83px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{b},\NVar{z}\right)" display="inline"><mrow><mi href="./13.2#E6">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar" href="./13.1#p1.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Kummer confluent hypergeometric function</a>,
+<a href="./13.14#E3" title="(13.14.3) ‣ Standard Solutions ‣ §13.14(i) Differential Equation ‣ §13.14 Definitions and Basic Properties ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="24px" altimg-valign="-8px" altimg-width="74px" alttext="\mathop{W_{\NVar{\kappa},\NVar{\mu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./13.14#E3">W</mi><mrow><mi class="ltx_nvar">κ</mi><mo href="./13.14#E3">,</mo><mi class="ltx_nvar">μ</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./13.1#p1.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Whittaker confluent hypergeometric function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./12.1#p1.t1.r2" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./12.1#p1.t1.r4" title="§12.1 Special Notation ‣ Notation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./12.1#p1.t1.r4">a</mi></math>: real or complex parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">19.12.2</span> (modification of)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./12.12#Px1.p2" title="Nicholson-type Integral ‣ §12.12 Integrals ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.12</span></a>,
+<a href="./12.20#p1" title="§12.20 Approximations ‣ Computation ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.20</span></a>,
+<a href="./12.7#SS4.p2" title="§12.7(iv) Confluent Hypergeometric Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.7(iv)</span></a>,
+<a href="./12.9#SS1.info" title="§12.9(i) Poincaré-Type Expansions ‣ §12.9 Asymptotic Expansions for Large Variable ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.9(i)</span></a>,
+<a href="./12.9#SS2.p1" title="§12.9(ii) Bounds and Re-Expansions for the Remainder Terms ‣ §12.9 Asymptotic Expansions for Large Variable ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§12.9(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./12.7.E14" title="" class="ltx_ref">http://dlmf.nist.gov/12.7.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./12.7.E14.tex">TeX</a>, <a href="./12.7.E14.pmml">pMML</a>, <a href="./12.7.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./12.7#SS4.info" title="§12.7(iv) Confluent Hypergeometric Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">(It should be observed that the functions on the right-hand sides of
+(<a href="./12.7#E14" title="(12.7.14) ‣ §12.7(iv) Confluent Hypergeometric Functions ‣ §12.7 Relations to Other Functions ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.7.14</span></a>) are multivalued; hence, for example, <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./12.1#p1.t1.r2">z</mi></math> cannot be replaced
+simply by <math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-4px" altimg-width="30px" alttext="-z" display="inline"><mrow><mo>-</mo><mi href="./12.1#p1.t1.r2">z</mi></mrow></math>.)</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./12.6" title="§12.6 Continued Fraction ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12.6 </span>Continued Fraction</span></a><a href="./12.8" title="§12.8 Recurrence Relations and Derivatives ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12.8 </span>Recurrence Relations and Derivatives</span></a>
+</div>
+</div>
+</body>
+</html>

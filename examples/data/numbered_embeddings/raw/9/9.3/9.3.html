@@ -1,0 +1,442 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 9.3 Graphics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/9.3";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./9#PT2" title="Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="up up" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="next" href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.1" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.5" title="§9.5 Integral Representations ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.6" title="§9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.8" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.10" title="§9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.11" title="§9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.12" title="§9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.13" title="§9.13 Generalized Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.14" title="§9.14 Incomplete Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.16" title="§9.16 Physical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.18" title="§9.18 Tables ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.19" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.20" title="§9.20 Software ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB1" title="Sidebar 9.SB1: Supernumerary Rainbows ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB2" title="Sidebar 9.SB2: Interference Patterns in Caustics ‣ Chapter 9 Airy and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./9.3.F1.mag" title="Figure 9.3.1 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F2.mag" title="Figure 9.3.2 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F3.mag" title="Figure 9.3.3 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F4.mag" title="Figure 9.3.4 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F5.mag" title="Figure 9.3.5 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F6.mag" title="Figure 9.3.6 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F3.webgl" title="9.3.3 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F4.webgl" title="9.3.4 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F5.webgl" title="9.3.5 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.3.F6.webgl" title="9.3.6 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<meta name="keywords" lang="en" content="Airy functions, graphics, graphs, modulus and phase">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./9" title="Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>Airy and Related Functions</span></a><a href="./9#PT2" title="Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Airy Functions</span></a><a href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.2 </span>Differential Equation</span></a><a href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.4 </span>Maclaurin Series</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§9.3 </span>Graphics</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3" title="" class="ltx_ref">http://dlmf.nist.gov/9.3</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§9.3(i) </span>Real Variable</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§9.3(ii) </span>Complex Variable</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.3(i) </span>Real Variable</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>These graphs were produced by NIST.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.8#SS1.p2" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.i" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#info" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="SS1.fig1" class="ltx_figure">
+<table style="width:100%;">
+<tr>
+<td class="ltx_subfigure">
+<figure id="F1" class="ltx_figure"><a href="./9.3.F1.mag"><img src="./9/3/F1.png" id="F1.g1" class="ltx_graphics ltx_centering" width="339" height="200" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 9.3.1: </span><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{M\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>.
+For <math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{M\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> see §<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>.
+
+<a href="./9.3.F1.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.F1" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.3.F1.pdf">pdf</a>, <a href="./9.3.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#SS1.info" title="§9.3(i) Real Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</td>
+<td class="ltx_subfigure">
+<figure id="F2" class="ltx_figure"><a href="./9.3.F2.mag"><img src="./9/3/F2.png" id="F2.g1" class="ltx_graphics ltx_centering" width="339" height="198" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 9.3.2: </span><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\mathop{\mathrm{Ai}\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{\mathrm{Bi}\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{N\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>.
+For <math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{N\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> see §<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>.
+
+<a href="./9.3.F2.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.F2" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.F2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.3.F2.pdf">pdf</a>, <a href="./9.3.F2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#SS1.info" title="§9.3(i) Real Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</td>
+</tr>
+</table>
+</figure>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.3(ii) </span>Complex Variable</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>These surfaces were produced by NIST.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.9#SS1.p2" title="§9.9(i) Distribution and Notation ‣ §9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.9(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.ii" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#info" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">In the graphics shown in this subsection, height corresponds to the absolute
+value of the function and color to the phase.
+See also <a href="./help/vrml/aboutcolor" title="About Color Map ‣ Viewing DLMF Interactive 3D Graphics ‣ Need Help?" class="ltx_ref"><span class="ltx_text ltx_ref_title">About Color Map</span></a>.</p>
+</div>
+<figure id="SS2.fig1" class="ltx_figure">
+<table style="width:100%;">
+<tr>
+<td class="ltx_subfigure">
+<figure id="F3" class="ltx_figure">
+<div class="ltx_vizimg">
+<a href="./9.3.F3.viz"><img src="./9/3/F3.png" id="F3.g1" class="ltx_graphics ltx_centering" width="339" height="257" alt="See accompanying text"></a>
+<br>
+<div class="ltx_footnote" style="text-align:right;width:339px"><a href="./help/vrml/">Visualization Help</a></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 9.3.3: </span><math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="93px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(x+iy\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>.
+
+<a href="./9.3.F3.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.F3" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.F3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.3.F3.wrl">VRML</a>, <a href="./9.3.F3.x3d">X3D</a>, <a href="./9.3.F3.pdf">pdf</a>, <a href="./9.3.F3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#SS2.info" title="§9.3(ii) Complex Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</td>
+<td class="ltx_subfigure">
+<figure id="F4" class="ltx_figure">
+<div class="ltx_vizimg">
+<a href="./9.3.F4.viz"><img src="./9/3/F4.png" id="F4.g1" class="ltx_graphics ltx_centering" width="338" height="255" alt="See accompanying text"></a>
+<br>
+<div class="ltx_footnote" style="text-align:right;width:338px"><a href="./help/vrml/">Visualization Help</a></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 9.3.4: </span><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="93px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(x+iy\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>.
+
+<a href="./9.3.F4.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.F4" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.F4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.3.F4.wrl">VRML</a>, <a href="./9.3.F4.x3d">X3D</a>, <a href="./9.3.F4.pdf">pdf</a>, <a href="./9.3.F4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#SS2.info" title="§9.3(ii) Complex Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</td>
+</tr>
+</table>
+</figure>
+<figure id="SS2.fig2" class="ltx_figure">
+<table style="width:100%;">
+<tr>
+<td class="ltx_subfigure">
+<figure id="F5" class="ltx_figure">
+<div class="ltx_vizimg">
+<a href="./9.3.F5.viz"><img src="./9/3/F5.png" id="F5.g1" class="ltx_graphics ltx_centering" width="339" height="255" alt="See accompanying text"></a>
+<br>
+<div class="ltx_footnote" style="text-align:right;width:339px"><a href="./help/vrml/">Visualization Help</a></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 9.3.5: </span><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathrm{Ai}\/}\nolimits'\!\left(x+iy\right)" display="inline"><mrow><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>.
+
+<a href="./9.3.F5.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.F5" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.F5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.3.F5.wrl">VRML</a>, <a href="./9.3.F5.x3d">X3D</a>, <a href="./9.3.F5.pdf">pdf</a>, <a href="./9.3.F5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#SS2.info" title="§9.3(ii) Complex Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</td>
+<td class="ltx_subfigure">
+<figure id="F6" class="ltx_figure">
+<div class="ltx_vizimg">
+<a href="./9.3.F6.viz"><img src="./9/3/F6.png" id="F6.g1" class="ltx_graphics ltx_centering" width="338" height="263" alt="See accompanying text"></a>
+<br>
+<div class="ltx_footnote" style="text-align:right;width:338px"><a href="./help/vrml/">Visualization Help</a></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 9.3.6: </span><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="98px" alttext="\mathop{\mathrm{Bi}\/}\nolimits'\!\left(x+iy\right)" display="inline"><mrow><msup><mi href="./9.2#i">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>.
+
+<a href="./9.3.F6.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.3.F6" title="" class="ltx_ref">http://dlmf.nist.gov/9.3.F6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.3.F6.wrl">VRML</a>, <a href="./9.3.F6.x3d">X3D</a>, <a href="./9.3.F6.pdf">pdf</a>, <a href="./9.3.F6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.3#SS2.info" title="§9.3(ii) Complex Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</td>
+</tr>
+</table>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.2 </span>Differential Equation</span></a><a href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.4 </span>Maclaurin Series</span></a>
+</div>
+</div>
+</body>
+</html>

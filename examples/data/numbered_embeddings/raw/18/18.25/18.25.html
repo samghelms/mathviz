@@ -1,0 +1,1177 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 18.25 Wilson Class: Definitions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/18.25";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./18#PT4" title="Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="up up" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="next" href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.1" title="§18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.2" title="§18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.4" title="§18.4 Graphics ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.5" title="§18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.6" title="§18.6 Symmetry, Special Values, and Limits to Monomials ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.8" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.10" title="§18.10 Integral Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.11" title="§18.11 Relations to Other Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.12" title="§18.12 Generating Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.13" title="§18.13 Continued Fractions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.14" title="§18.14 Inequalities ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.15" title="§18.15 Asymptotic Approximations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.16" title="§18.16 Zeros ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.17" title="§18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.18" title="§18.18 Sums ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.19" title="§18.19 Hahn Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.20" title="§18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.21" title="§18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.22" title="§18.22 Hahn Class: Recurrence Relations and Differences ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.23" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.27" title="§18.27 q -Hahn Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.28" title="§18.28 Askey–Wilson Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.29" title="§18.29 Asymptotic Approximations for q -Hahn and Askey–Wilson Classes ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.30" title="§18.30 Associated OP’s ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.31" title="§18.31 Bernstein–Szegő Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.32" title="§18.32 OP’s with Respect to Freud Weights ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.33" title="§18.33 Polynomials Orthogonal on the Unit Circle ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.34" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.36" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.38" title="§18.38 Mathematical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.39" title="§18.39 Physical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.40" title="§18.40 Methods of Computation ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.41" title="§18.41 Tables ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.42" title="§18.42 Software ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Wilson class orthogonal polynomials, definitions, leading coefficients, normalizations, orthogonality properties, transformations of variable, weight functions">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./18" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>Orthogonal Polynomials</span></a><a href="./18#PT4" title="Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Askey Scheme</span></a><a href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.24 </span>Hahn Class: Asymptotic Approximations</span></a><a href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.26 </span>Wilson Class: Continued</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§18.25 </span>Wilson Class: Definitions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/W#Wilsonclassorthogonalpolynomials">Wilson class orthogonal polynomials</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.21#Px1.p1" title="Duality of Hahn and Dual Hahn ‣ §18.21(i) Dualities ‣ §18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.21(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25" title="" class="ltx_ref">http://dlmf.nist.gov/18.25</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§18.25(i) </span>Preliminaries</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§18.25(ii) </span>Weights and Normalizations: Continuous Cases</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§18.25(iii) </span>Weights and Normalizations: Discrete Cases</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§18.25(iv) </span>Leading Coefficients</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.25(i) </span>Preliminaries</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For Table <a href="./18.25#T1" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.1</span></a>, Rows 2, 3, 4, see <cite class="ltx_cite ltx_citemacro_citet">Wilson (<a href="./bib/W#bib2591" title="Some hypergeometric orthogonal polynomials" class="ltx_ref">1980</a>)</cite>;
+for Row 5 see <cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib1135" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2005</a>, (6.2.20))</cite>.
+(<a href="./18.25#E1" title="(18.25.1) ‣ Further Constraints for Racah Polynomials ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.1</span></a>) follows from (<a href="./18.25#E11" title="(18.25.11) ‣ Racah ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.11</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.i" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#info" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">For the Wilson class OP’s <math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math> with <math class="ltx_Math" altimg="m72.png" altimg-height="23px" altimg-valign="-7px" altimg-width="80px" alttext="x=\lambda(y)" display="inline"><mrow><mi href="./18.2#Px1.p2">x</mi><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>: if the
+<math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>-orthogonality set is <math class="ltx_Math" altimg="m62.png" altimg-height="23px" altimg-valign="-7px" altimg-width="115px" alttext="\{0,1,\dots,N\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo stretchy="false">}</mo></mrow></math>, then the role of the
+differentiation operator <math class="ltx_Math" altimg="m45.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\ifrac{d}{dx}" display="inline"><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mo href="./1.4#E4">/</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math> in the Jacobi, Laguerre, and Hermite
+cases is played by the operator <math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-8px" altimg-width="30px" alttext="\Delta_{y}" display="inline"><msub><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub></math> followed by division by
+<math class="ltx_Math" altimg="m29.png" altimg-height="24px" altimg-valign="-8px" altimg-width="84px" alttext="\Delta_{y}(\lambda(y))" display="inline"><mrow><msub><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, or by the operator <math class="ltx_Math" altimg="m58.png" altimg-height="23px" altimg-valign="-8px" altimg-width="30px" alttext="\nabla_{y}" display="inline"><msub><mo href="./18.1#EGx2">∇</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub></math> followed by division by
+<math class="ltx_Math" altimg="m57.png" altimg-height="24px" altimg-valign="-8px" altimg-width="84px" alttext="\nabla_{y}(\lambda(y))" display="inline"><mrow><msub><mo href="./18.1#EGx2">∇</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. Alternatively if the <math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>-orthogonality interval is
+<math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="(0,\infty)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mn>0</mn><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math>, then the role of <math class="ltx_Math" altimg="m45.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\ifrac{d}{dx}" display="inline"><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mo href="./1.4#E4">/</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math> is played by the operator
+<math class="ltx_Math" altimg="m37.png" altimg-height="23px" altimg-valign="-8px" altimg-width="23px" alttext="\delta_{y}" display="inline"><msub><mi href="./18.1#EGx3">δ</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub></math> followed by division by <math class="ltx_Math" altimg="m36.png" altimg-height="24px" altimg-valign="-8px" altimg-width="76px" alttext="\delta_{y}(\lambda(y))" display="inline"><mrow><msub><mi href="./18.1#EGx3">δ</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>.
+</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Table <a href="./18.25#T1" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.1</span></a> lists the transformations of variable, orthogonality
+ranges, and parameter constraints
+that are needed in §<a href="./18.2#i" title="§18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.2(i)</span></a> for the Wilson polynomials
+<math class="ltx_Math" altimg="m55.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="\mathop{W_{n}\/}\nolimits\!\left(x;a,b,c,d\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>)</mo></mrow></mrow></math>, continuous dual Hahn polynomials
+<math class="ltx_Math" altimg="m53.png" altimg-height="23px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{S_{n}\/}\nolimits\!\left(x;a,b,c\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></math>, Racah polynomials
+<math class="ltx_Math" altimg="m50.png" altimg-height="23px" altimg-valign="-7px" altimg-width="139px" alttext="\mathop{R_{n}\/}\nolimits\!\left(x;\alpha,\beta,\gamma,\delta\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></math>, and dual Hahn polynomials
+<math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="122px" alttext="\mathop{R_{n}\/}\nolimits\!\left(x;\gamma,\delta,N\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 18.25.1: </span>Wilson class OP’s: transformations of variable, orthogonality ranges,
+and parameter constraints.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m72.png" altimg-height="23px" altimg-valign="-7px" altimg-width="80px" alttext="x=\lambda(y)" display="inline"><mrow><mi href="./18.2#Px1.p2">x</mi><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<span class="ltx_inline-block ltx_minipage ltx_align_middle" style="width:72.3pt;">
+<span class="ltx_p ltx_align_center">Orthogonality
+</span>
+<span class="ltx_p ltx_align_center">range for <math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">Constraints</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<math class="ltx_Math" altimg="m55.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="\mathop{W_{n}\/}\nolimits\!\left(x;a,b,c,d\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>)</mo></mrow></mrow></math>
+</td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m76.png" altimg-height="24px" altimg-valign="-6px" altimg-width="24px" alttext="y^{2}" display="inline"><msup><mi href="./18.1#SS1.p2.t1.r1">y</mi><mn>2</mn></msup></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="(0,\infty)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mn>0</mn><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<span class="ltx_inline-block ltx_minipage ltx_align_middle" style="width:180.7pt;">
+<span class="ltx_p ltx_align_center"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="135px" alttext="\realpart{(a,b,c,d)}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>;</span>
+<span class="ltx_p ltx_align_center">nonreal parameters in conjugate pairs</span>
+</span>
+</td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<math class="ltx_Math" altimg="m53.png" altimg-height="23px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{S_{n}\/}\nolimits\!\left(x;a,b,c\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></math>
+</td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m76.png" altimg-height="24px" altimg-valign="-6px" altimg-width="24px" alttext="y^{2}" display="inline"><msup><mi href="./18.1#SS1.p2.t1.r1">y</mi><mn>2</mn></msup></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="(0,\infty)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mn>0</mn><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<span class="ltx_inline-block ltx_minipage ltx_align_middle" style="width:180.7pt;">
+<span class="ltx_p ltx_align_center"><math class="ltx_Math" altimg="m59.png" altimg-height="23px" altimg-valign="-7px" altimg-width="116px" alttext="\realpart{(a,b,c)}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>;</span>
+<span class="ltx_p ltx_align_center">nonreal parameters in conjugate pairs</span>
+</span>
+</td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<math class="ltx_Math" altimg="m50.png" altimg-height="23px" altimg-valign="-7px" altimg-width="139px" alttext="\mathop{R_{n}\/}\nolimits\!\left(x;\alpha,\beta,\gamma,\delta\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></math>
+</td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m74.png" altimg-height="23px" altimg-valign="-7px" altimg-width="145px" alttext="y(y+\gamma+\delta+1)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>+</mo><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m62.png" altimg-height="23px" altimg-valign="-7px" altimg-width="115px" alttext="\{0,1,\dots,N\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo stretchy="false">}</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<span class="ltx_inline-block ltx_minipage ltx_align_middle" style="width:180.7pt;">
+<span class="ltx_p ltx_align_center"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-4px" altimg-width="51px" alttext="\alpha+1" display="inline"><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow></math> or <math class="ltx_Math" altimg="m33.png" altimg-height="21px" altimg-valign="-6px" altimg-width="85px" alttext="\beta+\delta+1" display="inline"><mrow><mi>β</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow></math> or <math class="ltx_Math" altimg="m41.png" altimg-height="21px" altimg-valign="-6px" altimg-width="116px" alttext="\gamma+1=-N;" display="inline"><mrow><mrow><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow><mo>;</mo></mrow></math></span>
+<span class="ltx_p ltx_align_center">for further constraints see (<a href="./18.25#E1" title="(18.25.1) ‣ Further Constraints for Racah Polynomials ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.1</span></a>)</span>
+</span>
+</td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_T ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="122px" alttext="\mathop{R_{n}\/}\nolimits\!\left(x;\gamma,\delta,N\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></math>
+</td>
+<td class="ltx_td ltx_align_center ltx_border_T ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m74.png" altimg-height="23px" altimg-valign="-7px" altimg-width="145px" alttext="y(y+\gamma+\delta+1)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>+</mo><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m62.png" altimg-height="23px" altimg-valign="-7px" altimg-width="115px" alttext="\{0,1,\dots,N\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo stretchy="false">}</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">
+<math class="ltx_Math" altimg="m44.png" altimg-height="21px" altimg-valign="-6px" altimg-width="86px" alttext="\gamma,\delta&gt;-1" display="inline"><mrow><mrow><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>&gt;</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math> or <math class="ltx_Math" altimg="m27.png" altimg-height="19px" altimg-valign="-4px" altimg-width="59px" alttext="&lt;-N" display="inline"><mrow><mi></mi><mo>&lt;</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow></math>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.25#T1.t1.r4" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="23px" altimg-valign="-7px" altimg-width="139px" alttext="\mathop{R_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{\alpha},\NVar{\beta},%
+\NVar{\gamma},\NVar{\delta}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">α</mi><mo>,</mo><mi class="ltx_nvar">β</mi><mo>,</mo><mi class="ltx_nvar">γ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></math>: Racah polynomial</a>,
+<a href="./18.25#T1.t1.r2" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="\mathop{W_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{a},\NVar{b},\NVar{c},%
+\NVar{d}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar">c</mi><mo>,</mo><mi class="ltx_nvar">d</mi><mo>)</mo></mrow></mrow></math>: Wilson polynomial</a>,
+<a href="./18.25#T1.t1.r3" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{S_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{a},\NVar{b},\NVar{c}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar">c</mi><mo>)</mo></mrow></mrow></math>: continuous dual Hahn polynomial</a>,
+<a href="./18.25#T1.t1.r5" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="123px" alttext="\mathop{R_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{\gamma},\NVar{\delta},%
+\NVar{N}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></math>: dual Hahn polynomial</a>,
+<a href="./front/introduction#Sx4.p1.t1.r28" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="(\NVar{a},\NVar{b})" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mi class="ltx_nvar">a</mi><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mi class="ltx_nvar">b</mi><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math>: open interval</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./18.1#SS1.p2.t1.r1" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>: real variable</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/W#Wilsonclassorthogonalpolynomials">Wilson class orthogonal polynomials</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.25#SS1.info" title="§18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(i)</span></a>,
+<a href="./18.25#SS1.p2" title="§18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.T1" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.T1</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS1.info" title="§18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Further Constraints for Racah Polynomials</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS1.info" title="§18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m31.png" altimg-height="19px" altimg-valign="-4px" altimg-width="112px" alttext="\alpha+1=-N" display="inline"><mrow><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow></math>, then the weights will be positive iff one of the following
+eight sets of inequalities holds:</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="8" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">18.25.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-4px" altimg-width="65px" alttext="\displaystyle-\delta-1" display="inline"><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>-</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-6px" altimg-width="212px" alttext="\displaystyle&lt;\beta&lt;\gamma+1&lt;-N+1." display="inline"><mrow><mrow><mi></mi><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo>&lt;</mo><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="\displaystyle N-1" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>-</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-6px" altimg-width="203px" alttext="\displaystyle&lt;-\delta-1&lt;\beta&lt;\gamma+1." display="inline"><mrow><mrow><mi></mi><mo>&lt;</mo><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-6px" altimg-width="36px" alttext="\displaystyle\gamma,\delta" display="inline"><mrow><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-6px" altimg-width="180px" alttext="\displaystyle&gt;-1,\quad\beta&gt;N+\gamma." display="inline"><mrow><mrow><mrow><mi></mi><mo>&gt;</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>β</mi><mo>&gt;</mo><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>+</mo><mi>γ</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-6px" altimg-width="36px" alttext="\displaystyle\gamma,\delta" display="inline"><mrow><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-6px" altimg-width="192px" alttext="\displaystyle&gt;-1,\quad\beta&lt;-N-\delta." display="inline"><mrow><mrow><mrow><mi></mi><mo>&gt;</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>β</mi><mo>&lt;</mo><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="\displaystyle N-1" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>-</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-6px" altimg-width="219px" alttext="\displaystyle&lt;N+\gamma&lt;\beta&lt;-N-\delta." display="inline"><mrow><mrow><mi></mi><mo>&lt;</mo><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>+</mo><mi>γ</mi></mrow><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-6px" altimg-width="60px" alttext="\displaystyle N+\gamma" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>+</mo><mi>γ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-6px" altimg-width="234px" alttext="\displaystyle&lt;\beta&lt;-N-\delta&lt;-N-1." display="inline"><mrow><mrow><mi></mi><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>&lt;</mo><mrow><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo>-</mo><mn>1</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-6px" altimg-width="36px" alttext="\displaystyle\gamma,\delta" display="inline"><mrow><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-6px" altimg-width="191px" alttext="\displaystyle&lt;-N,\quad\beta&gt;-1-\delta." display="inline"><mrow><mrow><mrow><mi></mi><mo>&lt;</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>β</mi><mo>&gt;</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-6px" altimg-width="36px" alttext="\displaystyle\gamma,\delta" display="inline"><mrow><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-6px" altimg-width="179px" alttext="\displaystyle&lt;-N,\quad\beta&lt;\gamma+1." display="inline"><mrow><mrow><mrow><mi></mi><mo>&lt;</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>β</mi><mo>&lt;</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a> and
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.25#SS1.info" title="§18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(i)</span></a>,
+<a href="./18.25#T1.t1.r4" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Table 18.25.1</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E1" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E1a.tex">TeX</a>, <a href="./18.25.E1b.tex">TeX</a>, <a href="./18.25.E1c.tex">TeX</a>, <a href="./18.25.E1d.tex">TeX</a>, <a href="./18.25.E1e.tex">TeX</a>, <a href="./18.25.E1f.tex">TeX</a>, <a href="./18.25.E1g.tex">TeX</a>, <a href="./18.25.E1h.tex">TeX</a>, <a href="./18.25.E1a.pmml">pMML</a>, <a href="./18.25.E1b.pmml">pMML</a>, <a href="./18.25.E1c.pmml">pMML</a>, <a href="./18.25.E1d.pmml">pMML</a>, <a href="./18.25.E1e.pmml">pMML</a>, <a href="./18.25.E1f.pmml">pMML</a>, <a href="./18.25.E1g.pmml">pMML</a>, <a href="./18.25.E1h.pmml">pMML</a>, <a href="./18.25.E1a.png">png</a>, <a href="./18.25.E1b.png">png</a>, <a href="./18.25.E1c.png">png</a>, <a href="./18.25.E1d.png">png</a>, <a href="./18.25.E1e.png">png</a>, <a href="./18.25.E1f.png">png</a>, <a href="./18.25.E1g.png">png</a>, <a href="./18.25.E1h.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px1.info" title="Further Constraints for Racah Polynomials ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">The first four sets imply <math class="ltx_Math" altimg="m43.png" altimg-height="21px" altimg-valign="-6px" altimg-width="102px" alttext="\gamma+\delta&gt;-2" display="inline"><mrow><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>&gt;</mo><mrow><mo>-</mo><mn>2</mn></mrow></mrow></math>, and the last four imply
+<math class="ltx_Math" altimg="m42.png" altimg-height="21px" altimg-valign="-6px" altimg-width="120px" alttext="\gamma+\delta&lt;-2N" display="inline"><mrow><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>&lt;</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.25(ii) </span>Weights and Normalizations: Continuous Cases</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For (<a href="./18.25#E3" title="(18.25.3) ‣ Wilson ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.3</span></a>)–(<a href="./18.25#E5" title="(18.25.5) ‣ Wilson ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.5</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Wilson (<a href="./bib/W#bib2591" title="Some hypergeometric orthogonal polynomials" class="ltx_ref">1980</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Andrews<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib102" title="Special Functions" class="ltx_ref">1999</a>, (3.8.3))</cite>.
+For (<a href="./18.25#E6" title="(18.25.6) ‣ Continuous Dual Hahn ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.6</span></a>)–(<a href="./18.25#E8" title="(18.25.8) ‣ Continuous Dual Hahn ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.8</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Wilson (<a href="./bib/W#bib2591" title="Some hypergeometric orthogonal polynomials" class="ltx_ref">1980</a>)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/W#Wilsonclassorthogonalpolynomials">Wilson class orthogonal polynomials</a>, <a class="ltx_keyword" href="./idx/W#weightfunctions">weight functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.ii" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#info" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="52px" altimg-valign="-20px" altimg-width="302px" alttext="\int_{0}^{\infty}p_{n}(x)p_{m}(x)w(x)dx=h_{n}\delta_{n,m}." display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r4">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./18.1#SS1.p2.t1.r11">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mi href="./front/introduction#Sx4.p1.t1.r4">δ</mi><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo href="./front/introduction#Sx4.p1.t1.r4">,</mo><mi href="./18.1#SS1.p2.t1.r4">m</mi></mrow></msub></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#Sx4.p1.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="23px" altimg-valign="-8px" altimg-width="35px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#Sx4.p1.t1.r4">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#Sx4.p1.t1.r4">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./18.1#SS1.p2.t1.r11" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="w(x)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r11">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: weight function</a>,
+<a href="./18.1#SS1.p2.t1.r4" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./18.1#SS1.p2.t1.r4">m</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a>,
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a> and
+<a href="./18.2#E5" title="(18.2.5) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E2" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E2.tex">TeX</a>, <a href="./18.25.E2.pmml">pMML</a>, <a href="./18.25.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Wilson</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="259px" alttext="p_{n}(x)=\mathop{W_{n}\/}\nolimits\!\left(x;a_{1},a_{2},a_{3},a_{4}\right)," display="block"><mrow><mrow><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub><mo>,</mo><msub><mi>a</mi><mn>4</mn></msub><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.25#T1.t1.r2" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="\mathop{W_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{a},\NVar{b},\NVar{c},%
+\NVar{d}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar">c</mi><mo>,</mo><mi class="ltx_nvar">d</mi><mo>)</mo></mrow></mrow></math>: Wilson polynomial</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E3" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E3.tex">TeX</a>, <a href="./18.25.E3.pmml">pMML</a>, <a href="./18.25.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px2.info" title="Wilson ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="60px" altimg-valign="-21px" altimg-width="266px" alttext="w(y^{2})=\frac{1}{2y}\left|\frac{\prod_{j}\mathop{\Gamma\/}\nolimits\!\left(a_%
+{j}+iy\right)}{\mathop{\Gamma\/}\nolimits\!\left(2iy\right)}\right|^{2}," display="block"><mrow><mrow><mrow><mi href="./18.1#SS1.p2.t1.r11">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi href="./18.1#SS1.p2.t1.r1">y</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow></mfrac><mo>⁢</mo><msup><mrow><mo>|</mo><mfrac><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mi>j</mi></msub><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>|</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./18.1#SS1.p2.t1.r1" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>: real variable</a> and
+<a href="./18.1#SS1.p2.t1.r11" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="w(x)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r11">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: weight function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E4" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E4.tex">TeX</a>, <a href="./18.25.E4.pmml">pMML</a>, <a href="./18.25.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px2.info" title="Wilson ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="71px" altimg-valign="-36px" altimg-width="375px" alttext="h_{n}=\frac{n!\,2\pi\prod_{j&lt;\ell}\mathop{\Gamma\/}\nolimits\!\left(n+a_{j}+a_%
+{\ell}\right)}{(2n-1+\sum_{j}a_{j})\mathop{\Gamma\/}\nolimits\!\left(n-1+\sum_%
+{j}a_{j}\right)}." display="block"><mrow><mrow><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>=</mo><mfrac><mrow><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><mn> 2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mrow><mi>j</mi><mo>&lt;</mo><mi href="./18.1#SS1.p2.t1.r4" mathvariant="normal">ℓ</mi></mrow></msub><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><msub><mi>a</mi><mi>j</mi></msub><mo>+</mo><msub><mi>a</mi><mi href="./18.1#SS1.p2.t1.r4" mathvariant="normal">ℓ</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>j</mi></msub><msub><mi>a</mi><mi>j</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>j</mi></msub><msub><mi>a</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./18.1#SS1.p2.t1.r4" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./18.1#SS1.p2.t1.r4" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a> and
+<a href="./18.2#E5" title="(18.2.5) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E5" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E5.tex">TeX</a>, <a href="./18.25.E5.pmml">pMML</a>, <a href="./18.25.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px2.info" title="Wilson ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Continuous Dual Hahn</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="\displaystyle p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="171px" alttext="\displaystyle=\mathop{S_{n}\/}\nolimits\!\left(x;a_{1},a_{2},a_{3}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.25#T1.t1.r3" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{S_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{a},\NVar{b},\NVar{c}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar">c</mi><mo>)</mo></mrow></mrow></math>: continuous dual Hahn polynomial</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E6" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E6.tex">TeX</a>, <a href="./18.25.E6.pmml">pMML</a>, <a href="./18.25.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px3.info" title="Continuous Dual Hahn ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="28px" altimg-valign="-7px" altimg-width="56px" alttext="\displaystyle w(y^{2})" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r11">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi href="./18.1#SS1.p2.t1.r1">y</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="60px" altimg-valign="-21px" altimg-width="211px" alttext="\displaystyle=\frac{1}{2y}\left|\frac{\prod_{j}\mathop{\Gamma\/}\nolimits\!%
+\left(a_{j}+iy\right)}{\mathop{\Gamma\/}\nolimits\!\left(2iy\right)}\right|^{2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo>|</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mi>j</mi></msub><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mstyle><mo>|</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./18.1#SS1.p2.t1.r1" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>: real variable</a> and
+<a href="./18.1#SS1.p2.t1.r11" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="w(x)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r11">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: weight function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E7" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E7.tex">TeX</a>, <a href="./18.25.E7.pmml">pMML</a>, <a href="./18.25.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px3.info" title="Continuous Dual Hahn ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="22px" altimg-valign="-5px" altimg-width="28px" alttext="\displaystyle h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="55px" altimg-valign="-31px" altimg-width="238px" alttext="\displaystyle=n!\,2\pi\prod_{j&lt;\ell}\mathop{\Gamma\/}\nolimits\!\left(n+a_{j}+%
+a_{\ell}\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><mn> 2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>j</mi><mo>&lt;</mo><mi href="./18.1#SS1.p2.t1.r4" mathvariant="normal">ℓ</mi></mrow></munder></mstyle><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><msub><mi>a</mi><mi>j</mi></msub><mo>+</mo><msub><mi>a</mi><mi href="./18.1#SS1.p2.t1.r4" mathvariant="normal">ℓ</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./18.1#SS1.p2.t1.r4" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./18.1#SS1.p2.t1.r4" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a> and
+<a href="./18.2#E5" title="(18.2.5) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS2.info" title="§18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E8" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E8.tex">TeX</a>, <a href="./18.25.E8.pmml">pMML</a>, <a href="./18.25.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px3.info" title="Continuous Dual Hahn ‣ §18.25(ii) Weights and Normalizations: Continuous Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.25(iii) </span>Weights and Normalizations: Discrete Cases</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For (<a href="./18.25#E10" title="(18.25.10) ‣ Racah ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.10</span></a>)–(<a href="./18.25#E12" title="(18.25.12) ‣ Racah ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.12</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Wilson (<a href="./bib/W#bib2591" title="Some hypergeometric orthogonal polynomials" class="ltx_ref">1980</a>)</cite>.
+For (<a href="./18.25#E13" title="(18.25.13) ‣ Dual Hahn ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.13</span></a>)–(<a href="./18.25#E15" title="(18.25.15) ‣ Dual Hahn ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.15</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib1135" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2005</a>, (6.2.20))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.iii" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#info" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="70px" altimg-valign="-30px" altimg-width="648px" alttext="\sum_{y=0}^{N}p_{n}(y(y+\gamma+\delta+1))p_{m}(y(y+\gamma+\delta+1))\*\frac{%
+\gamma+\delta+1+2y}{\gamma+\delta+1+y}\omega_{y}=h_{n}\delta_{n,m}." display="block"><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>=</mo><mn>0</mn></mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi></munderover><mrow><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>+</mo><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r4">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo>+</mo><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mfrac><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow></mrow><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi href="./18.1#SS1.p2.t1.r1">y</mi></mrow></mfrac><mo>⁢</mo><msub><mi>ω</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub></mrow></mrow><mo>=</mo><mrow><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mi href="./front/introduction#Sx4.p1.t1.r4">δ</mi><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo href="./front/introduction#Sx4.p1.t1.r4">,</mo><mi href="./18.1#SS1.p2.t1.r4">m</mi></mrow></msub></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#Sx4.p1.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="23px" altimg-valign="-8px" altimg-width="35px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#Sx4.p1.t1.r4">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#Sx4.p1.t1.r4">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./18.1#SS1.p2.t1.r1" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>: real variable</a>,
+<a href="./18.1#SS1.p2.t1.r4" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./18.1#SS1.p2.t1.r4">m</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a> and
+<a href="./18.2#E5" title="(18.2.5) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E9" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E9.tex">TeX</a>, <a href="./18.25.E9.pmml">pMML</a>, <a href="./18.25.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Racah</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="224px" alttext="p_{n}(x)=\mathop{R_{n}\/}\nolimits\!\left(x;\alpha,\beta,\gamma,\delta\right)," display="block"><mrow><mrow><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m31.png" altimg-height="19px" altimg-valign="-4px" altimg-width="112px" alttext="\alpha+1=-N" display="inline"><mrow><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.25#T1.t1.r4" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="23px" altimg-valign="-7px" altimg-width="139px" alttext="\mathop{R_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{\alpha},\NVar{\beta},%
+\NVar{\gamma},\NVar{\delta}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">α</mi><mo>,</mo><mi class="ltx_nvar">β</mi><mo>,</mo><mi class="ltx_nvar">γ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></math>: Racah polynomial</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E10" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E10.tex">TeX</a>, <a href="./18.25.E10.pmml">pMML</a>, <a href="./18.25.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px4.info" title="Racah ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-8px" altimg-width="28px" alttext="\displaystyle\omega_{y}" display="inline"><msub><mi>ω</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="59px" altimg-valign="-24px" altimg-width="413px" alttext="\displaystyle=\frac{\left(\alpha+1\right)_{y}\left(\beta+\delta+1\right)_{y}%
+\left(\gamma+1\right)_{y}\left(\gamma+\delta+2\right)_{y}}{\left(-\alpha+%
+\gamma+\delta+1\right)_{y}\left(-\beta+\gamma+1\right)_{y}\left(\delta+1\right%
+)_{y}y!}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>β</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>2</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub></mrow><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mo>-</mo><mi>α</mi></mrow><mo>+</mo><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mo>-</mo><mi>β</mi></mrow><mo>+</mo><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./18.1#SS1.p2.t1.r1" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>: real variable</a> and
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS1.info" title="§18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E11" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E11.tex">TeX</a>, <a href="./18.25.E11.pmml">pMML</a>, <a href="./18.25.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px4.info" title="Racah ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="22px" altimg-valign="-5px" altimg-width="28px" alttext="\displaystyle h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="54px" altimg-valign="-22px" altimg-width="757px" alttext="\displaystyle=\frac{\left(-\beta\right)_{N}\left(\gamma+\delta+2\right)_{N}}{%
+\left(-\beta+\gamma+1\right)_{N}\left(\delta+1\right)_{N}}\frac{\left(n+\alpha%
++\beta+1\right)_{n}n!}{\left(\alpha+\beta+2\right)_{2n}}\*\frac{\left(\alpha+%
+\beta-\gamma+1\right)_{n}\left(\alpha-\delta+1\right)_{n}\left(\beta+1\right)_%
+{n}}{\left(\alpha+1\right)_{n}\left(\beta+\delta+1\right)_{n}\left(\gamma+1%
+\right)_{n}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mo>-</mo><mi>β</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>2</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi></msub></mrow><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mo>-</mo><mi>β</mi></mrow><mo>+</mo><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>+</mo><mn>2</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow></msub></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo>-</mo><mi>γ</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mi>α</mi><mo>-</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>β</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></mrow><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>β</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></mrow></mfrac></mstyle></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a> and
+<a href="./18.2#E5" title="(18.2.5) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E12" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E12.tex">TeX</a>, <a href="./18.25.E12.pmml">pMML</a>, <a href="./18.25.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px4.info" title="Racah ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Dual Hahn</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/W#Wilsonclassorthogonalpolynomials">Wilson class orthogonal polynomials</a>, <a class="ltx_keyword" href="./idx/W#weightfunctions">weight functions</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="207px" alttext="p_{n}(x)=\mathop{R_{n}\/}\nolimits\!\left(x;\gamma,\delta,N\right)," display="block"><mrow><mrow><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.25#T1.t1.r5" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="123px" alttext="\mathop{R_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{\gamma},\NVar{\delta},%
+\NVar{N}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></math>: dual Hahn polynomial</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E13" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E13.tex">TeX</a>, <a href="./18.25.E13.pmml">pMML</a>, <a href="./18.25.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px5.info" title="Dual Hahn ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="59px" altimg-valign="-24px" altimg-width="359px" alttext="\omega_{y}=\frac{(-1)^{y}\left(-N\right)_{y}\left(\gamma+1\right)_{y}\left(%
+\gamma+\delta+1\right)_{2}}{\left(N+\gamma+\delta+2\right)_{y}\left(\delta+1%
+\right)_{y}y!}," display="block"><mrow><mrow><msub><mi>ω</mi><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>=</mo><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msup><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mn>2</mn></msub></mrow><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>+</mo><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>2</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi></msub><mo>⁢</mo><mrow><mi href="./18.1#SS1.p2.t1.r1">y</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./18.1#SS1.p2.t1.r1" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./18.1#SS1.p2.t1.r1">y</mi></math>: real variable</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a> and
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E14" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E14.tex">TeX</a>, <a href="./18.25.E14.pmml">pMML</a>, <a href="./18.25.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px5.info" title="Dual Hahn ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.25.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="56px" altimg-valign="-23px" altimg-width="279px" alttext="h_{n}=\frac{n!\,(N-n)!\,\left(\gamma+\delta+2\right)_{N}}{N!\,\left(\gamma+1%
+\right)_{n}\left(\delta+1\right)_{N-n}}." display="block"><mrow><mrow><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>=</mo><mfrac><mrow><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>-</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>2</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi></msub></mrow><mrow><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mrow><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>-</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow></msub></mrow></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a> and
+<a href="./18.2#E5" title="(18.2.5) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="h_{n}" display="inline"><msub><mi href="./18.2#E5">h</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.25#SS3.info" title="§18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.E15" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.25.E15.tex">TeX</a>, <a href="./18.25.E15.pmml">pMML</a>, <a href="./18.25.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#Px5.info" title="Dual Hahn ‣ §18.25(iii) Weights and Normalizations: Discrete Cases ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.25(iv) </span>Leading Coefficients</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Table <a href="./18.25#T2" title="Table 18.25.2 ‣ §18.25(iv) Leading Coefficients ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.2</span></a> follows from §<a href="./18.26#i" title="§18.26(i) Representations as Generalized Hypergeometric Functions ‣ §18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.26(i)</span></a>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.iv" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#info" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">Table <a href="./18.25#T2" title="Table 18.25.2 ‣ §18.25(iv) Leading Coefficients ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25.2</span></a> provides the leading coefficients <math class="ltx_Math" altimg="m65.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="k_{n}" display="inline"><msub><mi href="./18.2#E7">k</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math>
+(§<a href="./18.2#iii" title="§18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.2(iii)</span></a>) for the Wilson, continuous dual Hahn, Racah, and dual
+Hahn polynomials.</p>
+</div>
+<figure id="T2" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 18.25.2: </span>Wilson class OP’s: leading coefficients.
+</figcaption>
+<table id="T2.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T2.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m65.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="k_{n}" display="inline"><msub><mi href="./18.2#E7">k</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T2.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m55.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="\mathop{W_{n}\/}\nolimits\!\left(x;a,b,c,d\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m24.png" altimg-height="24px" altimg-valign="-8px" altimg-width="268px" alttext="(-1)^{n}\left(n+a+b+c+d-1\right)_{n}" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msup><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>d</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></mrow></math></td>
+</tr>
+<tr id="T2.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m53.png" altimg-height="23px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{S_{n}\/}\nolimits\!\left(x;a,b,c\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="(-1)^{n}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msup></math></td>
+</tr>
+<tr id="T2.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m50.png" altimg-height="23px" altimg-valign="-7px" altimg-width="139px" alttext="\mathop{R_{n}\/}\nolimits\!\left(x;\alpha,\beta,\gamma,\delta\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m39.png" altimg-height="52px" altimg-valign="-22px" altimg-width="268px" alttext="\dfrac{\left(n+\alpha+\beta+1\right)_{n}}{\left(\alpha+1\right)_{n}\left(\beta%
++\delta+1\right)_{n}\left(\gamma+1\right)_{n}}" display="inline"><mstyle displaystyle="true"><mfrac><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>β</mi><mo>+</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></mrow></mfrac></mstyle></math></td>
+</tr>
+<tr id="T2.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="122px" alttext="\mathop{R_{n}\/}\nolimits\!\left(x;\gamma,\delta,N\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>;</mo><mi>γ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m38.png" altimg-height="50px" altimg-valign="-22px" altimg-width="145px" alttext="\dfrac{1}{\left(\gamma+1\right)_{n}\left(-N\right)_{n}}" display="inline"><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi>γ</mi><mo>+</mo><mn>1</mn></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mo>-</mo><mi href="./18.1#SS1.p2.t1.r6">N</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></mrow></mfrac></mstyle></math></td>
+</tr>
+</tbody>
+</table>
+<div id="T2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./18.25#T1.t1.r4" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="23px" altimg-valign="-7px" altimg-width="139px" alttext="\mathop{R_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{\alpha},\NVar{\beta},%
+\NVar{\gamma},\NVar{\delta}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r4">R</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">α</mi><mo>,</mo><mi class="ltx_nvar">β</mi><mo>,</mo><mi class="ltx_nvar">γ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r8">δ</mi><mo>)</mo></mrow></mrow></math>: Racah polynomial</a>,
+<a href="./18.25#T1.t1.r2" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="\mathop{W_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{a},\NVar{b},\NVar{c},%
+\NVar{d}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r2">W</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar">c</mi><mo>,</mo><mi class="ltx_nvar">d</mi><mo>)</mo></mrow></mrow></math>: Wilson polynomial</a>,
+<a href="./18.25#T1.t1.r3" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{S_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{a},\NVar{b},\NVar{c}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r3">S</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>,</mo><mi class="ltx_nvar">b</mi><mo>,</mo><mi class="ltx_nvar">c</mi><mo>)</mo></mrow></mrow></math>: continuous dual Hahn polynomial</a>,
+<a href="./18.25#T1.t1.r5" title="Table 18.25.1 ‣ §18.25(i) Preliminaries ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="123px" alttext="\mathop{R_{\NVar{n}}\/}\nolimits\!\left(\NVar{x};\NVar{\gamma},\NVar{\delta},%
+\NVar{N}\right)" display="inline"><mrow><msub><mi href="./18.25#T1.t1.r5">R</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r8">δ</mi><mo>,</mo><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r6">N</mi><mo>)</mo></mrow></mrow></math>: dual Hahn polynomial</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a>,
+<a href="./18.1#SS1.p2.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="N" display="inline"><mi href="./18.1#SS1.p2.t1.r6">N</mi></math>: positive integer</a>,
+<a href="./18.1#SS1.p2.t1.r8" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#SS1.p2.t1.r8">δ</mi></math>: arbitary small positive constant</a>,
+<a href="./18.1#SS1.p2.t1.r9" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="p_{n}(x)" display="inline"><mrow><msub><mi href="./18.1#SS1.p2.t1.r9">p</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math>: polynomial of degree <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></a>,
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a> and
+<a href="./18.2#E7" title="(18.2.7) ‣ §18.2(iii) Normalization ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="k_{n}" display="inline"><msub><mi href="./18.2#E7">k</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/W#Wilsonclassorthogonalpolynomials">Wilson class orthogonal polynomials</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.25#SS4.info" title="§18.25(iv) Leading Coefficients ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(iv)</span></a>,
+<a href="./18.25#SS4.p1" title="§18.25(iv) Leading Coefficients ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.25(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.25.T2" title="" class="ltx_ref">http://dlmf.nist.gov/18.25.T2</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.25#SS4.info" title="§18.25(iv) Leading Coefficients ‣ §18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.25(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.24 </span>Hahn Class: Asymptotic Approximations</span></a><a href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.26 </span>Wilson Class: Continued</span></a>
+</div>
+</div>
+</body>
+</html>

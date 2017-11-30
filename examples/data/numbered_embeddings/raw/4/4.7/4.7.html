@@ -1,0 +1,789 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 4.7 Derivatives and Differential Equations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/4.7";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./4#PT2" title="Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="up up" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="next" href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.2" title="§4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.3" title="§4.3 Graphics ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.4" title="§4.4 Special Values and Limits ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.5" title="§4.5 Inequalities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.9" title="§4.9 Continued Fractions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.10" title="§4.10 Integrals ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.11" title="§4.11 Sums ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.13" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.15" title="§4.15 Graphics ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.16" title="§4.16 Elementary Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.17" title="§4.17 Special Values and Limits ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.18" title="§4.18 Inequalities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.19" title="§4.19 Maclaurin Series and Laurent Series ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.20" title="§4.20 Derivatives and Differential Equations ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.21" title="§4.21 Identities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.22" title="§4.22 Infinite Products and Partial Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.23" title="§4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.24" title="§4.24 Inverse Trigonometric Functions: Further Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.26" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.28" title="§4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.29" title="§4.29 Graphics ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.30" title="§4.30 Elementary Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.31" title="§4.31 Special Values and Limits ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.32" title="§4.32 Inequalities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.33" title="§4.33 Maclaurin Series and Laurent Series ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.34" title="§4.34 Derivatives and Differential Equations ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.35" title="§4.35 Identities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.36" title="§4.36 Infinite Products and Partial Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.37" title="§4.37 Inverse Hyperbolic Functions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.38" title="§4.38 Inverse Hyperbolic Functions: Further Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.39" title="§4.39 Continued Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.40" title="§4.40 Integrals ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.41" title="§4.41 Sums ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.42" title="§4.42 Solution of Triangles ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.43" title="§4.43 Cubic Equations ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.44" title="§4.44 Other Applications ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.45" title="§4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.46" title="§4.46 Tables ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.48" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="derivatives, differential equation, differential equations, exponential function, logarithm function, power function">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./4" title="Chapter 4 Elementary Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Elementary Functions</span></a><a href="./4#PT2" title="Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Logarithm, Exponential, Powers</span></a><a href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.6 </span>Power Series</span></a><a href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.8 </span>Identities</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§4.7 </span>Derivatives and Differential Equations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./4.7" title="" class="ltx_ref">http://dlmf.nist.gov/4.7</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4#info" title="Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§4.7(i) </span>Logarithms</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§4.7(ii) </span>Exponentials and Powers</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.7(i) </span>Logarithms</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Levinson and Redheffer (<a href="./bib/L#bib1421" title="Complex Variables" class="ltx_ref">1970</a>, pp. 62–69)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/D#derivatives">derivatives</a>, <a class="ltx_keyword" href="./idx/D#differentialequations">differential equations</a>, <a class="ltx_keyword" href="./idx/L#logarithmfunction">logarithm function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.i" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#info" title="§4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="47px" altimg-valign="-16px" altimg-width="112px" alttext="\frac{d}{dz}\mathop{\ln\/}\nolimits z=\frac{1}{z}," display="block"><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>⁡</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi href="./4.1#p2.t1.r4">z</mi></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.1.46</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E1" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E1.tex">TeX</a>, <a href="./4.7.E1.pmml">pMML</a>, <a href="./4.7.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS1.info" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="47px" altimg-valign="-16px" altimg-width="119px" alttext="\frac{d}{dz}\mathop{\mathrm{Ln}\/}\nolimits z=\frac{1}{z}," display="block"><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>⁡</mo><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi href="./4.1#p2.t1.r4">z</mi></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E1" title="(4.2.1) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="41px" alttext="\mathop{\mathrm{Ln}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: general logarithm function</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E2" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E2.tex">TeX</a>, <a href="./4.7.E2.pmml">pMML</a>, <a href="./4.7.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS1.info" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="47px" altimg-valign="-16px" altimg-width="281px" alttext="\frac{{d}^{n}}{{dz}^{n}}\mathop{\ln\/}\nolimits z=(-1)^{n-1}(n-1)!z^{-n}," display="block"><mrow><mrow><mrow><mfrac><mpadded lspace="-1.7pt" width="-4.5pt"><msup><mo href="./1.4#E4">d</mo><mi href="./4.1#p2.t1.r1">n</mi></msup></mpadded><msup><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow><mi href="./1.4#E4">n</mi></msup></mfrac><mo>⁡</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><msup><mi href="./4.1#p2.t1.r4">z</mi><mrow><mo>-</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.1.47</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E3" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E3.tex">TeX</a>, <a href="./4.7.E3.pmml">pMML</a>, <a href="./4.7.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS1.info" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="47px" altimg-valign="-16px" altimg-width="288px" alttext="\frac{{d}^{n}}{{dz}^{n}}\mathop{\mathrm{Ln}\/}\nolimits z=(-1)^{n-1}(n-1)!z^{-%
+n}." display="block"><mrow><mrow><mrow><mfrac><mpadded lspace="-1.7pt" width="-4.5pt"><msup><mo href="./1.4#E4">d</mo><mi href="./4.1#p2.t1.r1">n</mi></msup></mpadded><msup><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow><mi href="./1.4#E4">n</mi></msup></mfrac><mo>⁡</mo><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><msup><mi href="./4.1#p2.t1.r4">z</mi><mrow><mo>-</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow></msup></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./4.2#E1" title="(4.2.1) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="41px" alttext="\mathop{\mathrm{Ln}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: general logarithm function</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E4" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E4.tex">TeX</a>, <a href="./4.7.E4.pmml">pMML</a>, <a href="./4.7.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS1.info" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">For a nonvanishing analytic function <math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the general solution of the
+differential equation
+</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="53px" altimg-valign="-21px" altimg-width="110px" alttext="\frac{dw}{dz}=\frac{f^{\prime}(z)}{f(z)}" display="block"><mrow><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi>w</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi href="./4.7#SS1.p2">f</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a> and
+<a href="./4.7#SS1.p2" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: non-vanishing analytic function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E5" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E5.tex">TeX</a>, <a href="./4.7.E5.pmml">pMML</a>, <a href="./4.7.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS1.info" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="260px" alttext="w(z)=\mathop{\mathrm{Ln}\/}\nolimits\!\left(f(z)\right)+\hbox{ constant}." display="block"><mrow><mrow><mrow><mi href="./4.7#E6">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mtext> constant</mtext></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="19px" alttext="w" display="inline"><mi href="./4.7#E6">w</mi></math>: solution (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E1" title="(4.2.1) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="41px" alttext="\mathop{\mathrm{Ln}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: general logarithm function</a>,
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a> and
+<a href="./4.7#SS1.p2" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: non-vanishing analytic function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E6" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E6.tex">TeX</a>, <a href="./4.7.E6.pmml">pMML</a>, <a href="./4.7.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS1.info" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.7(ii) </span>Exponentials and Powers</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Levinson and Redheffer (<a href="./bib/L#bib1421" title="Complex Variables" class="ltx_ref">1970</a>, pp. 53–54 and p. 69)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/D#derivatives">derivatives</a>, <a class="ltx_keyword" href="./idx/E#exponentialfunction">exponential function</a>, <a class="ltx_keyword" href="./idx/P#powerfunction">power function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.ii" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#info" title="§4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="47px" altimg-valign="-16px" altimg-width="100px" alttext="\frac{d}{dz}e^{z}=e^{z}," display="block"><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>⁡</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi href="./4.1#p2.t1.r4">z</mi></msup></mrow><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi href="./4.1#p2.t1.r4">z</mi></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.2.49</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E7" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E7.tex">TeX</a>, <a href="./4.7.E7.pmml">pMML</a>, <a href="./4.7.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="47px" altimg-valign="-16px" altimg-width="128px" alttext="\frac{d}{dz}e^{az}=ae^{az}," display="block"><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>⁡</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></msup></mrow><mo>=</mo><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.2.50</span> (gives n-th derivative.)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E8" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E8.tex">TeX</a>, <a href="./4.7.E8.pmml">pMML</a>, <a href="./4.7.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="47px" altimg-valign="-16px" altimg-width="137px" alttext="\frac{d}{dz}a^{z}=a^{z}\mathop{\ln\/}\nolimits a," display="block"><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>⁡</mo><msup><mi href="./4.1#p2.t1.r2">a</mi><mi href="./4.1#p2.t1.r4">z</mi></msup></mrow><mo>=</mo><mrow><msup><mi href="./4.1#p2.t1.r2">a</mi><mi href="./4.1#p2.t1.r4">z</mi></msup><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r2">a</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m13.png" altimg-height="21px" altimg-valign="-6px" altimg-width="51px" alttext="a\neq 0" display="inline"><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>≠</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.2.51</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E9" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E9.tex">TeX</a>, <a href="./4.7.E9.pmml">pMML</a>, <a href="./4.7.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">When <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="24px" alttext="a^{z}" display="inline"><msup><mi href="./4.1#p2.t1.r2">a</mi><mi href="./4.1#p2.t1.r4">z</mi></msup></math> is a general power, <math class="ltx_Math" altimg="m8.png" altimg-height="18px" altimg-valign="-2px" altimg-width="35px" alttext="\mathop{\ln\/}\nolimits a" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r2">a</mi></mrow></math> is replaced by the branch of
+<math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\mathrm{Ln}\/}\nolimits a" display="inline"><mrow><mi href="./4.2#E1">Ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r2">a</mi></mrow></math> used in constructing <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="24px" alttext="a^{z}" display="inline"><msup><mi href="./4.1#p2.t1.r2">a</mi><mi href="./4.1#p2.t1.r4">z</mi></msup></math>.</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="47px" altimg-valign="-16px" altimg-width="134px" alttext="\frac{d}{dz}z^{a}=az^{a-1}," display="block"><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>⁡</mo><msup><mi href="./4.1#p2.t1.r4">z</mi><mi href="./4.1#p2.t1.r2">a</mi></msup></mrow><mo>=</mo><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><msup><mi href="./4.1#p2.t1.r4">z</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.2.52</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E10" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E10.tex">TeX</a>, <a href="./4.7.E10.pmml">pMML</a>, <a href="./4.7.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="47px" altimg-valign="-16px" altimg-width="394px" alttext="\frac{{d}^{n}}{{dz}^{n}}z^{a}=a(a-1)(a-2)\cdots(a-n+1)z^{a-n}." display="block"><mrow><mrow><mrow><mfrac><mpadded lspace="-1.7pt" width="-4.5pt"><msup><mo href="./1.4#E4">d</mo><mi href="./4.1#p2.t1.r1">n</mi></msup></mpadded><msup><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow><mi href="./1.4#E4">n</mi></msup></mfrac><mo>⁡</mo><msup><mi href="./4.1#p2.t1.r4">z</mi><mi href="./4.1#p2.t1.r2">a</mi></msup></mrow><mo>=</mo><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>-</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi href="./4.1#p2.t1.r4">z</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>-</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow></msup></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E11" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E11.tex">TeX</a>, <a href="./4.7.E11.pmml">pMML</a>, <a href="./4.7.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">The general solution of the differential equation
+</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="47px" altimg-valign="-16px" altimg-width="115px" alttext="\frac{dw}{dz}=f(z)w" display="block"><mrow><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi>w</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mfrac><mo>=</mo><mrow><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mi>w</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a> and
+<a href="./4.7#SS1.p2" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: non-vanishing analytic function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E12" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E12.tex">TeX</a>, <a href="./4.7.E12.pmml">pMML</a>, <a href="./4.7.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is
+</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="53px" altimg-valign="-21px" altimg-width="292px" alttext="w=\mathop{\exp\/}\nolimits\!\left(\int f(z)dz\right)+{\rm constant}." display="block"><mrow><mrow><mi>w</mi><mo>=</mo><mrow><mrow><mi href="./4.2#E19">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mi>constant</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E19" title="(4.2.19) ‣ §4.2(iii) The Exponential Function ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="16px" altimg-valign="-6px" altimg-width="48px" alttext="\mathop{\exp\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E19">exp</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a> and
+<a href="./4.7#SS1.p2" title="§4.7(i) Logarithms ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi href="./4.7#SS1.p2">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r4">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: non-vanishing analytic function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E13" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E13.tex">TeX</a>, <a href="./4.7.E13.pmml">pMML</a>, <a href="./4.7.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">The general solution of the differential equation</p>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="51px" altimg-valign="-18px" altimg-width="102px" alttext="\frac{{d}^{2}w}{{dz}^{2}}=aw," display="block"><mrow><mrow><mfrac><mrow><mpadded lspace="-1.7pt" width="-4.5pt"><msup><mo href="./1.4#E4">d</mo><mn>2</mn></msup></mpadded><mi>w</mi></mrow><msup><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi>w</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m13.png" altimg-height="21px" altimg-valign="-6px" altimg-width="51px" alttext="a\neq 0" display="inline"><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>≠</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E14" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E14.tex">TeX</a>, <a href="./4.7.E14.pmml">pMML</a>, <a href="./4.7.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is</p>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.7.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="29px" altimg-valign="-6px" altimg-width="201px" alttext="w=Ae^{\sqrt{a}z}+Be^{-\sqrt{a}z}," display="block"><mrow><mrow><mi>w</mi><mo>=</mo><mrow><mrow><mi href="./4.7#SS2.p3">A</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><msqrt><mi href="./4.1#p2.t1.r2">a</mi></msqrt><mo>⁢</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></msup></mrow><mo>+</mo><mrow><mi href="./4.7#SS2.p3">B</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><msqrt><mi href="./4.1#p2.t1.r2">a</mi></msqrt><mo>⁢</mo><mi href="./4.1#p2.t1.r4">z</mi></mrow></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a>,
+<a href="./4.1#p2.t1.r4" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./4.1#p2.t1.r4">z</mi></math>: complex variable</a>,
+<a href="./4.7#SS2.p3" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="A" display="inline"><mi href="./4.7#SS2.p3">A</mi></math>: arbitrary constant</a> and
+<a href="./4.7#SS2.p3" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="B" display="inline"><mi href="./4.7#SS2.p3">B</mi></math>: arbitrary constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.7.E15" title="" class="ltx_ref">http://dlmf.nist.gov/4.7.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.7.E15.tex">TeX</a>, <a href="./4.7.E15.pmml">pMML</a>, <a href="./4.7.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.7#SS2.info" title="§4.7(ii) Exponentials and Powers ‣ §4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="A" display="inline"><mi href="./4.7#SS2.p3">A</mi></math> and <math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="B" display="inline"><mi href="./4.7#SS2.p3">B</mi></math> are arbitrary constants.</p>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">For other differential equations see <cite class="ltx_cite ltx_citemacro_citet">Kamke (<a href="./bib/K#bib1213" title="Differentialgleichungen: Lösungsmethoden und Lösungen. Teil I" class="ltx_ref">1977</a>, pp. 396–413)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.6 </span>Power Series</span></a><a href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.8 </span>Identities</span></a>
+</div>
+</div>
+</body>
+</html>

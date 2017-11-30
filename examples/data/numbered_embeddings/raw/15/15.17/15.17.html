@@ -1,0 +1,316 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 15.17 Mathematical Applications</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/15.17";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./15#PT3" title="Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="up up" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="next" href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.2" title="§15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.3" title="§15.3 Graphics ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.4" title="§15.4 Special Cases ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.6" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.8" title="§15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.9" title="§15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.10" title="§15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.12" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.14" title="§15.14 Integrals ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.15" title="§15.15 Sums ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.19" title="§15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.20" title="§15.20 Software ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Fourier cosine and sine transforms, Fourier transform, Jacobi function, Painlevé equations, Painlevé transcendents, applications, arithmetic-geometric mean, combinatorics, complete, complete elliptic integrals, conformal mapping, elliptic integrals, generalized, group, group theory, harmonic analysis, hypergeometric function, hypergeometric identities, mathematical, monodromy groups, quasiconformal mapping, relations to other functions, special function solutions">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./15" title="Chapter 15 Hypergeometric Function" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15 </span>Hypergeometric Function</span></a><a href="./15#PT3" title="Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.16 </span>Products</span></a><a href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.18 </span>Physical Applications</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§15.17 </span>Mathematical Applications</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.17" title="" class="ltx_ref">http://dlmf.nist.gov/15.17</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15#info" title="Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§15.17(i) </span>Differential Equations</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§15.17(ii) </span>Conformal Mappings</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§15.17(iii) </span>Group Representations</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§15.17(iv) </span>Combinatorics</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§15.17(v) </span>Monodromy Groups</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.17(i) </span>Differential Equations</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/P#Painleveequations">Painlevé equations</a>, <a class="ltx_keyword" href="./idx/P#Painlevetranscendents">Painlevé transcendents</a>, <a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.17.i" title="" class="ltx_ref">http://dlmf.nist.gov/15.17.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.17#info" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.17</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">This topic is treated in §§<a href="./15.10" title="§15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.10</span></a> and <a href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.11</span></a>.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">The logarithmic derivatives of some hypergeometric functions for which
+quadratic transformations exist (§<a href="./15.8#iii" title="§15.8(iii) Quadratic Transformations ‣ §15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.8(iii)</span></a>) are solutions of
+Painlevé equations. See §<a href="./32.10#vi" title="§32.10(vi) Sixth Painlevé Equation ‣ §32.10 Special Function Solutions ‣ Properties ‣ Chapter 32 Painlevé Transcendents" class="ltx_ref"><span class="ltx_text ltx_ref_tag">32.10(vi)</span></a>.
+</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.17(ii) </span>Conformal Mappings</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/C#conformalmapping">conformal mapping</a>, <a class="ltx_keyword" href="./idx/E#ellipticintegrals">elliptic integrals</a>, <a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a>, <a class="ltx_keyword" href="./idx/Q#quasiconformalmapping">quasiconformal mapping</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.17.ii" title="" class="ltx_ref">http://dlmf.nist.gov/15.17.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.17#info" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.17</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">The quotient of two solutions of (<a href="./15.10#E1" title="(15.10.1) ‣ §15.10(i) Fundamental Solutions ‣ §15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.10.1</span></a>) maps the closed upper
+half-plane <math class="ltx_Math" altimg="m4.png" altimg-height="20px" altimg-valign="-5px" altimg-width="65px" alttext="\imagpart{z}\geq 0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℑ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>≥</mo><mn>0</mn></mrow></math> conformally onto a curvilinear triangle. See
+<cite class="ltx_cite ltx_citemacro_citet">Klein (<a href="./bib/K#bib1282" title="Vorlesungen über die hypergeometrische Funktion" class="ltx_ref">1894</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Hochstadt (<a href="./bib/H#bib1090" title="The Functions of Mathematical Physics" class="ltx_ref">1971</a>)</cite>. Hypergeometric
+functions, especially complete elliptic integrals, also play an important role
+in quasiconformal mapping. See <cite class="ltx_cite ltx_citemacro_citet">Anderson<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib84" title="Conformal Invariants, Inequalities, and Quasiconformal Maps" class="ltx_ref">1997</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.17(iii) </span>Group Representations</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/F#Fouriercosineandsinetransforms">Fourier cosine and sine transforms</a>, <a class="ltx_keyword" href="./idx/F#Fouriertransform">Fourier transform</a>, <a class="ltx_keyword" href="./idx/J#Jacobifunction">Jacobi function</a>, <a class="ltx_keyword" href="./idx/H#harmonicanalysis">harmonic analysis</a>, <a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.17.iii" title="" class="ltx_ref">http://dlmf.nist.gov/15.17.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.17#info" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.17</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">For harmonic analysis it is more natural to represent hypergeometric functions
+as a Jacobi function (§<a href="./15.9#ii" title="§15.9(ii) Jacobi Function ‣ §15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.9(ii)</span></a>). For special values of <math class="ltx_Math" altimg="m2.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\alpha" display="inline"><mi>α</mi></math> and
+<math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi>β</mi></math> there are many group-theoretic interpretations. First, as spherical
+functions on noncompact Riemannian symmetric spaces of rank one, but also as
+associated spherical functions, intertwining functions, matrix elements of
+SL<math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="(2,\Real)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mn>2</mn><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mi href="./front/introduction#Sx4.p2.t1.r14" mathvariant="normal">ℝ</mi><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math>, and spherical functions on certain nonsymmetric Gelfand pairs.
+Harmonic analysis can be developed for the Jacobi transform either as a
+generalization of the Fourier-cosine transform (§<a href="./1.14#ii" title="§1.14(ii) Fourier Cosine and Sine Transforms ‣ §1.14 Integral Transforms ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.14(ii)</span></a>) or as a
+specialization of a group Fourier transform. For further information see
+<cite class="ltx_cite ltx_citemacro_citet">Koornwinder (<a href="./bib/K#bib1323" title="Jacobi Functions and Analysis on Noncompact Semisimple Lie Groups" class="ltx_ref">1984a</a>)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.17(iv) </span>Combinatorics</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/#arithmeticgeometricmean">arithmetic-geometric mean</a>, <a class="ltx_keyword" href="./idx/C#combinatorics">combinatorics</a>, <a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.17.iv" title="" class="ltx_ref">http://dlmf.nist.gov/15.17.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.17#info" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.17</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">In combinatorics, hypergeometric identities classify single sums of products of
+binomial coefficients. See <cite class="ltx_cite ltx_citemacro_citet">Egorychev (<a href="./bib/E#bib729" title="Integral Representation and the Computation of Combinatorial Sums" class="ltx_ref">1984</a>, §2.3)</cite>.</p>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">Quadratic transformations give insight into the relation of elliptic integrals
+to the arithmetic-geometric mean (§<a href="./19.22#ii" title="§19.22(ii) Gauss’s Arithmetic-Geometric Mean (AGM) ‣ §19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.22(ii)</span></a>).
+See <cite class="ltx_cite ltx_citemacro_citet">Andrews<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib102" title="Special Functions" class="ltx_ref">1999</a>, §3.2)</cite>.
+</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.17(v) </span>Monodromy Groups</h2>
+<div id="SS5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/G#grouptheory">group theory</a>, <a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a>, <a class="ltx_keyword" href="./idx/M#monodromygroups">monodromy groups</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.17.v" title="" class="ltx_ref">http://dlmf.nist.gov/15.17.v</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.17#info" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.17</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS5.p1" class="ltx_para">
+<p class="ltx_p">The three singular points in Riemann’s differential equation
+(<a href="./15.11#E1" title="(15.11.1) ‣ §15.11(i) Equations with Three Singularities ‣ §15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.11.1</span></a>) lead to an interesting Riemann sheet structure. By
+considering, as a group, all analytic transformations of a basis of solutions
+under analytic continuation around all paths on the Riemann sheet, we obtain
+the monodromy group. These monodromy groups are finite iff the solutions of
+Riemann’s differential equation are all algebraic. For a survey of this topic
+see <cite class="ltx_cite ltx_citemacro_citet">Gray (<a href="./bib/G#bib973" title="Linear Differential Equations and Group Theory from Riemann to Poincaré" class="ltx_ref">2000</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.16 </span>Products</span></a><a href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.18 </span>Physical Applications</span></a>
+</div>
+</div>
+</body>
+</html>

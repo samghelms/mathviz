@@ -1,0 +1,706 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 4.13 Lambert W-Function</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/4.13";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./4#PT2" title="Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="up up" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="next" href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.2" title="§4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.3" title="§4.3 Graphics ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.4" title="§4.4 Special Values and Limits ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.5" title="§4.5 Inequalities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.7" title="§4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.9" title="§4.9 Continued Fractions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.10" title="§4.10 Integrals ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.11" title="§4.11 Sums ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.15" title="§4.15 Graphics ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.16" title="§4.16 Elementary Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.17" title="§4.17 Special Values and Limits ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.18" title="§4.18 Inequalities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.19" title="§4.19 Maclaurin Series and Laurent Series ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.20" title="§4.20 Derivatives and Differential Equations ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.21" title="§4.21 Identities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.22" title="§4.22 Infinite Products and Partial Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.23" title="§4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.24" title="§4.24 Inverse Trigonometric Functions: Further Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.26" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.28" title="§4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.29" title="§4.29 Graphics ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.30" title="§4.30 Elementary Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.31" title="§4.31 Special Values and Limits ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.32" title="§4.32 Inequalities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.33" title="§4.33 Maclaurin Series and Laurent Series ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.34" title="§4.34 Derivatives and Differential Equations ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.35" title="§4.35 Identities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.36" title="§4.36 Infinite Products and Partial Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.37" title="§4.37 Inverse Hyperbolic Functions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.38" title="§4.38 Inverse Hyperbolic Functions: Further Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.39" title="§4.39 Continued Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.40" title="§4.40 Integrals ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.41" title="§4.41 Sums ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.42" title="§4.42 Solution of Triangles ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.43" title="§4.43 Cubic Equations ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.44" title="§4.44 Other Applications ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.45" title="§4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.46" title="§4.46 Tables ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.48" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./4.13.F1.mag" title="Figure 4.13.1 ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<meta name="keywords" lang="en" content="Lambert , Lambert , Lambert , asymptotic expansions, definition, graphs, integral representations, notation, other branches, principal branch, properties">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./4" title="Chapter 4 Elementary Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Elementary Functions</span></a><a href="./4#PT2" title="Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Logarithm, Exponential, Powers</span></a><a href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.12 </span>Generalized Logarithms and Exponentials</span></a><a href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.14 </span>Definitions and Periodicity</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§4.13 </span>Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-Function</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>To verify the radius of convergence of the series
+(<a href="./4.13#E6" title="(4.13.6) ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13.6</span></a>) map the plane of <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math> onto the plane of
+<math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-2px" altimg-width="11px" alttext="t" display="inline"><mi>t</mi></math> via <math class="ltx_Math" altimg="m41.png" altimg-height="26px" altimg-valign="-7px" altimg-width="114px" alttext="t=(-2v)^{1/2}" display="inline"><mrow><mi>t</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>v</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math>, where
+<math class="ltx_Math" altimg="m47.png" altimg-height="19px" altimg-valign="-4px" altimg-width="199px" alttext="v=\mathop{W\/}\nolimits+\mathop{\ln\/}\nolimits\mathop{W\/}\nolimits+1-i\pi" display="inline"><mrow><mi>v</mi><mo>=</mo><mrow><mrow><mi href="./4.13#E1">W</mi><mo>+</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.13#E1">W</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>π</mi></mrow></mrow></mrow></math>. Then <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math> is
+analytic at <math class="ltx_Math" altimg="m42.png" altimg-height="17px" altimg-valign="-2px" altimg-width="48px" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>, and its nearest singularities to the origin are
+located at <math class="ltx_Math" altimg="m43.png" altimg-height="26px" altimg-valign="-7px" altimg-width="131px" alttext="t=2\sqrt{\pi}e^{\pm\pi i/4}" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>π</mi></msqrt><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>±</mo><mrow><mrow><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow><mo>/</mo><mn>4</mn></mrow></mrow></msup></mrow></mrow></math>.
+Figure <a href="./4.13#F1" title="Figure 4.13.1 ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13.1</span></a> was produced at NIST.</dd>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: nonprincipal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: principal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</span>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/L#LambertWfunction">Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./26.7#SS4.p1" title="§26.7(iv) Asymptotic Approximation ‣ §26.7 Set Partitions: Bell Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.7(iv)</span></a>,
+<a href="./errata/#Sx5.I8.I1.i5.p1" title="Other Changes ‣ Version 1.0.9 (August 29, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>,
+<a href="./errata/#Sx7.I14.I1.i7.p1" title="Other Changes ‣ Version 1.0.7 (March 21, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13" title="" class="ltx_ref">http://dlmf.nist.gov/4.13</a></dd>
+<dt>Addition (effective with 1.0.9):</dt>
+<dd>
+The reference to <cite class="ltx_cite ltx_citemacro_citet">Scott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2827" title="Numerics of the generalized Lambert W function" class="ltx_ref">2014</a>)</cite> has been
+added at the end of this section.
+
+<p><span class="ltx_font_italic">Reported 2014-08-06</span></p>
+</dd>
+<dt>Addition (effective with 1.0.7):</dt>
+<dd>
+The references to <cite class="ltx_cite ltx_citemacro_citet">Scott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2818" title="General relativity and quantum mechanics: towards a generalization of the Lambert W function: a generalization of the Lambert W function" class="ltx_ref">2006</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Scott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2819" title="Asymptotic series of generalized Lambert W function" class="ltx_ref">2013</a>)</cite> have been
+added at the end of this section.
+
+<p><span class="ltx_font_italic">Reported 2014-02-14</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4#info" title="Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function <math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{W\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math> is the solution of the equation</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="23px" altimg-valign="-2px" altimg-width="99px" alttext="We^{W}=x." display="block"><mrow><mrow><mrow><mi>W</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi>W</mi></msup></mrow><mo>=</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{W\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E1" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E1.tex">TeX</a>, <a href="./4.13.E1.pmml">pMML</a>, <a href="./4.13.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">On the <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>-interval <math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="[0,\infty)" display="inline"><mrow><mo href="./front/introduction#Sx4.p2.t1.r1" stretchy="false">[</mo><mn>0</mn><mo href="./front/introduction#Sx4.p2.t1.r1">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#Sx4.p2.t1.r1" stretchy="false">)</mo></mrow></math> there is one real solution, and it is
+nonnegative and increasing. On the <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>-interval <math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="83px" alttext="(-1/e,0)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./4.2#E11" mathvariant="normal">e</mi></mrow></mrow><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mn>0</mn><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math> there are two real
+solutions, one increasing and the other decreasing. We call the solution for
+which <math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="161px" alttext="\mathop{W\/}\nolimits\!\left(x\right)\geq\mathop{W\/}\nolimits\!\left(-1/e\right)" display="inline"><mrow><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow><mo>≥</mo><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./4.2#E11" mathvariant="normal">e</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math> the <em class="ltx_emph">principal branch</em> and
+denote it by <math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>. The other solution is denoted by
+<math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>. See Figure <a href="./4.13#F1" title="Figure 4.13.1 ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13.1</span></a>.</p>
+</div>
+<figure id="F1" class="ltx_figure"><a href="./4.13.F1.mag"><img src="./4/13/F1.png" id="F1.g1" class="ltx_graphics ltx_centering" width="339" height="197" alt="See accompanying text"></a>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 4.13.1: </span>Branches <math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math> of the Lambert
+<math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function. <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="A" display="inline"><mi>A</mi></math> and <math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="B" display="inline"><mi>B</mi></math> denote the points <math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="-1/e" display="inline"><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./4.2#E11" mathvariant="normal">e</mi></mrow></mrow></math> and <math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>,
+respectively, on the <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>-axis.
+
+
+<a href="./4.13.F1.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.13#E1" title="(4.13.1) ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{W\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: nonprincipal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: principal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/L#LambertWfunction">Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.13</span></a>,
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.13</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.F1" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.F1.pdf">pdf</a>, <a href="./4.13.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Properties include:
+</p>
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">4.13.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="98px" alttext="\displaystyle\mathop{\mathrm{Wp}\/}\nolimits\!\left(-1/e\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./4.2#E11" mathvariant="normal">e</mi></mrow></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="182px" alttext="\displaystyle=\mathop{\mathrm{Wm}\/}\nolimits\!\left(-1/e\right)=-1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./4.2#E11" mathvariant="normal">e</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="\displaystyle\mathop{\mathrm{Wp}\/}\nolimits\!\left(0\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\displaystyle\mathop{\mathrm{Wp}\/}\nolimits\!\left(e\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.2#E11" mathvariant="normal">e</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="43px" alttext="\displaystyle=1." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: nonprincipal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: principal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a> and
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E2" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E2a.tex">TeX</a>, <a href="./4.13.E2b.tex">TeX</a>, <a href="./4.13.E2c.tex">TeX</a>, <a href="./4.13.E2a.pmml">pMML</a>, <a href="./4.13.E2b.pmml">pMML</a>, <a href="./4.13.E2c.pmml">pMML</a>, <a href="./4.13.E2a.png">png</a>, <a href="./4.13.E2b.png">png</a>, <a href="./4.13.E2c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">4.13.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="21px" altimg-valign="-4px" altimg-width="82px" alttext="\displaystyle U+\mathop{\ln\/}\nolimits U" display="inline"><mrow><mi>U</mi><mo>+</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi>U</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-6px" altimg-width="44px" alttext="\displaystyle=x," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="19px" altimg-valign="-2px" altimg-width="22px" alttext="\displaystyle U" display="inline"><mi>U</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="162px" alttext="\displaystyle=U(x)=\mathop{W\/}\nolimits\!\left(e^{x}\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>U</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi href="./4.1#p2.t1.r3">x</mi></msup><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.13#E1" title="(4.13.1) ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{W\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E3" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E3a.tex">TeX</a>, <a href="./4.13.E3b.tex">TeX</a>, <a href="./4.13.E3a.pmml">pMML</a>, <a href="./4.13.E3b.pmml">pMML</a>, <a href="./4.13.E3a.png">png</a>, <a href="./4.13.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="51px" altimg-valign="-17px" altimg-width="139px" alttext="\frac{d\mathop{W\/}\nolimits}{dx}=\frac{e^{-\mathop{W\/}\nolimits}}{1+\mathop{%
+W\/}\nolimits}," display="block"><mrow><mrow><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.13#E1">W</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mfrac><mo>=</mo><mfrac><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mi href="./4.13#E1">W</mi></mrow></msup><mrow><mn>1</mn><mo>+</mo><mi href="./4.13#E1">W</mi></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m49.png" altimg-height="44px" altimg-valign="-16px" altimg-width="72px" alttext="x\neq-\dfrac{1}{e}" display="inline"><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>≠</mo><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi href="./4.2#E11" mathvariant="normal">e</mi></mfrac></mstyle></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.13#E1" title="(4.13.1) ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{W\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="29px" altimg-valign="-9px" altimg-width="27px" alttext="\frac{d\NVar{f}}{d\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" lspace="0.8pt" rspace="0pt">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m35.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./4.45#SS3.p1" title="§4.45(iii) Lambert W -Function ‣ §4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.45(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E4" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E4.tex">TeX</a>, <a href="./4.13.E4.pmml">pMML</a>, <a href="./4.13.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="64px" altimg-valign="-27px" altimg-width="293px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(x\right)=\sum_{n=1}^{\infty}(-1)^{n-1}%
+\frac{n^{n-2}}{(n-1)!}x^{n}," display="block"><mrow><mrow><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mfrac><msup><mi href="./4.1#p2.t1.r1">n</mi><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>2</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></mfrac><mo>⁢</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mi href="./4.1#p2.t1.r1">n</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m53.png" altimg-height="44px" altimg-valign="-16px" altimg-width="68px" alttext="|x|&lt;\dfrac{1}{e}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./4.1#p2.t1.r3">x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi href="./4.2#E11" mathvariant="normal">e</mi></mfrac></mstyle></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: principal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m38.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E5" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E5.tex">TeX</a>, <a href="./4.13.E5.pmml">pMML</a>, <a href="./4.13.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="64px" altimg-valign="-27px" altimg-width="324px" alttext="\mathop{W\/}\nolimits\!\left(-e^{-1-(t^{2}/2)}\right)=\sum_{n=0}^{\infty}(-1)^%
+{n-1}c_{n}t^{n}," display="block"><mrow><mrow><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msub><mi href="./4.13#p3">c</mi><mi href="./4.1#p2.t1.r1">n</mi></msub><mo>⁢</mo><msup><mi>t</mi><mi href="./4.1#p2.t1.r1">n</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m52.png" altimg-height="24px" altimg-valign="-7px" altimg-width="88px" alttext="|t|&lt;2\sqrt{\pi}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>t</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>π</mi></msqrt></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.13#E1" title="(4.13.1) ‣ §4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{W\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#E1">W</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a> and
+<a href="./4.13#p3" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="16px" altimg-valign="-5px" altimg-width="20px" alttext="c_{i}" display="inline"><msub><mi href="./4.13#p3">c</mi><mi mathvariant="normal">i</mi></msub></math>: coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.13</span></a>,
+<a href="./4.45#SS3.p1" title="§4.45(iii) Lambert W -Function ‣ §4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.45(iii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E6" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E6.tex">TeX</a>, <a href="./4.13.E6.pmml">pMML</a>, <a href="./4.13.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m45.png" altimg-height="19px" altimg-valign="-5px" altimg-width="48px" alttext="t\geq 0" display="inline"><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></math> for <math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-6px" altimg-width="36px" alttext="\mathop{\mathrm{Wp}\/}\nolimits" display="inline"><mi href="./4.13#p2">Wp</mi></math>, <math class="ltx_Math" altimg="m46.png" altimg-height="19px" altimg-valign="-5px" altimg-width="48px" alttext="t\leq 0" display="inline"><mrow><mi>t</mi><mo>≤</mo><mn>0</mn></mrow></math> for <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="41px" alttext="\mathop{\mathrm{Wm}\/}\nolimits" display="inline"><mi href="./4.13#p2">Wm</mi></math>,
+</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="29px" altimg-valign="-9px" altimg-width="365px" alttext="c_{0}=1,c_{1}=1,c_{2}=\tfrac{1}{3},c_{3}=\tfrac{1}{36},c_{4}=-\tfrac{1}{270}," display="block"><mrow><mrow><mrow><msub><mi href="./4.13#p3">c</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><msub><mi href="./4.13#p3">c</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><msub><mi href="./4.13#p3">c</mi><mn>2</mn></msub><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo>,</mo><mrow><mrow><msub><mi href="./4.13#p3">c</mi><mn>3</mn></msub><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>36</mn></mfrac></mstyle></mrow><mo>,</mo><mrow><msub><mi href="./4.13#p3">c</mi><mn>4</mn></msub><mo>=</mo><mrow><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>270</mn></mfrac></mstyle></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./4.13#p3" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="16px" altimg-valign="-5px" altimg-width="20px" alttext="c_{i}" display="inline"><msub><mi href="./4.13#p3">c</mi><mi mathvariant="normal">i</mi></msub></math>: coefficients</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E7" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E7.tex">TeX</a>, <a href="./4.13.E7.pmml">pMML</a>, <a href="./4.13.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="67px" altimg-valign="-28px" altimg-width="335px" alttext="c_{n}=\frac{1}{n+1}\left(c_{n-1}-\sum_{k=2}^{n-1}kc_{k}c_{n+1-k}\right)," display="block"><mrow><mrow><msub><mi href="./4.13#p3">c</mi><mi href="./4.1#p2.t1.r1">n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi href="./4.13#p3">c</mi><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./4.1#p2.t1.r1">k</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>-</mo><mn>1</mn></mrow></munderover><mrow><mi href="./4.1#p2.t1.r1">k</mi><mo>⁢</mo><msub><mi href="./4.13#p3">c</mi><mi href="./4.1#p2.t1.r1">k</mi></msub><mo>⁢</mo><msub><mi href="./4.13#p3">c</mi><mrow><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mi href="./4.1#p2.t1.r1">k</mi></mrow></msub></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m40.png" altimg-height="19px" altimg-valign="-5px" altimg-width="53px" alttext="n\geq 2" display="inline"><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>≥</mo><mn>2</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./4.1#p2.t1.r1">k</mi></math>: integer</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a> and
+<a href="./4.13#p3" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="16px" altimg-valign="-5px" altimg-width="20px" alttext="c_{i}" display="inline"><msub><mi href="./4.13#p3">c</mi><mi mathvariant="normal">i</mi></msub></math>: coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E8" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E8.tex">TeX</a>, <a href="./4.13.E8.pmml">pMML</a>, <a href="./4.13.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="266px" alttext="1\cdot 3\cdot 5\cdots(2n+1)c_{2n+1}=g_{n}," display="block"><mrow><mrow><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi href="./4.13#p3">c</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><msub><mi href="./4.13#p3">g</mi><mi href="./4.1#p2.t1.r1">n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a>,
+<a href="./4.13#p3" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="16px" altimg-valign="-5px" altimg-width="20px" alttext="c_{i}" display="inline"><msub><mi href="./4.13#p3">c</mi><mi mathvariant="normal">i</mi></msub></math>: coefficients</a> and
+<a href="./4.13#p3" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="16px" altimg-valign="-6px" altimg-width="25px" alttext="g_{n}" display="inline"><msub><mi href="./4.13#p3">g</mi><mi href="./4.1#p2.t1.r1">n</mi></msub></math>: Unknown defined in GA</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E9" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E9.tex">TeX</a>, <a href="./4.13.E9.pmml">pMML</a>, <a href="./4.13.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m36.png" altimg-height="16px" altimg-valign="-6px" altimg-width="25px" alttext="g_{n}" display="inline"><msub><mi href="./4.13#p3">g</mi><mi href="./4.1#p2.t1.r1">n</mi></msub></math> is defined in §<a href="./5.11#i" title="§5.11(i) Poincaré-Type Expansions ‣ §5.11 Asymptotic Expansions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.11(i)</span></a>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m51.png" altimg-height="17px" altimg-valign="-4px" altimg-width="82px" alttext="x\to+\infty" display="inline"><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></math></p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="54px" altimg-valign="-21px" altimg-width="492px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(x\right)=\xi-\mathop{\ln\/}\nolimits\xi%
++\frac{\mathop{\ln\/}\nolimits\xi}{\xi}+\frac{(\mathop{\ln\/}\nolimits\xi)^{2}%
+}{2\xi^{2}}-\frac{\mathop{\ln\/}\nolimits\xi}{\xi^{2}}+\mathop{O\/}\nolimits\!%
+\left(\frac{(\mathop{\ln\/}\nolimits\xi)^{3}}{\xi^{3}}\right)," display="block"><mrow><mrow><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi>ξ</mi><mo>-</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi>ξ</mi></mrow></mrow><mo>+</mo><mfrac><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi>ξ</mi></mrow><mi>ξ</mi></mfrac><mo>+</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>-</mo><mfrac><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi>ξ</mi></mrow><msup><mi>ξ</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><msup><mi>ξ</mi><mn>3</mn></msup></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="\mathop{\mathrm{Wp}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wp</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: principal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./4.45#SS3.p1" title="§4.45(iii) Lambert W -Function ‣ §4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.45(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E10" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E10.tex">TeX</a>, <a href="./4.13.E10.pmml">pMML</a>, <a href="./4.13.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m32.png" altimg-height="21px" altimg-valign="-6px" altimg-width="72px" alttext="\xi=\mathop{\ln\/}\nolimits x" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></math>. As <math class="ltx_Math" altimg="m50.png" altimg-height="18px" altimg-valign="-4px" altimg-width="72px" alttext="x\to 0-" display="inline"><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>→</mo><mrow><mn>0</mn><mo>-</mo></mrow></mrow></math></p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.13.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="54px" altimg-valign="-21px" altimg-width="519px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(x\right)=-\eta-\mathop{\ln\/}\nolimits%
+\eta-\frac{\mathop{\ln\/}\nolimits\eta}{\eta}-\frac{(\mathop{\ln\/}\nolimits%
+\eta)^{2}}{2\eta^{2}}-\frac{\mathop{\ln\/}\nolimits\eta}{\eta^{2}}+\mathop{O\/%
+}\nolimits\!\left(\frac{(\mathop{\ln\/}\nolimits\eta)^{3}}{\eta^{3}}\right)," display="block"><mrow><mrow><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>-</mo><mi href="./4.13#p4">η</mi></mrow><mo>-</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.13#p4">η</mi></mrow><mo>-</mo><mfrac><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.13#p4">η</mi></mrow><mi href="./4.13#p4">η</mi></mfrac><mo>-</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.13#p4">η</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./4.13#p4">η</mi><mn>2</mn></msup></mrow></mfrac><mo>-</mo><mfrac><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.13#p4">η</mi></mrow><msup><mi href="./4.13#p4">η</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./4.13#p4">η</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><msup><mi href="./4.13#p4">η</mi><mn>3</mn></msup></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./4.13#p2" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathrm{Wm}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./4.13#p2">Wm</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: nonprincipal branch of Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a> and
+<a href="./4.13#p4" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./4.13#p4">η</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.13.E11" title="" class="ltx_ref">http://dlmf.nist.gov/4.13.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.13.E11.tex">TeX</a>, <a href="./4.13.E11.pmml">pMML</a>, <a href="./4.13.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.13#info" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="120px" alttext="\eta=\mathop{\ln\/}\nolimits\!\left(-1/x\right)" display="inline"><mrow><mi href="./4.13#p4">η</mi><mo>=</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">For the foregoing results and further information see
+<cite class="ltx_cite ltx_citemacro_citet">Borwein and Corless (<a href="./bib/B#bib317" title="Emerging tools for experimental mathematics" class="ltx_ref">1999</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Corless<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib583" title="On the Lambert W function" class="ltx_ref">1996</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">de Bruijn (<a href="./bib/D#bib624" title="Asymptotic Methods in Analysis" class="ltx_ref">1961</a>, pp. 25–28)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 12–13)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Siewert and Burniston (<a href="./bib/S#bib2077" title="Exact analytical solutions of = ⁢ z e z a" class="ltx_ref">1973</a>)</cite>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">For integral representations of all branches of the Lambert
+<math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function see <cite class="ltx_cite ltx_citemacro_citet">Kheyfits (<a href="./bib/K#bib1262" title="Closed-form representations of the Lambert W function" class="ltx_ref">2004</a>)</cite>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">For a generalization of the Lambert <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\mathop{W\/}\nolimits" display="inline"><mi href="./4.13#E1">W</mi></math>-function connected to the three-body
+problem see <cite class="ltx_cite ltx_citemacro_citet">Scott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2818" title="General relativity and quantum mechanics: towards a generalization of the Lambert W function: a generalization of the Lambert W function" class="ltx_ref">2006</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Scott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2819" title="Asymptotic series of generalized Lambert W function" class="ltx_ref">2013</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Scott<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2827" title="Numerics of the generalized Lambert W function" class="ltx_ref">2014</a>)</cite>.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.12 </span>Generalized Logarithms and Exponentials</span></a><a href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.14 </span>Definitions and Periodicity</span></a>
+</div>
+</div>
+</body>
+</html>

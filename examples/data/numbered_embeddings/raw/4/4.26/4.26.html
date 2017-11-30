@@ -1,0 +1,1179 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 4.26 Integrals</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/4.26";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./4#PT3" title="Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="up up" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="next" href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.2" title="§4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.3" title="§4.3 Graphics ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.4" title="§4.4 Special Values and Limits ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.5" title="§4.5 Inequalities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.6" title="§4.6 Power Series ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.7" title="§4.7 Derivatives and Differential Equations ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.8" title="§4.8 Identities ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.9" title="§4.9 Continued Fractions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.10" title="§4.10 Integrals ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.11" title="§4.11 Sums ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.12" title="§4.12 Generalized Logarithms and Exponentials ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.13" title="§4.13 Lambert W -Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.14" title="§4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.15" title="§4.15 Graphics ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.16" title="§4.16 Elementary Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.17" title="§4.17 Special Values and Limits ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.18" title="§4.18 Inequalities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.19" title="§4.19 Maclaurin Series and Laurent Series ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.20" title="§4.20 Derivatives and Differential Equations ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.21" title="§4.21 Identities ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.22" title="§4.22 Infinite Products and Partial Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.23" title="§4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.24" title="§4.24 Inverse Trigonometric Functions: Further Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.28" title="§4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.29" title="§4.29 Graphics ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.30" title="§4.30 Elementary Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.31" title="§4.31 Special Values and Limits ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.32" title="§4.32 Inequalities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.33" title="§4.33 Maclaurin Series and Laurent Series ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.34" title="§4.34 Derivatives and Differential Equations ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.35" title="§4.35 Identities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.36" title="§4.36 Infinite Products and Partial Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.37" title="§4.37 Inverse Hyperbolic Functions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.38" title="§4.38 Inverse Hyperbolic Functions: Further Properties ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.39" title="§4.39 Continued Fractions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.40" title="§4.40 Integrals ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.41" title="§4.41 Sums ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.42" title="§4.42 Solution of Triangles ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.43" title="§4.43 Cubic Equations ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.44" title="§4.44 Other Applications ‣ Applications ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.45" title="§4.45 Methods of Computation ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.46" title="§4.46 Tables ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.47" title="§4.47 Approximations ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="section" href="./4.48" title="§4.48 Software ‣ Computation ‣ Chapter 4 Elementary Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="definite, indefinite, integrals, inverse trigonometric functions, orthogonality, trigonometric functions">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./4" title="Chapter 4 Elementary Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Elementary Functions</span></a><a href="./4#PT3" title="Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Trigonometric Functions</span></a><a href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.25 </span>Continued Fractions</span></a><a href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.27 </span>Sums</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§4.26 </span>Integrals</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./4.26" title="" class="ltx_ref">http://dlmf.nist.gov/4.26</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4#info" title="Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§4.26(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§4.26(ii) </span>Indefinite Integrals</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§4.26(iii) </span>Definite Integrals</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§4.26(iv) </span>Inverse Trigonometric Functions</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§4.26(v) </span>Compendia</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.26(i) </span>Introduction</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.i" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#info" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Throughout this section the variables are assumed to be real. The results in
+§§<a href="./4.26#ii" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a> and <a href="./4.26#iv" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a> can be extended to the
+complex plane by using continuous branches and avoiding singularities.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.26(ii) </span>Indefinite Integrals</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>These results may be verified by differentiation.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/I#integrals">integrals</a>, <a class="ltx_keyword" href="./idx/T#trigonometricfunctions">trigonometric functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.4#Px8.p2" title="Integration by Parts ‣ §1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.4(iv)</span></a>,
+<a href="./4.26#SS1.p1" title="§4.26(i) Introduction ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.26(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.ii" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#info" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="50px" altimg-valign="-19px" altimg-width="90px" alttext="\displaystyle\int\mathop{\sin\/}\nolimits xdx" display="inline"><mstyle displaystyle="true"><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-6px" altimg-width="93px" alttext="\displaystyle=-\mathop{\cos\/}\nolimits x," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.113</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E1" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E1.tex">TeX</a>, <a href="./4.26.E1.pmml">pMML</a>, <a href="./4.26.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="50px" altimg-valign="-19px" altimg-width="92px" alttext="\displaystyle\int\mathop{\cos\/}\nolimits xdx" display="inline"><mstyle displaystyle="true"><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="19px" altimg-valign="-2px" altimg-width="72px" alttext="\displaystyle=\mathop{\sin\/}\nolimits x." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.114</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E2" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E2.tex">TeX</a>, <a href="./4.26.E2.pmml">pMML</a>, <a href="./4.26.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="50px" altimg-valign="-19px" altimg-width="95px" alttext="\displaystyle\int\mathop{\tan\/}\nolimits xdx" display="inline"><mstyle displaystyle="true"><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.14#E4">tan</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="128px" alttext="\displaystyle=-\mathop{\ln\/}\nolimits\!\left(\mathop{\cos\/}\nolimits x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m12.png" altimg-height="27px" altimg-valign="-9px" altimg-width="134px" alttext="-\tfrac{1}{2}\pi&lt;x&lt;\tfrac{1}{2}\pi" display="inline"><mrow><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./4.14#E4" title="(4.14.4) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="17px" altimg-valign="-2px" altimg-width="47px" alttext="\mathop{\tan\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E4">tan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: tangent function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.115</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E3" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E3.tex">TeX</a>, <a href="./4.26.E3.pmml">pMML</a>, <a href="./4.26.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="50px" altimg-valign="-19px" altimg-width="91px" alttext="\displaystyle\int\mathop{\csc\/}\nolimits xdx" display="inline"><mstyle displaystyle="true"><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.14#E5">csc</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="29px" altimg-valign="-9px" altimg-width="127px" alttext="\displaystyle=\mathop{\ln\/}\nolimits\!\left(\mathop{\tan\/}\nolimits\tfrac{1}%
+{2}x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.14#E4">tan</mi><mo>⁡</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m14.png" altimg-height="17px" altimg-valign="-3px" altimg-width="91px" alttext="0&lt;x&lt;\pi" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mi>π</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E5" title="(4.14.5) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="43px" alttext="\mathop{\csc\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E5">csc</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosecant function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./4.14#E4" title="(4.14.4) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="17px" altimg-valign="-2px" altimg-width="47px" alttext="\mathop{\tan\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E4">tan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: tangent function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.116</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E4" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E4.tex">TeX</a>, <a href="./4.26.E4.pmml">pMML</a>, <a href="./4.26.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="50px" altimg-valign="-19px" altimg-width="196px" alttext="\int\mathop{\sec\/}\nolimits xdx=\mathop{{\mathrm{gd}^{-1}}\/}\nolimits\!\left%
+(x\right)," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.14#E6">sec</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi href="./4.23#E41">gd</mi><mrow><mo href="./4.23#E41">-</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m10.png" altimg-height="27px" altimg-valign="-9px" altimg-width="134px" alttext="-\frac{1}{2}\pi&lt;x&lt;\frac{1}{2}\pi" display="inline"><mrow><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#E41" title="(4.23.41) ‣ §4.23(viii) Gudermannian Function ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="26px" altimg-valign="-7px" altimg-width="74px" alttext="\mathop{{\mathrm{gd}^{-1}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msup><mi href="./4.23#E41">gd</mi><mrow><mo href="./4.23#E41">-</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r3">x</mi><mo>)</mo></mrow></mrow></math>: inverse Gudermannian function</a>,
+<a href="./4.14#E6" title="(4.14.6) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="43px" alttext="\mathop{\sec\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E6">sec</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: secant function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.117</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E5" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E5.tex">TeX</a>, <a href="./4.26.E5.pmml">pMML</a>, <a href="./4.26.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">For the right-hand side see (<a href="./4.23#E41" title="(4.23.41) ‣ §4.23(viii) Gudermannian Function ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.23.41</span></a>) and (<a href="./4.23#E42" title="(4.23.42) ‣ §4.23(viii) Gudermannian Function ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.23.42</span></a>).
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="50px" altimg-valign="-19px" altimg-width="199px" alttext="\int\mathop{\cot\/}\nolimits xdx=\mathop{\ln\/}\nolimits\!\left(\mathop{\sin\/%
+}\nolimits x\right)," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.14#E7">cot</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m14.png" altimg-height="17px" altimg-valign="-3px" altimg-width="91px" alttext="0&lt;x&lt;\pi" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mi>π</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E7" title="(4.14.7) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="17px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cot\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E7">cot</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cotangent function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.118</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E6" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E6.tex">TeX</a>, <a href="./4.26.E6.pmml">pMML</a>, <a href="./4.26.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="50px" altimg-valign="-19px" altimg-width="431px" alttext="\int e^{ax}\mathop{\sin\/}\nolimits\!\left(bx\right)dx=\frac{e^{ax}}{a^{2}+b^{%
+2}}(a\mathop{\sin\/}\nolimits\!\left(bx\right)-b\mathop{\cos\/}\nolimits\!%
+\left(bx\right))," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></msup><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></msup><mrow><msup><mi href="./4.1#p2.t1.r2">a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.136</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E7" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E7.tex">TeX</a>, <a href="./4.26.E7.pmml">pMML</a>, <a href="./4.26.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="50px" altimg-valign="-19px" altimg-width="434px" alttext="\int e^{ax}\mathop{\cos\/}\nolimits\!\left(bx\right)dx=\frac{e^{ax}}{a^{2}+b^{%
+2}}(a\mathop{\cos\/}\nolimits\!\left(bx\right)+b\mathop{\sin\/}\nolimits\!%
+\left(bx\right))." display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></msup><mo>⁢</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></msup><mrow><msup><mi href="./4.1#p2.t1.r2">a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./4.1#p2.t1.r2">a</mi><mo>⁢</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a>,
+<a href="./4.1#p2.t1.r2" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./4.1#p2.t1.r2">a</mi></math>: real or complex constant</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.137</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E8" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E8.tex">TeX</a>, <a href="./4.26.E8.pmml">pMML</a>, <a href="./4.26.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS2.info" title="§4.26(ii) Indefinite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.26(iii) </span>Definite Integrals</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For (<a href="./4.26#E12" title="(4.26.12) ‣ Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26.12</span></a>) and (<a href="./4.26#E13" title="(4.26.13) ‣ Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26.13</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Copson (<a href="./bib/C#bib578" title="An Introduction to the Theory of Functions of a Complex Variable" class="ltx_ref">1935</a>, pp. 137 and 227)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/I#integrals">integrals</a>, <a class="ltx_keyword" href="./idx/T#trigonometricfunctions">trigonometric functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.iii" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#info" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Throughout this subsection <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./4.1#p2.t1.r1">m</mi></math> and <math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math> are integers.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Orthogonality Properties</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/T#trigonometricfunctions">trigonometric functions</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS3.info" title="§4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="52px" altimg-valign="-20px" altimg-width="230px" alttext="\int_{0}^{\pi}\mathop{\sin\/}\nolimits\!\left(mt\right)\mathop{\sin\/}%
+\nolimits\!\left(nt\right)dt=0," display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m36.png" altimg-height="21px" altimg-valign="-6px" altimg-width="60px" alttext="m\neq n" display="inline"><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>≠</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./4.1#p2.t1.r1">m</mi></math>: integer</a> and
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.140</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E9" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E9.tex">TeX</a>, <a href="./4.26.E9.pmml">pMML</a>, <a href="./4.26.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#Px1.info" title="Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="52px" altimg-valign="-20px" altimg-width="235px" alttext="\int_{0}^{\pi}\mathop{\cos\/}\nolimits\!\left(mt\right)\mathop{\cos\/}%
+\nolimits\!\left(nt\right)dt=0," display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m36.png" altimg-height="21px" altimg-valign="-6px" altimg-width="60px" alttext="m\neq n" display="inline"><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>≠</mo><mi href="./4.1#p2.t1.r1">n</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./4.1#p2.t1.r1">m</mi></math>: integer</a> and
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.140</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E10" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E10.tex">TeX</a>, <a href="./4.26.E10.pmml">pMML</a>, <a href="./4.26.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#Px1.info" title="Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="52px" altimg-valign="-20px" altimg-width="338px" alttext="\int_{0}^{\pi}{\mathop{\sin\/}\nolimits^{2}}\!\left(nt\right)dt=\int_{0}^{\pi}%
+{\mathop{\cos\/}\nolimits^{2}}\!\left(nt\right)dt=\tfrac{1}{2}\pi," display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mrow><msup><mi href="./4.14#E1">sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mrow><msup><mi href="./4.14#E2">cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>π</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m38.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="n\neq 0" display="inline"><mrow><mi href="./4.1#p2.t1.r1">n</mi><mo>≠</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./4.1#p2.t1.r1">n</mi></math>: integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.141</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E11" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E11.tex">TeX</a>, <a href="./4.26.E11.pmml">pMML</a>, <a href="./4.26.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#Px1.info" title="Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="92px" altimg-valign="-40px" altimg-width="305px" alttext="\int_{0}^{\infty}\frac{\mathop{\sin\/}\nolimits\!\left(mt\right)}{t}dt=\begin{%
+cases}\frac{1}{2}\pi,&amp;m&gt;0,\\
+0,&amp;m=0,\\
+-\frac{1}{2}\pi,&amp;m&lt;0.\end{cases}" display="block"><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mi>t</mi></mfrac><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>π</mi></mrow><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>&gt;</mo><mn>0</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>π</mi></mrow></mrow><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./4.1#p2.t1.r1">m</mi><mo>&lt;</mo><mn>0</mn></mrow><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./4.1#p2.t1.r1" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./4.1#p2.t1.r1">m</mi></math>: integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.142</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./4.26#SS3.info" title="§4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.26(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E12" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E12.tex">TeX</a>, <a href="./4.26.E12.pmml">pMML</a>, <a href="./4.26.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#Px1.info" title="Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="54px" altimg-valign="-20px" altimg-width="358px" alttext="\int_{0}^{\infty}\mathop{\sin\/}\nolimits\!\left(t^{2}\right)dt=\int_{0}^{%
+\infty}\mathop{\cos\/}\nolimits\!\left(t^{2}\right)dt=\frac{1}{2}\sqrt{\frac{%
+\pi}{2}}." display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi>t</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi>t</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msqrt><mfrac><mi>π</mi><mn>2</mn></mfrac></msqrt></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a> and
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.3.144</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./4.26#SS3.info" title="§4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.26(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E13" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E13.tex">TeX</a>, <a href="./4.26.E13.pmml">pMML</a>, <a href="./4.26.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#Px1.info" title="Orthogonality Properties ‣ §4.26(iii) Definite Integrals ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.26(iv) </span>Inverse Trigonometric Functions</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>These results may be verified by differentiation.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/I#integrals">integrals</a>, <a class="ltx_keyword" href="./idx/I#inversetrigonometricfunctions">inverse trigonometric functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.4#Px8.p2" title="Integration by Parts ‣ §1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.4(iv)</span></a>,
+<a href="./4.26#SS1.p1" title="§4.26(i) Introduction ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.26(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.iv" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#info" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="50px" altimg-valign="-19px" altimg-width="349px" alttext="\int\mathop{\mathrm{arcsin}\/}\nolimits xdx=x\mathop{\mathrm{arcsin}\/}%
+\nolimits x+(1-x^{2})^{1/2}," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.23#SS2.p1">arcsin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arcsin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-4px" altimg-width="104px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="18px" altimg-valign="-2px" altimg-width="69px" alttext="\mathop{\mathrm{arcsin}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arcsin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arcsine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.58</span> (modified)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E14" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E14.tex">TeX</a>, <a href="./4.26.E14.pmml">pMML</a>, <a href="./4.26.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="50px" altimg-valign="-19px" altimg-width="353px" alttext="\int\mathop{\mathrm{arccos}\/}\nolimits xdx=x\mathop{\mathrm{arccos}\/}%
+\nolimits x-(1-x^{2})^{1/2}," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.23#SS2.p1">arccos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arccos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>-</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-4px" altimg-width="104px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="71px" alttext="\mathop{\mathrm{arccos}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arccos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arccosine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.59</span> (modified)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E15" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E15.tex">TeX</a>, <a href="./4.26.E15.pmml">pMML</a>, <a href="./4.26.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="50px" altimg-valign="-19px" altimg-width="371px" alttext="\int\mathop{\mathrm{arctan}\/}\nolimits xdx=x\mathop{\mathrm{arctan}\/}%
+\nolimits x-\tfrac{1}{2}\mathop{\ln\/}\nolimits\!\left(1+x^{2}\right)," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-4px" altimg-width="124px" alttext="-\infty&lt;x&lt;\infty" display="inline"><mrow><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.60</span> (modified)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E16" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E16.tex">TeX</a>, <a href="./4.26.E16.pmml">pMML</a>, <a href="./4.26.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="50px" altimg-valign="-19px" altimg-width="431px" alttext="\int\mathop{\mathrm{arccsc}\/}\nolimits xdx=x\mathop{\mathrm{arccsc}\/}%
+\nolimits x+\mathop{\ln\/}\nolimits\!\left(x+(x^{2}-1)^{1/2}\right)," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.23#E7">arccsc</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#E7">arccsc</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>+</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m15.png" altimg-height="17px" altimg-valign="-3px" altimg-width="99px" alttext="1&lt;x&lt;\infty" display="inline"><mrow><mn>1</mn><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#E7" title="(4.23.7) ‣ §4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="\mathop{\mathrm{arccsc}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#E7">arccsc</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arccosecant function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.61</span> (is stated differently.)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E17" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E17.tex">TeX</a>, <a href="./4.26.E17.pmml">pMML</a>, <a href="./4.26.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.18</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E18.png" altimg-height="50px" altimg-valign="-19px" altimg-width="431px" alttext="\int\mathop{\mathrm{arcsec}\/}\nolimits xdx=x\mathop{\mathrm{arcsec}\/}%
+\nolimits x-\mathop{\ln\/}\nolimits\!\left(x+(x^{2}-1)^{1/2}\right)," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.23#E8">arcsec</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#E8">arcsec</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>-</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m15.png" altimg-height="17px" altimg-valign="-3px" altimg-width="99px" alttext="1&lt;x&lt;\infty" display="inline"><mrow><mn>1</mn><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E18.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#E8" title="(4.23.8) ‣ §4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="\mathop{\mathrm{arcsec}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#E8">arcsec</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arcsecant function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.62</span> (is stated differently.)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E18" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E18.tex">TeX</a>, <a href="./4.26.E18.pmml">pMML</a>, <a href="./4.26.E18.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.19</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E19.png" altimg-height="50px" altimg-valign="-19px" altimg-width="367px" alttext="\int\mathop{\mathrm{arccot}\/}\nolimits xdx=x\mathop{\mathrm{arccot}\/}%
+\nolimits x+\tfrac{1}{2}\mathop{\ln\/}\nolimits\!\left(1+x^{2}\right)," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mrow><mi href="./4.23#E9">arccot</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#E9">arccot</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m13.png" altimg-height="17px" altimg-valign="-3px" altimg-width="99px" alttext="0&lt;x&lt;\infty" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E19.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#E9" title="(4.23.9) ‣ §4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-2px" altimg-width="71px" alttext="\mathop{\mathrm{arccot}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#E9">arccot</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arccotangent function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.63</span> (modified)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E19" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E19.tex">TeX</a>, <a href="./4.26.E19.pmml">pMML</a>, <a href="./4.26.E19.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.20</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E20.png" altimg-height="54px" altimg-valign="-21px" altimg-width="462px" alttext="\int x\mathop{\mathrm{arcsin}\/}\nolimits xdx=\left(\frac{x^{2}}{2}-\frac{1}{4%
+}\right)\mathop{\mathrm{arcsin}\/}\nolimits x+\frac{x}{4}(1-x^{2})^{1/2}," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arcsin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>(</mo><mrow><mfrac><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arcsin</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>+</mo><mrow><mfrac><mi href="./4.1#p2.t1.r3">x</mi><mn>4</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-4px" altimg-width="104px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E20.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="18px" altimg-valign="-2px" altimg-width="69px" alttext="\mathop{\mathrm{arcsin}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arcsin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arcsine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.64</span> (modified)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E20" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E20.tex">TeX</a>, <a href="./4.26.E20.pmml">pMML</a>, <a href="./4.26.E20.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">4.26.21</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E21.png" altimg-height="54px" altimg-valign="-21px" altimg-width="466px" alttext="\int x\mathop{\mathrm{arccos}\/}\nolimits xdx=\left(\frac{x^{2}}{2}-\frac{1}{4%
+}\right)\mathop{\mathrm{arccos}\/}\nolimits x-\frac{x}{4}(1-x^{2})^{1/2}," display="block"><mrow><mrow><mrow><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mi href="./4.1#p2.t1.r3">x</mi><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arccos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>(</mo><mrow><mfrac><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arccos</mi><mo>⁡</mo><mi href="./4.1#p2.t1.r3">x</mi></mrow></mrow><mo>-</mo><mrow><mfrac><mi href="./4.1#p2.t1.r3">x</mi><mn>4</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi href="./4.1#p2.t1.r3">x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-4px" altimg-width="104px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./4.1#p2.t1.r3">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E21.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="71px" alttext="\mathop{\mathrm{arccos}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arccos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arccosine function</a> and
+<a href="./4.1#p2.t1.r3" title="§4.1 Special Notation ‣ Notation ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./4.1#p2.t1.r3">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">4.4.66</span> (modified)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.E21" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.E21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./4.26.E21.tex">TeX</a>, <a href="./4.26.E21.pmml">pMML</a>, <a href="./4.26.E21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#SS4.info" title="§4.26(iv) Inverse Trigonometric Functions ‣ §4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§4.26(v) </span>Compendia</h2>
+<div id="SS5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./4.26.v" title="" class="ltx_ref">http://dlmf.nist.gov/4.26.v</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./4.26#info" title="§4.26 Integrals ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS5.p1" class="ltx_para">
+<p class="ltx_p">Extensive compendia of indefinite and definite integrals of trigonometric and
+inverse trigonometric functions include <cite class="ltx_cite ltx_citemacro_citet">Apelblat (<a href="./bib/#bib110" title="Table of Definite and Infinite Integrals" class="ltx_ref">1983</a>, pp. 48–109)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Bierens de Haan (<a href="./bib/B#bib282" title="Nouvelles Tables d’Intégrales Définies" class="ltx_ref">1939</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Gradshteyn and Ryzhik (<a href="./bib/G#bib968" title="Table of Integrals, Series, and Products" class="ltx_ref">2000</a>, Chapters 2–4)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Gröbner and Hofreiter (<a href="./bib/G#bib981" title="Integraltafel. Erster Teil. Unbestimmte Integrale" class="ltx_ref">1949</a>, pp. 116–139)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Gröbner and Hofreiter (<a href="./bib/G#bib982" title="Integraltafel. Zweiter Teil. Bestimmte Integrale" class="ltx_ref">1950</a>, pp. 94–160)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Prudnikov<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/P#bib1896" title="Integrals and Series: Elementary Functions, Vol. 1" class="ltx_ref">1986a</a>, §§1.5, 1.7, 2.5, 2.7)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./4.25" title="§4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.25 </span>Continued Fractions</span></a><a href="./4.27" title="§4.27 Sums ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.27 </span>Sums</span></a>
+</div>
+</div>
+</body>
+</html>

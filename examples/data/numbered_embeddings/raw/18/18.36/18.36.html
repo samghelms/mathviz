@@ -1,0 +1,288 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 18.36 Miscellaneous Polynomials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/18.36";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./18#PT5" title="Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="up up" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="next" href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.1" title="§18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.2" title="§18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.4" title="§18.4 Graphics ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.5" title="§18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.6" title="§18.6 Symmetry, Special Values, and Limits to Monomials ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.8" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.10" title="§18.10 Integral Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.11" title="§18.11 Relations to Other Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.12" title="§18.12 Generating Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.13" title="§18.13 Continued Fractions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.14" title="§18.14 Inequalities ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.15" title="§18.15 Asymptotic Approximations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.16" title="§18.16 Zeros ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.17" title="§18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.18" title="§18.18 Sums ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.19" title="§18.19 Hahn Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.20" title="§18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.21" title="§18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.22" title="§18.22 Hahn Class: Recurrence Relations and Differences ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.23" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.25" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.27" title="§18.27 q -Hahn Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.28" title="§18.28 Askey–Wilson Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.29" title="§18.29 Asymptotic Approximations for q -Hahn and Askey–Wilson Classes ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.30" title="§18.30 Associated OP’s ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.31" title="§18.31 Bernstein–Szegő Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.32" title="§18.32 OP’s with Respect to Freud Weights ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.33" title="§18.33 Polynomials Orthogonal on the Unit Circle ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.34" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.38" title="§18.38 Mathematical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.39" title="§18.39 Physical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.40" title="§18.40 Methods of Computation ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.41" title="§18.41 Tables ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.42" title="§18.42 Software ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Jacobi-type polynomials, Sobolev polynomials, multiple orthogonal polynomials, orthogonal matrix polynomials">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./18" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>Orthogonal Polynomials</span></a><a href="./18#PT5" title="Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Other Orthogonal Polynomials</span></a><a href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.35 </span>Pollaczek Polynomials</span></a><a href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.37 </span>Classical OP’s in Two or More Variables</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§18.36 </span>Miscellaneous Polynomials</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./18.36" title="" class="ltx_ref">http://dlmf.nist.gov/18.36</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§18.36(i) </span>Jacobi-Type Polynomials</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§18.36(ii) </span>Sobolev OP’s</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§18.36(iii) </span>Multiple OP’s</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§18.36(iv) </span>Orthogonal Matrix Polynomials</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.36(i) </span>Jacobi-Type Polynomials</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/J#Jacobitypepolynomials">Jacobi-type polynomials</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.36.i" title="" class="ltx_ref">http://dlmf.nist.gov/18.36.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.36#info" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">These are OP’s on the interval <math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="64px" alttext="(-1,1)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mn>1</mn><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math> with respect to an orthogonality
+measure obtained by adding constant multiples of “Dirac delta weights” at <math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-4px" altimg-width="30px" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math>
+and <math class="ltx_Math" altimg="m3.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math> to the weight function for the Jacobi polynomials. For further
+information see <cite class="ltx_cite ltx_citemacro_citet">Koornwinder (<a href="./bib/K#bib1324" title="Orthogonal polynomials with weight function + ⁢ ( - 1 x ) α ( + 1 x ) β ⁢ M δ ( + x 1 ) ⁢ N δ ( - x 1 )" class="ltx_ref">1984b</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Kwon<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib2573" title="Construction of differential operators having Bochner-Krall orthogonal polynomials as eigenfunctions" class="ltx_ref">2006</a>)</cite>.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Similar OP’s can also be constructed for the Laguerre polynomials; see
+<cite class="ltx_cite ltx_citemacro_citet">Koornwinder (<a href="./bib/K#bib1324" title="Orthogonal polynomials with weight function + ⁢ ( - 1 x ) α ( + 1 x ) β ⁢ M δ ( + x 1 ) ⁢ N δ ( - x 1 )" class="ltx_ref">1984b</a>, (4.8))</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.36(ii) </span>Sobolev OP’s</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/S#Sobolevpolynomials">Sobolev polynomials</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.36.ii" title="" class="ltx_ref">http://dlmf.nist.gov/18.36.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.36#info" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Sobolev OP’s are orthogonal with respect to an inner product involving
+derivatives. For an introductory survey to this subject, see
+<cite class="ltx_cite ltx_citemacro_citet">Marcellán<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/M#bib1538" title="Orthogonal polynomials on Sobolev spaces: Old and new directions" class="ltx_ref">1993</a>)</cite>. Other relevant references include
+<cite class="ltx_cite ltx_citemacro_citet">Iserles<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/I#bib1130" title="On polynomials orthogonal with respect to certain Sobolev inner products" class="ltx_ref">1991</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Koekoek<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib1298" title="On differential equations for Sobolev-type Laguerre polynomials" class="ltx_ref">1998</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.36(iii) </span>Multiple OP’s</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/M#multipleorthogonalpolynomials">multiple orthogonal polynomials</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.36.iii" title="" class="ltx_ref">http://dlmf.nist.gov/18.36.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.36#info" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">These are polynomials in one variable that are orthogonal with respect to a
+number of different measures. They are related to Hermite-Padé approximation
+and can be used for proofs of irrationality or transcendence of interesting
+numbers. For further information see <cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib1135" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2005</a>, Chapter 23)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.36(iv) </span>Orthogonal Matrix Polynomials</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/O#orthogonalmatrixpolynomials">orthogonal matrix polynomials</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.36.iv" title="" class="ltx_ref">http://dlmf.nist.gov/18.36.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.36#info" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">These are matrix-valued polynomials that are orthogonal with respect to a
+square matrix of measures on the real line. Classes of such polynomials have
+been found that generalize the classical OP’s in the sense that they satisfy
+second-order matrix differential equations with coefficients independent of the
+degree. For further information see <cite class="ltx_cite ltx_citemacro_citet">Durán and Grünbaum (<a href="./bib/D#bib2572" title="A survey on orthogonal matrix polynomials satisfying second order differential equations" class="ltx_ref">2005</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.35 </span>Pollaczek Polynomials</span></a><a href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.37 </span>Classical OP’s in Two or More Variables</span></a>
+</div>
+</div>
+</body>
+</html>

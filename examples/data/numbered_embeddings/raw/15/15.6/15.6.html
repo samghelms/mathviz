@@ -1,0 +1,677 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 15.6 Integral Representations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/15.6";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./15#PT2" title="Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="up up" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="next" href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.2" title="§15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.3" title="§15.3 Graphics ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.4" title="§15.4 Special Cases ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.8" title="§15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.9" title="§15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.10" title="§15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.12" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.14" title="§15.14 Integrals ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.15" title="§15.15 Sums ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.17" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.19" title="§15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.20" title="§15.20 Software ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./15.6.F1.mag" title="Figure 15.6.1 ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<meta name="keywords" lang="en" content="Mellin–Barnes type, Pochhammer double-loop contour, hypergeometric function, integral representations">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./15" title="Chapter 15 Hypergeometric Function" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15 </span>Hypergeometric Function</span></a><a href="./15#PT2" title="Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.5 </span>Derivatives and Contiguous Functions</span></a><a href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.7 </span>Continued Fractions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§15.6 </span>Integral Representations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Andrews<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib102" title="Special Functions" class="ltx_ref">1999</a>, §§2.2, 2.4, 2.9)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib749" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, §2.1.3)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Whittaker and Watson (<a href="./bib/W#bib2396" title="A Course of Modern Analysis" class="ltx_ref">1927</a>, pp. 290–291)</cite>.
+(<a href="./15.6#E3" title="(15.6.3) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.3</span></a>) follows from (<a href="./15.6#E4" title="(15.6.4) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.4</span></a>).</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">15.3</span></span>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./8.17#SS3.p2" title="§8.17(iii) Integral Representation ‣ §8.17 Incomplete Beta Functions ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.17(iii)</span></a>,
+<a href="./errata/#Sx9.I15.I1.i6.p1" title="Other Changes ‣ Version 1.0.5 (October 1, 2012) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6" title="" class="ltx_ref">http://dlmf.nist.gov/15.6</a></dd>
+<dt>Clarification (effective with 1.0.5):</dt>
+<dd>
+The description of the integration contour
+for (<a href="./15.6#E5" title="(15.6.5) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.5</span></a>), depicted in Figure <a href="./15.6#F1" title="Figure 15.6.1 ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.1</span></a>, has been expanded.
+
+<p><span class="ltx_font_italic">Reported 2012-09-19</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15#info" title="Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The function <math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left(a,b;c;z\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> (not <math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-7px" altimg-width="100px" alttext="\mathop{F\/}\nolimits\!\left(a,b;c;z\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>)
+has the following integral representations:</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="55px" altimg-valign="-21px" altimg-width="324px" alttext="\frac{1}{\mathop{\Gamma\/}\nolimits\!\left(b\right)\mathop{\Gamma\/}\nolimits%
+\!\left(c-b\right)}\int_{0}^{1}\frac{t^{b-1}(1-t)^{c-b-1}}{(1-zt)^{a}}dt," display="block"><mrow><mrow><mfrac><mn>1</mn><mrow><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mrow><msup><mi>t</mi><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup></mfrac><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-3px" altimg-width="113px" alttext="\realpart{c}&gt;\realpart{b}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>&gt;</mo><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.19#SS3.p1" title="§15.19(iii) Integral Representations ‣ §15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.19(iii)</span></a>,
+<a href="./15.6#p4" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E1" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E1.tex">TeX</a>, <a href="./15.6.E1.pmml">pMML</a>, <a href="./15.6.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="57px" altimg-valign="-21px" altimg-width="343px" alttext="\frac{\mathop{\Gamma\/}\nolimits\!\left(1+b-c\right)}{2\pi i\mathop{\Gamma\/}%
+\nolimits\!\left(b\right)}\int_{0}^{(1+)}\frac{t^{b-1}(t-1)^{c-b-1}}{(1-zt)^{a%
+}}dt," display="block"><mrow><mrow><mfrac><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo></mrow><mo stretchy="false">)</mo></mrow></msubsup><mrow><mfrac><mrow><msup><mi>t</mi><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup></mfrac><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-6px" altimg-width="152px" alttext="c-b\neq 1,2,3,\dots" display="inline"><mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>≠</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-3px" altimg-width="64px" alttext="\realpart{b}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.6#p5" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E2" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E2.tex">TeX</a>, <a href="./15.6.E2.pmml">pMML</a>, <a href="./15.6.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="57px" altimg-valign="-21px" altimg-width="368px" alttext="e^{-b\pi i}\frac{\mathop{\Gamma\/}\nolimits\!\left(1-b\right)}{2\pi i\mathop{%
+\Gamma\/}\nolimits\!\left(c-b\right)}\int_{\infty}^{(0+)}\frac{t^{b-1}(t+1)^{a%
+-c}}{(t-zt+1)^{a}}dt," display="block"><mrow><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mrow></msup><mo>⁢</mo><mfrac><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mi mathvariant="normal">∞</mi><mrow><mo stretchy="false">(</mo><mrow><mn>0</mn><mo>+</mo></mrow><mo stretchy="false">)</mo></mrow></msubsup><mrow><mfrac><mrow><msup><mi>t</mi><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>t</mi><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup></mfrac><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m38.png" altimg-height="21px" altimg-valign="-6px" altimg-width="119px" alttext="b\neq 1,2,3,\dots" display="inline"><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>≠</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="112px" alttext="\realpart{(c-b)}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>,
+<a href="./15.6#p6" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E3" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E3.tex">TeX</a>, <a href="./15.6.E3.pmml">pMML</a>, <a href="./15.6.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="57px" altimg-valign="-21px" altimg-width="386px" alttext="e^{-b\pi i}\frac{\mathop{\Gamma\/}\nolimits\!\left(1-b\right)}{2\pi i\mathop{%
+\Gamma\/}\nolimits\!\left(c-b\right)}\int_{1}^{(0+)}\frac{t^{b-1}(1-t)^{c-b-1}%
+}{(1-zt)^{a}}dt," display="block"><mrow><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mrow></msup><mo>⁢</mo><mfrac><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>1</mn><mrow><mo stretchy="false">(</mo><mrow><mn>0</mn><mo>+</mo></mrow><mo stretchy="false">)</mo></mrow></msubsup><mrow><mfrac><mrow><msup><mi>t</mi><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup></mfrac><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m38.png" altimg-height="21px" altimg-valign="-6px" altimg-width="119px" alttext="b\neq 1,2,3,\dots" display="inline"><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>≠</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="112px" alttext="\realpart{(c-b)}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>,
+<a href="./15.6#p7" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E4" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E4.tex">TeX</a>, <a href="./15.6.E4.pmml">pMML</a>, <a href="./15.6.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="57px" altimg-valign="-21px" altimg-width="579px" alttext="e^{-c\pi i}\mathop{\Gamma\/}\nolimits\!\left(1-b\right)\mathop{\Gamma\/}%
+\nolimits\!\left(1+b-c\right)\*\frac{1}{4\pi^{2}}\int_{A}^{(0+,1+,0-,1-)}\frac%
+{t^{b-1}(1-t)^{c-b-1}}{(1-zt)^{a}}dt," display="block"><mrow><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mi>A</mi><mrow><mo stretchy="false">(</mo><mrow><mn>0</mn><mo>+</mo></mrow><mo>,</mo><mrow><mn>1</mn><mo>+</mo></mrow><mo>,</mo><mrow><mn>0</mn><mo>-</mo></mrow><mo>,</mo><mrow><mn>1</mn><mo>-</mo></mrow><mo stretchy="false">)</mo></mrow></msubsup><mrow><mfrac><mrow><msup><mi>t</mi><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup></mfrac><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m36.png" altimg-height="21px" altimg-valign="-6px" altimg-width="169px" alttext="b,c-b\neq 1,2,3,\dots" display="inline"><mrow><mrow><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mrow><mo>≠</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.6#F1" title="Figure 15.6.1 ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 15.6.1</span></a>,
+<a href="./15.6.F1.mag" title="Figure 15.6.1 ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 15.6.1</span></a>,
+<a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>,
+<a href="./15.6#p8" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E5" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E5.tex">TeX</a>, <a href="./15.6.E5.pmml">pMML</a>, <a href="./15.6.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="57px" altimg-valign="-22px" altimg-width="445px" alttext="\frac{1}{2\pi i\mathop{\Gamma\/}\nolimits\!\left(a\right)\mathop{\Gamma\/}%
+\nolimits\!\left(b\right)}\int_{-i\infty}^{i\infty}\frac{\mathop{\Gamma\/}%
+\nolimits\!\left(a+t\right)\mathop{\Gamma\/}\nolimits\!\left(b+t\right)\mathop%
+{\Gamma\/}\nolimits\!\left(-t\right)}{\mathop{\Gamma\/}\nolimits\!\left(c+t%
+\right)}(-z)^{t}dt," display="block"><mrow><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mfrac><mrow><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m34.png" altimg-height="21px" altimg-valign="-6px" altimg-width="169px" alttext="a,b\neq 0,-1,-2,\dots" display="inline"><mrow><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>≠</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">15.3.2</span> (modified)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.6#p3" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>,
+<a href="./15.6#p9" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E6" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E6.tex">TeX</a>, <a href="./15.6.E6.pmml">pMML</a>, <a href="./15.6.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\frac{1}{2\pi i\mathop{\Gamma\/}\nolimits\!\left(a\right)\mathop{\Gamma\/}%
+\nolimits\!\left(b\right)\mathop{\Gamma\/}\nolimits\!\left(c-a\right)\mathop{%
+\Gamma\/}\nolimits\!\left(c-b\right)}\int_{-i\infty}^{i\infty}\mathop{\Gamma\/%
+}\nolimits\!\left(a+t\right)\mathop{\Gamma\/}\nolimits\!\left(b+t\right)%
+\mathop{\Gamma\/}\nolimits\!\left(c-a-b-t\right)\mathop{\Gamma\/}\nolimits\!%
+\left(-t\right)(1-z)^{t}dt," display="block"><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>×</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>×</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow><mo>,</mo></mtd></mtr></mtable></mrow></mrow></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m33.png" altimg-height="21px" altimg-valign="-6px" altimg-width="272px" alttext="a,b,c-a,c-b\neq 0,-1,-2,\dots" display="inline"><mrow><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mrow><mo>≠</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.6#p10" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E7" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E7.tex">TeX</a>, <a href="./15.6.E7.pmml">pMML</a>, <a href="./15.6.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="55px" altimg-valign="-21px" altimg-width="390px" alttext="\frac{1}{\mathop{\Gamma\/}\nolimits\!\left(c-d\right)}\int_{0}^{1}\mathop{%
+\mathbf{F}\/}\nolimits\!\left(a,b;d;zt\right)t^{d-1}(1-t)^{c-d-1}dt," display="block"><mrow><mrow><mfrac><mn>1</mn><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi>d</mi><mo>;</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi>t</mi><mrow><mi>d</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi>d</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-3px" altimg-width="115px" alttext="\realpart{c}&gt;\realpart{d}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>&gt;</mo><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi>d</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./15.2#E2" title="(15.2.2) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m22.png" altimg-height="39px" altimg-valign="-15px" altimg-width="87px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z%
+}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: Olver’s hypergeometric function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.6#p11" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E8" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E8.tex">TeX</a>, <a href="./15.6.E8.pmml">pMML</a>, <a href="./15.6.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.6.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="56px" altimg-valign="-21px" altimg-width="658px" alttext="\int_{0}^{1}\frac{t^{d-1}(1-t)^{c-d-1}}{(1-zt)^{a+b-\lambda}}\mathop{\mathbf{F%
+}\/}\nolimits\!\left({\lambda-a,\lambda-b\atop d};zt\right)\mathop{\mathbf{F}%
+\/}\nolimits\!\left({a+b-\lambda,\lambda-d\atop c-d};\frac{(1-t)z}{1-zt}\right%
+)dt," display="block"><mrow><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mrow><msup><mi>t</mi><mrow><mi>d</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi>d</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>-</mo><mi>λ</mi></mrow></msup></mfrac><mo>⁢</mo><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>λ</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mrow><mi>d</mi></mfrac><mo>;</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>-</mo><mi>λ</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>-</mo><mi>d</mi></mrow></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi>d</mi></mrow></mfrac><mo>;</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mfrac><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-3px" altimg-width="115px" alttext="\realpart{c}&gt;\realpart{d}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>&gt;</mo><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi>d</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\realpart{}" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi></mi></mrow></math>: real part</a>,
+<a href="./15.2#E2" title="(15.2.2) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m22.png" altimg-height="39px" altimg-valign="-15px" altimg-width="87px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z%
+}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: Olver’s hypergeometric function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.6#p11" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.E9" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.E9.tex">TeX</a>, <a href="./15.6.E9.pmml">pMML</a>, <a href="./15.6.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">These representations are valid when <math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="143px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\!\left(1-z\right)|&lt;\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>π</mi></mrow></math>, except (<a href="./15.6#E6" title="(15.6.6) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.6</span></a>) which holds
+for <math class="ltx_Math" altimg="m50.png" altimg-height="23px" altimg-valign="-7px" altimg-width="124px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\!\left(-z\right)|&lt;\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>π</mi></mrow></math>. In all cases the integrands are continuous functions of
+<math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-2px" altimg-width="11px" alttext="t" display="inline"><mi>t</mi></math> on the integration paths, except possibly at the endpoints. In addition:
+</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E1" title="(15.6.1) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.1</span></a>) all functions in the integrand assume their principal
+values.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E2" title="(15.6.2) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.2</span></a>) the point <math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="39px" alttext="\ifrac{1}{z}" display="inline"><mrow><mn>1</mn><mo>/</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow></math> lies outside the integration
+contour, <math class="ltx_Math" altimg="m47.png" altimg-height="20px" altimg-valign="-2px" altimg-width="40px" alttext="t^{b-1}" display="inline"><msup><mi>t</mi><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup></math> and <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="109px" alttext="(t-1)^{c-b-1}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup></math> assume their principal values where the
+contour cuts the interval <math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">(</mo><mn>1</mn><mo href="./front/introduction#Sx4.p1.t1.r28">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#Sx4.p1.t1.r28" stretchy="false">)</mo></mrow></math>, and <math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-7px" altimg-width="118px" alttext="(1-zt)^{a}=1" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup><mo>=</mo><mn>1</mn></mrow></math> at <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-2px" altimg-width="48px" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E3" title="(15.6.3) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.3</span></a>) the point <math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="89px" alttext="\ifrac{1}{(z-1)}" display="inline"><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math> lies outside the integration
+contour, the contour cuts the real axis between <math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-4px" altimg-width="64px" alttext="t=-1" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math> and <math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math>, at which
+point <math class="ltx_Math" altimg="m23.png" altimg-height="21px" altimg-valign="-6px" altimg-width="76px" alttext="\mathop{\mathrm{ph}\/}\nolimits t=\pi" display="inline"><mrow><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>t</mi></mrow><mo>=</mo><mi>π</mi></mrow></math> and <math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="120px" alttext="\mathop{\mathrm{ph}\/}\nolimits\!\left(1+t\right)=0" display="inline"><mrow><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E4" title="(15.6.4) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.4</span></a>) the point <math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="39px" alttext="\ifrac{1}{z}" display="inline"><mrow><mn>1</mn><mo>/</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow></math> lies outside the integration
+contour, and at the point where the contour cuts the negative real axis
+<math class="ltx_Math" altimg="m23.png" altimg-height="21px" altimg-valign="-6px" altimg-width="76px" alttext="\mathop{\mathrm{ph}\/}\nolimits t=\pi" display="inline"><mrow><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>t</mi></mrow><mo>=</mo><mi>π</mi></mrow></math> and <math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="120px" alttext="\mathop{\mathrm{ph}\/}\nolimits\!\left(1-t\right)=0" display="inline"><mrow><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E5" title="(15.6.5) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.5</span></a>) the integration contour starts and terminates at a point
+<math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="A" display="inline"><mi>A</mi></math> on the real axis between <math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math> and <math class="ltx_Math" altimg="m9.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math>. It encircles <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-2px" altimg-width="48px" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math> and <math class="ltx_Math" altimg="m45.png" altimg-height="17px" altimg-valign="-2px" altimg-width="48px" alttext="t=1" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></math> once
+in the positive direction, and then once in the negative direction. See Figure
+<a href="./15.6#F1" title="Figure 15.6.1 ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.1</span></a>. At the starting point <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="37px" alttext="\mathop{\mathrm{ph}\/}\nolimits t" display="inline"><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>t</mi></mrow></math> and <math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="83px" alttext="\mathop{\mathrm{ph}\/}\nolimits\!\left(1-t\right)" display="inline"><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> are zero.
+If desired, and as in Figure <a href="./5.12#F3" title="Figure 5.12.3 ‣ Pochhammer’s Integral ‣ §5.12 Beta Function ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.12.3</span></a>, the upper integration limit in
+(<a href="./15.6#E5" title="(15.6.5) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.5</span></a>) can be replaced by <math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="148px" alttext="(1+,0+,1-,0-)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo></mrow><mo>,</mo><mrow><mn>0</mn><mo>+</mo></mrow><mo>,</mo><mrow><mn>1</mn><mo>-</mo></mrow><mo>,</mo><mrow><mn>0</mn><mo>-</mo></mrow><mo stretchy="false">)</mo></mrow></math>. However, this reverses the
+direction of the integration contour, and in consequence (<a href="./15.6#E5" title="(15.6.5) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.5</span></a>) would
+need to be multiplied by <math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-4px" altimg-width="30px" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E6" title="(15.6.6) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.6</span></a>) the integration contour separates the poles of
+<math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="74px" alttext="\mathop{\Gamma\/}\nolimits\!\left(a+t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="72px" alttext="\mathop{\Gamma\/}\nolimits\!\left(b+t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> from those of <math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="55px" alttext="\mathop{\Gamma\/}\nolimits\!\left(-t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>,
+and <math class="ltx_Math" altimg="m1.png" altimg-height="24px" altimg-valign="-7px" altimg-width="52px" alttext="(-z)^{t}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></math> has its principal value.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">In (<a href="./15.6#E7" title="(15.6.7) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.7</span></a>) the integration contour separates the poles of
+<math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="74px" alttext="\mathop{\Gamma\/}\nolimits\!\left(a+t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="72px" alttext="\mathop{\Gamma\/}\nolimits\!\left(b+t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> from those of
+<math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="140px" alttext="\mathop{\Gamma\/}\nolimits\!\left(c-a-b-t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="55px" alttext="\mathop{\Gamma\/}\nolimits\!\left(-t\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>, and <math class="ltx_Math" altimg="m4.png" altimg-height="24px" altimg-valign="-7px" altimg-width="71px" alttext="(1-z)^{t}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></math> has its
+principal value.</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">In each of (<a href="./15.6#E8" title="(15.6.8) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.8</span></a>) and (<a href="./15.6#E9" title="(15.6.9) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.9</span></a>) all functions in the
+integrand assume their principal values.</p>
+</div>
+<figure id="F1" class="ltx_figure"><a href="./15.6.F1.mag"><img src="./15/6/F1.png" id="F1.g1" class="ltx_graphics ltx_centering" width="339" height="112" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 15.6.1: </span><math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-2px" altimg-width="11px" alttext="t" display="inline"><mi>t</mi></math>-plane. Contour of integration in (<a href="./15.6#E5" title="(15.6.5) ‣ §15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6.5</span></a>).
+
+
+<a href="./15.6.F1.mag"><img style="vertical-align:top;" alt="Magnify" src="./style/mag.png"></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/P#Pochhammerdoubleloopcontour">Pochhammer double-loop contour</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>,
+<a href="./15.6#p8" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.6.F1" title="" class="ltx_ref">http://dlmf.nist.gov/15.6.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.6.F1.pdf">pdf</a>, <a href="./15.6.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.6#info" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.6</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.5 </span>Derivatives and Contiguous Functions</span></a><a href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.7 </span>Continued Fractions</span></a>
+</div>
+</div>
+</body>
+</html>

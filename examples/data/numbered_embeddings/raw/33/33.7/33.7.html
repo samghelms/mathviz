@@ -1,0 +1,372 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 33.7 Integral Representations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/33.7";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./33#PT2" title="Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="up up" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./33.6" title="§33.6 Power-Series Expansions in ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="next" href="./33.8" title="§33.8 Continued Fractions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.2" title="§33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.3" title="§33.3 Graphics ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.4" title="§33.4 Recurrence Relations and Derivatives ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.5" title="§33.5 Limiting Forms for Small ρ , Small | η | , or Large ℓ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.6" title="§33.6 Power-Series Expansions in ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.8" title="§33.8 Continued Fractions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.9" title="§33.9 Expansions in Series of Bessel Functions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.10" title="§33.10 Limiting Forms for Large ρ or Large | η | ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.11" title="§33.11 Asymptotic Expansions for Large ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.12" title="§33.12 Asymptotic Expansions for Large η ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.13" title="§33.13 Complex Variable and Parameters ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.14" title="§33.14 Definitions and Basic Properties ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.15" title="§33.15 Graphics ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.16" title="§33.16 Connection Formulas ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.17" title="§33.17 Recurrence Relations and Derivatives ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.18" title="§33.18 Limiting Forms for Large ℓ ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.19" title="§33.19 Power-Series Expansions in r ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.20" title="§33.20 Expansions for Small | ϵ | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.21" title="§33.21 Asymptotic Approximations for Large | r | ‣ Variables r , ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.22" title="§33.22 Particle Scattering and Atomic and Molecular Spectra ‣ Physical Applications ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.23" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.24" title="§33.24 Tables ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.25" title="§33.25 Approximations ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.26" title="§33.26 Software ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Coulomb functions: variables , integral representations">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./33" title="Chapter 33 Coulomb Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33 </span>Coulomb Functions</span></a><a href="./33#PT2" title="Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Variables <math class="ltx_Math" altimg="m14.png" altimg-height="16px" altimg-valign="-6px" altimg-width="34px" alttext="\rho,\eta" display="inline"><mrow><mi href="./33.1#p1.t1.r3">ρ</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></math></span></a><a href="./33.6" title="§33.6 Power-Series Expansions in ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.6 </span>Power-Series Expansions in <math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3">ρ</mi></math></span></a><a href="./33.8" title="§33.8 Continued Fractions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.8 </span>Continued Fractions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§33.7 </span>Integral Representations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Hull and Breit (<a href="./bib/H#bib1106" title="Coulomb Wave Functions" class="ltx_ref">1959</a>, pp. 413–416)</cite>.
+For (<a href="./33.7#E1" title="(33.7.1) ‣ §33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7.1</span></a>) see also <cite class="ltx_cite ltx_citemacro_citet">Lowan and Horenstein (<a href="./bib/L#bib2688" title="On the function = ⁢ H ( m , a , x ) ⁢ exp ( - ⁢ i x ) F ( - + m 1 ⁢ i a , + ⁢ 2 m 2 ; ⁢ 2 i x )" class="ltx_ref">1942</a>)</cite>, with change of
+variable <math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="82px" alttext="\xi=1-t" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow></mrow></math> in the integral that follows Eq. (8).
+For (<a href="./33.7#E2" title="(33.7.2) ‣ §33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7.2</span></a>) see also <cite class="ltx_cite ltx_citemacro_citet">Hoisington and Breit (<a href="./bib/H#bib2693" title="Calculation of Coulomb wave functions for high energies" class="ltx_ref">1938</a>)</cite>.
+For (<a href="./33.7#E3" title="(33.7.3) ‣ §33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7.3</span></a>) see also <cite class="ltx_cite ltx_citemacro_citet">Bloch<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib2684" title="Methods of calculation of radial wave functions and new tables of Coulomb functions" class="ltx_ref">1950</a>)</cite>.
+For (<a href="./33.7#E4" title="(33.7.4) ‣ §33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7.4</span></a>) see also <cite class="ltx_cite ltx_citemacro_citet">Newton (<a href="./bib/N#bib2685" title="Coulomb Functions for Large Values of the Parameter η" class="ltx_ref">1952</a>)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#Coulombfunctionsvariablesre">Coulomb functions: variables <math class="ltx_Math" altimg="m14.png" altimg-height="16px" altimg-valign="-6px" altimg-width="34px" alttext="\rho,\eta" display="inline"><mrow><mi href="./33.1#p1.t1.r3">ρ</mi><mo>,</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></math></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.7" title="" class="ltx_ref">http://dlmf.nist.gov/33.7</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.7.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="55px" altimg-valign="-21px" altimg-width="485px" alttext="\mathop{F_{\ell}\/}\nolimits\!\left(\eta,\rho\right)=\frac{\rho^{\ell+1}2^{%
+\ell}e^{i\rho-(\pi\eta/2)}}{|\mathop{\Gamma\/}\nolimits\!\left(\ell+1+i\eta%
+\right)|}\int_{0}^{1}e^{-2i\rho t}t^{\ell+i\eta}(1-t)^{\ell-i\eta}dt," display="block"><mrow><mrow><mrow><msub><mi href="./33.2#E3">F</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi href="./33.1#p1.t1.r3">ρ</mi><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mn>2</mn><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r3">ρ</mi></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>π</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r3">ρ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi>t</mi><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./33.2#E3" title="(33.2.3) ‣ §33.2(ii) Regular Solution F ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="\mathop{F_{\NVar{\ell}}\/}\nolimits\!\left(\NVar{\eta},\NVar{\rho}\right)" display="inline"><mrow><msub><mi href="./33.2#E3">F</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow></math>: regular Coulomb radial function</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r3" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3">ρ</mi></math>: nonnegative real variable</a> and
+<a href="./33.1#p1.t1.r4" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./33.1#p1.t1.r4">η</mi></math>: real parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.7</span></a>,
+<a href="./33.7#p2" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.7</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.7.E1" title="" class="ltx_ref">http://dlmf.nist.gov/33.7.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.7.E1.tex">TeX</a>, <a href="./33.7.E1.pmml">pMML</a>, <a href="./33.7.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.7.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="55px" altimg-valign="-21px" altimg-width="485px" alttext="\mathop{{H^{-}_{\ell}}\/}\nolimits\!\left(\eta,\rho\right)=\frac{e^{-i\rho}%
+\rho^{-\ell}}{(2\ell+1)!\mathop{C_{\ell}\/}\nolimits\!\left(\eta\right)}\int_{%
+0}^{\infty}e^{-t}t^{\ell-i\eta}(t+2i\rho)^{\ell+i\eta}dt," display="block"><mrow><mrow><mrow><msubsup><mi href="./33.2#E7">H</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>-</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r3">ρ</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./33.1#p1.t1.r3">ρ</mi><mrow><mo>-</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow></msup></mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><mrow><msub><mi href="./33.2#E5">C</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mi>t</mi></mrow></msup><mo>⁢</mo><msup><mi>t</mi><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r3">ρ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.2#E5" title="(33.2.5) ‣ §33.2(ii) Regular Solution F ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{C_{\NVar{\ell}}\/}\nolimits\!\left(\NVar{\eta}\right)" display="inline"><mrow><msub><mi href="./33.2#E5">C</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>)</mo></mrow></mrow></math>: normalizing constant for Coulomb radial functions</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./33.2#E7" title="(33.2.7) ‣ §33.2(iii) Irregular Solutions G ℓ ( η , ρ ) , H ± ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-8px" altimg-width="81px" alttext="\mathop{{H^{\NVar{\pm}}_{\NVar{\ell}}}\/}\nolimits\!\left(\NVar{\eta},\NVar{%
+\rho}\right)" display="inline"><mrow><msubsup><mi href="./33.2#E7">H</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo class="ltx_nvar">±</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow></math>: irregular Coulomb radial functions</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r3" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3">ρ</mi></math>: nonnegative real variable</a> and
+<a href="./33.1#p1.t1.r4" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./33.1#p1.t1.r4">η</mi></math>: real parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">14.3.1</span> (modified)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.7</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.7.E2" title="" class="ltx_ref">http://dlmf.nist.gov/33.7.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.7.E2.tex">TeX</a>, <a href="./33.7.E2.pmml">pMML</a>, <a href="./33.7.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.7.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="55px" altimg-valign="-21px" altimg-width="844px" alttext="\mathop{{H^{-}_{\ell}}\/}\nolimits\!\left(\eta,\rho\right)=\frac{-ie^{-\pi\eta%
+}\rho^{\ell+1}}{(2\ell+1)!\mathop{C_{\ell}\/}\nolimits\!\left(\eta\right)}\int%
+_{0}^{\infty}\left(\frac{\mathop{\exp\/}\nolimits\!\left(-i(\rho\mathop{\tanh%
+\/}\nolimits t-2\eta t)\right)}{(\mathop{\cosh\/}\nolimits t)^{2\ell+2}}+i(1+t%
+^{2})^{\ell}\mathop{\exp\/}\nolimits\!\left(-\rho t+2\eta\mathop{\mathrm{%
+arctan}\/}\nolimits t\right)\right)dt," display="block"><mrow><mrow><mrow><msubsup><mi href="./33.2#E7">H</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>-</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./33.1#p1.t1.r3">ρ</mi><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><mrow><msub><mi href="./33.2#E5">C</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi href="./4.2#E19">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./33.1#p1.t1.r3">ρ</mi><mo>⁢</mo><mrow><mi href="./4.28#E4">tanh</mi><mo>⁡</mo><mi>t</mi></mrow></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.28#E2">cosh</mi><mo>⁡</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup></mfrac><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msup><mo>⁢</mo><mrow><mi href="./4.2#E19">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mrow><mi href="./33.1#p1.t1.r3">ρ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>⁢</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.2#E5" title="(33.2.5) ‣ §33.2(ii) Regular Solution F ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{C_{\NVar{\ell}}\/}\nolimits\!\left(\NVar{\eta}\right)" display="inline"><mrow><msub><mi href="./33.2#E5">C</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>)</mo></mrow></mrow></math>: normalizing constant for Coulomb radial functions</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E19" title="(4.2.19) ‣ §4.2(iii) The Exponential Function ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="16px" altimg-valign="-6px" altimg-width="48px" alttext="\mathop{\exp\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E19">exp</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: exponential function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./4.28#E2" title="(4.28.2) ‣ §4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="56px" alttext="\mathop{\cosh\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.28#E2">cosh</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: hyperbolic cosine function</a>,
+<a href="./4.28#E4" title="(4.28.4) ‣ §4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-2px" altimg-width="58px" alttext="\mathop{\tanh\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.28#E4">tanh</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: hyperbolic tangent function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./33.2#E7" title="(33.2.7) ‣ §33.2(iii) Irregular Solutions G ℓ ( η , ρ ) , H ± ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-8px" altimg-width="81px" alttext="\mathop{{H^{\NVar{\pm}}_{\NVar{\ell}}}\/}\nolimits\!\left(\NVar{\eta},\NVar{%
+\rho}\right)" display="inline"><mrow><msubsup><mi href="./33.2#E7">H</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo class="ltx_nvar">±</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow></math>: irregular Coulomb radial functions</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r3" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3">ρ</mi></math>: nonnegative real variable</a> and
+<a href="./33.1#p1.t1.r4" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./33.1#p1.t1.r4">η</mi></math>: real parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">14.3.3</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.7</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.7.E3" title="" class="ltx_ref">http://dlmf.nist.gov/33.7.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.7.E3.tex">TeX</a>, <a href="./33.7.E3.pmml">pMML</a>, <a href="./33.7.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">33.7.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="57px" altimg-valign="-22px" altimg-width="549px" alttext="\mathop{{H^{+}_{\ell}}\/}\nolimits\!\left(\eta,\rho\right)=\frac{ie^{-\pi\eta}%
+\rho^{\ell+1}}{(2\ell+1)!\mathop{C_{\ell}\/}\nolimits\!\left(\eta\right)}\int_%
+{-1}^{-i\infty}e^{-i\rho t}(1-t)^{\ell-i\eta}(1+t)^{\ell+i\eta}dt." display="block"><mrow><mrow><mrow><msubsup><mi href="./33.2#E7">H</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./33.1#p1.t1.r3">ρ</mi><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><mrow><msub><mi href="./33.2#E5">C</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4">η</mi><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mn>1</mn></mrow><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msubsup><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r3">ρ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo>+</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi href="./33.1#p1.t1.r4">η</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./33.2#E5" title="(33.2.5) ‣ §33.2(ii) Regular Solution F ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{C_{\NVar{\ell}}\/}\nolimits\!\left(\NVar{\eta}\right)" display="inline"><mrow><msub><mi href="./33.2#E5">C</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>)</mo></mrow></mrow></math>: normalizing constant for Coulomb radial functions</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="d\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0.8pt">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" largeop="true" symmetric="true">∫</mo></math>: integral</a>,
+<a href="./33.2#E7" title="(33.2.7) ‣ §33.2(iii) Irregular Solutions G ℓ ( η , ρ ) , H ± ℓ ( η , ρ ) ‣ §33.2 Definitions and Basic Properties ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-8px" altimg-width="81px" alttext="\mathop{{H^{\NVar{\pm}}_{\NVar{\ell}}}\/}\nolimits\!\left(\NVar{\eta},\NVar{%
+\rho}\right)" display="inline"><mrow><msubsup><mi href="./33.2#E7">H</mi><mi class="ltx_nvar" href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi><mo class="ltx_nvar">±</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r4">η</mi><mo>,</mo><mi class="ltx_nvar" href="./33.1#p1.t1.r3">ρ</mi><mo>)</mo></mrow></mrow></math>: irregular Coulomb radial functions</a>,
+<a href="./33.1#p1.t1.r1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal">ℓ</mi></math>: nonnegative integer</a>,
+<a href="./33.1#p1.t1.r3" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3">ρ</mi></math>: nonnegative real variable</a> and
+<a href="./33.1#p1.t1.r4" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./33.1#p1.t1.r4">η</mi></math>: real parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">14.3.2</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.7</span></a>,
+<a href="./33.7#p2" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.7</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.7.E4" title="" class="ltx_ref">http://dlmf.nist.gov/33.7.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./33.7.E4.tex">TeX</a>, <a href="./33.7.E4.pmml">pMML</a>, <a href="./33.7.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./33.7#info" title="§33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Noninteger powers in (<a href="./33.7#E1" title="(33.7.1) ‣ §33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7.1</span></a>)–(<a href="./33.7#E4" title="(33.7.4) ‣ §33.7 Integral Representations ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.7.4</span></a>) and the
+arctangent assume their principal values (§§<a href="./4.2#i" title="§4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2(i)</span></a>,
+<a href="./4.2#iv" title="§4.2(iv) Powers ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2(iv)</span></a>, <a href="./4.23#ii" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.23(ii)</span></a>).</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./33.6" title="§33.6 Power-Series Expansions in ρ ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.6 </span>Power-Series Expansions in <math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3">ρ</mi></math></span></a><a href="./33.8" title="§33.8 Continued Fractions ‣ Variables ρ , η ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.8 </span>Continued Fractions</span></a>
+</div>
+</div>
+</body>
+</html>

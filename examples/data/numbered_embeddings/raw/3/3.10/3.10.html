@@ -1,0 +1,1219 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 3.10 Continued Fractions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/3.10";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./3#PT1" title="Areas ‣ Chapter 3 Numerical Methods">
+<link rel="up up" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./3.9" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="next" href="./3.11" title="§3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.1" title="§3.1 Arithmetics and Error Measures ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.2" title="§3.2 Linear Algebra ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.3" title="§3.3 Interpolation ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.4" title="§3.4 Differentiation ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.5" title="§3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.6" title="§3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.7" title="§3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.8" title="§3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.9" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.11" title="§3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.12" title="§3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="-fraction, -fraction, Jacobi fraction, Jacobi fraction (, Steed’s algorithm, Stieltjes fraction, Stieltjes fraction (, associated, backward recurrence, continued fractions, for continued fractions, forward recurrence, forward series recurrence, numerical evaluation, quotient-difference algorithm, quotient-difference scheme, relation to power series, rhombus rule, stability">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./3" title="Chapter 3 Numerical Methods" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Numerical Methods</span></a><a href="./3#PT1" title="Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Areas</span></a><a href="./3.9" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.9 </span>Acceleration of Convergence</span></a><a href="./3.11" title="§3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.11 </span>Approximation Techniques</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§3.10 </span>Continued Fractions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.12#SS6.p1" title="§1.12(vi) Applications ‣ §1.12 Continued Fractions ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.12(vi)</span></a>,
+<a href="./14.32#I1.i4.p1" title="§14.32 Methods of Computation ‣ Computation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.32</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10" title="" class="ltx_ref">http://dlmf.nist.gov/3.10</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3#info" title="Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§3.10(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§3.10(ii) </span>Relations to Power Series</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§3.10(iii) </span>Numerical Evaluation of Continued Fractions</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.10(i) </span>Introduction</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.i" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#info" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">See §<a href="./1.12" title="§1.12 Continued Fractions ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.12</span></a> for relevant properties of continued fractions, including the
+following definitions:</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="54px" altimg-valign="-19px" altimg-width="230px" alttext="C=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}," display="block"><mrow><mrow><mi href="./3.10#E1">C</mi><mo>=</mo><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><mrow><mfrac><msub><mi>a</mi><mn>1</mn></msub><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo></mrow></mfrac><mfrac><msub><mi>a</mi><mn>2</mn></msub><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>+</mo></mrow></mfrac><mi mathvariant="normal">⋯</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m70.png" altimg-height="21px" altimg-valign="-6px" altimg-width="62px" alttext="a_{n}\neq 0" display="inline"><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math>: continued fraction (locally)</span></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#SS2.p1" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E1" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E1.tex">TeX</a>, <a href="./3.10.E1.pmml">pMML</a>, <a href="./3.10.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS1.info" title="§3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="54px" altimg-valign="-19px" altimg-width="323px" alttext="C_{n}=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}\frac{a_{n}}{b_{n}%
+}=\frac{A_{n}}{B_{n}}." display="block"><mrow><mrow><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><mrow><mrow><mfrac><msub><mi>a</mi><mn>1</mn></msub><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo></mrow></mfrac><mfrac><msub><mi>a</mi><mn>2</mn></msub><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>+</mo></mrow></mfrac><mi mathvariant="normal">⋯</mi></mrow><mo>⁢</mo><mfrac><msub><mi>a</mi><mi>n</mi></msub><msub><mi>b</mi><mi>n</mi></msub></mfrac></mrow></mrow><mo>=</mo><mfrac><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m56.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="A_{n}" display="inline"><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub></math>: continued fraction numerator (locally)</span>,
+<span class="ltx_text"><math class="ltx_Math" altimg="m57.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="B_{n}" display="inline"><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></math>: continued fraction denominator (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math>: continued fraction approximant (locally)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./3.10#Px5.p1" title="Forward Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(iii)</span></a>,
+<a href="./3.10#Px6.p1" title="Backward Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(iii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E2" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E2.tex">TeX</a>, <a href="./3.10.E2.pmml">pMML</a>, <a href="./3.10.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS1.info" title="§3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p"><math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math> is the <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th <em class="ltx_emph">approximant</em> or <em class="ltx_emph">convergent</em> to <math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.10(ii) </span>Relations to Power Series</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Blanch (<a href="./bib/B#bib289" title="Numerical evaluation of continued fractions" class="ltx_ref">1964</a>)</cite>. For the original source of the
+quotient-difference algorithm see <cite class="ltx_cite ltx_citemacro_citet">Rutishauser (<a href="./bib/R#bib1979" title="Der Quotienten-Differenzen-Algorithmus" class="ltx_ref">1957</a>)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.ii" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#info" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Every convergent, asymptotic, or formal series</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="20px" altimg-valign="-5px" altimg-width="163px" alttext="u_{0}+u_{1}+u_{2}+\cdots" display="block"><mrow><msub><mi href="./3.10#E3">u</mi><mn>0</mn></msub><mo>+</mo><msub><mi href="./3.10#E3">u</mi><mn>1</mn></msub><mo>+</mo><msub><mi href="./3.10#E3">u</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m110.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="u_{n}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></math>: series (locally)</span></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#SS2.p1" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E3" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E3.tex">TeX</a>, <a href="./3.10.E3.pmml">pMML</a>, <a href="./3.10.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">can be converted into a continued fraction <math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math> of type (<a href="./3.10#E1" title="(3.10.1) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.1</span></a>),
+and with the property that the <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th convergent <math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="118px" alttext="C_{n}=A_{n}/B_{n}" display="inline"><mrow><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub><mo>/</mo><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></mrow></mrow></math> to <math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math> is
+equal to the <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th partial sum of the series in (<a href="./3.10#E3" title="(3.10.3) ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.3</span></a>), that is,</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="49px" altimg-valign="-19px" altimg-width="228px" alttext="\frac{A_{n}}{B_{n}}=u_{0}+u_{1}+\dots+u_{n}," display="block"><mrow><mrow><mfrac><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></mfrac><mo>=</mo><mrow><msub><mi href="./3.10#E3">u</mi><mn>0</mn></msub><mo>+</mo><msub><mi href="./3.10#E3">u</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m93.png" altimg-height="20px" altimg-valign="-6px" altimg-width="104px" alttext="n=0,1,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.10#E2" title="(3.10.2) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="A_{n}" display="inline"><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub></math>: continued fraction numerator</a>,
+<a href="./3.10#E2" title="(3.10.2) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="B_{n}" display="inline"><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></math>: continued fraction denominator</a> and
+<a href="./3.10#E3" title="(3.10.3) ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m110.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="u_{n}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></math>: series</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#SS2.p2" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E4" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E4.tex">TeX</a>, <a href="./3.10.E4.pmml">pMML</a>, <a href="./3.10.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">For instance, if none of the <math class="ltx_Math" altimg="m110.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="u_{n}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></math> vanish, then we can define</p>
+<table id="E5" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="6" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m42.png" altimg-height="22px" altimg-valign="-5px" altimg-width="24px" alttext="\displaystyle b_{0}" display="inline"><msub><mi>b</mi><mn>0</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-6px" altimg-width="53px" alttext="\displaystyle=u_{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./3.10#E3">u</mi><mn>0</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m43.png" altimg-height="22px" altimg-valign="-5px" altimg-width="24px" alttext="\displaystyle b_{1}" display="inline"><msub><mi>b</mi><mn>1</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-5px" altimg-width="26px" alttext="\displaystyle a_{1}" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m26.png" altimg-height="18px" altimg-valign="-6px" altimg-width="53px" alttext="\displaystyle=u_{1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./3.10#E3">u</mi><mn>1</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m44.png" altimg-height="22px" altimg-valign="-5px" altimg-width="25px" alttext="\displaystyle b_{n}" display="inline"><msub><mi>b</mi><mi>n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="46px" altimg-valign="-20px" altimg-width="114px" alttext="\displaystyle=1+\frac{u_{n}}{u_{n-1}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub><msub><mi href="./3.10#E3">u</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m41.png" altimg-height="17px" altimg-valign="-5px" altimg-width="27px" alttext="\displaystyle a_{n}" display="inline"><msub><mi>a</mi><mi>n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m2.png" altimg-height="46px" altimg-valign="-20px" altimg-width="90px" alttext="\displaystyle=-\frac{u_{n}}{u_{n-1}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub><msub><mi href="./3.10#E3">u</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mfrac></mstyle></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m97.png" altimg-height="19px" altimg-valign="-5px" altimg-width="53px" alttext="n\geq 2" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E3" title="(3.10.3) ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m110.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="u_{n}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></math>: series</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#SS2.p2" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E5" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E5a.tex">TeX</a>, <a href="./3.10.E5b.tex">TeX</a>, <a href="./3.10.E5c.tex">TeX</a>, <a href="./3.10.E5d.tex">TeX</a>, <a href="./3.10.E5e.tex">TeX</a>, <a href="./3.10.E5a.pmml">pMML</a>, <a href="./3.10.E5b.pmml">pMML</a>, <a href="./3.10.E5c.pmml">pMML</a>, <a href="./3.10.E5d.pmml">pMML</a>, <a href="./3.10.E5e.pmml">pMML</a>, <a href="./3.10.E5a.png">png</a>, <a href="./3.10.E5b.png">png</a>, <a href="./3.10.E5c.png">png</a>, <a href="./3.10.E5d.png">png</a>, <a href="./3.10.E5e.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">However, other continued fractions with the same limit may converge in a much
+larger domain of the complex plane than the fraction given by
+(<a href="./3.10#E4" title="(3.10.4) ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.4</span></a>) and (<a href="./3.10#E5" title="(3.10.5) ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.5</span></a>). For example, by converting the
+Maclaurin expansion of <math class="ltx_Math" altimg="m66.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits z" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi>z</mi></mrow></math> (<a href="./4.24#E3" title="(4.24.3) ‣ §4.24(i) Power Series ‣ §4.24 Inverse Trigonometric Functions: Further Properties ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.24.3</span></a>), we obtain a
+continued fraction with the same region of convergence (<math class="ltx_Math" altimg="m65.png" altimg-height="23px" altimg-valign="-7px" altimg-width="62px" alttext="\left|z\right|\leq 1" display="inline"><mrow><mrow><mo>|</mo><mi>z</mi><mo>|</mo></mrow><mo>≤</mo><mn>1</mn></mrow></math>,
+<math class="ltx_Math" altimg="m113.png" altimg-height="21px" altimg-valign="-6px" altimg-width="63px" alttext="z\neq\pm i" display="inline"><mrow><mi>z</mi><mo>≠</mo><mrow><mo>±</mo><mi mathvariant="normal">i</mi></mrow></mrow></math>), whereas the continued fraction (<a href="./4.25#E4" title="(4.25.4) ‣ §4.25 Continued Fractions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.25.4</span></a>) converges
+for all <math class="ltx_Math" altimg="m112.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z\in\Complex" display="inline"><mrow><mi>z</mi><mo href="./front/introduction#Sx4.p1.t1.r9">∈</mo><mi href="./front/introduction#Sx4.p1.t1.r1" mathvariant="normal">ℂ</mi></mrow></math> except on the branch cuts from <math class="ltx_Math" altimg="m87.png" altimg-height="17px" altimg-valign="-2px" altimg-width="11px" alttext="i" display="inline"><mi mathvariant="normal">i</mi></math> to <math class="ltx_Math" altimg="m88.png" altimg-height="17px" altimg-valign="-2px" altimg-width="31px" alttext="i\infty" display="inline"><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></math> and
+<math class="ltx_Math" altimg="m54.png" altimg-height="18px" altimg-valign="-4px" altimg-width="27px" alttext="-i" display="inline"><mrow><mo>-</mo><mi mathvariant="normal">i</mi></mrow></math> to <math class="ltx_Math" altimg="m55.png" altimg-height="18px" altimg-valign="-4px" altimg-width="47px" alttext="-i\infty" display="inline"><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow></math>.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Stieltjes Fractions</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/S#StieltjesfractionSfraction">Stieltjes fraction (<math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi>S</mi></math>-fraction)</a>, <a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">A continued fraction of the form</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="53px" altimg-valign="-17px" altimg-width="209px" alttext="C=\cfrac{a_{0}}{1-\cfrac{a_{1}z}{1-\cfrac{a_{2}z}{1-\cdots}}}" display="block"><mrow><mi href="./3.10#E1">C</mi><mo>=</mo><mrow><mfrac><msub><mi>a</mi><mn>0</mn></msub><mrow><mn>1</mn><mo>-</mo></mrow></mfrac><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>1</mn><mo>-</mo></mrow></mfrac><mfrac><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>1</mn><mo>-</mo></mrow></mfrac><mi mathvariant="normal">⋯</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E1" title="(3.10.1) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math>: continued fraction</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a>,
+<a href="./3.10#Px3.p1" title="Jacobi Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E6" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E6.tex">TeX</a>, <a href="./3.10.E6.pmml">pMML</a>, <a href="./3.10.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px1.info" title="Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is called a <em class="ltx_emph">Stieltjes fraction (<math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi>S</mi></math>-fraction)</em>. We say that it
+<em class="ltx_emph">corresponds</em> to the formal power series</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="28px" altimg-valign="-7px" altimg-width="248px" alttext="f(z)=c_{0}+c_{1}z+c_{2}z^{2}+\cdots" display="block"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./3.10#E7">c</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi href="./3.10#E7">c</mi><mn>1</mn></msub><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><msub><mi href="./3.10#E7">c</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m71.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="c_{n}" display="inline"><msub><mi href="./3.10#E7">c</mi><mi>n</mi></msub></math>: coefficients (locally)</span></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./3.10#Px1.p1" title="Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a>,
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a>,
+<a href="./3.10#Px3.p1" title="Jacobi Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E7" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E7.tex">TeX</a>, <a href="./3.10.E7.pmml">pMML</a>, <a href="./3.10.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px1.info" title="Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">if the expansion of its <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th convergent <math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math> in ascending powers of <math class="ltx_Math" altimg="m111.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi>z</mi></math>
+agrees with (<a href="./3.10#E7" title="(3.10.7) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.7</span></a>) up to and including the term in <math class="ltx_Math" altimg="m115.png" altimg-height="20px" altimg-valign="-2px" altimg-width="46px" alttext="z^{n-1}" display="inline"><msup><mi>z</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math>,
+<math class="ltx_Math" altimg="m94.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=1,2,3,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Quotient-Difference Algorithm</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a>, <a class="ltx_keyword" href="./idx/Q#quotientdifferencealgorithm">quotient-difference algorithm</a>, <a class="ltx_keyword" href="./idx/Q#quotientdifferencescheme">quotient-difference scheme</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">For several special functions the <math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi>S</mi></math>-fractions are known explicitly, but in
+any case the coefficients <math class="ltx_Math" altimg="m69.png" altimg-height="16px" altimg-valign="-5px" altimg-width="26px" alttext="a_{n}" display="inline"><msub><mi>a</mi><mi>n</mi></msub></math> can always be calculated from the power-series
+coefficients by means of the <em class="ltx_emph">quotient-difference algorithm</em>; see
+Table <a href="./3.10#T1" title="Table 3.10.1 ‣ Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.1</span></a>.
+</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.10.1: </span>Quotient-difference scheme.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_tt"><img id="T1.t1.r1.pic1" class="ltx_picture" style="width:260pt;height:292pt;" src="./3/10/g1.png" width="260" height="292" alt="\begin{picture}(8.0,9.0)\put(0.0,7.0){$e_{0}^{1}$}
+\put(0.0,5.0){$e_{0}^{2}$}
+\put(0.0,3.0){$e_{0}^{3}$}
+\put(0.0,1.0){$e_{0}^{4}$}
+\put(1.0,8.0){$q_{1}^{0}$}
+\put(1.0,6.0){$q_{1}^{1}$}
+\put(1.0,4.0){$q_{1}^{2}$}
+\put(1.0,2.0){$q_{1}^{3}$}
+\put(1.0,0.0){$\ddots$}
+\put(2.0,7.0){$e_{1}^{0}$}
+\put(2.0,5.0){$e_{1}^{1}$}
+\put(2.0,3.0){$e_{1}^{2}$}
+\put(2.0,1.0){$e_{1}^{3}$}
+\put(3.0,6.0){$q_{2}^{0}$}
+\put(3.0,4.0){$q_{2}^{1}$}
+\put(3.0,2.0){$q_{2}^{2}$}
+\put(3.0,0.0){$\ddots$}
+\put(4.0,5.0){$e_{2}^{0}$}
+\put(4.0,3.0){$e_{2}^{1}$}
+\put(4.0,1.0){$e_{2}^{2}$}
+\put(5.0,4.0){$q_{3}^{0}$}
+\put(5.0,2.0){$q_{3}^{1}$}
+\put(5.0,0.0){$\ddots$}
+\put(6.0,3.0){$e_{3}^{0}$}
+\put(6.0,1.0){$e_{3}^{1}$}
+\put(7.0,2.0){$\ddots$}
+\put(7.0,0.0){$\ddots$}
+\end{picture}"></td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m85.png" altimg-height="28px" altimg-valign="-10px" altimg-width="23px" alttext="e_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a> and
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m107.png" altimg-height="28px" altimg-valign="-10px" altimg-width="24px" alttext="q_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#Px2.p1" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.T1" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.T1</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px2.info" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="Px2.p2" class="ltx_para">
+<p class="ltx_p">The first two columns in this table are defined by
+</p>
+<table id="E8" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="\displaystyle e_{0}^{n}" display="inline"><msubsup><mi href="./3.10#Px2.p2">e</mi><mn>0</mn><mi>n</mi></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m95.png" altimg-height="20px" altimg-valign="-6px" altimg-width="104px" alttext="n=1,2,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m47.png" altimg-height="25px" altimg-valign="-7px" altimg-width="27px" alttext="\displaystyle q_{1}^{n}" display="inline"><msubsup><mi href="./3.10#Px2.p2">q</mi><mn>1</mn><mi>n</mi></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="102px" alttext="\displaystyle=c_{n+1}/c_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./3.10#E7">c</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>/</mo><msub><mi href="./3.10#E7">c</mi><mi>n</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m93.png" altimg-height="20px" altimg-valign="-6px" altimg-width="104px" alttext="n=0,1,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.10#E7" title="(3.10.7) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="c_{n}" display="inline"><msub><mi href="./3.10#E7">c</mi><mi>n</mi></msub></math>: coefficients</a>,
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m85.png" altimg-height="28px" altimg-valign="-10px" altimg-width="23px" alttext="e_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a> and
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m107.png" altimg-height="28px" altimg-valign="-10px" altimg-width="24px" alttext="q_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E8" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E8a.tex">TeX</a>, <a href="./3.10.E8b.tex">TeX</a>, <a href="./3.10.E8a.pmml">pMML</a>, <a href="./3.10.E8b.pmml">pMML</a>, <a href="./3.10.E8a.png">png</a>, <a href="./3.10.E8b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px2.info" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where the <math class="ltx_Math" altimg="m71.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="c_{n}" display="inline"><msub><mi href="./3.10#E7">c</mi><mi>n</mi></msub></math> (<math class="ltx_Math" altimg="m68.png" altimg-height="21px" altimg-valign="-6px" altimg-width="35px" alttext="\neq 0" display="inline"><mrow><mi></mi><mo>≠</mo><mn>0</mn></mrow></math>) appear in (<a href="./3.10#E7" title="(3.10.7) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.7</span></a>). We continue by
+means of the <em class="ltx_emph">rhombus rule</em>
+</p>
+<table id="E9" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m46.png" altimg-height="31px" altimg-valign="-10px" altimg-width="25px" alttext="\displaystyle e_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mi>k</mi></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="33px" altimg-valign="-10px" altimg-width="180px" alttext="\displaystyle=e_{j-1}^{k+1}+q_{j}^{k+1}-q_{j}^{k}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msubsup><mi href="./3.10#Px2.p2">e</mi><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>+</mo><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup></mrow><mo>-</mo><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mi>k</mi></msubsup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m89.png" altimg-height="20px" altimg-valign="-6px" altimg-width="50px" alttext="j\geq 1" display="inline"><mrow><mi>j</mi><mo>≥</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m92.png" altimg-height="20px" altimg-valign="-5px" altimg-width="52px" alttext="k\geq 0" display="inline"><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr id="Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m48.png" altimg-height="31px" altimg-valign="-10px" altimg-width="44px" alttext="\displaystyle q_{j+1}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">q</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow><mi>k</mi></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m24.png" altimg-height="33px" altimg-valign="-10px" altimg-width="141px" alttext="\displaystyle=q_{j}^{k+1}e_{j}^{k+1}/e_{j}^{k}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup></mrow><mo>/</mo><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mi>k</mi></msubsup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m89.png" altimg-height="20px" altimg-valign="-6px" altimg-width="50px" alttext="j\geq 1" display="inline"><mrow><mi>j</mi><mo>≥</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m92.png" altimg-height="20px" altimg-valign="-5px" altimg-width="52px" alttext="k\geq 0" display="inline"><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m85.png" altimg-height="28px" altimg-valign="-10px" altimg-width="23px" alttext="e_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a> and
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m107.png" altimg-height="28px" altimg-valign="-10px" altimg-width="24px" alttext="q_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E9" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E9a.tex">TeX</a>, <a href="./3.10.E9b.tex">TeX</a>, <a href="./3.10.E9a.pmml">pMML</a>, <a href="./3.10.E9b.pmml">pMML</a>, <a href="./3.10.E9a.png">png</a>, <a href="./3.10.E9b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px2.info" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Then the coefficients <math class="ltx_Math" altimg="m69.png" altimg-height="16px" altimg-valign="-5px" altimg-width="26px" alttext="a_{n}" display="inline"><msub><mi>a</mi><mi>n</mi></msub></math> of the <math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi>S</mi></math>-fraction (<a href="./3.10#E6" title="(3.10.6) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.6</span></a>) are
+given by</p>
+<table id="E10" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="6" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m36.png" altimg-height="17px" altimg-valign="-5px" altimg-width="26px" alttext="\displaystyle a_{0}" display="inline"><msub><mi>a</mi><mn>0</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-6px" altimg-width="50px" alttext="\displaystyle=c_{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./3.10#E7">c</mi><mn>0</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-5px" altimg-width="26px" alttext="\displaystyle a_{1}" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="28px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle=q_{1}^{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msubsup><mi href="./3.10#Px2.p2">q</mi><mn>1</mn><mn>0</mn></msubsup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m38.png" altimg-height="17px" altimg-valign="-5px" altimg-width="26px" alttext="\displaystyle a_{2}" display="inline"><msub><mi>a</mi><mn>2</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="28px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle=e_{1}^{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msubsup><mi href="./3.10#Px2.p2">e</mi><mn>1</mn><mn>0</mn></msubsup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m39.png" altimg-height="17px" altimg-valign="-5px" altimg-width="26px" alttext="\displaystyle a_{3}" display="inline"><msub><mi>a</mi><mn>3</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="28px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle=q_{2}^{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msubsup><mi href="./3.10#Px2.p2">q</mi><mn>2</mn><mn>0</mn></msubsup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex14" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m40.png" altimg-height="17px" altimg-valign="-5px" altimg-width="26px" alttext="\displaystyle a_{4}" display="inline"><msub><mi>a</mi><mn>4</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="28px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle=e_{2}^{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msubsup><mi href="./3.10#Px2.p2">e</mi><mn>2</mn><mn>0</mn></msubsup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10f.png" altimg-height="6px" altimg-valign="-2px" altimg-width="36px" alttext="\ldots." display="inline"><mrow><mi mathvariant="normal">…</mi><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.10#E7" title="(3.10.7) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="c_{n}" display="inline"><msub><mi href="./3.10#E7">c</mi><mi>n</mi></msub></math>: coefficients</a>,
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m85.png" altimg-height="28px" altimg-valign="-10px" altimg-width="23px" alttext="e_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">e</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a> and
+<a href="./3.10#Px2.p2" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m107.png" altimg-height="28px" altimg-valign="-10px" altimg-width="24px" alttext="q_{j}^{k}" display="inline"><msubsup><mi href="./3.10#Px2.p2">q</mi><mi>j</mi><mi>k</mi></msubsup></math>: element</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E10" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E10a.tex">TeX</a>, <a href="./3.10.E10b.tex">TeX</a>, <a href="./3.10.E10c.tex">TeX</a>, <a href="./3.10.E10d.tex">TeX</a>, <a href="./3.10.E10e.tex">TeX</a>, <a href="./3.10.E10f.tex">TeX</a>, <a href="./3.10.E10a.pmml">pMML</a>, <a href="./3.10.E10b.pmml">pMML</a>, <a href="./3.10.E10c.pmml">pMML</a>, <a href="./3.10.E10d.pmml">pMML</a>, <a href="./3.10.E10e.pmml">pMML</a>, <a href="./3.10.E10f.pmml">pMML</a>, <a href="./3.10.E10a.png">png</a>, <a href="./3.10.E10b.png">png</a>, <a href="./3.10.E10c.png">png</a>, <a href="./3.10.E10d.png">png</a>, <a href="./3.10.E10e.png">png</a>, <a href="./3.10.E10f.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px2.info" title="Quotient-Difference Algorithm ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="Px2.p3" class="ltx_para">
+<p class="ltx_p">The quotient-difference algorithm is frequently unstable and may require
+high-precision arithmetic or exact arithmetic. A more stable version of the
+algorithm is discussed in <cite class="ltx_cite ltx_citemacro_citet">Stokes (<a href="./bib/S#bib2167" title="A stable quotient-difference algorithm" class="ltx_ref">1980</a>)</cite>. For applications to Bessel
+functions and Whittaker functions (Chapters <a href="./10" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10</span></a> and <a href="./13" title="Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13</span></a>), see
+<cite class="ltx_cite ltx_citemacro_citet">Gargantini and Henrici (<a href="./bib/G#bib855" title="A continued fraction algorithm for the computation of higher transcendental functions in the complex plane" class="ltx_ref">1967</a>)</cite>.
+</p>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Jacobi Fractions</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/J#JacobifractionJfraction">Jacobi fraction (<math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="J" display="inline"><mi>J</mi></math>-fraction)</a>, <a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">A continued fraction of the form</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="54px" altimg-valign="-19px" altimg-width="377px" alttext="C=\cfrac{\beta_{0}}{1-\alpha_{0}z-\cfrac{\beta_{1}z^{2}}{1-\alpha_{1}z-\cfrac{%
+\beta_{2}z^{2}}{1-\alpha_{2}z-\cdots}}}" display="block"><mrow><mi href="./3.10#E1">C</mi><mo>=</mo><mrow><mfrac><msub><mi>β</mi><mn>0</mn></msub><mrow><mrow><mn>1</mn><mo>-</mo><mrow><msub><mi>α</mi><mn>0</mn></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>-</mo></mrow></mfrac><mfrac><mrow><msub><mi>β</mi><mn>1</mn></msub><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mrow><mrow><mn>1</mn><mo>-</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>-</mo></mrow></mfrac><mfrac><mrow><msub><mi>β</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mrow><mrow><mn>1</mn><mo>-</mo><mrow><msub><mi>α</mi><mn>2</mn></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>-</mo></mrow></mfrac><mi mathvariant="normal">⋯</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E1" title="(3.10.1) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math>: continued fraction</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#Px3.p1" title="Jacobi Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E11" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E11.tex">TeX</a>, <a href="./3.10.E11.pmml">pMML</a>, <a href="./3.10.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px3.info" title="Jacobi Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is called a <em class="ltx_emph">Jacobi fraction (<math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="J" display="inline"><mi>J</mi></math>-fraction)</em>. We say that it is
+<em class="ltx_emph">associated</em> with the formal power series <math class="ltx_Math" altimg="m86.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> in
+(<a href="./3.10#E7" title="(3.10.7) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.7</span></a>) if the expansion of its <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th convergent <math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math> in
+ascending powers of <math class="ltx_Math" altimg="m111.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi>z</mi></math>, agrees with (<a href="./3.10#E7" title="(3.10.7) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.7</span></a>) up to and
+including the term in <math class="ltx_Math" altimg="m114.png" altimg-height="20px" altimg-valign="-2px" altimg-width="54px" alttext="z^{2n-1}" display="inline"><msup><mi>z</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, <math class="ltx_Math" altimg="m94.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=1,2,3,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>. For the same function
+<math class="ltx_Math" altimg="m86.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the convergent <math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math> of the Jacobi fraction (<a href="./3.10#E11" title="(3.10.11) ‣ Jacobi Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.11</span></a>)
+equals the convergent <math class="ltx_Math" altimg="m59.png" altimg-height="21px" altimg-valign="-5px" altimg-width="37px" alttext="C_{2n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub></math> of the Stieltjes fraction
+(<a href="./3.10#E6" title="(3.10.6) ‣ Stieltjes Fractions ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.6</span></a>).</p>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Examples of <math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi>S</mi></math>- and <math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="J" display="inline"><mi>J</mi></math>-Fractions</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS2.info" title="§3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">For elementary functions, see §§ <a href="./4.9" title="§4.9 Continued Fractions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.9</span></a> and <a href="./4.35" title="§4.35 Identities ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.35</span></a>.</p>
+</div>
+<div id="Px4.p2" class="ltx_para">
+<p class="ltx_p">For special functions see
+§<a href="./5.10" title="§5.10 Continued Fractions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.10</span></a> (gamma function),
+§<a href="./7.9" title="§7.9 Continued Fractions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.9</span></a> (error function),
+§<a href="./8.9" title="§8.9 Continued Fractions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.9</span></a> (incomplete gamma functions),
+§<a href="./8.17#v" title="§8.17(v) Continued Fraction ‣ §8.17 Incomplete Beta Functions ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.17(v)</span></a> (incomplete beta function),
+§<a href="./8.19#vii" title="§8.19(vii) Continued Fraction ‣ §8.19 Generalized Exponential Integral ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.19(vii)</span></a> (generalized exponential integral),
+§§<a href="./10.10" title="§10.10 Continued Fractions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.10</span></a> and <a href="./10.33" title="§10.33 Continued Fractions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.33</span></a> (quotients of Bessel functions),
+§<a href="./13.6" title="§13.6 Relations to Other Functions ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.6</span></a> (quotients of confluent hypergeometric functions),
+§<a href="./13.19" title="§13.19 Asymptotic Expansions for Large Argument ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.19</span></a> (quotients of Whittaker functions), and
+§<a href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.7</span></a> (quotients of hypergeometric functions).</p>
+</div>
+<div id="Px4.p3" class="ltx_para">
+<p class="ltx_p">For further information and examples see
+<cite class="ltx_cite ltx_citemacro_citet">Lorentzen and Waadeland (<a href="./bib/L#bib1462" title="Continued Fractions with Applications" class="ltx_ref">1992</a>, pp. 292–330, 560–599)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Cuyt<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib606" title="Handbook of Continued Fractions for Special Functions" class="ltx_ref">2008</a>)</cite>.</p>
+</div>
+</section>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.10(iii) </span>Numerical Evaluation of Continued Fractions</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Wall (<a href="./bib/W#bib2354" title="Analytic Theory of Continued Fractions" class="ltx_ref">1948</a>, pp. 17–19)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Barnett<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib200" title="Coulomb wave functions for all real η and ρ" class="ltx_ref">1974</a>)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Barnett (<a href="./bib/B#bib196" title="An algorithm for regular and irregular Coulomb and Bessel functions of real order to machine accuracy" class="ltx_ref">1981a</a>)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.iii" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#info" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Forward Recurrence Algorithm</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS3.info" title="§3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">The <math class="ltx_Math" altimg="m56.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="A_{n}" display="inline"><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub></math> and <math class="ltx_Math" altimg="m57.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="B_{n}" display="inline"><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></math> of (<a href="./3.10#E2" title="(3.10.2) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.2</span></a>) can be computed by means of
+three-term recurrence relations (<a href="./1.12#E5" title="(1.12.5) ‣ Recurrence Relations ‣ §1.12(ii) Convergents ‣ §1.12 Continued Fractions ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.12.5</span></a>). However, this may be
+unstable; also overflow and underflow may occur when evaluating <math class="ltx_Math" altimg="m56.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="A_{n}" display="inline"><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub></math> and <math class="ltx_Math" altimg="m57.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="B_{n}" display="inline"><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></math>
+(making it necessary to re-scale from time to time).</p>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Backward Recurrence Algorithm</h3>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS3.info" title="§3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">To compute the <math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math> of (<a href="./3.10#E2" title="(3.10.2) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.2</span></a>) we perform the iterated divisions</p>
+<table id="E12" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex16" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m52.png" altimg-height="17px" altimg-valign="-5px" altimg-width="28px" alttext="\displaystyle u_{n}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-6px" altimg-width="52px" alttext="\displaystyle=b_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi>b</mi><mi>n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex17" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m51.png" altimg-height="17px" altimg-valign="-5px" altimg-width="27px" alttext="\displaystyle u_{k}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>k</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m15.png" altimg-height="46px" altimg-valign="-20px" altimg-width="116px" alttext="\displaystyle=b_{k}+\frac{a_{k+1}}{u_{k+1}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>b</mi><mi>k</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>a</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi href="./3.10#E3">u</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mfrac></mstyle></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m91.png" altimg-height="21px" altimg-valign="-6px" altimg-width="198px" alttext="k=n-1,n-2,\dots,0" display="inline"><mrow><mi>k</mi><mo>=</mo><mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>0</mn></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E3" title="(3.10.3) ‣ §3.10(ii) Relations to Power Series ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m110.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="u_{n}" display="inline"><msub><mi href="./3.10#E3">u</mi><mi>n</mi></msub></math>: series</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E12" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E12a.tex">TeX</a>, <a href="./3.10.E12b.tex">TeX</a>, <a href="./3.10.E12a.pmml">pMML</a>, <a href="./3.10.E12b.pmml">pMML</a>, <a href="./3.10.E12a.png">png</a>, <a href="./3.10.E12b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px6.info" title="Backward Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Then <math class="ltx_Math" altimg="m109.png" altimg-height="21px" altimg-valign="-5px" altimg-width="76px" alttext="u_{0}=C_{n}" display="inline"><mrow><msub><mi href="./3.10#E3">u</mi><mn>0</mn></msub><mo>=</mo><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></mrow></math>. To achieve a prescribed accuracy, either <em class="ltx_emph">a priori</em>
+knowledge is needed of the value of <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>, or <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math> is determined by trial and
+error. In general this algorithm is more stable than the forward algorithm; see
+<cite class="ltx_cite ltx_citemacro_citet">Jones and Thron (<a href="./bib/J#bib1177" title="Numerical stability in evaluating continued fractions" class="ltx_ref">1974</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px7" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Forward Series Recurrence Algorithm</h3>
+<div id="Px7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/C#continuedfractions">continued fractions</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS3.info" title="§3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px7.p1" class="ltx_para">
+<p class="ltx_p">The continued fraction</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="53px" altimg-valign="-17px" altimg-width="209px" alttext="C=\cfrac{a_{0}}{1-\cfrac{a_{1}}{1-\cfrac{a_{2}}{1-\cdots}}}" display="block"><mrow><mi href="./3.10#E1">C</mi><mo>=</mo><mrow><mfrac><msub><mi>a</mi><mn>0</mn></msub><mrow><mn>1</mn><mo>-</mo></mrow></mfrac><mfrac><msub><mi>a</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>-</mo></mrow></mfrac><mfrac><msub><mi>a</mi><mn>2</mn></msub><mrow><mn>1</mn><mo>-</mo></mrow></mfrac><mi mathvariant="normal">⋯</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E1" title="(3.10.1) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math>: continued fraction</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#Px7.p1" title="Forward Series Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E13" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E13.tex">TeX</a>, <a href="./3.10.E13.pmml">pMML</a>, <a href="./3.10.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px7.info" title="Forward Series Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">can be written in the form</p>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.10.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="64px" altimg-valign="-28px" altimg-width="103px" alttext="C=\sum_{k=0}^{\infty}t_{k}," display="block"><mrow><mrow><mi href="./3.10#E1">C</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>t</mi><mi>k</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E1" title="(3.10.1) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="C" display="inline"><mi href="./3.10#E1">C</mi></math>: continued fraction</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E14" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E14.tex">TeX</a>, <a href="./3.10.E14.pmml">pMML</a>, <a href="./3.10.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px7.info" title="Forward Series Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="E15" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex18" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="5" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-5px" altimg-width="22px" alttext="\displaystyle t_{0}" display="inline"><msub><mi>t</mi><mn>0</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-6px" altimg-width="52px" alttext="\displaystyle=a_{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi>a</mi><mn>0</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex19" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m50.png" altimg-height="21px" altimg-valign="-5px" altimg-width="23px" alttext="\displaystyle t_{k}" display="inline"><msub><mi>t</mi><mi>k</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="90px" alttext="\displaystyle=\rho_{k}t_{k-1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>ρ</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>t</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex20" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-6px" altimg-width="25px" alttext="\displaystyle\rho_{0}" display="inline"><msub><mi>ρ</mi><mn>0</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex21" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-6px" altimg-width="26px" alttext="\displaystyle\rho_{k}" display="inline"><msub><mi>ρ</mi><mi>k</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m10.png" altimg-height="53px" altimg-valign="-21px" altimg-width="177px" alttext="\displaystyle=\frac{a_{k}(1+\rho_{k-1})}{1-a_{k}(1+\rho_{k-1})}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>a</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>-</mo><mrow><msub><mi>a</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mstyle></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m90.png" altimg-height="21px" altimg-valign="-6px" altimg-width="122px" alttext="k=1,2,3,\dots" display="inline"><mrow><mi>k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E15" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E15a.tex">TeX</a>, <a href="./3.10.E15b.tex">TeX</a>, <a href="./3.10.E15c.tex">TeX</a>, <a href="./3.10.E15d.tex">TeX</a>, <a href="./3.10.E15a.pmml">pMML</a>, <a href="./3.10.E15b.pmml">pMML</a>, <a href="./3.10.E15c.pmml">pMML</a>, <a href="./3.10.E15d.pmml">pMML</a>, <a href="./3.10.E15a.png">png</a>, <a href="./3.10.E15b.png">png</a>, <a href="./3.10.E15c.png">png</a>, <a href="./3.10.E15d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px7.info" title="Forward Series Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">The <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th partial sum <math class="ltx_Math" altimg="m108.png" altimg-height="21px" altimg-valign="-7px" altimg-width="171px" alttext="t_{0}+t_{1}+\dots+t_{n-1}" display="inline"><mrow><msub><mi>t</mi><mn>0</mn></msub><mo>+</mo><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>t</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></math> equals the <math class="ltx_Math" altimg="m96.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th convergent
+of (<a href="./3.10#E13" title="(3.10.13) ‣ Forward Series Recurrence Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10.13</span></a>), <math class="ltx_Math" altimg="m94.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=1,2,3,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>. In contrast to the preceding
+algorithms in this subsection no scaling problems arise and no <em class="ltx_emph">a priori</em>
+information is needed.</p>
+</div>
+<div id="Px7.p2" class="ltx_para">
+<p class="ltx_p">In <cite class="ltx_cite ltx_citemacro_citet">Gautschi (<a href="./bib/G#bib885" title="Un procedimento di calcolo per le funzioni gamma incomplete" class="ltx_ref">1979c</a>)</cite> the forward series algorithm is used for the
+evaluation of a continued fraction of an incomplete gamma function (see
+§<a href="./8.9" title="§8.9 Continued Fractions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.9</span></a>).</p>
+</div>
+</section>
+<section id="Px8" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Steed’s Algorithm</h3>
+<div id="Px8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/S#Steedsalgorithm">Steed’s algorithm</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#SS3.info" title="§3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px8.p1" class="ltx_para">
+<p class="ltx_p">This forward algorithm achieves efficiency and stability in the computation of
+the convergents <math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="118px" alttext="C_{n}=A_{n}/B_{n}" display="inline"><mrow><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi href="./3.10#E2">A</mi><mi>n</mi></msub><mo>/</mo><msub><mi href="./3.10#E2">B</mi><mi>n</mi></msub></mrow></mrow></math>, and is related to the forward series
+recurrence algorithm. Again, no scaling problems arise and no <em class="ltx_emph">a priori</em>
+information is needed.
+</p>
+</div>
+<div id="Px8.p2" class="ltx_para">
+<p class="ltx_p">Let</p>
+<table id="E16" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex22" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m27.png" altimg-height="22px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle C_{0}" display="inline"><msub><mi href="./3.10#E2">C</mi><mn>0</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-6px" altimg-width="50px" alttext="\displaystyle=b_{0}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi>b</mi><mn>0</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex23" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m30.png" altimg-height="22px" altimg-valign="-5px" altimg-width="31px" alttext="\displaystyle D_{1}" display="inline"><msub><mi>D</mi><mn>1</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="\displaystyle=1/b_{1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><msub><mi>b</mi><mn>1</mn></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex24" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m32.png" altimg-height="22px" altimg-valign="-5px" altimg-width="46px" alttext="\displaystyle\nabla C_{1}" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><msub><mi href="./3.10#E2">C</mi><mn>1</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="23px" altimg-valign="-6px" altimg-width="78px" alttext="\displaystyle=a_{1}D_{1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>D</mi><mn>1</mn></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex25" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m28.png" altimg-height="22px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle C_{1}" display="inline"><msub><mi href="./3.10#E2">C</mi><mn>1</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="22px" altimg-valign="-5px" altimg-width="120px" alttext="\displaystyle=C_{0}+\nabla C_{1}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./3.10#E2">C</mi><mn>0</mn></msub><mo>+</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi href="./3.10#E2">C</mi><mn>1</mn></msub></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E2" title="(3.10.2) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math>: continued fraction approximant</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E16" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E16a.tex">TeX</a>, <a href="./3.10.E16b.tex">TeX</a>, <a href="./3.10.E16c.tex">TeX</a>, <a href="./3.10.E16d.tex">TeX</a>, <a href="./3.10.E16a.pmml">pMML</a>, <a href="./3.10.E16b.pmml">pMML</a>, <a href="./3.10.E16c.pmml">pMML</a>, <a href="./3.10.E16d.pmml">pMML</a>, <a href="./3.10.E16a.png">png</a>, <a href="./3.10.E16b.png">png</a>, <a href="./3.10.E16c.png">png</a>, <a href="./3.10.E16d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px8.info" title="Steed’s Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">(<math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\nabla" display="inline"><mo>∇</mo></math> is the <em class="ltx_emph">backward difference operator</em>.) Then for <math class="ltx_Math" altimg="m97.png" altimg-height="19px" altimg-valign="-5px" altimg-width="53px" alttext="n\geq 2" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></math>,</p>
+<table id="E17" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex26" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.10.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m31.png" altimg-height="22px" altimg-valign="-5px" altimg-width="33px" alttext="\displaystyle D_{n}" display="inline"><msub><mi>D</mi><mi>n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="50px" altimg-valign="-20px" altimg-width="150px" alttext="\displaystyle=\frac{1}{D_{n-1}a_{n}+b_{n}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mrow><msub><mi>D</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>+</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex27" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-5px" altimg-width="48px" alttext="\displaystyle\nabla C_{n}" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="191px" alttext="\displaystyle=(b_{n}D_{n}-1)\nabla C_{n-1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi href="./3.10#E2">C</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex28" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m29.png" altimg-height="22px" altimg-valign="-5px" altimg-width="31px" alttext="\displaystyle C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="24px" altimg-valign="-7px" altimg-width="144px" alttext="\displaystyle=C_{n-1}+\nabla C_{n}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./3.10#E2">C</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>+</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.10#E2" title="(3.10.2) ‣ §3.10(i) Introduction ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="C_{n}" display="inline"><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></math>: continued fraction approximant</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.10.E17" title="" class="ltx_ref">http://dlmf.nist.gov/3.10.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.10.E17a.tex">TeX</a>, <a href="./3.10.E17b.tex">TeX</a>, <a href="./3.10.E17c.tex">TeX</a>, <a href="./3.10.E17a.pmml">pMML</a>, <a href="./3.10.E17b.pmml">pMML</a>, <a href="./3.10.E17c.pmml">pMML</a>, <a href="./3.10.E17a.png">png</a>, <a href="./3.10.E17b.png">png</a>, <a href="./3.10.E17c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.10#Px8.info" title="Steed’s Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">The recurrences are continued until <math class="ltx_Math" altimg="m53.png" altimg-height="23px" altimg-valign="-7px" altimg-width="97px" alttext="(\nabla C_{n})/C_{n}" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msub><mi href="./3.10#E2">C</mi><mi>n</mi></msub></mrow></math> is within a prescribed
+relative precision.</p>
+</div>
+<div id="Px8.p3" class="ltx_para">
+<p class="ltx_p">For further information on the preceding algorithms, including convergence in
+the complex plane and methods for accelerating convergence, see
+<cite class="ltx_cite ltx_citemacro_citet">Blanch (<a href="./bib/B#bib289" title="Numerical evaluation of continued fractions" class="ltx_ref">1964</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Lorentzen and Waadeland (<a href="./bib/L#bib1462" title="Continued Fractions with Applications" class="ltx_ref">1992</a>, Chapter 3)</cite>. For the
+evaluation of special functions by using continued fractions see
+<cite class="ltx_cite ltx_citemacro_citet">Cuyt<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib606" title="Handbook of Continued Fractions for Special Functions" class="ltx_ref">2008</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Gautschi (<a href="./bib/G#bib875" title="Computational aspects of three-term recurrence relations" class="ltx_ref">1967</a>, §1)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Gil<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/G#bib933" title="Numerical Methods for Special Functions" class="ltx_ref">2007a</a>, Chapter 6)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Wimp (<a href="./bib/W#bib2413" title="Computation with Recurrence Relations" class="ltx_ref">1984</a>, Chapter 4, §5)</cite>. See
+also §§<a href="./6.18#i" title="§6.18(i) Main Functions ‣ §6.18 Methods of Computation ‣ Computation ‣ Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.18(i)</span></a>, <a href="./7.22#i" title="§7.22(i) Main Functions ‣ §7.22 Methods of Computation ‣ Computation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.22(i)</span></a>, <a href="./8.25#iv" title="§8.25(iv) Continued Fractions ‣ §8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.25(iv)</span></a>,
+<a href="./10.74#v" title="§10.74(v) Continued Fractions ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.74(v)</span></a>, <a href="./14.32" title="§14.32 Methods of Computation ‣ Computation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.32</span></a>, <a href="./28.34#ii" title="§28.34(ii) Eigenvalues ‣ §28.34 Methods of Computation ‣ Computation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">28.34(ii)</span></a>, <a href="./29.20#i" title="§29.20(i) Lamé Functions ‣ §29.20 Methods of Computation ‣ Computation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.20(i)</span></a>,
+<a href="./30.16#i" title="§30.16(i) Eigenvalues ‣ §30.16 Methods of Computation ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.16(i)</span></a>, <a href="./33.23#v" title="§33.23(v) Continued Fractions ‣ §33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.23(v)</span></a>.</p>
+</div>
+</section>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./3.9" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.9 </span>Acceleration of Convergence</span></a><a href="./3.11" title="§3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.11 </span>Approximation Techniques</span></a>
+</div>
+</div>
+</body>
+</html>

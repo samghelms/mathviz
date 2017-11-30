@@ -1,0 +1,508 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 27.5 Inversion Formulas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/27.5";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="up up" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="next" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.11" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.13" title="§27.13 Functions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.18" title="§27.18 Methods of Computation: Primes ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.19" title="§27.19 Methods of Computation: Factorization ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.20" title="§27.20 Methods of Computation: Other Number-Theoretic Functions ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.22" title="§27.22 Software ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Dirichlet product (or convolution), Möbius inversion, Möbius inversion formulas, inversion formulas, number theory, number-theoretic functions, pairs">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./27" title="Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27 </span>Functions of Number Theory</span></a><a href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Multiplicative Number Theory</span></a><a href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.4 </span>Euler Products and Dirichlet Series</span></a><a href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.6 </span>Divisor Sums</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§27.5 </span>Inversion Formulas</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib114" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, Chapter 2 and p. 228)</cite>. For
+(<a href="./27.5#E7" title="(27.5.7) ‣ §27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5.7</span></a>) use (<a href="./27.5#E2" title="(27.5.2) ‣ §27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5.2</span></a>) and formal substitution.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/D#Dirichletproductorconvolution">Dirichlet product (or convolution)</a>, <a class="ltx_keyword" href="./idx/M#Mobiusinversionformulas">Möbius inversion formulas</a>, <a class="ltx_keyword" href="./idx/N#numbertheory">number theory</a>, <a class="ltx_keyword" href="./idx/N#numbertheoreticfunctions">number-theoretic functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5" title="" class="ltx_ref">http://dlmf.nist.gov/27.5</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27#info" title="Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">If a Dirichlet series <math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="45px" alttext="F(s)" display="inline"><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></math> generates <math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="f(n)" display="inline"><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and <math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-7px" altimg-width="45px" alttext="G(s)" display="inline"><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></math> generates <math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="g(n)" display="inline"><mrow><mi href="./27.5">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>,
+then the product <math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="85px" alttext="F(s)G(s)" display="inline"><mrow><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> generates
+</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="59px" altimg-valign="-32px" altimg-width="204px" alttext="h(n)=\sum_{d\divides n}f(d)g\left(\frac{n}{d}\right)," display="block"><mrow><mrow><mrow><mi href="./27.5">h</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./27.5">g</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r1">n</mi><mi href="./27.1#p2.t1.r1">d</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi href="./27.5">f</mi></math>: function</a>,
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./27.5">g</mi></math>: function</a> and
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./27.5">h</mi></math>: function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E1" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E1.tex">TeX</a>, <a href="./27.5.E1.pmml">pMML</a>, <a href="./27.5.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">called the <em class="ltx_emph">Dirichlet product</em> (or <em class="ltx_emph">convolution</em>) of <math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi href="./27.5">f</mi></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./27.5">g</mi></math>. The
+set of all number-theoretic functions <math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi href="./27.5">f</mi></math> with <math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-7px" altimg-width="78px" alttext="f(1)\neq 0" display="inline"><mrow><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> forms an abelian
+group under Dirichlet multiplication, with the function <math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\left\lfloor 1/n\right\rfloor" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r16">⌊</mo><mrow><mn>1</mn><mo>/</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./front/introduction#Sx4.p1.t1.r16">⌋</mo></mrow></math> in
+(<a href="./27.2#E5" title="(27.2.5) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.5</span></a>) as identity element; see <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib114" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, p. 129)</cite>.
+The multiplicative functions are a subgroup of this group. Generating
+functions yield many relations connecting number-theoretic functions. For
+example, the equation <math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="165px" alttext="\mathop{\zeta\/}\nolimits\!\left(s\right)\cdot(\ifrac{1}{\mathop{\zeta\/}%
+\nolimits\!\left(s\right)})=1" display="inline"><mrow><mrow><mrow><mi href="./25.2#E1">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mrow><mi href="./25.2#E1">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>
+is equivalent to the identity</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="65px" altimg-valign="-32px" altimg-width="151px" alttext="\sum_{d\divides n}\mathop{\mu\/}\nolimits\!\left(d\right)=\left\lfloor\frac{1}%
+{n}\right\rfloor," display="block"><mrow><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo href="./front/introduction#Sx4.p1.t1.r16">⌊</mo><mfrac><mn>1</mn><mi href="./27.1#p2.t1.r1">n</mi></mfrac><mo href="./front/introduction#Sx4.p1.t1.r16">⌋</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./front/introduction#Sx4.p1.t1.r16" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-7px" altimg-width="33px" alttext="\left\lfloor\NVar{x}\right\rfloor" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r16">⌊</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#Sx4.p1.t1.r16">⌋</mo></mrow></math>: floor of <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 II.B</span> (in slightly different form)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.5</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E2" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E2.tex">TeX</a>, <a href="./27.5.E2.pmml">pMML</a>, <a href="./27.5.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">which, in turn, is the basis for the <em class="ltx_emph">Möbius inversion formula</em> relating
+sums over divisors:</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="59px" altimg-valign="-32px" altimg-width="387px" alttext="g(n)=\sum_{d\divides n}f(d)\Longleftrightarrow f(n)=\sum_{d\divides n}g(d)%
+\mathop{\mu\/}\nolimits\!\left(\frac{n}{d}\right)." display="block"><mrow><mrow><mrow><mrow><mi href="./27.5">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>⟺</mo><mrow><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mrow><mi href="./27.5">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r1">n</mi><mi href="./27.1#p2.t1.r1">d</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi href="./27.5">f</mi></math>: function</a> and
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./27.5">g</mi></math>: function</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 II.C</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E3" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E3.tex">TeX</a>, <a href="./27.5.E3.pmml">pMML</a>, <a href="./27.5.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Special cases of Möbius inversion pairs are:
+</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="59px" altimg-valign="-32px" altimg-width="335px" alttext="n=\sum_{d\divides n}\mathop{\phi\/}\nolimits\!\left(d\right)%
+\Longleftrightarrow\mathop{\phi\/}\nolimits\!\left(n\right)=\sum_{d\divides n}%
+d\mathop{\mu\/}\nolimits\!\left(\frac{n}{d}\right)," display="block"><mrow><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>⟺</mo><mrow><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>⁢</mo><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r1">n</mi><mi href="./27.1#p2.t1.r1">d</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.2 II.B</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E4" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E4.tex">TeX</a>, <a href="./27.5.E4.pmml">pMML</a>, <a href="./27.5.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="59px" altimg-valign="-32px" altimg-width="391px" alttext="\mathop{\ln\/}\nolimits n=\sum_{d\divides n}\mathop{\Lambda\/}\nolimits\!\left%
+(d\right)\Longleftrightarrow\mathop{\Lambda\/}\nolimits\!\left(n\right)=\sum_{%
+d\divides n}(\mathop{\ln\/}\nolimits d)\mathop{\mu\/}\nolimits\!\left(\frac{n}%
+{d}\right)." display="block"><mrow><mrow><mrow><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mi href="./27.2#E14" mathvariant="normal">Λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>⟺</mo><mrow><mrow><mi href="./27.2#E14" mathvariant="normal">Λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r1">d</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r1">n</mi><mi href="./27.1#p2.t1.r1">d</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E14" title="(27.2.14) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="\mathop{\Lambda\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E14" mathvariant="normal">Λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Mangoldt’s function</a>,
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E5" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E5.tex">TeX</a>, <a href="./27.5.E5.pmml">pMML</a>, <a href="./27.5.E5.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m8.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m12.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Other types of Möbius inversion formulas include:
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="57px" altimg-valign="-30px" altimg-width="432px" alttext="G(x)=\sum_{n\leq x}F\left(\frac{x}{n}\right)\Longleftrightarrow F(x)=\sum_{n%
+\leq x}\mathop{\mu\/}\nolimits\!\left(n\right)G\left(\frac{x}{n}\right)," display="block"><mrow><mrow><mrow><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r9">x</mi><mi href="./27.1#p2.t1.r1">n</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>⟺</mo><mrow><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mrow><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r9">x</mi><mi href="./27.1#p2.t1.r1">n</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>,
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="45px" alttext="F(s)" display="inline"><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></math>: Dirichlet series</a> and
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-7px" altimg-width="45px" alttext="G(s)" display="inline"><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></math>: Dirichlet series</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 II.C</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E6" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E6.tex">TeX</a>, <a href="./27.5.E6.pmml">pMML</a>, <a href="./27.5.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="64px" altimg-valign="-27px" altimg-width="450px" alttext="G(x)=\sum_{m=1}^{\infty}\frac{F(mx)}{m^{s}}\Longleftrightarrow F(x)=\sum_{m=1}%
+^{\infty}\mathop{\mu\/}\nolimits\!\left(m\right)\frac{G(mx)}{m^{s}}," display="block"><mrow><mrow><mrow><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>⁢</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./27.1#p2.t1.r1">m</mi><mi>s</mi></msup></mfrac></mrow></mrow><mo>⟺</mo><mrow><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">m</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mfrac><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>⁢</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./27.1#p2.t1.r1">m</mi><mi>s</mi></msup></mfrac></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>,
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="45px" alttext="F(s)" display="inline"><mrow><mi href="./27.5">F</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></math>: Dirichlet series</a> and
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-7px" altimg-width="45px" alttext="G(s)" display="inline"><mrow><mi href="./27.5">G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></math>: Dirichlet series</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.17#p1" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.17</span></a>,
+<a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.5</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E7" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E7.tex">TeX</a>, <a href="./27.5.E7.pmml">pMML</a>, <a href="./27.5.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.5.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="64px" altimg-valign="-32px" altimg-width="390px" alttext="g(n)=\prod_{d\divides n}f(d)\Longleftrightarrow f(n)=\prod_{d\divides n}\left(%
+g\left(\frac{n}{d}\right)\right)^{\mathop{\mu\/}\nolimits\!\left(d\right)}." display="block"><mrow><mrow><mrow><mrow><mi href="./27.5">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>⟺</mo><mrow><mrow><mi href="./27.5">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><msup><mrow><mo>(</mo><mrow><mi href="./27.5">g</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./27.1#p2.t1.r1">n</mi><mi href="./27.1#p2.t1.r1">d</mi></mfrac><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">d</mi><mo>)</mo></mrow></mrow></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E12" title="(27.2.12) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi href="./27.5">f</mi></math>: function</a> and
+<a href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./27.5">g</mi></math>: function</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 II.C</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.5.E8" title="" class="ltx_ref">http://dlmf.nist.gov/27.5.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.5.E8.tex">TeX</a>, <a href="./27.5.E8.pmml">pMML</a>, <a href="./27.5.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.5#info" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">For a general theory of Möbius inversion with applications to combinatorial
+theory see <cite class="ltx_cite ltx_citemacro_citet">Rota (<a href="./bib/R#bib1969" title="On the foundations of combinatorial theory. I. Theory of Möbius functions" class="ltx_ref">1964</a>)</cite>.
+</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.4 </span>Euler Products and Dirichlet Series</span></a><a href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.6 </span>Divisor Sums</span></a>
+</div>
+</div>
+</body>
+</html>

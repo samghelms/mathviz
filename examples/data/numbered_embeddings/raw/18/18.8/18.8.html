@@ -1,0 +1,340 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 18.8 Differential Equations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/18.8";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./18#PT3" title="Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="up up" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="next" href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.1" title="§18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.2" title="§18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.4" title="§18.4 Graphics ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.5" title="§18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.6" title="§18.6 Symmetry, Special Values, and Limits to Monomials ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.10" title="§18.10 Integral Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.11" title="§18.11 Relations to Other Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.12" title="§18.12 Generating Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.13" title="§18.13 Continued Fractions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.14" title="§18.14 Inequalities ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.15" title="§18.15 Asymptotic Approximations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.16" title="§18.16 Zeros ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.17" title="§18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.18" title="§18.18 Sums ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.19" title="§18.19 Hahn Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.20" title="§18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.21" title="§18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.22" title="§18.22 Hahn Class: Recurrence Relations and Differences ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.23" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.25" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.27" title="§18.27 q -Hahn Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.28" title="§18.28 Askey–Wilson Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.29" title="§18.29 Asymptotic Approximations for q -Hahn and Askey–Wilson Classes ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.30" title="§18.30 Associated OP’s ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.31" title="§18.31 Bernstein–Szegő Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.32" title="§18.32 OP’s with Respect to Freud Weights ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.33" title="§18.33 Polynomials Orthogonal on the Unit Circle ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.34" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.36" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.38" title="§18.38 Mathematical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.39" title="§18.39 Physical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.40" title="§18.40 Methods of Computation ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.41" title="§18.41 Tables ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.42" title="§18.42 Software ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Chebyshev polynomials, Hermite polynomials, Jacobi polynomials, Laguerre polynomials, Legendre polynomials, classical orthogonal polynomials, differential equation, differential equations, ultraspherical polynomials">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./18" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>Orthogonal Polynomials</span></a><a href="./18#PT3" title="Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Classical Orthogonal Polynomials</span></a><a href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.7 </span>Interrelations and Limit Relations</span></a><a href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.9 </span>Recurrence Relations and Derivatives</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§18.8 </span>Differential Equations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For Table <a href="./18.8#T1" title="Table 18.8.1 ‣ §18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.8.1</span></a>, Rows 2, 3, 5, 9–10, 11–12, see
+<cite class="ltx_cite ltx_citemacro_citet">Szegő (<a href="./bib/S#bib2188" title="Orthogonal Polynomials" class="ltx_ref">1975</a>, (4.2.4), (4.24.2), (4.7.5), (5.1.2), (5.5.2))</cite>,
+respectively;
+Row 4 is the special case <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="56px" alttext="\alpha=\beta" display="inline"><mrow><mi>α</mi><mo>=</mo><mi>β</mi></mrow></math> of Row 2;
+Rows 6, 7, 8 are the special cases <math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-9px" altimg-width="111px" alttext="\alpha=\beta=-\frac{1}{2}" display="inline"><mrow><mi>α</mi><mo>=</mo><mi>β</mi><mo>=</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m23.png" altimg-height="27px" altimg-valign="-9px" altimg-width="95px" alttext="\alpha=\beta=\frac{1}{2}" display="inline"><mrow><mi>α</mi><mo>=</mo><mi>β</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, <math class="ltx_Math" altimg="m22.png" altimg-height="21px" altimg-valign="-6px" altimg-width="93px" alttext="\alpha=\beta=0" display="inline"><mrow><mi>α</mi><mo>=</mo><mi>β</mi><mo>=</mo><mn>0</mn></mrow></math>, respectively, of
+Row 2.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.8" title="" class="ltx_ref">http://dlmf.nist.gov/18.8</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">See Table <a href="./18.8#T1" title="Table 18.8.1 ‣ §18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.8.1</span></a> and also Table 22.6 of
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>)</cite>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 18.8.1: </span>Classical OP’s: differential equations
+<math class="ltx_Math" altimg="m17.png" altimg-height="24px" altimg-valign="-7px" altimg-width="435px" alttext="A(x)f^{\prime\prime}(x)+B(x)f^{\prime}(x)+C(x)f(x)+\lambda_{n}f(x)=0" display="inline"><mrow><mrow><mrow><mrow><mi>A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi>f</mi><mi>′′</mi></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mrow><mi>B</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mrow><mi>C</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁢</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="A(x)" display="inline"><mrow><mi>A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="B(x)" display="inline"><mrow><mi>B</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="C(x)" display="inline"><mrow><mi>C</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="\lambda_{n}" display="inline"><msub><mi>λ</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m37.png" altimg-height="29px" altimg-valign="-7px" altimg-width="85px" alttext="\mathop{P^{(\alpha,\beta)}_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r2">P</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r2">,</mo><mi>β</mi><mo href="./18.3#T1.t1.r2" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="1-x^{2}" display="inline"><mrow><mn>1</mn><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="189px" alttext="\beta-\alpha-(\alpha+\beta+2)x" display="inline"><mrow><mi>β</mi><mo>-</mo><mi>α</mi><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;">0</td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m55.png" altimg-height="23px" altimg-valign="-7px" altimg-width="152px" alttext="n(n+\alpha+\beta+1)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m25.png" altimg-height="68px" altimg-valign="-29px" altimg-width="223px" alttext="\begin{gathered}\displaystyle\textstyle\left(\mathop{\sin\/}\nolimits\frac{1}{%
+2}x\right)^{\alpha+\frac{1}{2}}\left(\mathop{\cos\/}\nolimits\frac{1}{2}x%
+\right)^{\beta+\frac{1}{2}}\\
+\displaystyle\times\mathop{P^{(\alpha,\beta)}_{n}\/}\nolimits\!\left(\mathop{%
+\cos\/}\nolimits x\right)\end{gathered}" display="inline"><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><msup><mrow><mo>(</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow><mo>)</mo></mrow><mrow><mi>α</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow><mo>)</mo></mrow><mrow><mi>β</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi></mi><mo>×</mo><mrow><msubsup><mi href="./18.3#T1.t1.r2">P</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r2">,</mo><mi>β</mi><mo href="./18.3#T1.t1.r2" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi href="./18.2#Px1.p2">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m27.png" altimg-height="57px" altimg-valign="-24px" altimg-width="175px" alttext="\dfrac{\tfrac{1}{4}-\alpha^{2}}{4{\mathop{\sin\/}\nolimits^{2}}\frac{1}{2}x}+%
+\dfrac{\frac{1}{4}-\beta^{2}}{4{\mathop{\cos\/}\nolimits^{2}}\frac{1}{2}x}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>-</mo><msup><mi>α</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><msup><mi href="./4.14#E1">sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>-</mo><msup><mi>β</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><msup><mi href="./4.14#E2">cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m29.png" altimg-height="32px" altimg-valign="-9px" altimg-width="180px" alttext="\left(n+\frac{1}{2}(\alpha+\beta+1)\right)^{2}" display="inline"><msup><mrow><mo>(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup></math></td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m2.png" altimg-height="29px" altimg-valign="-7px" altimg-width="209px" alttext="(\mathop{\sin\/}\nolimits x)^{\alpha+\frac{1}{2}}\mathop{P^{(\alpha,\alpha)}_{%
+n}\/}\nolimits\!\left(\mathop{\cos\/}\nolimits x\right)" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi href="./18.2#Px1.p2">x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>α</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><msubsup><mi href="./18.3#T1.t1.r2">P</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r2">,</mo><mi>α</mi><mo href="./18.3#T1.t1.r2" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi href="./18.2#Px1.p2">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m1.png" altimg-height="28px" altimg-valign="-9px" altimg-width="133px" alttext="(\frac{1}{4}-\alpha^{2})/{\mathop{\sin\/}\nolimits^{2}}x" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>-</mo><msup><mi>α</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mrow><msup><mi href="./4.14#E1">sin</mi><mn>2</mn></msup><mo>⁡</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m3.png" altimg-height="27px" altimg-valign="-9px" altimg-width="115px" alttext="(n+\alpha+\frac{1}{2})^{2}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mi>α</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></math></td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m31.png" altimg-height="29px" altimg-valign="-7px" altimg-width="70px" alttext="\mathop{C^{(\lambda)}_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r3">C</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r3" stretchy="false">(</mo><mi>λ</mi><mo href="./18.3#T1.t1.r3" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="1-x^{2}" display="inline"><mrow><mn>1</mn><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-7px" altimg-width="103px" alttext="-(2\lambda+1)x" display="inline"><mrow><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="90px" alttext="n(n+2\lambda)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+</tr>
+<tr id="T1.t1.r6" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m41.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\mathop{T_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r4">T</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="1-x^{2}" display="inline"><mrow><mn>1</mn><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m7.png" altimg-height="17px" altimg-valign="-4px" altimg-width="31px" alttext="-x" display="inline"><mrow><mo>-</mo><mi href="./18.2#Px1.p2">x</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m57.png" altimg-height="20px" altimg-valign="-2px" altimg-width="25px" alttext="n^{2}" display="inline"><msup><mi href="./18.1#SS1.p2.t1.r5">n</mi><mn>2</mn></msup></math></td>
+</tr>
+<tr id="T1.t1.r7" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m43.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{U_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r5">U</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="1-x^{2}" display="inline"><mrow><mn>1</mn><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m6.png" altimg-height="18px" altimg-valign="-4px" altimg-width="41px" alttext="-3x" display="inline"><mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m53.png" altimg-height="23px" altimg-valign="-7px" altimg-width="78px" alttext="n(n+2)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+</tr>
+<tr id="T1.t1.r8" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m39.png" altimg-height="23px" altimg-valign="-7px" altimg-width="55px" alttext="\mathop{P_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r10">P</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-4px" altimg-width="59px" alttext="1-x^{2}" display="inline"><mrow><mn>1</mn><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-4px" altimg-width="41px" alttext="-2x" display="inline"><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="78px" alttext="n(n+1)" display="inline"><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./18.1#SS1.p2.t1.r5">n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+</tr>
+<tr id="T1.t1.r9" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m35.png" altimg-height="29px" altimg-valign="-7px" altimg-width="69px" alttext="\mathop{L^{(\alpha)}_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r12">L</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r12" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-4px" altimg-width="87px" alttext="\alpha+1-x" display="inline"><mrow><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mi href="./18.2#Px1.p2">x</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></td>
+</tr>
+<tr id="T1.t1.r10" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m50.png" altimg-height="31px" altimg-valign="-9px" altimg-width="181px" alttext="e^{-\frac{1}{2}x^{2}}x^{\alpha+\frac{1}{2}}\mathop{L^{(\alpha)}_{n}\/}%
+\nolimits\!\left(x^{2}\right)" display="inline"><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./18.2#Px1.p2">x</mi><mrow><mi>α</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><msubsup><mi href="./18.3#T1.t1.r12">L</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r12" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m8.png" altimg-height="27px" altimg-valign="-9px" altimg-width="172px" alttext="-x^{2}+(\frac{1}{4}-\alpha^{2})x^{-2}" display="inline"><mrow><mrow><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>-</mo><msup><mi>α</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi href="./18.2#Px1.p2">x</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-4px" altimg-width="108px" alttext="4n+2\alpha+2" display="inline"><mrow><mrow><mn>4</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>α</mi></mrow><mo>+</mo><mn>2</mn></mrow></math></td>
+</tr>
+<tr id="T1.t1.r11" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="\mathop{H_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-4px" altimg-width="41px" alttext="-2x" display="inline"><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.2#Px1.p2">x</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m14.png" altimg-height="17px" altimg-valign="-2px" altimg-width="26px" alttext="2n" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow></math></td>
+</tr>
+<tr id="T1.t1.r12" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m49.png" altimg-height="28px" altimg-valign="-7px" altimg-width="113px" alttext="e^{-\frac{1}{2}x^{2}}\mathop{H_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m9.png" altimg-height="21px" altimg-valign="-4px" altimg-width="40px" alttext="-x^{2}" display="inline"><mrow><mo>-</mo><msup><mi href="./18.2#Px1.p2">x</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-4px" altimg-width="61px" alttext="2n+1" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#SS1.p2.t1.r5">n</mi></mrow><mo>+</mo><mn>1</mn></mrow></math></td>
+</tr>
+<tr id="T1.t1.r13" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m46.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathit{He}_{n}\/}\nolimits\!\left(x\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r14" mathvariant="italic">He</mi><mi href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m7.png" altimg-height="17px" altimg-valign="-4px" altimg-width="31px" alttext="-x" display="inline"><mrow><mo>-</mo><mi href="./18.2#Px1.p2">x</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:4.166666666666667px;padding-bottom:4.166666666666667px;"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math></td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.3#T1.t1.r4" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\mathop{T_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r4">T</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Chebyshev polynomial of the first kind</a>,
+<a href="./18.3#T1.t1.r5" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="23px" altimg-valign="-7px" altimg-width="56px" alttext="\mathop{U_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r5">U</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Chebyshev polynomial of the second kind</a>,
+<a href="./18.3#T1.t1.r13" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="23px" altimg-valign="-7px" altimg-width="59px" alttext="\mathop{H_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r13">H</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Hermite polynomial</a>,
+<a href="./18.3#T1.t1.r14" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m45.png" altimg-height="23px" altimg-valign="-7px" altimg-width="68px" alttext="\mathop{\mathit{He}_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r14" mathvariant="italic">He</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Hermite polynomial</a>,
+<a href="./18.3#T1.t1.r2" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="29px" altimg-valign="-7px" altimg-width="85px" alttext="\mathop{P^{(\NVar{\alpha},\NVar{\beta})}_{\NVar{n}}\/}\nolimits\!\left(\NVar{x%
+}\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r2">P</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false">(</mo><mi class="ltx_nvar">α</mi><mo href="./18.3#T1.t1.r2">,</mo><mi class="ltx_nvar">β</mi><mo href="./18.3#T1.t1.r2" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Jacobi polynomial</a>,
+<a href="./18.3#T1.t1.r10" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="23px" altimg-valign="-7px" altimg-width="55px" alttext="\mathop{P_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msub><mi href="./18.3#T1.t1.r10">P</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Legendre polynomial</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./18.3#T1.t1.r12" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-7px" altimg-width="69px" alttext="\mathop{L^{(\NVar{\alpha})}_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r12">L</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false">(</mo><mi class="ltx_nvar">α</mi><mo href="./18.3#T1.t1.r12" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: Laguerre (or generalized Laguerre) polynomial</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a>,
+<a href="./18.3#T1.t1.r3" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="29px" altimg-valign="-7px" altimg-width="70px" alttext="\mathop{C^{(\NVar{\lambda})}_{\NVar{n}}\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r3">C</mi><mi class="ltx_nvar" href="./18.1#SS1.p2.t1.r5">n</mi><mrow><mo href="./18.3#T1.t1.r3" stretchy="false">(</mo><mi class="ltx_nvar">λ</mi><mo href="./18.3#T1.t1.r3" stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2">x</mi><mo>)</mo></mrow></mrow></math>: ultraspherical (or Gegenbauer) polynomial</a>,
+<a href="./18.1#SS1.p2.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./18.1#SS1.p2.t1.r5">n</mi></math>: nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2">x</mi></math>: real variable</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">22.6.1, 22.6.4, 22.6.5, 22.6.8, 22.6.15, 22.6.18, 22.6.19, 22.6.20,
+22.6.21</span></span>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/C#Chebyshevpolynomials">Chebyshev polynomials</a>, <a class="ltx_keyword" href="./idx/H#Hermitepolynomials">Hermite polynomials</a>, <a class="ltx_keyword" href="./idx/J#Jacobipolynomials">Jacobi polynomials</a>, <a class="ltx_keyword" href="./idx/L#Laguerrepolynomials">Laguerre polynomials</a>, <a class="ltx_keyword" href="./idx/L#Legendrepolynomials">Legendre polynomials</a>, <a class="ltx_keyword" href="./idx/C#classicalorthogonalpolynomials">classical orthogonal polynomials</a>, <a class="ltx_keyword" href="./idx/D#differentialequations">differential equations</a>, <a class="ltx_keyword" href="./idx/U#ultrasphericalpolynomials">ultraspherical polynomials</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.8#info" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.8</span></a>,
+<a href="./18.8#p1" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.8</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.8.T1" title="" class="ltx_ref">http://dlmf.nist.gov/18.8.T1</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./18.8#info" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.7 </span>Interrelations and Limit Relations</span></a><a href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.9 </span>Recurrence Relations and Derivatives</span></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1098 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 3.9 Acceleration of Convergence</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/3.9";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./3#PT1" title="Areas ‣ Chapter 3 Numerical Methods">
+<link rel="up up" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./3.8" title="§3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="next" href="./3.10" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.1" title="§3.1 Arithmetics and Error Measures ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.2" title="§3.2 Linear Algebra ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.3" title="§3.3 Interpolation ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.4" title="§3.4 Differentiation ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.5" title="§3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.6" title="§3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.7" title="§3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.8" title="§3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.10" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.11" title="§3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="section" href="./3.12" title="§3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Aitken’s , Aitken’s , Euler’s transformation, Hankel, Levin’s transformations, Shanks’ transformation, Weniger’s transformation, Wynn’s epsilon algorithm, acceleration of convergence, convergence, definition, determinants, for sequences, for series, iterated, iterative methods, limit-preserving, logarithmic, of series">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./3" title="Chapter 3 Numerical Methods" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Numerical Methods</span></a><a href="./3#PT1" title="Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Areas</span></a><a href="./3.8" title="§3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.8 </span>Nonlinear Equations</span></a><a href="./3.10" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.10 </span>Continued Fractions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§3.9 </span>Acceleration of Convergence</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#accelerationofconvergence">acceleration of convergence</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./17.18#p3" title="§17.18 Methods of Computation ‣ Computation ‣ Chapter 17 q -Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§17.18</span></a>,
+<a href="./2.11#SS6.p1" title="§2.11(vi) Direct Numerical Transformations ‣ §2.11 Remainder Terms; Stokes Phenomenon ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.11(vi)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9" title="" class="ltx_ref">http://dlmf.nist.gov/3.9</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3#info" title="Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§3.9(i) </span>Sequence Transformations</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§3.9(ii) </span>Euler’s Transformation of Series</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§3.9(iii) </span>Aitken’s <math class="ltx_Math" altimg="m14.png" altimg-height="20px" altimg-valign="-2px" altimg-width="30px" alttext="\Delta^{2}" display="inline"><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup></math>-Process</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§3.9(iv) </span>Shanks’ Transformation</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§3.9(v) </span>Levin’s and Weniger’s Transformations</a></li>
+<li class="ltx_tocentry"><a href="#vi"><span class="ltx_tag ltx_tag_subsection">§3.9(vi) </span>Applications and Further Transformations</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.9(i) </span>Sequence Transformations</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#accelerationofconvergence">acceleration of convergence</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.i" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#info" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">All sequences (series) in this section are sequences (series) of real or
+complex numbers.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">A transformation of a convergent sequence <math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\{s_{n}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></math> with limit <math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\sigma" display="inline"><mi href="./3.9#SS1.p2">σ</mi></math> into a
+sequence <math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\{t_{n}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></math> is
+called <em class="ltx_emph">limit-preserving</em> if <math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\{t_{n}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></math> converges to the same limit
+<math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\sigma" display="inline"><mi href="./3.9#SS1.p2">σ</mi></math>.
+</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">The transformation is <em class="ltx_emph">accelerating</em> if it is limit-preserving and if
+</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="48px" altimg-valign="-19px" altimg-width="159px" alttext="\lim_{n\to\infty}\frac{t_{n}-\sigma}{s_{n}-\sigma}=0." display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub><mo>-</mo><mi href="./3.9#SS1.p2">σ</mi></mrow><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo>-</mo><mi href="./3.9#SS1.p2">σ</mi></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a>,
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="20px" altimg-valign="-5px" altimg-width="22px" alttext="t_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub></math>: sequence</a> and
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\sigma" display="inline"><mi href="./3.9#SS1.p2">σ</mi></math>: limit</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E1" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E1.tex">TeX</a>, <a href="./3.9.E1.pmml">pMML</a>, <a href="./3.9.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS1.info" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Similarly for convergent series if we regard the sum as the limit of the
+sequence of partial sums.</p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<p class="ltx_p">It should be borne in mind that a sequence (series) transformation can be
+effective for one type of sequence (series) but may not accelerate convergence
+for another type. It may even fail altogether by not being limit-preserving.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.9(ii) </span>Euler’s Transformation of Series</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Knopp (<a href="./bib/K#bib1286" title="Theorie und Anwendung der unendlichen Reihen" class="ltx_ref">1964</a>, pp. 253–255)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/E#Eulerstransformation">Euler’s transformation</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./2.11#SS6.p2" title="§2.11(vi) Direct Numerical Transformations ‣ §2.11 Remainder Terms; Stokes Phenomenon ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.11(vi)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.ii" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#info" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m10.png" altimg-height="26px" altimg-valign="-8px" altimg-width="166px" alttext="S=\sum_{k=0}^{\infty}(-1)^{k}a_{k}" display="inline"><mrow><mi href="./3.9#SS2.p1">S</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><msub><mi>a</mi><mi>k</mi></msub></mrow></mrow></mrow></math> is a convergent series, then
+</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="64px" altimg-valign="-28px" altimg-width="230px" alttext="S=\sum_{k=0}^{\infty}(-1)^{k}2^{-k-1}\Delta^{k}a_{0}," display="block"><mrow><mrow><mi href="./3.9#SS2.p1">S</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mrow><mo>-</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mi>k</mi></msup><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.6#SS1.p1" title="§3.6(i) Introduction ‣ §3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\Delta" display="inline"><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi></math>: forward difference operator</a> and
+<a href="./3.9#SS2.p1" title="§3.9(ii) Euler’s Transformation of Series ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi href="./3.9#SS2.p1">S</mi></math>: a convergent series</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E2" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E2.tex">TeX</a>, <a href="./3.9.E2.pmml">pMML</a>, <a href="./3.9.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS2.info" title="§3.9(ii) Euler’s Transformation of Series ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">provided that the right-hand side converges. Here <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\Delta" display="inline"><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi></math> is the <em class="ltx_emph">forward
+difference operator</em>:</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="27px" altimg-valign="-6px" altimg-width="241px" alttext="\Delta^{k}a_{0}=\Delta^{k-1}a_{1}-\Delta^{k-1}a_{0}," display="block"><mrow><mrow><mrow><msup><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mi>k</mi></msup><msub><mi>a</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mrow><msup><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>-</mo><mrow><msup><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-6px" altimg-width="103px" alttext="k=1,2,\ldots" display="inline"><mrow><mi>k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.6#SS1.p1" title="§3.6(i) Introduction ‣ §3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\Delta" display="inline"><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi></math>: forward difference operator</a></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">3.6.27</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E3" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E3.tex">TeX</a>, <a href="./3.9.E3.pmml">pMML</a>, <a href="./3.9.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS2.info" title="§3.9(ii) Euler’s Transformation of Series ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Thus</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="67px" altimg-valign="-27px" altimg-width="268px" alttext="\Delta^{k}a_{0}=\sum_{m=0}^{k}(-1)^{m}\binom{k}{m}a_{k-m}." display="block"><mrow><mrow><mrow><msup><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi><mi>k</mi></msup><msub><mi>a</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>m</mi></msup><mo>⁢</mo><mrow><mo href="./1.2#i">(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>m</mi></mfrac><mo href="./1.2#i">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mrow><mi>k</mi><mo>-</mo><mi>m</mi></mrow></msub></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#i" title="§1.2(i) Binomial Coefficients ‣ §1.2 Elementary Algebra ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="27px" altimg-valign="-9px" altimg-width="37px" alttext="\binom{\NVar{m}}{\NVar{n}}" display="inline"><mrow><mo href="./1.2#i">(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar" href="./1.1#p2.t1.r5">m</mi><mi class="ltx_nvar" href="./1.1#p2.t1.r5">n</mi></mfrac><mo href="./1.2#i">)</mo></mrow></math>: binomial coefficient</a> and
+<a href="./3.6#SS1.p1" title="§3.6(i) Introduction ‣ §3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\Delta" display="inline"><mi href="./3.6#SS1.p1" mathvariant="normal">Δ</mi></math>: forward difference operator</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">3.6.27</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E4" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E4.tex">TeX</a>, <a href="./3.9.E4.pmml">pMML</a>, <a href="./3.9.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS2.info" title="§3.9(ii) Euler’s Transformation of Series ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Euler’s transformation is usually applied to alternating series. Examples are
+provided by the following analytic transformations of slowly-convergent series
+into rapidly convergent ones:</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="46px" altimg-valign="-16px" altimg-width="513px" alttext="\mathop{\ln\/}\nolimits 2=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots=\frac{1%
+}{1\cdot 2^{1}}+\frac{1}{2\cdot 2^{2}}+\frac{1}{3\cdot 2^{3}}+\cdots," display="block"><mrow><mrow><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mn>2</mn></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>⋅</mo><msup><mn>2</mn><mn>1</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⋅</mo><msup><mn>2</mn><mn>3</mn></msup></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E5" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E5.tex">TeX</a>, <a href="./3.9.E5.pmml">pMML</a>, <a href="./3.9.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS2.info" title="§3.9(ii) Euler’s Transformation of Series ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="53px" altimg-valign="-21px" altimg-width="579px" alttext="\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\cdots=\frac{1}{2}\left(1+%
+\frac{1!}{1\cdot 3}+\frac{2!}{3\cdot 5}+\frac{3!}{3\cdot 5\cdot 7}+\cdots%
+\right)." display="block"><mrow><mrow><mfrac><mi>π</mi><mn>4</mn></mfrac><mo>=</mo><mrow><mrow><mrow><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><mn>7</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>1</mn><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mrow><mn>1</mn><mo>⋅</mo><mn>3</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mrow><mn>3</mn><mo>⋅</mo><mn>5</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>3</mn><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mrow><mn>3</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>7</mn></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E6" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E6.tex">TeX</a>, <a href="./3.9.E6.pmml">pMML</a>, <a href="./3.9.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS2.info" title="§3.9(ii) Euler’s Transformation of Series ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.9(iii) </span>Aitken’s <math class="ltx_Math" altimg="m14.png" altimg-height="20px" altimg-valign="-2px" altimg-width="30px" alttext="\Delta^{2}" display="inline"><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup></math>-Process</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#AitkensD2process">Aitken’s <math class="ltx_Math" altimg="m14.png" altimg-height="20px" altimg-valign="-2px" altimg-width="30px" alttext="\Delta^{2}" display="inline"><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup></math>-process</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.iii" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#info" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="54px" altimg-valign="-20px" altimg-width="402px" alttext="t_{n}=s_{n}-\frac{(\Delta s_{n})^{2}}{\Delta^{2}s_{n}}=s_{n}-\frac{(s_{n+1}-s_%
+{n})^{2}}{s_{n+2}-2s_{n+1}+s_{n}}." display="block"><mrow><mrow><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo>-</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mrow><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo>-</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mrow><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi href="./3.9#SS1.p2">s</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>+</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a> and
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="20px" altimg-valign="-5px" altimg-width="22px" alttext="t_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub></math>: sequence</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">3.9.7</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E7" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E7.tex">TeX</a>, <a href="./3.9.E7.pmml">pMML</a>, <a href="./3.9.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS3.info" title="§3.9(iii) Aitken’s Δ 2 -Process ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">This transformation is accelerating if <math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\{s_{n}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></math> is a <em class="ltx_emph">linearly convergent
+sequence</em>, i.e., a sequence for which</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="47px" altimg-valign="-19px" altimg-width="180px" alttext="\lim_{n\to\infty}\frac{s_{n+1}-\sigma}{s_{n}-\sigma}=\rho," display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><mi>σ</mi></mrow><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo>-</mo><mi>σ</mi></mrow></mfrac></mrow><mo>=</mo><mi>ρ</mi></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="62px" alttext="\left|\rho\right|&lt;1" display="inline"><mrow><mrow><mo>|</mo><mi>ρ</mi><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E8" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E8.tex">TeX</a>, <a href="./3.9.E8.pmml">pMML</a>, <a href="./3.9.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS3.info" title="§3.9(iii) Aitken’s Δ 2 -Process ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">When applied repeatedly, Aitken’s process is known as the <em class="ltx_emph">iterated
+<math class="ltx_Math" altimg="m14.png" altimg-height="20px" altimg-valign="-2px" altimg-width="30px" alttext="\Delta^{2}" display="inline"><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup></math>-process</em>. See <cite class="ltx_cite ltx_citemacro_citet">Brezinski and Redivo Zaglia (<a href="./bib/B#bib351" title="Extrapolation Methods. Theory and Practice" class="ltx_ref">1991</a>, pp. 39–42)</cite>.
+</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.9(iv) </span>Shanks’ Transformation</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/S#Shankstransformation">Shanks’ transformation</a>, <a class="ltx_keyword" href="./idx/W#Wynnsepsilonalgorithm">Wynn’s epsilon algorithm</a>, <a class="ltx_keyword" href="./idx/D#determinants">determinants</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.iv" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#info" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph">Shanks’ transformation</em> is a generalization of Aitken’s
+<math class="ltx_Math" altimg="m14.png" altimg-height="20px" altimg-valign="-2px" altimg-width="30px" alttext="\Delta^{2}" display="inline"><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup></math>-process. Let <math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi>k</mi></math> be a fixed positive integer. Then the
+transformation of the sequence <math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\{s_{n}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></math> into a sequence <math class="ltx_Math" altimg="m26.png" altimg-height="24px" altimg-valign="-8px" altimg-width="64px" alttext="\{t_{n,2k}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msub><mo stretchy="false">}</mo></mrow></math> is
+given by</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="53px" altimg-valign="-21px" altimg-width="170px" alttext="t_{n,2k}=\frac{H_{k+1}(s_{n})}{H_{k}(\Delta^{2}s_{n})}," display="block"><mrow><mrow><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi href="./3.9#E10">H</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi href="./3.9#E10">H</mi><mi>k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m35.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a>,
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="20px" altimg-valign="-5px" altimg-width="22px" alttext="t_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub></math>: sequence</a> and
+<a href="./3.9#E10" title="(3.9.10) ‣ §3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="H_{m}(u)" display="inline"><mrow><msub><mi href="./3.9#E10">H</mi><mi>m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow></math>: Hankel determinant</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.9#SS4.p2" title="§3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.9(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E9" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E9.tex">TeX</a>, <a href="./3.9.E9.pmml">pMML</a>, <a href="./3.9.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS4.info" title="§3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m9.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="H_{m}" display="inline"><msub><mi href="./3.9#E10">H</mi><mi>m</mi></msub></math> is the <em class="ltx_emph">Hankel determinant</em>
+</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="114px" altimg-valign="-51px" altimg-width="402px" alttext="H_{m}(u_{n})=\begin{vmatrix}u_{n}&amp;u_{n+1}&amp;\cdots&amp;u_{n+m-1}\\
+u_{n+1}&amp;u_{n+2}&amp;\cdots&amp;u_{n+m}\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+u_{n+m-1}&amp;u_{n+m}&amp;\cdots&amp;u_{n+2m-2}\end{vmatrix}." display="block"><mrow><mrow><mrow><msub><mi href="./3.9#E10">H</mi><mi>m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo href="./1.3#i">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>u</mi><mi>n</mi></msub></mtd><mtd columnalign="center"><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><msub><mi>u</mi><mrow><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo>-</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center"><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow></msub></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋱</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>u</mi><mrow><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo>-</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center"><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow></msub></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><msub><mi>u</mi><mrow><mrow><mi>n</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mrow><mo>-</mo><mn>2</mn></mrow></msub></mtd></mtr></mtable><mo href="./1.3#i">|</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="63px" alttext="H_{m}(u)" display="inline"><mrow><msub><mi href="./3.9#E10">H</mi><mi>m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow></math>: Hankel determinant (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd><a href="./1.3#i" title="§1.3(i) Definitions and Elementary Properties ‣ §1.3 Determinants ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="32px" alttext="\det" display="inline"><mo href="./1.3#i">det</mo></math>: determinant</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E10" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E10.tex">TeX</a>, <a href="./3.9.E10.pmml">pMML</a>, <a href="./3.9.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS4.info" title="§3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">The ratio of the Hankel determinants in (<a href="./3.9#E9" title="(3.9.9) ‣ §3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9.9</span></a>) can be
+computed recursively by <em class="ltx_emph">Wynn’s epsilon algorithm</em>:
+</p>
+<table id="E11" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="5" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">3.9.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="33px" altimg-valign="-9px" altimg-width="39px" alttext="\displaystyle\varepsilon_{-1}^{(n)}" display="inline"><msubsup><mi>ε</mi><mrow><mo>-</mo><mn>1</mn></mrow><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="32px" altimg-valign="-7px" altimg-width="39px" alttext="\displaystyle\varepsilon_{0}^{(n)}" display="inline"><msubsup><mi>ε</mi><mn>0</mn><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-6px" altimg-width="53px" alttext="\displaystyle=s_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m35.png" altimg-height="20px" altimg-valign="-6px" altimg-width="123px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="33px" altimg-valign="-9px" altimg-width="51px" alttext="\displaystyle\varepsilon_{m+1}^{(n)}" display="inline"><msubsup><mi>ε</mi><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="53px" altimg-valign="-23px" altimg-width="224px" alttext="\displaystyle=\varepsilon_{m-1}^{(n+1)}+\frac{1}{\varepsilon_{m}^{(n+1)}-%
+\varepsilon_{m}^{(n)}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msubsup><mi>ε</mi><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msubsup><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msubsup><mi>ε</mi><mi>m</mi><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msubsup><mo>-</mo><msubsup><mi>ε</mi><mi>m</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m34.png" altimg-height="20px" altimg-valign="-6px" altimg-width="149px" alttext="n,m=0,1,2,\dots" display="inline"><mrow><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.11#SS4.p6" title="§3.11(iv) Padé Approximations ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.11(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E11" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E11a.tex">TeX</a>, <a href="./3.9.E11b.tex">TeX</a>, <a href="./3.9.E11c.tex">TeX</a>, <a href="./3.9.E11a.pmml">pMML</a>, <a href="./3.9.E11b.pmml">pMML</a>, <a href="./3.9.E11c.pmml">pMML</a>, <a href="./3.9.E11a.png">png</a>, <a href="./3.9.E11b.png">png</a>, <a href="./3.9.E11c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS4.info" title="§3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Then <math class="ltx_Math" altimg="m43.png" altimg-height="30px" altimg-valign="-8px" altimg-width="103px" alttext="t_{n,2k}=\varepsilon_{2k}^{(n)}" display="inline"><mrow><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msub><mo>=</mo><msubsup><mi>ε</mi><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow></math>. Aitken’s <math class="ltx_Math" altimg="m14.png" altimg-height="20px" altimg-valign="-2px" altimg-width="30px" alttext="\Delta^{2}" display="inline"><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup></math>-process is the case
+<math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="52px" alttext="k=1" display="inline"><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="SS4.p3" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math> is the <math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>th partial sum of a power series <math class="ltx_Math" altimg="m29.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math>, then
+<math class="ltx_Math" altimg="m43.png" altimg-height="30px" altimg-valign="-8px" altimg-width="103px" alttext="t_{n,2k}=\varepsilon_{2k}^{(n)}" display="inline"><mrow><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msub><mo>=</mo><msubsup><mi>ε</mi><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow></math> is the Padé approximant <math class="ltx_Math" altimg="m12.png" altimg-height="24px" altimg-valign="-8px" altimg-width="109px" alttext="[(n+k)/k]_{f}" display="inline"><msub><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow><mi>f</mi></msub></math>
+(§<a href="./3.11#iv" title="§3.11(iv) Padé Approximations ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.11(iv)</span></a>).</p>
+</div>
+<div id="SS4.p4" class="ltx_para">
+<p class="ltx_p">For further information on the epsilon algorithm see
+<cite class="ltx_cite ltx_citemacro_citet">Brezinski and Redivo Zaglia (<a href="./bib/B#bib351" title="Extrapolation Methods. Theory and Practice" class="ltx_ref">1991</a>, pp. 78–95)</cite>.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Example</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS4.info" title="§3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">In Table <a href="./3.9#T1" title="Table 3.9.1 ‣ Example ‣ §3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9.1</span></a> values of the transforms <math class="ltx_Math" altimg="m44.png" altimg-height="22px" altimg-valign="-8px" altimg-width="44px" alttext="t_{n,2k}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msub></math> are supplied
+for</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="67px" altimg-valign="-30px" altimg-width="165px" alttext="s_{n}=\sum_{j=1}^{n}\frac{(-1)^{j+1}}{j^{2}}," display="block"><mrow><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>j</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E12" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E12.tex">TeX</a>, <a href="./3.9.E12.pmml">pMML</a>, <a href="./3.9.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#Px1.info" title="Example ‣ §3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">with <math class="ltx_Math" altimg="m38.png" altimg-height="27px" altimg-valign="-9px" altimg-width="298px" alttext="s_{\infty}=\frac{1}{12}\pi^{2}=0.82246\;70334\;24\ldots" display="inline"><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi mathvariant="normal">∞</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>0.82246 70334 24</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.9.1: </span>Shanks’ transformation for
+<math class="ltx_Math" altimg="m40.png" altimg-height="29px" altimg-valign="-11px" altimg-width="201px" alttext="s_{n}=\sum_{j=1}^{n}(-1)^{j+1}j^{-2}" display="inline"><mrow><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>j</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow></math>.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_tt"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math class="ltx_Math" altimg="m45.png" altimg-height="22px" altimg-valign="-8px" altimg-width="35px" alttext="t_{n,2}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mn>2</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math class="ltx_Math" altimg="m46.png" altimg-height="22px" altimg-valign="-8px" altimg-width="35px" alttext="t_{n,4}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mn>4</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-8px" altimg-width="35px" alttext="t_{n,6}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mn>6</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-8px" altimg-width="35px" alttext="t_{n,8}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mn>8</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math class="ltx_Math" altimg="m42.png" altimg-height="22px" altimg-valign="-8px" altimg-width="43px" alttext="t_{n,10}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mrow><mi>n</mi><mo>,</mo><mn>10</mn></mrow></msub></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_t">0</th>
+<td class="ltx_td ltx_align_right ltx_border_t">0.80000 00000 00</td>
+<td class="ltx_td ltx_align_right ltx_border_t">0.82182 62806 24</td>
+<td class="ltx_td ltx_align_right ltx_border_t">0.82244 84501 47</td>
+<td class="ltx_td ltx_align_right ltx_border_t">0.82246 64909 60</td>
+<td class="ltx_td ltx_align_right ltx_border_t">0.82246 70175 41</td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">1</th>
+<td class="ltx_td ltx_align_right">0.82692 30769 23</td>
+<td class="ltx_td ltx_align_right">0.82259 02017 65</td>
+<td class="ltx_td ltx_align_right">0.82247 05346 57</td>
+<td class="ltx_td ltx_align_right">0.82246 71342 06</td>
+<td class="ltx_td ltx_align_right">0.82246 70363 45</td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">2</th>
+<td class="ltx_td ltx_align_right">0.82111 11111 11</td>
+<td class="ltx_td ltx_align_right">0.82243 44785 14</td>
+<td class="ltx_td ltx_align_right">0.82246 61821 45</td>
+<td class="ltx_td ltx_align_right">0.82246 70102 48</td>
+<td class="ltx_td ltx_align_right">0.82246 70327 79</td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">3</th>
+<td class="ltx_td ltx_align_right">0.82300 13550 14</td>
+<td class="ltx_td ltx_align_right">0.82247 78118 35</td>
+<td class="ltx_td ltx_align_right">0.82246 72851 83</td>
+<td class="ltx_td ltx_align_right">0.82246 70397 56</td>
+<td class="ltx_td ltx_align_right">0.82246 70335 90</td>
+</tr>
+<tr id="T1.t1.r6" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">4</th>
+<td class="ltx_td ltx_align_right">0.82221 76684 88</td>
+<td class="ltx_td ltx_align_right">0.82246 28314 41</td>
+<td class="ltx_td ltx_align_right">0.82246 69467 93</td>
+<td class="ltx_td ltx_align_right">0.82246 70314 36</td>
+<td class="ltx_td ltx_align_right">0.82246 70333 75</td>
+</tr>
+<tr id="T1.t1.r7" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">5</th>
+<td class="ltx_td ltx_align_right">0.82259 80392 16</td>
+<td class="ltx_td ltx_align_right">0.82246 88857 22</td>
+<td class="ltx_td ltx_align_right">0.82246 70670 21</td>
+<td class="ltx_td ltx_align_right">0.82246 70341 24</td>
+<td class="ltx_td ltx_align_right">0.82246 70334 40</td>
+</tr>
+<tr id="T1.t1.r8" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_T">6</th>
+<td class="ltx_td ltx_align_right ltx_border_T">0.82239 19390 77</td>
+<td class="ltx_td ltx_align_right ltx_border_T">0.82246 61352 37</td>
+<td class="ltx_td ltx_align_right ltx_border_T">0.82246 70190 76</td>
+<td class="ltx_td ltx_align_right ltx_border_T">0.82246 70331 54</td>
+<td class="ltx_td ltx_align_right ltx_border_T">0.82246 70334 18</td>
+</tr>
+<tr id="T1.t1.r9" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">7</th>
+<td class="ltx_td ltx_align_right">0.82251 30483 23</td>
+<td class="ltx_td ltx_align_right">0.82246 75033 13</td>
+<td class="ltx_td ltx_align_right">0.82246 70400 56</td>
+<td class="ltx_td ltx_align_right">0.82246 70335 37</td>
+<td class="ltx_td ltx_align_right">0.82246 70334 26</td>
+</tr>
+<tr id="T1.t1.r10" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">8</th>
+<td class="ltx_td ltx_align_right">0.82243 73137 33</td>
+<td class="ltx_td ltx_align_right">0.82246 67719 32</td>
+<td class="ltx_td ltx_align_right">0.82246 70301 49</td>
+<td class="ltx_td ltx_align_right">0.82246 70333 73</td>
+<td class="ltx_td ltx_align_right">0.82246 70334 23</td>
+</tr>
+<tr id="T1.t1.r11" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">9</th>
+<td class="ltx_td ltx_align_right">0.82248 70624 89</td>
+<td class="ltx_td ltx_align_right">0.82246 71865 91</td>
+<td class="ltx_td ltx_align_right">0.82246 70351 34</td>
+<td class="ltx_td ltx_align_right">0.82246 70334 48</td>
+<td class="ltx_td ltx_align_right">0.82246 70334 24</td>
+</tr>
+<tr id="T1.t1.r12" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_b">10</th>
+<td class="ltx_td ltx_align_right ltx_border_b">0.82245 30535 15</td>
+<td class="ltx_td ltx_align_right ltx_border_b">0.82246 69397 57</td>
+<td class="ltx_td ltx_align_right ltx_border_b">0.82246 70324 88</td>
+<td class="ltx_td ltx_align_right ltx_border_b">0.82246 70334 12</td>
+<td class="ltx_td ltx_align_right ltx_border_b">0.82246 70334 24</td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">s</mi><mi>n</mi></msub></math>: sequence</a> and
+<a href="./3.9#SS1.p2" title="§3.9(i) Sequence Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="20px" altimg-valign="-5px" altimg-width="22px" alttext="t_{n}" display="inline"><msub><mi href="./3.9#SS1.p2">t</mi><mi>n</mi></msub></math>: sequence</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.9#Px1.p1" title="Example ‣ §3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.9(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.T1" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.T1</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#Px1.info" title="Example ‣ §3.9(iv) Shanks’ Transformation ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.9(v) </span>Levin’s and Weniger’s Transformations</h2>
+<div id="SS5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/L#Levinstransformations">Levin’s transformations</a>, <a class="ltx_keyword" href="./idx/W#Wenigerstransformation">Weniger’s transformation</a>, <a class="ltx_keyword" href="./idx/C#convergence">convergence</a>, <a class="ltx_keyword" href="./idx/I#iterativemethods">iterative methods</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.5#SS7.p3" title="§3.5(vii) Oscillatory Integrals ‣ §3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.5(vii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.v" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.v</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#info" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS5.p1" class="ltx_para">
+<p class="ltx_p">We give a special form of <em class="ltx_emph">Levin’s transformation</em> in which the sequence
+<math class="ltx_Math" altimg="m37.png" altimg-height="23px" altimg-valign="-7px" altimg-width="80px" alttext="s=\{s_{n}\}" display="inline"><mrow><mi href="./3.9#SS5.p1">s</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi href="./3.9#SS5.p1">s</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow></math> of partial sums <math class="ltx_Math" altimg="m39.png" altimg-height="28px" altimg-valign="-11px" altimg-width="123px" alttext="s_{n}=\sum_{j=0}^{n}a_{j}" display="inline"><mrow><msub><mi href="./3.9#SS5.p1">s</mi><mi>n</mi></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>j</mi></msub></mrow></mrow></math> is transformed into:</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="83px" altimg-valign="-36px" altimg-width="404px" alttext="{\cal L}_{k}^{(n)}(s)=\frac{\sum_{j=0}^{k}(-1)^{j}{\left({{k}\atop{j}}\right)}%
+c_{j,k,n}\ifrac{s_{n+j}}{a_{n+j+1}}}{\sum_{j=0}^{k}(-1)^{j}{\left({{k}\atop{j}%
+}\right)}c_{j,k,n}/a_{n+j+1}}," display="block"><mrow><mrow><mrow><msubsup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>k</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./3.9#SS5.p1">s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup><mo>⁢</mo><mrow><mo href="./1.2#i">(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>j</mi></mfrac><mo href="./1.2#i">)</mo></mrow><mo>⁢</mo><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mrow><msub><mi href="./3.9#SS5.p1">s</mi><mrow><mi>n</mi><mo>+</mo><mi>j</mi></mrow></msub><mo>/</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></msubsup><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup><mo>⁢</mo><mrow><mo href="./1.2#i">(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>j</mi></mfrac><mo href="./1.2#i">)</mo></mrow><mo>⁢</mo><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub></mrow><mo>/</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#i" title="§1.2(i) Binomial Coefficients ‣ §1.2 Elementary Algebra ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="27px" altimg-valign="-9px" altimg-width="37px" alttext="\binom{\NVar{m}}{\NVar{n}}" display="inline"><mrow><mo href="./1.2#i">(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar" href="./1.1#p2.t1.r5">m</mi><mi class="ltx_nvar" href="./1.1#p2.t1.r5">n</mi></mfrac><mo href="./1.2#i">)</mo></mrow></math>: binomial coefficient</a>,
+<a href="./3.9#SS5.p1" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS5.p1">s</mi><mi>n</mi></msub></math>: sequence</a> and
+<a href="./3.9#E14" title="(3.9.14) ‣ §3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-8px" altimg-width="49px" alttext="c_{j,k,n}" display="inline"><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub></math>: coefficient</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.9#SS5.p3" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.9(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E13" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E13.tex">TeX</a>, <a href="./3.9.E13.pmml">pMML</a>, <a href="./3.9.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS5.info" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(v)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi>k</mi></math> is a fixed nonnegative integer, and</p>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="55px" altimg-valign="-21px" altimg-width="215px" alttext="c_{j,k,n}=\frac{(n+j+1)^{k-1}}{(n+k+1)^{k-1}}." display="block"><mrow><mrow><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>=</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mi>j</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-8px" altimg-width="49px" alttext="c_{j,k,n}" display="inline"><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub></math>: coefficient (locally)</span></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E14" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E14.tex">TeX</a>, <a href="./3.9.E14.pmml">pMML</a>, <a href="./3.9.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS5.info" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(v)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">Sequences that are accelerated by Levin’s transformation include
+<em class="ltx_emph">logarithmically convergent</em> sequences, i.e., sequences <math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS5.p1">s</mi><mi>n</mi></msub></math> converging
+to <math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\sigma" display="inline"><mi href="./3.9#SS5.p1">σ</mi></math> such that</p>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="47px" altimg-valign="-19px" altimg-width="179px" alttext="\lim_{n\to\infty}\frac{s_{n+1}-\sigma}{s_{n}-\sigma}=1." display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><msub><mi href="./3.9#SS5.p1">s</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><mi href="./3.9#SS5.p1">σ</mi></mrow><mrow><msub><mi href="./3.9#SS5.p1">s</mi><mi>n</mi></msub><mo>-</mo><mi href="./3.9#SS5.p1">σ</mi></mrow></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.9#SS5.p1" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="s_{n}" display="inline"><msub><mi href="./3.9#SS5.p1">s</mi><mi>n</mi></msub></math>: sequence</a> and
+<a href="./3.9#SS5.p1" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\sigma" display="inline"><mi href="./3.9#SS5.p1">σ</mi></math>: limit</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E15" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E15.tex">TeX</a>, <a href="./3.9.E15.pmml">pMML</a>, <a href="./3.9.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS5.info" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(v)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS5.p2" class="ltx_para">
+<p class="ltx_p">For further information see <cite class="ltx_cite ltx_citemacro_citet">Brezinski and Redivo Zaglia (<a href="./bib/B#bib351" title="Extrapolation Methods. Theory and Practice" class="ltx_ref">1991</a>, pp. 39–42)</cite>.</p>
+</div>
+<div id="SS5.p3" class="ltx_para">
+<p class="ltx_p">In <em class="ltx_emph">Weniger’s transformations</em> the numbers <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-8px" altimg-width="49px" alttext="c_{j,k,n}" display="inline"><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub></math> in
+(<a href="./3.9#E13" title="(3.9.13) ‣ §3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9.13</span></a>) are chosen as follows:
+</p>
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="57px" altimg-valign="-23px" altimg-width="217px" alttext="c_{j,k,n}=\frac{\left(\beta+n+j\right)_{k-1}}{\left(\beta+n+k\right)_{k-1}}," display="block"><mrow><mrow><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>=</mo><mfrac><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./3.9#SS5.p3">β</mi><mo>+</mo><mi>n</mi><mo>+</mo><mi>j</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mi href="./3.9#SS5.p3">β</mi><mo>+</mo><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./3.9#E14" title="(3.9.14) ‣ §3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-8px" altimg-width="49px" alttext="c_{j,k,n}" display="inline"><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub></math>: coefficient</a> and
+<a href="./3.9#SS5.p3" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./3.9#SS5.p3">β</mi></math>: arbitrary constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E16" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E16.tex">TeX</a>, <a href="./3.9.E16.pmml">pMML</a>, <a href="./3.9.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS5.info" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(v)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">or</p>
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">3.9.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="57px" altimg-valign="-23px" altimg-width="231px" alttext="c_{j,k,n}=\frac{\left(-\gamma-n-j\right)_{k-1}}{\left(-\gamma-n-k\right)_{k-1}}," display="block"><mrow><mrow><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>=</mo><mfrac><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mo>-</mo><mi href="./3.9#SS5.p3">γ</mi></mrow><mo>-</mo><mi>n</mi><mo>-</mo><mi>j</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><msub><mrow><mo href="./5.2#iii">(</mo><mrow><mrow><mo>-</mo><mi href="./3.9#SS5.p3">γ</mi></mrow><mo>-</mo><mi>n</mi><mo>-</mo><mi>k</mi></mrow><mo href="./5.2#iii">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./3.9#SS5.p3" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="16px" alttext="\gamma" display="inline"><mi href="./3.9#SS5.p3">γ</mi></math>: arbitrary constant</a> and
+<a href="./3.9#E14" title="(3.9.14) ‣ §3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-8px" altimg-width="49px" alttext="c_{j,k,n}" display="inline"><msub><mi href="./3.9#E14">c</mi><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>n</mi></mrow></msub></math>: coefficient</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.E17" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./3.9.E17.tex">TeX</a>, <a href="./3.9.E17.pmml">pMML</a>, <a href="./3.9.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#SS5.info" title="§3.9(v) Levin’s and Weniger’s Transformations ‣ §3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9(v)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m20.png" altimg-height="24px" altimg-valign="-8px" altimg-width="76px" alttext="\left(a\right)_{0}=1" display="inline"><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mi>a</mi><mo href="./5.2#iii">)</mo></mrow><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow></math> and <math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-11px" altimg-width="260px" alttext="\left(a\right)_{j}=a(a+1)\cdots(a+j-1)" display="inline"><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mi>a</mi><mo href="./5.2#iii">)</mo></mrow><mi>j</mi></msub><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>+</mo><mi>j</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> are
+Pochhammer symbols (§<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.2(iii)</span></a>), and the constants <math class="ltx_Math" altimg="m15.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./3.9#SS5.p3">β</mi></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-6px" altimg-width="16px" alttext="\gamma" display="inline"><mi href="./3.9#SS5.p3">γ</mi></math> are
+chosen arbitrarily subject to certain conditions. See
+<cite class="ltx_cite ltx_citemacro_citet">Weniger (<a href="./bib/W#bib2384" title="Nonlinear sequence transformations for the acceleration of convergence and the summation of divergent series" class="ltx_ref">1989</a>)</cite>.</p>
+</div>
+</section>
+<section id="vi" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§3.9(vi) </span>Applications and Further Transformations</h2>
+<div id="SS6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#accelerationofconvergence">acceleration of convergence</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./3.9.vi" title="" class="ltx_ref">http://dlmf.nist.gov/3.9.vi</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./3.9#info" title="§3.9 Acceleration of Convergence ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS6.p1" class="ltx_para">
+<p class="ltx_p">For examples and other transformations for convergent sequences and series, see
+<cite class="ltx_cite ltx_citemacro_citet">Wimp (<a href="./bib/W#bib2412" title="Sequence Transformations and their Applications" class="ltx_ref">1981</a>, pp. 156–199)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Brezinski and Redivo Zaglia (<a href="./bib/B#bib351" title="Extrapolation Methods. Theory and Practice" class="ltx_ref">1991</a>, pp. 55–72)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Sidi (<a href="./bib/S#bib2069" title="Practical Extrapolation Methods: Theory and Applications" class="ltx_ref">2003</a>, Chapters 6, 12–13, 15–16, 19–24, and pp. 483–492)</cite>.</p>
+</div>
+<div id="SS6.p2" class="ltx_para">
+<p class="ltx_p">For applications to asymptotic expansions, see §<a href="./2.11#vi" title="§2.11(vi) Direct Numerical Transformations ‣ §2.11 Remainder Terms; Stokes Phenomenon ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.11(vi)</span></a>,
+<cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 540–543)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Weniger (<a href="./bib/W#bib2384" title="Nonlinear sequence transformations for the acceleration of convergence and the summation of divergent series" class="ltx_ref">1989</a>, <a href="./bib/W#bib2386" title="A rational approximant for the digamma function" class="ltx_ref">2003</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./3.8" title="§3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.8 </span>Nonlinear Equations</span></a><a href="./3.10" title="§3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.10 </span>Continued Fractions</span></a>
+</div>
+</div>
+</body>
+</html>

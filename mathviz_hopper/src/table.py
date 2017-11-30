@@ -85,13 +85,48 @@ class Table:
             "docs": construct_trie(self.docs)
         }
 
-    def print_html(self):
-        '''
-        "prints" a javascript visualization that can be run in the browser
-        (or TODO: a jupyter notebook cell) and initializes listening on a
-        port to serve data to the viz.
+    def print_table(self, public = False):
+        """ 
+        "prints" a javascript visualization that can be run in the browser locally
+        (and initializes listening on a port to serve data to the viz.
 
-        '''
+        Args:
+           public (boolean): indicates whether or not the table should be
+                             visible on a public address.
+
+        Returns:
+           A webpage
+
+        Usage example
+        ... initialize index
+        >>> t = Table(ind)
+        >>> t.print_table(public = true)
+        ... 
+
+        """
+
+        self._listen()
+
+    def serve_table(self, public = False, port = None):
+        """ 
+        "prints" a javascript visualization that can be run in the browser locally
+        (and initializes listening on a port to serve data to the viz.
+
+        Args:
+           public (boolean): indicates whether or not the table should be
+                             visible on a public address.
+           port (int): the port to serve the table on
+
+        Returns:
+           A webpage
+
+        Usage example
+        ... initialize index
+        >>> t = Table(ind)
+        >>> t.serve_table(public = true)
+        ... starts serving the table to a public address
+
+        """
 
         self._listen()
 
@@ -123,6 +158,7 @@ class Table:
         shutil.copytree(self.html_path, 'viz')
         pth = "viz/index.html"
         html = open(pth).read()
+        html.replace("__SERVER_DATA__", "http://localhost:"+str(self.port))
         display(HTML(html))
 
     def _listen(self):

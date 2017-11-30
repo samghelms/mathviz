@@ -1,0 +1,910 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 15.12 Asymptotic Approximations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/15.12";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./15#PT2" title="Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="up up" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="next" href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.2" title="§15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.3" title="§15.3 Graphics ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.4" title="§15.4 Special Cases ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.6" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.8" title="§15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.9" title="§15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.10" title="§15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.14" title="§15.14 Integrals ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.15" title="§15.15 Sums ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.17" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.19" title="§15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.20" title="§15.20 Software ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="asymptotic approximations, hypergeometric function, large , large , large , large , large , large , large , large , large variable">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./15" title="Chapter 15 Hypergeometric Function" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15 </span>Hypergeometric Function</span></a><a href="./15#PT2" title="Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.11 </span>Riemann’s Differential Equation</span></a><a href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.13 </span>Zeros</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§15.12 </span>Asymptotic Approximations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./15.12" title="" class="ltx_ref">http://dlmf.nist.gov/15.12</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15#info" title="Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§15.12(i) </span>Large Variable</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§15.12(ii) </span>Large <math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math></a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§15.12(iii) </span>Other Large Parameters</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.12(i) </span>Large Variable</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">15.7</span></span>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.i" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#info" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">For the asymptotic behavior of <math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left(a,b;c;z\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="65px" alttext="z\to\infty" display="inline"><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math> with
+<math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>, <math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>, <math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math> fixed, combine (<a href="./15.2#E2" title="(15.2.2) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.2.2</span></a>) with (<a href="./15.8#E2" title="(15.8.2) ‣ §15.8(i) Linear Transformations ‣ §15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.8.2</span></a>) or
+(<a href="./15.8#E8" title="(15.8.8) ‣ §15.8(ii) Linear Transformations: Limiting Cases ‣ §15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.8.8</span></a>).</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.12(ii) </span>Large <math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>
+</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Wagner (<a href="./bib/W#bib2342" title="Asymptotische Entwicklungen der hypergeometrischen Funktion ⁢ F ( a , b , c , z ) für → | c | ∞ und konstante Werte a , b und z" class="ltx_ref">1988</a>)</cite>. The region of validity given in
+<cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1489" title="The Special Functions and their Approximations, Vol. 1" class="ltx_ref">1969a</a>, p. 235)</cite> is incorrect.</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">15.7</span></span>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./14.15#SS1.info" title="§14.15(i) Large μ , Fixed ν ‣ §14.15 Uniform Asymptotic Approximations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.15(i)</span></a>,
+<a href="./15.19#SS4.p1" title="§15.19(iv) Recurrence Relations ‣ §15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.19(iv)</span></a>,
+<a href="./8.18#SS1.info" title="§8.18(i) Large Parameters, Fixed x ‣ §8.18 Asymptotic Expansions of I x ( a , b ) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.18(i)</span></a>,
+<a href="./errata/#Sx7.I14.I1.i7.p1" title="Other Changes ‣ Version 1.0.7 (March 21, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.ii" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.ii</a></dd>
+<dt>Addition (effective with 1.0.7):</dt>
+<dd>
+The reference to <cite class="ltx_cite ltx_citemacro_citet">López and Pagola (<a href="./bib/L#bib2805" title="A systematic “saddle point near a pole” asymptotic method with application to the Gauss hypergeometric function" class="ltx_ref">2011</a>)</cite> has been added at the end of this subsection.
+
+<p><span class="ltx_font_italic">Reported 2013-09-17</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#info" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Let <math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./15.1#p2.t1.r6">δ</mi></math> denote an arbitrary small positive constant. Also let <math class="ltx_Math" altimg="m53.png" altimg-height="21px" altimg-valign="-6px" altimg-width="51px" alttext="a,b,z" display="inline"><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>,</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow></math> be
+real or complex and fixed, and at least one of the following
+conditions be satisfied:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">(a)</span> 
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math> and/or <math class="ltx_Math" altimg="m58.png" altimg-height="23px" altimg-valign="-7px" altimg-width="171px" alttext="b\in\{0,-1,-2,\dots\}" display="inline"><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo href="./front/introduction#Sx4.p1.t1.r9">∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">(b)</span> 
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m45.png" altimg-height="27px" altimg-valign="-9px" altimg-width="68px" alttext="\realpart{z}&lt;\tfrac{1}{2}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>&lt;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> and <math class="ltx_Math" altimg="m80.png" altimg-height="23px" altimg-valign="-7px" altimg-width="96px" alttext="|c+n|\geq\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>+</mo><mi href="./15.1#p2.t1.r4">n</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≥</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></math> for all
+<math class="ltx_Math" altimg="m68.png" altimg-height="23px" altimg-valign="-7px" altimg-width="144px" alttext="n\in\{0,1,2,\dots\}" display="inline"><mrow><mi href="./15.1#p2.t1.r4">n</mi><mo href="./front/introduction#Sx4.p1.t1.r9">∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">(c)</span> 
+<div id="I1.ix3.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m46.png" altimg-height="27px" altimg-valign="-9px" altimg-width="68px" alttext="\realpart{z}=\tfrac{1}{2}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> and <math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="122px" alttext="\left|\mathop{\mathrm{ph}\/}\nolimits c\right|\leq\pi-\delta" display="inline"><mrow><mrow><mo>|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>|</mo></mrow><mo>≤</mo><mrow><mi>π</mi><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">(d)</span> 
+<div id="I1.ix4.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m47.png" altimg-height="27px" altimg-valign="-9px" altimg-width="68px" alttext="\realpart{z}&gt;\tfrac{1}{2}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>&gt;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> and <math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-9px" altimg-width="310px" alttext="\alpha_{-}-\tfrac{1}{2}\pi+\delta\leq\mathop{\mathrm{ph}\/}\nolimits c\leq%
+\alpha_{+}+\tfrac{1}{2}\pi-\delta" display="inline"><mrow><mrow><mrow><msub><mi href="./15.12#I1.ix4.p1">α</mi><mo>-</mo></msub><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow><mo>+</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow><mo>≤</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>≤</mo><mrow><mrow><msub><mi href="./15.12#I1.ix4.p1">α</mi><mo>+</mo></msub><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>, where
+</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="53px" altimg-valign="-21px" altimg-width="336px" alttext="\alpha_{\pm}=\mathop{\mathrm{arctan}\/}\nolimits\!\left(\frac{\mathop{\mathrm{%
+ph}\/}\nolimits z-\mathop{\mathrm{ph}\/}\nolimits\!\left(1-z\right)\mp\pi}{%
+\mathop{\ln\/}\nolimits|1-z^{-1}|}\right)," display="block"><mrow><mrow><msub><mi href="./15.12#I1.ix4.p1">α</mi><mo>±</mo></msub><mo>=</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mrow><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>-</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>∓</mo><mi>π</mi></mrow><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo stretchy="false">|</mo><mrow><mn>1</mn><mo>-</mo><msup><mi href="./15.1#p2.t1.r2">z</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">|</mo></mrow></mrow></mfrac><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-6px" altimg-width="26px" alttext="\mathop{\mathrm{ph}\/}\nolimits" display="inline"><mi href="./1.9#E7">ph</mi></math>: phase</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./15.12#I1.ix4.p1" title="(d) ‣ §15.12(ii) Large c ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="17px" altimg-valign="-7px" altimg-width="30px" alttext="\alpha_{\pm}" display="inline"><msub><mi href="./15.12#I1.ix4.p1">α</mi><mo>±</mo></msub></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E1" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E1.tex">TeX</a>, <a href="./15.12.E1.pmml">pMML</a>, <a href="./15.12.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS2.info" title="§15.12(ii) Large c ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">with <math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math> restricted so that <math class="ltx_Math" altimg="m42.png" altimg-height="27px" altimg-valign="-9px" altimg-width="127px" alttext="\pm\alpha_{\pm}\in[0,\tfrac{1}{2}\pi)" display="inline"><mrow><mrow><mo>±</mo><msub><mi href="./15.12#I1.ix4.p1">α</mi><mo>±</mo></msub></mrow><mo href="./front/introduction#Sx4.p1.t1.r9">∈</mo><mrow><mo href="./front/introduction#Sx4.p2.t1.r1" stretchy="false">[</mo><mn>0</mn><mo href="./front/introduction#Sx4.p2.t1.r1">,</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow><mo href="./front/introduction#Sx4.p2.t1.r1" stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Then for fixed <math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="149px" alttext="m\in\{0,1,2,\dots\}" display="inline"><mrow><mi href="./15.1#p2.t1.r4">m</mi><mo href="./front/introduction#Sx4.p1.t1.r9">∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></math>,</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="67px" altimg-valign="-27px" altimg-width="363px" alttext="\mathop{F\/}\nolimits\!\left(a,b;c;z\right)=\sum_{s=0}^{m-1}\frac{\left(a%
+\right)_{s}\left(b\right)_{s}}{\left(c\right)_{s}s!}z^{s}+\mathop{O\/}%
+\nolimits\!\left(c^{-m}\right)," display="block"><mrow><mrow><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./15.1#p2.t1.r5">s</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi href="./15.1#p2.t1.r4">m</mi><mo>-</mo><mn>1</mn></mrow></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo href="./5.2#iii">)</mo></mrow><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mi href="./15.1#p2.t1.r3">b</mi><mo href="./5.2#iii">)</mo></mrow><mi href="./15.1#p2.t1.r5">s</mi></msub></mrow><mrow><msub><mrow><mo href="./5.2#iii">(</mo><mi href="./15.1#p2.t1.r3">c</mi><mo href="./5.2#iii">)</mo></mrow><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁢</mo><mrow><mi href="./15.1#p2.t1.r5">s</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mi href="./15.1#p2.t1.r2">z</mi><mi href="./15.1#p2.t1.r5">s</mi></msup></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./15.1#p2.t1.r3">c</mi><mrow><mo>-</mo><mi href="./15.1#p2.t1.r4">m</mi></mrow></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m81.png" altimg-height="23px" altimg-valign="-7px" altimg-width="75px" alttext="|c|\to\infty" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./15.1#p2.t1.r3">c</mi><mo stretchy="false">|</mo></mrow><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./15.2#E1" title="(15.2.1) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="100px" alttext="\mathop{F\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m23.png" altimg-height="39px" altimg-valign="-15px" altimg-width="88px" alttext="\mathop{F\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./15.1#p2.t1.r5" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./15.1#p2.t1.r5">s</mi></math>: nonnegative integer</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a> and
+<a href="./15.1#p2.t1.r4" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./15.1#p2.t1.r4">m</mi></math>: integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.19#SS4.p2" title="§15.19(iv) Recurrence Relations ‣ §15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.19(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E2" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E2.tex">TeX</a>, <a href="./15.12.E2.pmml">pMML</a>, <a href="./15.12.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS2.info" title="§15.12(ii) Large c ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Similar results for other sectors are given in <cite class="ltx_cite ltx_citemacro_citet">Wagner (<a href="./bib/W#bib2342" title="Asymptotische Entwicklungen der hypergeometrischen Funktion ⁢ F ( a , b , c , z ) für → | c | ∞ und konstante Werte a , b und z" class="ltx_ref">1988</a>)</cite>. For the
+more general case in which <math class="ltx_Math" altimg="m55.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="a^{2}=\mathop{o\/}\nolimits\!\left(c\right)" display="inline"><mrow><msup><mi href="./15.1#p2.t1.r3">a</mi><mn>2</mn></msup><mo>=</mo><mrow><mi href="./2.1#E2">o</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>)</mo></mrow></mrow></mrow></math> and <math class="ltx_Math" altimg="m59.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="b^{2}=\mathop{o\/}\nolimits\!\left(c\right)" display="inline"><mrow><msup><mi href="./15.1#p2.t1.r3">b</mi><mn>2</mn></msup><mo>=</mo><mrow><mi href="./2.1#E2">o</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>)</mo></mrow></mrow></mrow></math> see
+<cite class="ltx_cite ltx_citemacro_citet">Wagner (<a href="./bib/W#bib2343" title="Asymptotische Entwicklungen der Gaußschen hypergeometrischen Funktion für unbeschränkte Parameter" class="ltx_ref">1990</a>)</cite>.</p>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">For large <math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math> and <math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math> with <math class="ltx_Math" altimg="m60.png" altimg-height="19px" altimg-valign="-4px" altimg-width="82px" alttext="c&gt;b+1" display="inline"><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>&gt;</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> see <cite class="ltx_cite ltx_citemacro_citet">López and Pagola (<a href="./bib/L#bib2805" title="A systematic “saddle point near a pole” asymptotic method with application to the Gauss hypergeometric function" class="ltx_ref">2011</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§15.12(iii) </span>Other Large Parameters</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For (<a href="./15.12#E3" title="(15.12.3) ‣ §15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12.3</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1489" title="The Special Functions and their Approximations, Vol. 1" class="ltx_ref">1969a</a>, §7.2)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 162)</cite>.
+The sector of validity given in the first reference is incorrect. See the
+third footnote in the second reference.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/H#hypergeometricfunction">hypergeometric function</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.19#SS4.p1" title="§15.19(iv) Recurrence Relations ‣ §15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.19(iv)</span></a>,
+<a href="./2.8#SS3.p6" title="§2.8(iii) Case II: Simple Turning Point ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iii)</span></a>,
+<a href="./2.8#SS4.p8" title="§2.8(iv) Case III: Simple Pole ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iv)</span></a>,
+<a href="./2.8#SS6.p5" title="§2.8(vi) Coalescing Transition Points ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(vi)</span></a>,
+<a href="./errata/#Sx3.I4.I1.i6.p1" title="Other Changes ‣ Version 1.0.11 (June 8, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.iii" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.iii</a></dd>
+<dt>Additions and a Deletion (effective with 1.0.11):</dt>
+<dd>
+In the last paragraph of this subsection, (i) a reference to <cite class="ltx_cite ltx_citemacro_citet">Farid Khwaja and Olde Daalhuis (<a href="./bib/F#bib2858" title="Uniform asymptotic expansions for hypergeometric functions with large parameters IV" class="ltx_ref">2014</a>)</cite> was added, replacing
+the original reference to <cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib1766" title="Uniform asymptotic expansions for hypergeometric functions with large parameters. III" class="ltx_ref">2010</a>)</cite>, and (ii)
+a reference to <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib469" title="Asymptotic Methods for Integrals" class="ltx_ref">2015</a>, Chapters 12 and 28)</cite> was also added.
+
+<p><span class="ltx_font_italic">Reported 2015-10-27</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#info" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Again, throughout this subsection <math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./15.1#p2.t1.r6">δ</mi></math> denotes an arbitrary small positive
+constant, and <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="69px" alttext="a,b,c,z" display="inline"><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">c</mi><mo>,</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow></math> are real or complex and fixed.</p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="67px" alttext="\lambda\to\infty" display="inline"><mrow><mi>λ</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>,
+</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="64px" altimg-valign="-27px" altimg-width="431px" alttext="\mathop{F\/}\nolimits\!\left({a,b\atop c+\lambda};z\right)\sim\frac{\mathop{%
+\Gamma\/}\nolimits\!\left(c+\lambda\right)}{\mathop{\Gamma\/}\nolimits\!\left(%
+c-b+\lambda\right)}\sum_{s=0}^{\infty}q_{s}(z)\left(b\right)_{s}\lambda^{-s-b}," display="block"><mrow><mrow><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>+</mo><mi>λ</mi></mrow></mfrac><mo>;</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow><mo href="./2.1#SS3.p1">∼</mo><mrow><mfrac><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>+</mo><mi>λ</mi></mrow><mo>)</mo></mrow></mrow><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>+</mo><mi>λ</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./15.1#p2.t1.r5">s</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./15.12#SS3.p2">q</mi><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msub><mrow><mo href="./5.2#iii">(</mo><mi href="./15.1#p2.t1.r3">b</mi><mo href="./5.2#iii">)</mo></mrow><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁢</mo><msup><mi>λ</mi><mrow><mrow><mo>-</mo><mi href="./15.1#p2.t1.r5">s</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\Gamma\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./15.2#E1" title="(15.2.1) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="100px" alttext="\mathop{F\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m23.png" altimg-height="39px" altimg-valign="-15px" altimg-width="88px" alttext="\mathop{F\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="\left(\NVar{a}\right)_{\NVar{n}}" display="inline"><msub><mrow><mo href="./5.2#iii">(</mo><mi class="ltx_nvar" href="./5.1#p2.t1.r5">a</mi><mo href="./5.2#iii">)</mo></mrow><mi class="ltx_nvar" href="./5.1#p2.t1.r1">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./2.1#SS3.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#SS3.p1">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./15.1#p2.t1.r5" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./15.1#p2.t1.r5">s</mi></math>: nonnegative integer</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a> and
+<a href="./15.12#SS3.p2" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="q_{s}(z)" display="inline"><mrow><msub><mi href="./15.12#SS3.p2">q</mi><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.12(iii)</span></a>,
+<a href="./15.12#SS3.p2" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.12(iii)</span></a>,
+<a href="./15.19#SS4.p2" title="§15.19(iv) Recurrence Relations ‣ §15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.19(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E3" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E3.tex">TeX</a>, <a href="./15.12.E3.pmml">pMML</a>, <a href="./15.12.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m69.png" altimg-height="23px" altimg-valign="-7px" altimg-width="84px" alttext="q_{0}(z)=1" display="inline"><mrow><mrow><msub><mi href="./15.12#SS3.p2">q</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math> and <math class="ltx_Math" altimg="m70.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="q_{s}(z)" display="inline"><mrow><msub><mi href="./15.12#SS3.p2">q</mi><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m71.png" altimg-height="20px" altimg-valign="-6px" altimg-width="101px" alttext="s=1,2,\dots" display="inline"><mrow><mi href="./15.1#p2.t1.r5">s</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, are defined by the generating
+function
+</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="65px" altimg-valign="-27px" altimg-width="444px" alttext="\left(\frac{e^{t}-1}{t}\right)^{b-1}e^{t(1-c)}\left(1-z+ze^{-t}\right)^{-a}=%
+\sum_{s=0}^{\infty}q_{s}(z)t^{s}." display="block"><mrow><mrow><mrow><msup><mrow><mo>(</mo><mfrac><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi>t</mi></msup><mo>-</mo><mn>1</mn></mrow><mi>t</mi></mfrac><mo>)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>+</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mi>t</mi></mrow></msup></mrow></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow></msup></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./15.1#p2.t1.r5">s</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./15.12#SS3.p2">q</mi><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>t</mi><mi href="./15.1#p2.t1.r5">s</mi></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./15.1#p2.t1.r5" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./15.1#p2.t1.r5">s</mi></math>: nonnegative integer</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a> and
+<a href="./15.12#SS3.p2" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="q_{s}(z)" display="inline"><mrow><msub><mi href="./15.12#SS3.p2">q</mi><mi href="./15.1#p2.t1.r5">s</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>: coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E4" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E4.tex">TeX</a>, <a href="./15.12.E4.pmml">pMML</a>, <a href="./15.12.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">If <math class="ltx_Math" altimg="m76.png" altimg-height="23px" altimg-valign="-7px" altimg-width="143px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\!\left(1-z\right)|&lt;\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>π</mi></mrow></math>, then (<a href="./15.12#E3" title="(15.12.3) ‣ §15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12.3</span></a>) applies when
+<math class="ltx_Math" altimg="m79.png" altimg-height="27px" altimg-valign="-9px" altimg-width="141px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\lambda|\leq\tfrac{1}{2}\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>λ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>. If
+<math class="ltx_Math" altimg="m48.png" altimg-height="27px" altimg-valign="-9px" altimg-width="68px" alttext="\realpart{z}\leq\tfrac{1}{2}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>≤</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, then (<a href="./15.12#E3" title="(15.12.3) ‣ §15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12.3</span></a>) applies when
+<math class="ltx_Math" altimg="m78.png" altimg-height="23px" altimg-valign="-7px" altimg-width="128px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\lambda|\leq\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>λ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>π</mi><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>.</p>
+</div>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m77.png" altimg-height="23px" altimg-valign="-7px" altimg-width="143px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\!\left(z-1\right)|&lt;\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>π</mi></mrow></math>, then as <math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="67px" alttext="\lambda\to\infty" display="inline"><mrow><mi>λ</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math> with
+<math class="ltx_Math" altimg="m78.png" altimg-height="23px" altimg-valign="-7px" altimg-width="128px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\lambda|\leq\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>λ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>π</mi><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>,</p>
+</div>
+<div id="SS3.p4" class="ltx_para">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left({a+\lambda,b-\lambda\atop c};\tfrac{1}{2%
+}-\tfrac{1}{2}z\right)=2^{(a+b-1)/2}\frac{(z+1)^{(c-a-b-1)/2}}{(z-1)^{c/2}}%
+\sqrt{\zeta\mathop{\sinh\/}\nolimits\zeta}\left(\lambda+\tfrac{1}{2}a-\tfrac{1%
+}{2}b\right)^{1-c}\left(\mathop{I_{c-1}\/}\nolimits\!\left((\lambda+\tfrac{1}{%
+2}a-\tfrac{1}{2}b)\zeta\right)(1+\mathop{O\/}\nolimits(\lambda^{-2}))+\frac{%
+\mathop{I_{c-2}\/}\nolimits\!\left((\lambda+\tfrac{1}{2}a-\tfrac{1}{2}b)\zeta%
+\right)}{2\lambda+a-b}\left(\left(c-\tfrac{1}{2}\right)\left(c-\tfrac{3}{2}%
+\right)\left(\frac{1}{\zeta}-\mathop{\coth\/}\nolimits\zeta\right)+\tfrac{1}{2%
+}(2c-a-b-1)(a+b-1)\mathop{\tanh\/}\nolimits\!\left(\tfrac{1}{2}\zeta\right)+%
+\mathop{O\/}\nolimits(\lambda^{-2})\right)\right)," display="block"><mrow><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi>λ</mi></mrow><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mi>λ</mi></mrow></mrow><mi href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><msup><mn>2</mn><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>/</mo><mn>2</mn></mrow></msup></mfrac><mo>⁢</mo><msqrt><mrow><mi href="./15.12#EGx1">ζ</mi><mo>⁢</mo><mrow><mi href="./4.28#E1">sinh</mi><mo>⁡</mo><mi href="./15.12#EGx1">ζ</mi></mrow></mrow></msqrt><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mrow><mi>λ</mi><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow></mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow></msup></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>×</mo><mrow><mo maxsize="4.08em" minsize="4.08em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><mrow><msub><mi href="./10.25#E2">I</mi><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>λ</mi><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow></mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./15.12#EGx1">ζ</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>+</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mfrac><mrow><msub><mi href="./10.25#E2">I</mi><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mn>2</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>λ</mi><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./15.12#EGx1">ζ</mi></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>+</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></mfrac></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>×</mo><mrow><mo maxsize="2.736em" minsize="2.736em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi href="./15.12#EGx1">ζ</mi></mfrac><mo>-</mo><mrow><mi href="./4.28#E7">coth</mi><mo>⁡</mo><mi href="./15.12#EGx1">ζ</mi></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi href="./4.28#E4">tanh</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.12#EGx1">ζ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="2.736em" minsize="2.736em">)</mo><mo maxsize="4.08em" minsize="4.08em">)</mo><mo>,</mo></mtd></mtr></mtable></mrow></mrow></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./4.28#E7" title="(4.28.7) ‣ §4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="55px" alttext="\mathop{\coth\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.28#E7">coth</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: hyperbolic cotangent function</a>,
+<a href="./4.28#E1" title="(4.28.1) ‣ §4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="53px" alttext="\mathop{\sinh\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.28#E1">sinh</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: hyperbolic sine function</a>,
+<a href="./4.28#E4" title="(4.28.4) ‣ §4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="58px" alttext="\mathop{\tanh\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.28#E4">tanh</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: hyperbolic tangent function</a>,
+<a href="./10.25#E2" title="(10.25.2) ‣ §10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{I_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.25#E2">I</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: modified Bessel function of the first kind</a>,
+<a href="./15.2#E2" title="(15.2.2) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="23px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m34.png" altimg-height="39px" altimg-valign="-15px" altimg-width="87px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z%
+}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: Olver’s hypergeometric function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a> and
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E5" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E5.tex">TeX</a>, <a href="./15.12.E5.pmml">pMML</a>, <a href="./15.12.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="23px" altimg-valign="-6px" altimg-width="126px" alttext="\zeta=\mathop{\mathrm{arccosh}\/}\nolimits z." display="block"><mrow><mrow><mi href="./15.12#EGx1">ζ</mi><mo>=</mo><mrow><mi href="./4.37#SS2.p1">arccosh</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.37#SS2.p1" title="§4.37(ii) Principal Values ‣ §4.37 Inverse Hyperbolic Functions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="82px" alttext="\mathop{\mathrm{arccosh}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.37#SS2.p1">arccosh</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: inverse hyperbolic cosine function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E6" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E6.tex">TeX</a>, <a href="./15.12.E6.pmml">pMML</a>, <a href="./15.12.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">For <math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{I_{\nu}\/}\nolimits\!\left(z\right)" display="inline"><mrow><msub><mi href="./10.25#E2">I</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> see §<a href="./10.25#ii" title="§10.25(ii) Standard Solutions ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.25(ii)</span></a>. For this result and an
+extension to an asymptotic expansion with error bounds see
+<cite class="ltx_cite ltx_citemacro_citet">Jones (<a href="./bib/J#bib1181" title="Asymptotics of the hypergeometric function" class="ltx_ref">2001</a>)</cite>.</p>
+</div>
+<div id="SS3.p5" class="ltx_para">
+<p class="ltx_p">See also <cite class="ltx_cite ltx_citemacro_citet">Dunster (<a href="./bib/D#bib705" title="Asymptotic approximations for the Jacobi and ultraspherical polynomials, and related functions" class="ltx_ref">1999</a>)</cite> where the asymptotics of Jacobi polynomials
+is described; compare (<a href="./15.9#E1" title="(15.9.1) ‣ Jacobi ‣ §15.9(i) Orthogonal Polynomials ‣ §15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.9.1</span></a>).</p>
+</div>
+<div id="SS3.p6" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m75.png" altimg-height="23px" altimg-valign="-7px" altimg-width="93px" alttext="|\mathop{\mathrm{ph}\/}\nolimits z|&lt;\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>π</mi></mrow></math>, then as <math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="67px" alttext="\lambda\to\infty" display="inline"><mrow><mi>λ</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math> with
+<math class="ltx_Math" altimg="m78.png" altimg-height="23px" altimg-valign="-7px" altimg-width="128px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\lambda|\leq\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>λ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>π</mi><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>,
+</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\mathop{F\/}\nolimits\!\left({a,b-\lambda\atop c+\lambda};-z\right)=2^{b-c+(1/%
+2)}\left(\frac{z+1}{2\sqrt{z}}\right)^{\lambda}\left(\lambda^{a/2}\mathop{U\/}%
+\nolimits\!\left(a-\tfrac{1}{2},-\alpha\sqrt{\lambda}\right)\left((1+z)^{c-a-b%
+}z^{1-c}\left(\frac{\alpha}{z-1}\right)^{1-a}+\mathop{O\/}\nolimits(\lambda^{-%
+1})\right)+\frac{\lambda^{\ifrac{(a-1)}{2}}}{\alpha}\mathop{U\/}\nolimits\!%
+\left(a-\tfrac{3}{2},-\alpha\sqrt{\lambda}\right)\left((1+z)^{c-a-b}z^{1-c}%
+\left(\frac{\alpha}{z-1}\right)^{1-a}-2^{c-b-(\ifrac{1}{2})}\left(\frac{\alpha%
+}{z-1}\right)^{a}+\mathop{O\/}\nolimits(\lambda^{-1})\right)\right)," display="block"><mrow><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mi>λ</mi></mrow></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>+</mo><mi>λ</mi></mrow></mfrac><mo>;</mo><mrow><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msup><mn>2</mn><mrow><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi href="./15.1#p2.t1.r2">z</mi></msqrt></mrow></mfrac><mo>)</mo></mrow><mi>λ</mi></msup><mo>⁢</mo><mrow><mo maxsize="3.384em" minsize="3.384em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><msup><mi>λ</mi><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mrow><mo>-</mo><mrow><mi href="./15.12#SS3.p6">α</mi><mo>⁢</mo><msqrt><mi>λ</mi></msqrt></mrow></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></msup><mo>⁢</mo><msup><mi href="./15.1#p2.t1.r2">z</mi><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi href="./15.12#SS3.p6">α</mi><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow></msup></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>+</mo><mrow><mfrac><msup><mi>λ</mi><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup><mi href="./15.12#SS3.p6">α</mi></mfrac><mo>⁢</mo><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo>,</mo><mrow><mo>-</mo><mrow><mi href="./15.12#SS3.p6">α</mi><mo>⁢</mo><msqrt><mi>λ</mi></msqrt></mrow></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi></mrow></msup><mo>⁢</mo><msup><mi href="./15.1#p2.t1.r2">z</mi><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi href="./15.12#SS3.p6">α</mi><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow></msup></mrow><mo>-</mo><mrow><msup><mn>2</mn><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi href="./15.12#SS3.p6">α</mi><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mi href="./15.1#p2.t1.r3">a</mi></msup></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo maxsize="3.384em" minsize="3.384em">)</mo><mo>,</mo></mtd></mtr></mtable></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./15.2#E1" title="(15.2.1) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="100px" alttext="\mathop{F\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m23.png" altimg-height="39px" altimg-valign="-15px" altimg-width="88px" alttext="\mathop{F\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: hypergeometric function</a>,
+<a href="./12.2#SS1.p1" title="§12.2(i) Introduction ‣ §12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./12.2#E1">a</mi><mo>,</mo><mi class="ltx_nvar" href="./12.1#p1.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: parabolic cylinder function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a> and
+<a href="./15.12#SS3.p6" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\alpha" display="inline"><mi href="./15.12#SS3.p6">α</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E7" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E7.tex">TeX</a>, <a href="./15.12.E7.pmml">pMML</a>, <a href="./15.12.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where
+</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="71px" altimg-valign="-27px" altimg-width="297px" alttext="\alpha=\left(-2\mathop{\ln\/}\nolimits\!\left(1-\left(\frac{z-1}{z+1}\right)^{%
+2}\right)\right)^{1/2}," display="block"><mrow><mrow><mi href="./15.12#SS3.p6">α</mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./15.12#SS3.p6" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\alpha" display="inline"><mi href="./15.12#SS3.p6">α</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E8" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E8.tex">TeX</a>, <a href="./15.12.E8.pmml">pMML</a>, <a href="./15.12.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">with the branch chosen to be continuous and <math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-3px" altimg-width="68px" alttext="\realpart{\alpha}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mi href="./15.12#SS3.p6">α</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> when
+<math class="ltx_Math" altimg="m43.png" altimg-height="23px" altimg-valign="-7px" altimg-width="205px" alttext="\realpart{(\ifrac{(z-1)}{(z+1)})}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>. For <math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="65px" alttext="\mathop{U\/}\nolimits\!\left(a,z\right)" display="inline"><mrow><mi href="./12.2#SS1.p1">U</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> see
+§<a href="./12.2" title="§12.2 Differential Equations ‣ Properties ‣ Chapter 12 Parabolic Cylinder Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.2</span></a>, and for an extension to an asymptotic expansion see
+<cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib1764" title="Uniform asymptotic expansions for hypergeometric functions with large parameters. I" class="ltx_ref">2003a</a>)</cite>.</p>
+</div>
+<div id="SS3.p7" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m75.png" altimg-height="23px" altimg-valign="-7px" altimg-width="93px" alttext="|\mathop{\mathrm{ph}\/}\nolimits z|&lt;\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>π</mi></mrow></math>, then as <math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="67px" alttext="\lambda\to\infty" display="inline"><mrow><mi>λ</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math> with
+<math class="ltx_Math" altimg="m79.png" altimg-height="27px" altimg-valign="-9px" altimg-width="141px" alttext="|\mathop{\mathrm{ph}\/}\nolimits\lambda|\leq\tfrac{1}{2}\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7">ph</mi><mo>⁡</mo><mi>λ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow><mo>-</mo><mi href="./15.1#p2.t1.r6">δ</mi></mrow></mrow></math>,
+</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="(z+1)^{3\lambda/2}(2\lambda)^{c-1}\mathop{\mathbf{F}\/}\nolimits\!\left({a+%
+\lambda,b+2\lambda\atop c};-z\right)={\lambda^{-1/3}\left(e^{\pi i(a-c+\lambda%
++(1/3))}\mathop{\mathrm{Ai}\/}\nolimits\!\left(e^{-\ifrac{2\pi i}{3}}\lambda^{%
+\ifrac{2}{3}}\beta^{2}\right)+e^{\pi i(c-a-\lambda-(1/3))}\mathop{\mathrm{Ai}%
+\/}\nolimits\!\left(e^{\ifrac{2\pi i}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right%
+)\right)\left(a_{0}(\zeta)+\mathop{O\/}\nolimits(\lambda^{-1})\right)}+\lambda%
+^{-2/3}\left(e^{\pi i(a-c+\lambda+(2/3))}\mathop{\mathrm{Ai}\/}\nolimits'\!%
+\left(e^{-\ifrac{2\pi i}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)+e^{\pi i(c-%
+a-\lambda-(2/3))}\mathop{\mathrm{Ai}\/}\nolimits'\!\left(e^{\ifrac{2\pi i}{3}}%
+\lambda^{\ifrac{2}{3}}\beta^{2}\right)\right)\left(a_{1}(\zeta)+\mathop{O\/}%
+\nolimits(\lambda^{-1})\right)," display="block"><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mi>λ</mi></mrow><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></mrow><mi href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mrow><mo>-</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>=</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><msup><mi>λ</mi><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mo maxsize="1.944em" minsize="1.944em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>+</mo><mi>λ</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><msup><mi>λ</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi href="./15.12#EGx1">β</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi>λ</mi><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi>λ</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi href="./15.12#EGx1">β</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo maxsize="1.944em" minsize="1.944em">)</mo></mtd></mtr></mtable></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>×</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./15.12#SS3.p7">a</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">ζ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>+</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><msup><mi>λ</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mo maxsize="1.944em" minsize="1.944em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>+</mo><mi>λ</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><msup><mi>λ</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi href="./15.12#EGx1">β</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi>λ</mi><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi>λ</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi href="./15.12#EGx1">β</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo maxsize="1.944em" minsize="1.944em">)</mo></mtd></mtr></mtable></mrow></mrow></mtd></mtr><mtr><mtd><mspace width="2em"></mspace><mo>×</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./15.12#SS3.p7">a</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">ζ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mo>,</mo></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{O\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./15.2#E2" title="(15.2.2) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="23px" altimg-valign="-7px" altimg-width="99px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m34.png" altimg-height="39px" altimg-valign="-15px" altimg-width="87px" alttext="\mathop{\mathbf{F}\/}\nolimits\!\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z%
+}\right)" display="inline"><mrow><mi href="./15.2#E2" mathvariant="bold">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r3">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p2.t1.r3">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math>: Olver’s hypergeometric function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>,
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a>,
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./15.12#EGx1">β</mi></math></a> and
+<a href="./15.12#SS3.p7" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="24px" altimg-valign="-8px" altimg-width="49px" alttext="a_{j}(\zeta)" display="inline"><mrow><msub><mi href="./15.12#SS3.p7">a</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math>: function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.12#SS3.p7" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.12(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E9" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E9.tex">TeX</a>, <a href="./15.12.E9.pmml">pMML</a>, <a href="./15.12.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-6px" altimg-width="16px" alttext="\displaystyle\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="29px" altimg-valign="-9px" altimg-width="176px" alttext="\displaystyle=\mathop{\mathrm{arccosh}\/}\nolimits\!\left(\tfrac{1}{4}z-1%
+\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.37#SS2.p1">arccosh</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi href="./15.1#p2.t1.r2">z</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.37#SS2.p1" title="§4.37(ii) Principal Values ‣ §4.37 Inverse Hyperbolic Functions ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="82px" alttext="\mathop{\mathrm{arccosh}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.37#SS2.p1">arccosh</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: inverse hyperbolic cosine function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a> and
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E10" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E10.tex">TeX</a>, <a href="./15.12.E10.pmml">pMML</a>, <a href="./15.12.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle\beta" display="inline"><mi href="./15.12#EGx1">β</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="60px" altimg-valign="-21px" altimg-width="283px" alttext="\displaystyle=\left(-\frac{3}{2}\zeta+\frac{9}{4}\mathop{\ln\/}\nolimits\!%
+\left(\frac{2+e^{\zeta}}{2+e^{-\zeta}}\right)\right)^{1/3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./15.12#EGx1">ζ</mi></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>9</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>+</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi href="./15.12#EGx1">ζ</mi></msup></mrow><mrow><mn>2</mn><mo>+</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mi href="./15.12#EGx1">ζ</mi></mrow></msup></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a> and
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./15.12#EGx1">β</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E11" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E11.tex">TeX</a>, <a href="./15.12.E11.pmml">pMML</a>, <a href="./15.12.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">with the branch chosen to be continuous and <math class="ltx_Math" altimg="m15.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="\beta&gt;0" display="inline"><mrow><mi href="./15.12#EGx1">β</mi><mo>&gt;</mo><mn>0</mn></mrow></math> when <math class="ltx_Math" altimg="m50.png" altimg-height="21px" altimg-valign="-6px" altimg-width="51px" alttext="\zeta&gt;0" display="inline"><mrow><mi href="./15.12#EGx1">ζ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>. Also,
+</p>
+<table id="E12" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">15.12.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle a_{0}(\zeta)" display="inline"><mrow><msub><mi href="./15.12#SS3.p7">a</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="203px" alttext="\displaystyle=\tfrac{1}{2}G_{0}(\beta)+\tfrac{1}{2}G_{0}(-\beta)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./15.12#EGx1">β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle a_{1}(\zeta)" display="inline"><mrow><msub><mi href="./15.12#SS3.p7">a</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="29px" altimg-valign="-9px" altimg-width="247px" alttext="\displaystyle=\left(\tfrac{1}{2}G_{0}(\beta)-\tfrac{1}{2}G_{0}(-\beta)\right)/\beta," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./15.12#EGx1">β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow><mo>/</mo><mi href="./15.12#EGx1">β</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a>,
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./15.12#EGx1">β</mi></math></a>,
+<a href="./15.12#SS3.p7" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="24px" altimg-valign="-8px" altimg-width="49px" alttext="a_{j}(\zeta)" display="inline"><mrow><msub><mi href="./15.12#SS3.p7">a</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./15.12#EGx1">ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math>: function</a> and
+<a href="./15.12#SS3.p7" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="G_{0}(\pm\zeta)" display="inline"><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./15.12#EGx1">ζ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>: function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E12" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E12a.tex">TeX</a>, <a href="./15.12.E12b.tex">TeX</a>, <a href="./15.12.E12a.pmml">pMML</a>, <a href="./15.12.E12b.pmml">pMML</a>, <a href="./15.12.E12a.png">png</a>, <a href="./15.12.E12b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where
+</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">15.12.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="54px" altimg-valign="-18px" altimg-width="730px" alttext="G_{0}(\pm\beta)=\left(2+e^{\pm\zeta}\right)^{c-b-(\ifrac{1}{2})}\left(1+e^{\pm%
+\zeta}\right)^{a-c+(\ifrac{1}{2})}\left(z-1-e^{\pm\zeta}\right)^{-a+(\ifrac{1}%
+{2})}\sqrt{\frac{\beta}{e^{\zeta}-e^{-\zeta}}}." display="block"><mrow><mrow><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./15.12#EGx1">β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mn>2</mn><mo>+</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>±</mo><mi href="./15.12#EGx1">ζ</mi></mrow></msup></mrow><mo>)</mo></mrow><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">b</mi><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>±</mo><mi href="./15.12#EGx1">ζ</mi></mrow></msup></mrow><mo>)</mo></mrow><mrow><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>-</mo><mi href="./15.1#p2.t1.r3">c</mi></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r2">z</mi><mo>-</mo><mn>1</mn><mo>-</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>±</mo><mi href="./15.12#EGx1">ζ</mi></mrow></msup></mrow><mo>)</mo></mrow><mrow><mrow><mo>-</mo><mi href="./15.1#p2.t1.r3">a</mi></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msqrt><mfrac><mi href="./15.12#EGx1">β</mi><mrow><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mi href="./15.12#EGx1">ζ</mi></msup><mo>-</mo><msup><mi href="./4.2#E11" mathvariant="normal">e</mi><mrow><mo>-</mo><mi href="./15.12#EGx1">ζ</mi></mrow></msup></mrow></mfrac></msqrt></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base a ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="e" display="inline"><mi href="./4.2#E11" mathvariant="normal">e</mi></math>: base of exponential function</a>,
+<a href="./15.1#p2.t1.r2" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="z" display="inline"><mi href="./15.1#p2.t1.r2">z</mi></math>: complex variable</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./15.1#p2.t1.r3">a</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./15.1#p2.t1.r3">b</mi></math>: real or complex parameter</a>,
+<a href="./15.1#p2.t1.r3" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./15.1#p2.t1.r3">c</mi></math>: real or complex parameter</a>,
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="14px" alttext="\zeta" display="inline"><mi href="./15.12#EGx1">ζ</mi></math>: change of variable</a>,
+<a href="./15.12#EGx1" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./15.12#EGx1">β</mi></math></a> and
+<a href="./15.12#SS3.p7" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="70px" alttext="G_{0}(\pm\zeta)" display="inline"><mrow><msub><mi href="./15.12#SS3.p7">G</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./15.12#EGx1">ζ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>: function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15.12.E13" title="" class="ltx_ref">http://dlmf.nist.gov/15.12.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./15.12.E13.tex">TeX</a>, <a href="./15.12.E13.pmml">pMML</a>, <a href="./15.12.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./15.12#SS3.info" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12(iii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">For <math class="ltx_Math" altimg="m36.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(z\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> see §<a href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2</span></a>, and for further information and an
+extension to an asymptotic expansion see <cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib1765" title="Uniform asymptotic expansions for hypergeometric functions with large parameters. II" class="ltx_ref">2003b</a>)</cite>. (Two
+errors in this reference are corrected in (<a href="./15.12#E9" title="(15.12.9) ‣ §15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.12.9</span></a>).)</p>
+</div>
+<div id="SS3.p8" class="ltx_para">
+<p class="ltx_p">By combination of the foregoing results of this subsection with the linear
+transformations of §<a href="./15.8#i" title="§15.8(i) Linear Transformations ‣ §15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.8(i)</span></a> and the connection formulas of
+§<a href="./15.10#ii" title="§15.10(ii) Kummer’s 24 Solutions and Connection Formulas ‣ §15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.10(ii)</span></a>, similar asymptotic approximations for
+<math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="262px" alttext="\mathop{F\/}\nolimits\!\left(a+e_{1}\lambda,b+e_{2}\lambda;c+e_{3}\lambda;z\right)" display="inline"><mrow><mi href="./15.2#E1">F</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./15.1#p2.t1.r3">a</mi><mo>+</mo><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo>,</mo><mrow><mi href="./15.1#p2.t1.r3">b</mi><mo>+</mo><mrow><msub><mi>e</mi><mn>2</mn></msub><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo>;</mo><mrow><mi href="./15.1#p2.t1.r3">c</mi><mo>+</mo><mrow><msub><mi>e</mi><mn>3</mn></msub><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo>;</mo><mi href="./15.1#p2.t1.r2">z</mi><mo>)</mo></mrow></mrow></math> can be obtained with
+<math class="ltx_Math" altimg="m63.png" altimg-height="22px" altimg-valign="-8px" altimg-width="74px" alttext="e_{j}=\pm 1" display="inline"><mrow><msub><mi>e</mi><mi>j</mi></msub><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math>, <math class="ltx_Math" altimg="m64.png" altimg-height="20px" altimg-valign="-6px" altimg-width="88px" alttext="j=1,2,3" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+For more details see <cite class="ltx_cite ltx_citemacro_citet">Farid Khwaja and Olde Daalhuis (<a href="./bib/F#bib2858" title="Uniform asymptotic expansions for hypergeometric functions with large parameters IV" class="ltx_ref">2014</a>)</cite>.
+
+For other extensions, see
+<cite class="ltx_cite ltx_citemacro_citet">Wagner (<a href="./bib/W#bib2341" title="Asymptotische Darstellungen der hypergeometrischen Funktion für große Parameter unterschiedlicher Größenordnung" class="ltx_ref">1986</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2228" title="Large parameter cases of the Gauss hypergeometric function" class="ltx_ref">2003</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib469" title="Asymptotic Methods for Integrals" class="ltx_ref">2015</a>, Chapters 12 and 28)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.11 </span>Riemann’s Differential Equation</span></a><a href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.13 </span>Zeros</span></a>
+</div>
+</div>
+</body>
+</html>

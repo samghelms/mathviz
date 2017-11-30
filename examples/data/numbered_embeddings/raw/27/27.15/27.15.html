@@ -1,0 +1,190 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 27.15 Chinese Remainder Theorem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/27.15";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./27#PT4" title="Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="up up" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="next" href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.11" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.13" title="§27.13 Functions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.18" title="§27.18 Methods of Computation: Primes ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.19" title="§27.19 Methods of Computation: Factorization ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.20" title="§27.20 Methods of Computation: Other Number-Theoretic Functions ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.22" title="§27.22 Software ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Chinese remainder theorem, number theory">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./27" title="Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27 </span>Functions of Number Theory</span></a><a href="./27#PT4" title="Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.14 </span>Unrestricted Partitions</span></a><a href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.16 </span>Cryptography</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§27.15 </span>Chinese Remainder Theorem</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/C#Chineseremaindertheorem">Chinese remainder theorem</a>, <a class="ltx_keyword" href="./idx/N#numbertheory">number theory</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.15" title="" class="ltx_ref">http://dlmf.nist.gov/27.15</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27#info" title="Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The Chinese remainder theorem states that a system of congruences
+<math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="356px" alttext="x\equiv a_{1}\pmod{m_{1}},\dots,x\equiv a_{k}\pmod{m_{k}}" display="inline"><mrow><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>≡</mo><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>≡</mo><mrow><msub><mi>a</mi><mi href="./27.1#p2.t1.r1">k</mi></msub><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mi href="./27.1#p2.t1.r1">k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, always has a
+solution if the moduli are relatively prime in pairs; the solution is unique
+(mod <math class="ltx_Math" altimg="m11.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math>), where <math class="ltx_Math" altimg="m11.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math> is the product of the moduli.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">This theorem is employed to increase efficiency in calculating with large
+numbers by making use of smaller numbers in most of the calculation. For
+example, suppose a lengthy calculation involves many 10-digit integers. Most of
+the calculation can be done with five-digit integers as follows. Choose four
+relatively prime moduli <math class="ltx_Math" altimg="m12.png" altimg-height="16px" altimg-valign="-6px" altimg-width="101px" alttext="m_{1},m_{2},m_{3}" display="inline"><mrow><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>2</mn></msub><mo>,</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>3</mn></msub></mrow></math>, and <math class="ltx_Math" altimg="m16.png" altimg-height="16px" altimg-valign="-5px" altimg-width="31px" alttext="m_{4}" display="inline"><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>4</mn></msub></math> of five digits each, for
+example <math class="ltx_Math" altimg="m4.png" altimg-height="21px" altimg-valign="-4px" altimg-width="65px" alttext="2^{16}-3" display="inline"><mrow><msup><mn>2</mn><mn>16</mn></msup><mo>-</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-4px" altimg-width="65px" alttext="2^{16}-1" display="inline"><mrow><msup><mn>2</mn><mn>16</mn></msup><mo>-</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-4px" altimg-width="65px" alttext="2^{16}+1" display="inline"><mrow><msup><mn>2</mn><mn>16</mn></msup><mo>+</mo><mn>1</mn></mrow></math>, and <math class="ltx_Math" altimg="m2.png" altimg-height="21px" altimg-valign="-4px" altimg-width="65px" alttext="2^{16}+3" display="inline"><mrow><msup><mn>2</mn><mn>16</mn></msup><mo>+</mo><mn>3</mn></mrow></math>. Their product <math class="ltx_Math" altimg="m11.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math>
+has 20 digits, twice the number of digits in the data. By the Chinese remainder
+theorem each integer in the data can be uniquely represented by its residues
+(mod <math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-5px" altimg-width="31px" alttext="m_{1}" display="inline"><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>1</mn></msub></math>), (mod <math class="ltx_Math" altimg="m14.png" altimg-height="16px" altimg-valign="-5px" altimg-width="31px" alttext="m_{2}" display="inline"><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>2</mn></msub></math>), (mod <math class="ltx_Math" altimg="m15.png" altimg-height="16px" altimg-valign="-5px" altimg-width="31px" alttext="m_{3}" display="inline"><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>3</mn></msub></math>), and (mod <math class="ltx_Math" altimg="m16.png" altimg-height="16px" altimg-valign="-5px" altimg-width="31px" alttext="m_{4}" display="inline"><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>4</mn></msub></math>), respectively.
+Because each residue has no more than five digits, the arithmetic can be
+performed efficiently on these residues with respect to each of the moduli,
+yielding answers <math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="119px" alttext="a_{1}\pmod{m_{1}}" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="119px" alttext="a_{2}\pmod{m_{2}}" display="inline"><mrow><msub><mi>a</mi><mn>2</mn></msub><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="119px" alttext="a_{3}\pmod{m_{3}}" display="inline"><mrow><msub><mi>a</mi><mn>3</mn></msub><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, and
+<math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="119px" alttext="a_{4}\pmod{m_{4}}" display="inline"><mrow><msub><mi>a</mi><mn>4</mn></msub><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi href="./27.1#p2.t1.r1">m</mi><mn>4</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, where each <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-8px" altimg-width="23px" alttext="a_{j}" display="inline"><msub><mi>a</mi><mi>j</mi></msub></math> has no more than five digits. These numbers,
+in turn, are combined by the Chinese remainder theorem to obtain the final
+result <math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-7px" altimg-width="91px" alttext="\pmod{m}" display="inline"><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">m</mi></mrow><mo stretchy="false">)</mo></mrow></math>, which is correct to 20 digits.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Even though the lengthy calculation is repeated four times, once for each
+modulus, most of it only uses five-digit integers and is accomplished quickly
+without overwhelming the machine’s memory. Details of a machine program
+describing the method together with typical numerical results can be found in
+<cite class="ltx_cite ltx_citemacro_citet">Newman (<a href="./bib/N#bib1709" title="Solving equations exactly" class="ltx_ref">1967</a>)</cite>. See also <cite class="ltx_cite ltx_citemacro_citet">Apostol and Niven (<a href="./bib/#bib119" title="Number Theory" class="ltx_ref">1994</a>, pp. 18–19)</cite>.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.14 </span>Unrestricted Partitions</span></a><a href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.16 </span>Cryptography</span></a>
+</div>
+</div>
+</body>
+</html>

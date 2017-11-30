@@ -1,0 +1,1191 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 9.8 Modulus and Phase</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/9.8";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./9#PT2" title="Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="up up" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="next" href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.1" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.3" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.5" title="§9.5 Integral Representations ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.6" title="§9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.10" title="§9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.11" title="§9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.12" title="§9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.13" title="§9.13 Generalized Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.14" title="§9.14 Incomplete Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.16" title="§9.16 Physical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.18" title="§9.18 Tables ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.19" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.20" title="§9.20 Software ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB1" title="Sidebar 9.SB1: Supernumerary Rainbows ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB2" title="Sidebar 9.SB2: Interference Patterns in Caustics ‣ Chapter 9 Airy and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Airy functions, asymptotic expansions, definitions, identities, modulus and phase, monotonicity, relation to Bessel functions">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./9" title="Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>Airy and Related Functions</span></a><a href="./9#PT2" title="Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Airy Functions</span></a><a href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.7 </span>Asymptotic Expansions</span></a><a href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.9 </span>Zeros</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§9.8 </span>Modulus and Phase</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./10.21#SS7.p1" title="§10.21(vii) Asymptotic Expansions for Large Order ‣ §10.21 Zeros ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.21(vii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8" title="" class="ltx_ref">http://dlmf.nist.gov/9.8</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§9.8(i) </span>Definitions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§9.8(ii) </span>Identities</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§9.8(iii) </span>Monotonicity</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§9.8(iv) </span>Asymptotic Expansions</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.8(i) </span>Definitions</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>For (<a href="./9.8#E9" title="(9.8.9) ‣ §9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.9</span></a>)–(<a href="./9.8#E12" title="(9.8.12) ‣ §9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.12</span></a>) combine
+(<a href="./9.6#E17" title="(9.6.17) ‣ §9.6(ii) Bessel Functions, Hankel Functions, and Modified Bessel Functions as Airy Functions ‣ §9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.6.17</span></a>) and (<a href="./9.6#E18" title="(9.6.18) ‣ §9.6(ii) Bessel Functions, Hankel Functions, and Modified Bessel Functions as Airy Functions ‣ §9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.6.18</span></a>) with (<a href="./10.4#E3" title="(10.4.3) ‣ §10.4 Connection Formulas ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.4.3</span></a>).</dd>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</span>,
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</span>,
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</span>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.11#SS5.info" title="§9.11(v) Definite Integrals ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.11(v)</span></a>,
+<a href="./9.3#F1" title="Figure 9.3.1 ‣ §9.3(i) Real Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 9.3.1</span></a>,
+<a href="./9.3.F1.mag" title="Figure 9.3.1 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 9.3.1</span></a>,
+<a href="./9.3#F2" title="Figure 9.3.2 ‣ §9.3(i) Real Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 9.3.2</span></a>,
+<a href="./9.3.F2.mag" title="Figure 9.3.2 ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 9.3.2</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.i" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#info" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Throughout this section <math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math> is real and nonpositive.</p>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="53px" alttext="\displaystyle\mathop{\mathrm{Ai}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="152px" alttext="\displaystyle=\mathop{M\/}\nolimits\!\left(x\right)\mathop{\sin\/}\nolimits%
+\mathop{\theta\/}\nolimits\!\left(x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E1" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E1.tex">TeX</a>, <a href="./9.8.E1.pmml">pMML</a>, <a href="./9.8.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="53px" alttext="\displaystyle\mathop{\mathrm{Bi}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="154px" alttext="\displaystyle=\mathop{M\/}\nolimits\!\left(x\right)\mathop{\cos\/}\nolimits%
+\mathop{\theta\/}\nolimits\!\left(x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m55.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E2" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E2.tex">TeX</a>, <a href="./9.8.E2.pmml">pMML</a>, <a href="./9.8.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="\displaystyle\mathop{M\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="42px" altimg-valign="-12px" altimg-width="189px" alttext="\displaystyle=\sqrt{{\mathop{\mathrm{Ai}\/}\nolimits^{2}}\!\left(x\right)+{%
+\mathop{\mathrm{Bi}\/}\nolimits^{2}}\!\left(x\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msqrt><mrow><mrow><msup><mi href="./9.2#i">Ai</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi href="./9.2#i">Bi</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></msqrt></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E3" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E3.tex">TeX</a>, <a href="./9.8.E3.pmml">pMML</a>, <a href="./9.8.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="\displaystyle\mathop{\theta\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="217px" alttext="\displaystyle=\mathop{\mathrm{arctan}\/}\nolimits\!\left(\mathop{\mathrm{Ai}\/%
+}\nolimits\!\left(x\right)/\mathop{\mathrm{Bi}\/}\nolimits\!\left(x\right)%
+\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.11#SS5.info" title="§9.11(v) Definite Integrals ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.11(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E4" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E4.tex">TeX</a>, <a href="./9.8.E4.pmml">pMML</a>, <a href="./9.8.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx3" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m24.png" altimg-height="27px" altimg-valign="-7px" altimg-width="59px" alttext="\displaystyle\mathop{\mathrm{Ai}\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="151px" alttext="\displaystyle=\mathop{N\/}\nolimits\!\left(x\right)\mathop{\sin\/}\nolimits%
+\mathop{\phi\/}\nolimits\!\left(x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E5" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E5.tex">TeX</a>, <a href="./9.8.E5.pmml">pMML</a>, <a href="./9.8.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m26.png" altimg-height="27px" altimg-valign="-7px" altimg-width="58px" alttext="\displaystyle\mathop{\mathrm{Bi}\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="153px" alttext="\displaystyle=\mathop{N\/}\nolimits\!\left(x\right)\mathop{\cos\/}\nolimits%
+\mathop{\phi\/}\nolimits\!\left(x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m55.png" altimg-height="13px" altimg-valign="-2px" altimg-width="44px" alttext="\mathop{\cos\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E2">cos</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: cosine function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E6" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E6.tex">TeX</a>, <a href="./9.8.E6.pmml">pMML</a>, <a href="./9.8.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx4" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle\mathop{N\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="42px" altimg-valign="-12px" altimg-width="198px" alttext="\displaystyle=\sqrt{{\mathop{\mathrm{Ai}\/}\nolimits'^{2}}\!\left(x\right)+{%
+\mathop{\mathrm{Bi}\/}\nolimits'^{2}}\!\left(x\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msqrt><mrow><mrow><msup><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><msup><mi href="./9.2#i">Bi</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></msqrt></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E7" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E7.tex">TeX</a>, <a href="./9.8.E7.pmml">pMML</a>, <a href="./9.8.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="\displaystyle\mathop{\phi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="29px" altimg-valign="-9px" altimg-width="231px" alttext="\displaystyle=\mathop{\mathrm{arctan}\/}\nolimits\!\left(\mathop{\mathrm{Ai}\/%
+}\nolimits'\!\left(x\right)/\mathop{\mathrm{Bi}\/}\nolimits'\!\left(x\right)%
+\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><msup><mi href="./9.2#i">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msup><mi href="./9.2#i">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="23px" altimg-valign="-7px" altimg-width="50px" alttext="\mathop{\mathrm{Bi}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.11#SS5.info" title="§9.11(v) Definite Integrals ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.11(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E8" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E8.tex">TeX</a>, <a href="./9.8.E8.pmml">pMML</a>, <a href="./9.8.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Graphs of <math class="ltx_Math" altimg="m50.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{M\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m53.png" altimg-height="23px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{N\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> are included in
+§<a href="./9.3#i" title="§9.3(i) Real Variable ‣ §9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.3(i)</span></a>. The branches of <math class="ltx_Math" altimg="m67.png" altimg-height="23px" altimg-valign="-7px" altimg-width="41px" alttext="\mathop{\theta\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m61.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\phi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> are continuous and fixed by
+<math class="ltx_Math" altimg="m65.png" altimg-height="27px" altimg-valign="-9px" altimg-width="174px" alttext="\mathop{\theta\/}\nolimits\!\left(0\right)=-\mathop{\phi\/}\nolimits\!\left(0%
+\right)=\tfrac{1}{6}\pi" display="inline"><mrow><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow></mrow></math>. (These definitions
+of <math class="ltx_Math" altimg="m67.png" altimg-height="23px" altimg-valign="-7px" altimg-width="41px" alttext="\mathop{\theta\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m61.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\phi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> differ from
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 10)</cite>, and agree more closely with those used
+in <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1613" title="The Airy Integral, Giving Tables of Solutions of the Differential Equation = y ′′ ⁢ x y" class="ltx_ref">1946</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, Chapter 11)</cite>.)</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">In terms of Bessel functions, and with <math class="ltx_Math" altimg="m69.png" altimg-height="28px" altimg-valign="-9px" altimg-width="101px" alttext="\xi=\tfrac{2}{3}|x|^{3/2}" display="inline"><mrow><mi href="./9.8#SS1.p3">ξ</mi><mo>=</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">|</mo><mi href="./9.1#p2.t1.r2">x</mi><mo stretchy="false">|</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow></math>,
+</p>
+<table id="EGx5" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m41.png" altimg-height="29px" altimg-valign="-7px" altimg-width="111px" alttext="\displaystyle|x|^{1/2}{\mathop{M\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><msup><mrow><mo stretchy="false">|</mo><mi href="./9.1#p2.t1.r2">x</mi><mo stretchy="false">|</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="31px" altimg-valign="-9px" altimg-width="245px" alttext="\displaystyle=\tfrac{1}{2}\xi\left({\mathop{J_{1/3}\/}\nolimits^{2}}\!\left(%
+\xi\right)+{\mathop{Y_{1/3}\/}\nolimits^{2}}\!\left(\xi\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msup><msub><mi href="./10.2#E2">J</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msub><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><msub><mi href="./10.2#E3">Y</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msub><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{J_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E2">J</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the first kind</a>,
+<a href="./10.2#E3" title="(10.2.3) ‣ Bessel Function of the Second Kind (Weber’s Function) ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{Y_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E3">Y</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the second kind</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a> and
+<a href="./9.8#SS1.p3" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="23px" alttext="xi" display="inline"><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></math>: change of variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(i)</span></a>,
+<a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(ii)</span></a>,
+<a href="./9.8#SS4.info" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E9" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E9.tex">TeX</a>, <a href="./9.8.E9.pmml">pMML</a>, <a href="./9.8.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m40.png" altimg-height="29px" altimg-valign="-7px" altimg-width="120px" alttext="\displaystyle|x|^{-1/2}{\mathop{N\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><msup><mrow><mo stretchy="false">|</mo><mi href="./9.1#p2.t1.r2">x</mi><mo stretchy="false">|</mo></mrow><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./9.8#i">N</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="31px" altimg-valign="-9px" altimg-width="245px" alttext="\displaystyle=\tfrac{1}{2}\xi\left({\mathop{J_{2/3}\/}\nolimits^{2}}\!\left(%
+\xi\right)+{\mathop{Y_{2/3}\/}\nolimits^{2}}\!\left(\xi\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msup><msub><mi href="./10.2#E2">J</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msub><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><msub><mi href="./10.2#E3">Y</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msub><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{J_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E2">J</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the first kind</a>,
+<a href="./10.2#E3" title="(10.2.3) ‣ Bessel Function of the Second Kind (Weber’s Function) ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{Y_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E3">Y</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the second kind</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a> and
+<a href="./9.8#SS1.p3" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="23px" alttext="xi" display="inline"><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></math>: change of variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E10" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E10.tex">TeX</a>, <a href="./9.8.E10.pmml">pMML</a>, <a href="./9.8.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx6" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="\displaystyle\mathop{\theta\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="30px" altimg-valign="-9px" altimg-width="298px" alttext="\displaystyle=\tfrac{2}{3}\pi+\mathop{\mathrm{arctan}\/}\nolimits\!\left(%
+\mathop{Y_{1/3}\/}\nolimits\!\left(\xi\right)/\mathop{J_{1/3}\/}\nolimits\!%
+\left(\xi\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow><mo>+</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./10.2#E3">Y</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msub><mi href="./10.2#E2">J</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{J_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E2">J</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the first kind</a>,
+<a href="./10.2#E3" title="(10.2.3) ‣ Bessel Function of the Second Kind (Weber’s Function) ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{Y_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E3">Y</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the second kind</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a> and
+<a href="./9.8#SS1.p3" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="23px" alttext="xi" display="inline"><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></math>: change of variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E11" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E11.tex">TeX</a>, <a href="./9.8.E11.pmml">pMML</a>, <a href="./9.8.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="\displaystyle\mathop{\phi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="30px" altimg-valign="-9px" altimg-width="298px" alttext="\displaystyle=\tfrac{1}{3}\pi+\mathop{\mathrm{arctan}\/}\nolimits\!\left(%
+\mathop{Y_{2/3}\/}\nolimits\!\left(\xi\right)/\mathop{J_{2/3}\/}\nolimits\!%
+\left(\xi\right)\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>π</mi></mrow><mo>+</mo><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./10.2#E3">Y</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msub><mi href="./10.2#E2">J</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.8#SS1.p3">ξ</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{J_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E2">J</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the first kind</a>,
+<a href="./10.2#E3" title="(10.2.3) ‣ Bessel Function of the Second Kind (Weber’s Function) ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{Y_{\NVar{\nu}}\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.2#E3">Y</mi><mi class="ltx_nvar" href="./10.1#p2.t1.r5">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#p2.t1.r4">z</mi><mo>)</mo></mrow></mrow></math>: Bessel function of the second kind</a>,
+<a href="./4.23#SS2.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="17px" altimg-valign="-2px" altimg-width="73px" alttext="\mathop{\mathrm{arctan}\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.23#SS2.p1">arctan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: arctangent function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a> and
+<a href="./9.8#SS1.p3" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="23px" alttext="xi" display="inline"><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></math>: change of variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(i)</span></a>,
+<a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(ii)</span></a>,
+<a href="./9.8#SS4.info" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E12" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E12.tex">TeX</a>, <a href="./9.8.E12.pmml">pMML</a>, <a href="./9.8.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS1.info" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.8(ii) </span>Identities</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Combine (<a href="./9.8#E9" title="(9.8.9) ‣ §9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.9</span></a>)–(<a href="./9.8#E12" title="(9.8.12) ‣ §9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.12</span></a>) with
+§<a href="./10.18#ii" title="§10.18(ii) Basic Properties ‣ §10.18 Modulus and Phase Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.18(ii)</span></a>. See also <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 404)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1613" title="The Airy Integral, Giving Tables of Solutions of the Differential Equation = y ′′ ⁢ x y" class="ltx_ref">1946</a>, p. B10)</cite>. For (<a href="./9.8#E13" title="(9.8.13) ‣ §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.13</span></a>) use (<a href="./9.2#E7" title="(9.2.7) ‣ §9.2(iv) Wronskians ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2.7</span></a>).</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.ii" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#info" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Primes denote differentiations with respect to <math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>, which is continued to be
+assumed real and nonpositive.</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="28px" altimg-valign="-7px" altimg-width="312px" alttext="\mathop{M\/}\nolimits\!\left(x\right)\mathop{N\/}\nolimits\!\left(x\right)%
+\mathop{\sin\/}\nolimits\!\left(\mathop{\theta\/}\nolimits\!\left(x\right)-%
+\mathop{\phi\/}\nolimits\!\left(x\right)\right)=\pi^{-1}," display="block"><mrow><mrow><mrow><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>-</mo><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><msup><mi>π</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\mathop{\sin\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E1">sin</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: sine function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E13" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E13.tex">TeX</a>, <a href="./9.8.E13.pmml">pMML</a>, <a href="./9.8.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E14" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">9.8.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m37.png" altimg-height="28px" altimg-valign="-7px" altimg-width="109px" alttext="\displaystyle{\mathop{M\/}\nolimits^{2}}\!\left(x\right)\mathop{\theta\/}%
+\nolimits'\!\left(x\right)" display="inline"><mrow><mrow><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-4px" altimg-width="76px" alttext="\displaystyle=-\pi^{-1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><msup><mi>π</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m39.png" altimg-height="28px" altimg-valign="-7px" altimg-width="108px" alttext="\displaystyle{\mathop{N\/}\nolimits^{2}}\!\left(x\right)\mathop{\phi\/}%
+\nolimits'\!\left(x\right)" display="inline"><mrow><mrow><msup><mi href="./9.8#i">N</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi href="./9.8#i">ϕ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-2px" altimg-width="72px" alttext="\displaystyle=\pi^{-1}x" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>π</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi href="./9.1#p2.t1.r2">x</mi></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="27px" altimg-valign="-7px" altimg-width="105px" alttext="\displaystyle\mathop{N\/}\nolimits\!\left(x\right)\mathop{N\/}\nolimits'\!%
+\left(x\right)" display="inline"><mrow><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi href="./9.8#i">N</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="147px" alttext="\displaystyle=x\mathop{M\/}\nolimits\!\left(x\right)\mathop{M\/}\nolimits'\!%
+\left(x\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.11#SS5.info" title="§9.11(v) Definite Integrals ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.11(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E14" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E14a.tex">TeX</a>, <a href="./9.8.E14b.tex">TeX</a>, <a href="./9.8.E14c.tex">TeX</a>, <a href="./9.8.E14a.pmml">pMML</a>, <a href="./9.8.E14b.pmml">pMML</a>, <a href="./9.8.E14c.pmml">pMML</a>, <a href="./9.8.E14a.png">png</a>, <a href="./9.8.E14b.png">png</a>, <a href="./9.8.E14c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="EGx7" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m38.png" altimg-height="28px" altimg-valign="-7px" altimg-width="60px" alttext="\displaystyle{\mathop{N\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">N</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="28px" altimg-valign="-7px" altimg-width="449px" alttext="\displaystyle={\mathop{M\/}\nolimits'^{2}}\!\left(x\right)+{\mathop{M\/}%
+\nolimits^{2}}\!\left(x\right){\mathop{\theta\/}\nolimits'^{2}}\!\left(x\right%
+)={\mathop{M\/}\nolimits'^{2}}(x)+\pi^{-2}{\mathop{M\/}\nolimits^{-2}}\!\left(%
+x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><msup><mi href="./9.8#i">M</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mrow><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msup><msup><mi href="./9.8#i">M</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>π</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E15" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E15.tex">TeX</a>, <a href="./9.8.E15.pmml">pMML</a>, <a href="./9.8.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E16" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m34.png" altimg-height="28px" altimg-valign="-7px" altimg-width="84px" alttext="\displaystyle x^{2}{\mathop{M\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="28px" altimg-valign="-7px" altimg-width="458px" alttext="\displaystyle={\mathop{N\/}\nolimits'^{2}}\!\left(x\right)+{\mathop{N\/}%
+\nolimits^{2}}\!\left(x\right){\mathop{\phi\/}\nolimits'^{2}}\!\left(x\right)=%
+{\mathop{N\/}\nolimits'^{2}}\!\left(x\right)+\pi^{-2}x^{2}{\mathop{N\/}%
+\nolimits^{-2}}\!\left(x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><msup><mi href="./9.8#i">N</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mrow><msup><mi href="./9.8#i">N</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><msup><mi href="./9.8#i">ϕ</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msup><msup><mi href="./9.8#i">N</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>π</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi href="./9.8#i">N</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E16" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E16.tex">TeX</a>, <a href="./9.8.E16.pmml">pMML</a>, <a href="./9.8.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="552px" alttext="\mathop{\tan\/}\nolimits\!\left(\mathop{\theta\/}\nolimits\!\left(x\right)-%
+\mathop{\phi\/}\nolimits\!\left(x\right)\right)=1/(\pi\mathop{M\/}\nolimits\!%
+\left(x\right)\mathop{M\/}\nolimits'\!\left(x\right))=-\mathop{M\/}\nolimits\!%
+\left(x\right)\mathop{\theta\/}\nolimits'\!\left(x\right)/\mathop{M\/}%
+\nolimits'\!\left(x\right)," display="block"><mrow><mrow><mrow><mi href="./4.14#E4">tan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>-</mo><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mrow><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>/</mo><mrow><msup><mi href="./9.8#i">M</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a>,
+<a href="./4.14#E4" title="(4.14.4) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="17px" altimg-valign="-2px" altimg-width="47px" alttext="\mathop{\tan\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.14#E4">tan</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: tangent function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E17" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E17.tex">TeX</a>, <a href="./9.8.E17.pmml">pMML</a>, <a href="./9.8.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E18" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">9.8.18</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="27px" altimg-valign="-7px" altimg-width="65px" alttext="\displaystyle\mathop{M\/}\nolimits''\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">M</mi><mo>′′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m16.png" altimg-height="28px" altimg-valign="-7px" altimg-width="218px" alttext="\displaystyle=x\mathop{M\/}\nolimits\!\left(x\right)+\pi^{-2}{\mathop{M\/}%
+\nolimits^{-3}}\!\left(x\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>π</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m35.png" altimg-height="31px" altimg-valign="-7px" altimg-width="278px" alttext="\displaystyle{\mathop{M\/}\nolimits^{2}}'''\!\left(x\right)-4x{\mathop{M\/}%
+\nolimits^{2}}'\!\left(x\right)-2{\mathop{M\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><mrow><msup><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>′′′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>⁢</mo><mrow><msup><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E18.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E18" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E18a.tex">TeX</a>, <a href="./9.8.E18b.tex">TeX</a>, <a href="./9.8.E18a.pmml">pMML</a>, <a href="./9.8.E18b.pmml">pMML</a>, <a href="./9.8.E18a.png">png</a>, <a href="./9.8.E18b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.19</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E19.png" altimg-height="30px" altimg-valign="-9px" altimg-width="446px" alttext="{\mathop{\theta\/}\nolimits'^{2}}\!\left(x\right)+\tfrac{1}{2}(\mathop{\theta%
+\/}\nolimits'''\!\left(x\right)/\mathop{\theta\/}\nolimits'\!\left(x\right))-%
+\tfrac{3}{4}(\mathop{\theta\/}\nolimits''\!\left(x\right)/\mathop{\theta\/}%
+\nolimits'\!\left(x\right))^{2}=-x." display="block"><mrow><mrow><mrow><mrow><mrow><msup><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi href="./9.8#i">θ</mi><mo>′′′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi href="./9.8#i">θ</mi><mo>′′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mi href="./9.1#p2.t1.r2">x</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E19.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E19" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E19.tex">TeX</a>, <a href="./9.8.E19.pmml">pMML</a>, <a href="./9.8.E19.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS2.info" title="§9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.8(iii) </span>Monotonicity</h2>
+<div id="SS3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 404)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a>, <a class="ltx_keyword" href="./idx/M#monotonicity">monotonicity</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.iii" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.iii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#info" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math> increases from <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-4px" altimg-width="40px" alttext="-\infty" display="inline"><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></math> to <math class="ltx_Math" altimg="m45.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="0" display="inline"><mn>0</mn></math> each of the functions
+<math class="ltx_Math" altimg="m50.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{M\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m48.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="\mathop{M\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">M</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m80.png" altimg-height="26px" altimg-valign="-7px" altimg-width="113px" alttext="|x|^{-1/4}\mathop{N\/}\nolimits\!\left(x\right)" display="inline"><mrow><msup><mrow><mo stretchy="false">|</mo><mi href="./9.1#p2.t1.r2">x</mi><mo stretchy="false">|</mo></mrow><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-7px" altimg-width="101px" alttext="\mathop{M\/}\nolimits\!\left(x\right)\mathop{N\/}\nolimits\!\left(x\right)" display="inline"><mrow><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\mathop{\theta\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">θ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m59.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="\mathop{\phi\/}\nolimits'\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">ϕ</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> is increasing, and each of the functions
+<math class="ltx_Math" altimg="m81.png" altimg-height="26px" altimg-valign="-7px" altimg-width="104px" alttext="|x|^{1/4}\mathop{M\/}\nolimits\!\left(x\right)" display="inline"><mrow><msup><mrow><mo stretchy="false">|</mo><mi href="./9.1#p2.t1.r2">x</mi><mo stretchy="false">|</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m67.png" altimg-height="23px" altimg-valign="-7px" altimg-width="41px" alttext="\mathop{\theta\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m61.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\phi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>
+is decreasing.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.8(iv) </span>Asymptotic Expansions</h2>
+<div id="SS4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Combine (<a href="./9.8#E9" title="(9.8.9) ‣ §9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.9</span></a>)–(<a href="./9.8#E12" title="(9.8.12) ‣ §9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.12</span></a>) with
+§<a href="./10.18#iii" title="§10.18(iii) Asymptotic Expansions for Large Argument ‣ §10.18 Modulus and Phase Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.18(iii)</span></a>. See also <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1613" title="The Airy Integral, Giving Tables of Solutions of the Differential Equation = y ′′ ⁢ x y" class="ltx_ref">1946</a>, p. B48)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.iv" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.iv</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#info" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m75.png" altimg-height="17px" altimg-valign="-4px" altimg-width="82px" alttext="x\rightarrow-\infty" display="inline"><mrow><mi href="./9.1#p2.t1.r2">x</mi><mo>→</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow></math></p>
+<table id="EGx8" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E20" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.20</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m36.png" altimg-height="28px" altimg-valign="-7px" altimg-width="63px" alttext="\displaystyle{\mathop{M\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">M</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m32.png" altimg-height="64px" altimg-valign="-28px" altimg-width="351px" alttext="\displaystyle\sim\frac{1}{\pi(-x)^{1/2}}\sum_{k=0}^{\infty}\frac{1\cdot 3\cdot
+5%
+\cdots(6k-1)}{k!(96)^{k}}\frac{1}{x^{3k}}," display="inline"><mrow><mrow><mi></mi><mo href="./2.1#SS3.p1">∼</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./9.1#p2.t1.r2">x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mi>k</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mn>96</mn><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow></msup></mfrac></mstyle></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E20.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#SS3.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#SS3.p1">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m70.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="\mathop{M\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.8#SS4.p2" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E20" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E20.tex">TeX</a>, <a href="./9.8.E20.pmml">pMML</a>, <a href="./9.8.E20.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS4.info" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E21" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.21</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m38.png" altimg-height="28px" altimg-valign="-7px" altimg-width="60px" alttext="\displaystyle{\mathop{N\/}\nolimits^{2}}\!\left(x\right)" display="inline"><mrow><msup><mi href="./9.8#i">N</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m31.png" altimg-height="64px" altimg-valign="-28px" altimg-width="399px" alttext="\displaystyle\sim\frac{(-x)^{1/2}}{\pi}\sum_{k=0}^{\infty}\frac{1\cdot 3\cdot 5%
+\cdots(6k-1)}{k!(96)^{k}}\frac{1+6k}{1-6k}\frac{1}{x^{3k}}," display="inline"><mrow><mrow><mi></mi><mo href="./2.1#SS3.p1">∼</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./9.1#p2.t1.r2">x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mi>π</mi></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mi>k</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mn>96</mn><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>k</mi></mrow></mrow><mrow><mn>1</mn><mo>-</mo><mrow><mn>6</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow></msup></mfrac></mstyle></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E21.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#SS3.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#SS3.p1">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./front/introduction#Sx4.p1.t1.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m70.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#Sx4.p1.t1.r14" lspace="0pt" rspace="3.5pt">!</mo></mrow></math>)</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="23px" altimg-valign="-7px" altimg-width="48px" alttext="\mathop{N\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">N</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy modulus function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.8#SS4.p2" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E21" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E21.tex">TeX</a>, <a href="./9.8.E21.pmml">pMML</a>, <a href="./9.8.E21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS4.info" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E22" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.22</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="\displaystyle\mathop{\theta\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m33.png" altimg-height="53px" altimg-valign="-21px" altimg-width="689px" alttext="\displaystyle\sim\frac{\pi}{4}+\frac{2}{3}(-x)^{3/2}\left(1+\frac{5}{32}\frac{%
+1}{x^{3}}+\frac{1105}{6144}\frac{1}{x^{6}}+\frac{82825}{65536}\frac{1}{x^{9}}+%
+\frac{12820\;31525}{587\;20256}\frac{1}{x^{12}}+\cdots\right)," display="inline"><mrow><mrow><mi></mi><mo href="./2.1#SS3.p1">∼</mo><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./9.1#p2.t1.r2">x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>5</mn><mn>32</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>3</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1105</mn><mn>6144</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>6</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>82825</mn><mn>65536</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>9</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>12820 31525</mn><mn>587 20256</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>12</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E22.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#SS3.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#SS3.p1">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="40px" alttext="\mathop{\theta\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.8#SS4.p3" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E22" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E22</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E22.tex">TeX</a>, <a href="./9.8.E22.pmml">pMML</a>, <a href="./9.8.E22.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS4.info" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E23" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.8.23</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="\displaystyle\mathop{\phi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m30.png" altimg-height="53px" altimg-valign="-21px" altimg-width="710px" alttext="\displaystyle\sim-\frac{\pi}{4}+\frac{2}{3}(-x)^{3/2}\left(1-\frac{7}{32}\frac%
+{1}{x^{3}}-\frac{1463}{6144}\frac{1}{x^{6}}-\frac{4\;95271}{3\;27680}\frac{1}{%
+x^{9}}-\frac{2065\;30429}{83\;88608}\frac{1}{x^{12}}-\cdots\right)." display="inline"><mrow><mrow><mi></mi><mo href="./2.1#SS3.p1">∼</mo><mrow><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi href="./9.1#p2.t1.r2">x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>7</mn><mn>32</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>3</mn></msup></mfrac></mstyle></mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1463</mn><mn>6144</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>6</mn></msup></mfrac></mstyle></mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>4 95271</mn><mn>3 27680</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>9</mn></msup></mfrac></mstyle></mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2065 30429</mn><mn>83 88608</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./9.1#p2.t1.r2">x</mi><mn>12</mn></msup></mfrac></mstyle></mrow><mo>-</mo><mi mathvariant="normal">⋯</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E23.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#SS3.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#SS3.p1">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./9.8#i" title="§9.8(i) Definitions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{\phi\/}\nolimits\!\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.8#i">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#p2.t1.r3">z</mi><mo>)</mo></mrow></mrow></math>: Airy phase function</a> and
+<a href="./9.1#p2.t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m74.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#p2.t1.r2">x</mi></math>: real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.8#SS4.p3" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.8(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.8.E23" title="" class="ltx_ref">http://dlmf.nist.gov/9.8.E23</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.8.E23.tex">TeX</a>, <a href="./9.8.E23.pmml">pMML</a>, <a href="./9.8.E23.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9.8#SS4.info" title="§9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8(iv)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">In (<a href="./9.8#E20" title="(9.8.20) ‣ §9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.20</span></a>) and (<a href="./9.8#E21" title="(9.8.21) ‣ §9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.21</span></a>) the remainder after <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi>n</mi></math>
+terms does not exceed the <math class="ltx_Math" altimg="m43.png" altimg-height="23px" altimg-valign="-7px" altimg-width="66px" alttext="(n+1)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math>th term in absolute value and is of the same
+sign, provided that <math class="ltx_Math" altimg="m72.png" altimg-height="19px" altimg-valign="-5px" altimg-width="53px" alttext="n\geq 0" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></math> for (<a href="./9.8#E20" title="(9.8.20) ‣ §9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.20</span></a>) and <math class="ltx_Math" altimg="m73.png" altimg-height="19px" altimg-valign="-5px" altimg-width="53px" alttext="n\geq 1" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></math> for
+(<a href="./9.8#E21" title="(9.8.21) ‣ §9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.21</span></a>).</p>
+</div>
+<div id="SS4.p3" class="ltx_para">
+<p class="ltx_p">For higher terms in (<a href="./9.8#E22" title="(9.8.22) ‣ §9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.22</span></a>) and (<a href="./9.8#E23" title="(9.8.23) ‣ §9.8(iv) Asymptotic Expansions ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8.23</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Fabijonas<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib768" title="Computation of complex Airy functions and their zeros using asymptotics and the differential equation" class="ltx_ref">2004</a>)</cite>. Also, approximate values (25S) of the coefficients
+of the powers <math class="ltx_Math" altimg="m77.png" altimg-height="20px" altimg-valign="-2px" altimg-width="45px" alttext="{x^{-15}}" display="inline"><msup><mi href="./9.1#p2.t1.r2">x</mi><mrow><mo>-</mo><mn>15</mn></mrow></msup></math>, <math class="ltx_Math" altimg="m78.png" altimg-height="20px" altimg-valign="-2px" altimg-width="45px" alttext="{x^{-18}}" display="inline"><msup><mi href="./9.1#p2.t1.r2">x</mi><mrow><mo>-</mo><mn>18</mn></mrow></msup></math>, <math class="ltx_Math" altimg="m46.png" altimg-height="9px" altimg-valign="-6px" altimg-width="36px" alttext="\ldots," display="inline"><mrow><mi mathvariant="normal">…</mi><mo>,</mo></mrow></math> <math class="ltx_Math" altimg="m79.png" altimg-height="20px" altimg-valign="-2px" altimg-width="45px" alttext="{x^{-56}}" display="inline"><msup><mi href="./9.1#p2.t1.r2">x</mi><mrow><mo>-</mo><mn>56</mn></mrow></msup></math> are available in
+<cite class="ltx_cite ltx_citemacro_citet">Sherry (<a href="./bib/S#bib2060" title="The zeros and maxima of the Airy function and its first derivative to 25 significant figures" class="ltx_ref">1959</a>)</cite>.
+</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.7 </span>Asymptotic Expansions</span></a><a href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.9 </span>Zeros</span></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 27.8 Dirichlet Characters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/27.8";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="up up" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="next" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.11" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.13" title="§27.13 Functions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.18" title="§27.18 Methods of Computation: Primes ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.19" title="§27.19 Methods of Computation: Factorization ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.20" title="§27.20 Methods of Computation: Other Number-Theoretic Functions ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.22" title="§27.22 Software ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Dirichlet, Dirichlet character, Dirichlet characters, characters, induced modulus, number theory, number-theoretic functions, orthogonality, orthogonality relation, primitive, principal, real">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./27" title="Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27 </span>Functions of Number Theory</span></a><a href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Multiplicative Number Theory</span></a><a href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.7 </span>Lambert Series as Generating Functions</span></a><a href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.9 </span>Quadratic Characters</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§27.8 </span>Dirichlet Characters</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib114" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, pp. 137–142, 167–172)</cite>.</dd>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</span></dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/D#Dirichletcharacters">Dirichlet characters</a>, <a class="ltx_keyword" href="./idx/C#characters">characters</a>, <a class="ltx_keyword" href="./idx/N#numbertheory">number theory</a>, <a class="ltx_keyword" href="./idx/N#numbertheoreticfunctions">number-theoretic functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./24.16#SS2.p1" title="§24.16(ii) Character Analogs ‣ §24.16 Generalizations ‣ Properties ‣ Chapter 24 Bernoulli and Euler Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§24.16(ii)</span></a>,
+<a href="./25.11#SS10.p2" title="§25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.11(x)</span></a>,
+<a href="./25.15#SS1.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet L -functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#SS1.p2" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet L -functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./27.3#p3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.3</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8" title="" class="ltx_ref">http://dlmf.nist.gov/27.8</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27#info" title="Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math> <math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="51px" alttext="(&gt;1)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>&gt;</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math> is a given integer, then a function <math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> is called a
+<em class="ltx_emph">Dirichlet character</em> (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>) if it is completely multiplicative,
+periodic with period <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>, and vanishes when <math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(n,k\right)&gt;1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>. In other words,
+Dirichlet characters (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>) satisfy the four conditions:</p>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="E1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\displaystyle\mathop{\chi\/}\nolimits\!\left(1\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E1" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E1.tex">TeX</a>, <a href="./27.8.E1.pmml">pMML</a>, <a href="./27.8.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="\displaystyle\mathop{\chi\/}\nolimits\!\left(mn\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>⁢</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="125px" alttext="\displaystyle=\mathop{\chi\/}\nolimits\!\left(m\right)\mathop{\chi\/}\nolimits%
+\!\left(n\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">m</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m32.png" altimg-height="20px" altimg-valign="-6px" altimg-width="130px" alttext="m,n=1,2,\dots" display="inline"><mrow><mrow><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E2" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E2.tex">TeX</a>, <a href="./27.8.E2.pmml">pMML</a>, <a href="./27.8.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="\displaystyle\mathop{\chi\/}\nolimits\!\left(n+k\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\displaystyle=\mathop{\chi\/}\nolimits\!\left(n\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m34.png" altimg-height="20px" altimg-valign="-6px" altimg-width="104px" alttext="n=1,2,\dots" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E3" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E3.tex">TeX</a>, <a href="./27.8.E3.pmml">pMML</a>, <a href="./27.8.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+<tr id="E4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\displaystyle\mathop{\chi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="22px" altimg-valign="-6px" altimg-width="43px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(n,k\right)&gt;1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.1#p2.t1.r3" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="58px" alttext="\left(\NVar{m},\NVar{n}\right)" display="inline"><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi class="ltx_nvar" href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow></math>: greatest common divisor (gcd)</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E4" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E4.tex">TeX</a>, <a href="./27.8.E4.pmml">pMML</a>, <a href="./27.8.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">An example is the <em class="ltx_emph">principal character</em> (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>):
+</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="65px" altimg-valign="-27px" altimg-width="225px" alttext="\mathop{\chi_{1}\/}\nolimits\!\left(n\right)=\begin{cases}1,&amp;\left(n,k\right)=%
+1,\\
+0,&amp;\left(n,k\right)&gt;1.\end{cases}" display="block"><mrow><mrow><msub><mi href="./27.8">χ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mn>1</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>&gt;</mo><mn>1</mn></mrow><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.1#p2.t1.r3" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="58px" alttext="\left(\NVar{m},\NVar{n}\right)" display="inline"><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi class="ltx_nvar" href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow></math>: greatest common divisor (gcd)</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E5" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E5.tex">TeX</a>, <a href="./27.8.E5.pmml">pMML</a>, <a href="./27.8.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">For any character <math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="97px" alttext="\mathop{\chi\/}\nolimits\pmod{k}" display="inline"><mrow><mi href="./27.8">χ</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="81px" alttext="\mathop{\chi\/}\nolimits\!\left(n\right)\neq 0" display="inline"><mrow><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> if and only if
+<math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(n,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>, in which case the Euler–Fermat theorem (<a href="./27.2#E8" title="(27.2.8) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.8</span></a>)
+implies <math class="ltx_Math" altimg="m13.png" altimg-height="29px" altimg-valign="-7px" altimg-width="125px" alttext="\left(\mathop{\chi\/}\nolimits\!\left(n\right)\right)^{\mathop{\phi\/}%
+\nolimits\!\left(k\right)}=1" display="inline"><mrow><msup><mrow><mo>(</mo><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><mn>1</mn></mrow></math>. There are exactly
+<math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\phi\/}\nolimits\!\left(k\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow></math> different characters (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>), which can be labeled
+as <math class="ltx_Math" altimg="m24.png" altimg-height="20px" altimg-valign="-9px" altimg-width="112px" alttext="\mathop{\chi_{1}\/}\nolimits,\dots,\mathop{\chi_{\mathop{\phi\/}\nolimits\!%
+\left(k\right)}\/}\nolimits" display="inline"><mrow><msub><mi href="./27.8">χ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./27.8">χ</mi><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow></msub></mrow></math>. If <math class="ltx_Math" altimg="m21.png" altimg-height="16px" altimg-valign="-6px" altimg-width="17px" alttext="\mathop{\chi\/}\nolimits" display="inline"><mi href="./27.8">χ</mi></math> is a character
+(mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>), so is its complex conjugate <math class="ltx_Math" altimg="m11.png" altimg-height="20px" altimg-valign="-6px" altimg-width="17px" alttext="\conj{\mathop{\chi\/}\nolimits}" display="inline"><mover accent="true"><mi href="./27.8">χ</mi><mo href="./1.9#E11">¯</mo></mover></math>. If <math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(n,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>,
+then the characters satisfy the <em class="ltx_emph">orthogonality relation</em>
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="70px" altimg-valign="-27px" altimg-width="413px" alttext="\sum_{r=1}^{\mathop{\phi\/}\nolimits\!\left(k\right)}\mathop{\chi_{r}\/}%
+\nolimits\!\left(m\right)\conj{\mathop{\chi\/}\nolimits}_{r}(n)=\begin{cases}%
+\mathop{\phi\/}\nolimits\!\left(k\right),&amp;m\equiv n\pmod{k},\\
+0,&amp;\mbox{otherwise}.\end{cases}" display="block"><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow></munderover><mrow><mrow><msub><mi href="./27.8">χ</mi><mi>r</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">m</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><msub><mover accent="true"><mi href="./27.8">χ</mi><mo href="./1.9#E11">¯</mo></mover><mi>r</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">k</mi><mo>)</mo></mrow></mrow><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>≡</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mtext>otherwise</mtext><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./1.9#E11" title="(1.9.11) ‣ Complex Conjugate ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Areas ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="\conj{\NVar{z}}" display="inline"><mover accent="true"><mi class="ltx_nvar" href="./1.1#p2.t1.r2">z</mi><mo href="./1.9#E11">¯</mo></mover></math>: complex conjugate</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E6" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E6.tex">TeX</a>, <a href="./27.8.E6.pmml">pMML</a>, <a href="./27.8.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">A Dirichlet character <math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="97px" alttext="\mathop{\chi\/}\nolimits\pmod{k}" display="inline"><mrow><mi href="./27.8">χ</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> is called <em class="ltx_emph">primitive</em> (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>) if
+for every proper divisor <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math> of <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math> (that is, a divisor <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-3px" altimg-width="52px" alttext="d&lt;k" display="inline"><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>&lt;</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow></math>), there exists
+an integer <math class="ltx_Math" altimg="m28.png" altimg-height="23px" altimg-valign="-7px" altimg-width="131px" alttext="a\equiv 1\pmod{d}" display="inline"><mrow><mi>a</mi><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">d</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, with <math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-7px" altimg-width="87px" alttext="\left(a,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi>a</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="79px" alttext="\mathop{\chi\/}\nolimits\!\left(a\right)\neq 1" display="inline"><mrow><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>≠</mo><mn>1</mn></mrow></math>.
+If <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math> is prime, then every nonprincipal character <math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="97px" alttext="\mathop{\chi\/}\nolimits\pmod{k}" display="inline"><mrow><mi href="./27.8">χ</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> is
+primitive. A divisor <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math> of <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math> is called an <em class="ltx_emph">induced modulus</em>
+for <math class="ltx_Math" altimg="m21.png" altimg-height="16px" altimg-valign="-6px" altimg-width="17px" alttext="\mathop{\chi\/}\nolimits" display="inline"><mi href="./27.8">χ</mi></math> if
+</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="276px" alttext="\mathop{\chi\/}\nolimits\!\left(a\right)=1\text{ for all $a\equiv 1$ (mod $d$)}," display="block"><mrow><mrow><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mtext> for all </mtext><mrow><mi>a</mi><mo>≡</mo><mn>1</mn></mrow><mtext> (mod </mtext><mi href="./27.1#p2.t1.r1">d</mi><mtext>)</mtext></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m14.png" altimg-height="23px" altimg-valign="-7px" altimg-width="87px" alttext="\left(a,k\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi>a</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">k</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.1#p2.t1.r3" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="58px" alttext="\left(\NVar{m},\NVar{n}\right)" display="inline"><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi class="ltx_nvar" href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow></math>: greatest common divisor (gcd)</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E7" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E7.tex">TeX</a>, <a href="./27.8.E7.pmml">pMML</a>, <a href="./27.8.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Every Dirichlet character <math class="ltx_Math" altimg="m21.png" altimg-height="16px" altimg-valign="-6px" altimg-width="17px" alttext="\mathop{\chi\/}\nolimits" display="inline"><mi href="./27.8">χ</mi></math> (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>) is a product</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.8.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="182px" alttext="\mathop{\chi\/}\nolimits\!\left(n\right)=\mathop{\chi_{0}\/}\nolimits\!\left(n%
+\right)\mathop{\chi_{1}\/}\nolimits\!\left(n\right)," display="block"><mrow><mrow><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./27.8">χ</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msub><mi href="./27.8">χ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\chi\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.8">χ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Dirichlet character</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.8.E8" title="" class="ltx_ref">http://dlmf.nist.gov/27.8.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.8.E8.tex">TeX</a>, <a href="./27.8.E8.pmml">pMML</a>, <a href="./27.8.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.8#info" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m23.png" altimg-height="16px" altimg-valign="-6px" altimg-width="26px" alttext="\mathop{\chi_{0}\/}\nolimits" display="inline"><msub><mi href="./27.8">χ</mi><mn>0</mn></msub></math> is a character (mod <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>) for some induced modulus <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math> for
+<math class="ltx_Math" altimg="m21.png" altimg-height="16px" altimg-valign="-6px" altimg-width="17px" alttext="\mathop{\chi\/}\nolimits" display="inline"><mi href="./27.8">χ</mi></math>, and <math class="ltx_Math" altimg="m25.png" altimg-height="16px" altimg-valign="-6px" altimg-width="26px" alttext="\mathop{\chi_{1}\/}\nolimits" display="inline"><msub><mi href="./27.8">χ</mi><mn>1</mn></msub></math> is the principal character (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>). A character is
+<em class="ltx_emph">real</em> if all its values are real.
+If <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math> is odd, then the real characters (mod <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>) are the principal character
+and the quadratic characters described in the next section.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.7 </span>Lambert Series as Generating Functions</span></a><a href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.9 </span>Quadratic Characters</span></a>
+</div>
+</div>
+</body>
+</html>

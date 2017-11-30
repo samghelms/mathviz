@@ -1,0 +1,1298 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 27.2 Functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/27.2";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="up up" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="next" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.11" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.13" title="§27.13 Functions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.16" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.18" title="§27.18 Methods of Computation: Primes ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.19" title="§27.19 Methods of Computation: Factorization ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.20" title="§27.20 Methods of Computation: Other Number-Theoretic Functions ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.22" title="§27.22 Software ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Euler–Fermat theorem, Euler’s totient, Jordan’s function, Liouville’s function, Mangoldt’s function, Möbius function, asymptotic estimate, distribution, divisor function, fundamental theorem of arithmetic, multiplicative number theory, number theory, number-theoretic functions, prime number theorem, prime numbers, primitive roots, reduced residue system, tables">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./27" title="Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27 </span>Functions of Number Theory</span></a><a href="./27#PT2" title="Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Multiplicative Number Theory</span></a><a href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.1 </span>Special Notation</span></a><a href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.3 </span>Multiplicative Properties</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§27.2 </span>Functions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.15#SS1.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet L -functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./27.11#p2" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a>,
+<a href="./27.12#Px1.p5" title="Prime Number Theorem ‣ §27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.12</span></a>,
+<a href="./27.16#p4" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.16</span></a>,
+<a href="./27.3#p1" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.3</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2" title="" class="ltx_ref">http://dlmf.nist.gov/27.2</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27#info" title="Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§27.2(i) </span>Definitions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§27.2(ii) </span>Tables</a></li>
+</ul>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§27.2(i) </span>Definitions</h2>
+<div id="SS1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib114" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, pp. 17–38, 48, 74–80, 113)</cite>. For
+(<a href="./27.2#E11" title="(27.2.11) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.11</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib753" title="Higher Transcendental Functions. Vol. III" class="ltx_ref">1955</a>, p. 168)</cite>.</dd>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{d_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">d</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: divisor function</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\nu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: number of distinct primes dividing <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></span>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/E#EulerFermattheorem">Euler–Fermat theorem</a>, <a class="ltx_keyword" href="./idx/E#Eulerstotient">Euler’s totient</a>, <a class="ltx_keyword" href="./idx/J#Jordansfunction">Jordan’s function</a>, <a class="ltx_keyword" href="./idx/L#Liouvillesfunction">Liouville’s function</a>, <a class="ltx_keyword" href="./idx/M#Mangoldtsfunction">Mangoldt’s function</a>, <a class="ltx_keyword" href="./idx/M#Mobiusfunction">Möbius function</a>, <a class="ltx_keyword" href="./idx/D#divisorfunction">divisor function</a>, <a class="ltx_keyword" href="./idx/F#fundamentaltheoremofarithmetic">fundamental theorem of arithmetic</a>, <a class="ltx_keyword" href="./idx/M#multiplicativenumbertheory">multiplicative number theory</a>, <a class="ltx_keyword" href="./idx/N#numbertheory">number theory</a>, <a class="ltx_keyword" href="./idx/N#numbertheoreticfunctions">number-theoretic functions</a>, <a class="ltx_keyword" href="./idx/P#primenumbertheorem">prime number theorem</a>, <a class="ltx_keyword" href="./idx/P#primenumbers">prime numbers</a>, <a class="ltx_keyword" href="./idx/R#reducedresiduesystem">reduced residue system</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./26.18#Px1.p1" title="Example 1 ‣ §26.18 Counting Techniques ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.18</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.i" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.i</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#info" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Functions in this section derive their properties from the <em class="ltx_emph">fundamental
+theorem of arithmetic</em>, which states that every integer <math class="ltx_Math" altimg="m48.png" altimg-height="17px" altimg-valign="-3px" altimg-width="53px" alttext="n&gt;1" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>&gt;</mo><mn>1</mn></mrow></math> can be
+represented uniquely as a product of prime powers,
+</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="70px" altimg-valign="-27px" altimg-width="110px" alttext="n=\prod_{r=1}^{\mathop{\nu\/}\nolimits\!\left(n\right)}p^{a_{r}}_{r}," display="block"><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></munderover><msubsup><mi href="./27.1#p2.t1.r7">p</mi><mi>r</mi><msub><mi href="./27.2#SS1.p4">a</mi><mi>r</mi></msub></msubsup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#SS1.p1" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\nu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: number of distinct primes dividing <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a> and
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./27.2#SS1.p4">a</mi></math>: primitive root</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.2#SS1.p5" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.2(i)</span></a>,
+<a href="./27.3#p2" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.3</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E1" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E1.tex">TeX</a>, <a href="./27.2.E1.pmml">pMML</a>, <a href="./27.2.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m55.png" altimg-height="20px" altimg-valign="-9px" altimg-width="135px" alttext="p_{1},p_{2},\dots,p_{\mathop{\nu\/}\nolimits\!\left(n\right)}" display="inline"><mrow><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msub></mrow></math> are the distinct prime factors of
+<math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>, each exponent <math class="ltx_Math" altimg="m39.png" altimg-height="16px" altimg-valign="-5px" altimg-width="24px" alttext="a_{r}" display="inline"><msub><mi href="./27.2#SS1.p4">a</mi><mi>r</mi></msub></math> is positive, and <math class="ltx_Math" altimg="m18.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\nu\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> is the number of
+distinct primes dividing <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. (<math class="ltx_Math" altimg="m16.png" altimg-height="23px" altimg-valign="-7px" altimg-width="41px" alttext="\mathop{\nu\/}\nolimits\!\left(1\right)" display="inline"><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></math> is defined to be 0.)
+Euclid’s Elements (<cite class="ltx_cite ltx_citemacro_citet">Euclid (<a href="./bib/E#bib757" title="The Thirteen Books of Euclid’s Elements" class="ltx_ref">1908</a>, Book IX, Proposition 20)</cite>) gives an
+elegant proof that there are infinitely many primes. Tables of primes (§<a href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.21</span></a>) reveal
+great irregularity in their distribution. They tend to thin out among the large
+integers, but this thinning out is not completely regular. There is great
+interest in the function <math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\pi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./27.2#E2">π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo>)</mo></mrow></mrow></math> that counts the number of
+primes not exceeding <math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>. It can be expressed as a sum over all primes
+<math class="ltx_Math" altimg="m53.png" altimg-height="20px" altimg-valign="-6px" altimg-width="52px" alttext="p\leq x" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></math>:</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="55px" altimg-valign="-31px" altimg-width="120px" alttext="\mathop{\pi\/}\nolimits\!\left(x\right)=\sum_{p\leq x}1." display="block"><mrow><mrow><mrow><mi href="./27.2#E2">π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>≤</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></munder><mn>1</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\pi\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./27.2#E2">π</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r9">x</mi><mo>)</mo></mrow></mrow></math>: number of primes not exceeding <math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math></span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E2" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E2.tex">TeX</a>, <a href="./27.2.E2.pmml">pMML</a>, <a href="./27.2.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Gauss and Legendre conjectured that <math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\pi\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./27.2#E2">π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo>)</mo></mrow></mrow></math> is asymptotic to
+<math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-7px" altimg-width="60px" alttext="x/\mathop{\ln\/}\nolimits x" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>/</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mrow></math> as <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="67px" alttext="x\to\infty" display="inline"><mrow><mi href="./27.1#p2.t1.r9">x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>:
+</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="41px" altimg-valign="-16px" altimg-width="113px" alttext="\mathop{\pi\/}\nolimits\!\left(x\right)\sim\frac{x}{\mathop{\ln\/}\nolimits x}." display="block"><mrow><mrow><mrow><mi href="./27.2#E2">π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r9">x</mi><mo>)</mo></mrow></mrow><mo href="./2.1#E1">∼</mo><mfrac><mi href="./27.1#p2.t1.r9">x</mi><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r9">x</mi></mrow></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E1" title="(2.1.1) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#E1">∼</mo></math>: asymptotic equality</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.2#E2" title="(27.2.2) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\pi\/}\nolimits\!\left(\NVar{x}\right)" display="inline"><mrow><mi href="./27.2#E2">π</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r9">x</mi><mo>)</mo></mrow></mrow></math>: number of primes not exceeding <math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math></a> and
+<a href="./27.1#p2.t1.r9" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>: real number</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.16#SS1.p2" title="§25.16(i) Distribution of Primes ‣ §25.16 Mathematical Applications ‣ Applications ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.16(i)</span></a>,
+<a href="./27.11#p4" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.11</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E3" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E3.tex">TeX</a>, <a href="./27.2.E3.pmml">pMML</a>, <a href="./27.2.E3.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m32.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">(See <cite class="ltx_cite ltx_citemacro_citet">Gauss (<a href="./bib/G#bib866" title="Werke. Band II" class="ltx_ref">1863</a>, Band II, pp. 437–477)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Legendre (<a href="./bib/L#bib1396" title="Essai sur la Théorie des Nombres" class="ltx_ref">1808</a>, p. 394)</cite>.)</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">This result, first proved in <cite class="ltx_cite ltx_citemacro_citet">Hadamard (<a href="./bib/H#bib1009" title="Sur la distribution des zéros de la fonction ζ ( s ) et ses conséquences arithmétiques" class="ltx_ref">1896</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">de la Vallée Poussin (<a href="./bib/D#bib640" title="Recherches analytiques sur la théorie des nombres premiers. Première partie. La fonction ζ ( s ) de Riemann et les nombres premiers en général, suivi d’un Appendice sur des réflexions applicables à une formule donnée par Riemann" class="ltx_ref">1896a</a>, <a href="./bib/D#bib641" title="Recherches analytiques sur la théorie des nombres premiers. Deuxième partie. Les fonctions de Dirichlet et les nombres premiers de la forme linéaire + ⁢ M x N" class="ltx_ref">b</a>)</cite>, is known as
+the <em class="ltx_emph">prime number theorem</em>. An equivalent form states that the <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>th prime
+<math class="ltx_Math" altimg="m65.png" altimg-height="16px" altimg-valign="-6px" altimg-width="25px" alttext="p_{n}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mi href="./27.1#p2.t1.r1">n</mi></msub></math> (when the primes are listed in increasing order) is asymptotic to
+<math class="ltx_Math" altimg="m50.png" altimg-height="18px" altimg-valign="-2px" altimg-width="51px" alttext="n\mathop{\ln\/}\nolimits n" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></mrow></math> as <math class="ltx_Math" altimg="m51.png" altimg-height="13px" altimg-valign="-2px" altimg-width="67px" alttext="n\to\infty" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>:</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="23px" altimg-valign="-6px" altimg-width="106px" alttext="p_{n}\sim n\mathop{\ln\/}\nolimits n." display="block"><mrow><mrow><msub><mi href="./27.1#p2.t1.r7">p</mi><mi href="./27.1#p2.t1.r1">n</mi></msub><mo href="./2.1#E1">∼</mo><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>⁢</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E1" title="(2.1.1) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="12px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#E1">∼</mo></math>: asymptotic equality</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E4" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E4.tex">TeX</a>, <a href="./27.2.E4.pmml">pMML</a>, <a href="./27.2.E4.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m32.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">(See also §<a href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.12</span></a>.) Other examples of number-theoretic functions
+treated in this chapter are as follows.</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="65px" altimg-valign="-27px" altimg-width="180px" alttext="\left\lfloor\frac{1}{n}\right\rfloor=\begin{cases}1,&amp;n=1,\\
+0,&amp;n&gt;1.\end{cases}" display="block"><mrow><mrow><mo href="./front/introduction#Sx4.p1.t1.r16">⌊</mo><mfrac><mn>1</mn><mi href="./27.1#p2.t1.r1">n</mi></mfrac><mo href="./front/introduction#Sx4.p1.t1.r16">⌋</mo></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mn>1</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>&gt;</mo><mn>1</mn></mrow><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#Sx4.p1.t1.r16" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="23px" altimg-valign="-7px" altimg-width="33px" alttext="\left\lfloor\NVar{x}\right\rfloor" display="inline"><mrow><mo href="./front/introduction#Sx4.p1.t1.r16">⌊</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#Sx4.p1.t1.r16">⌋</mo></mrow></math>: floor of <math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.5#p1" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.5</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E5" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E5.tex">TeX</a>, <a href="./27.2.E5.pmml">pMML</a>, <a href="./27.2.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="57px" altimg-valign="-32px" altimg-width="179px" alttext="\mathop{\phi_{k}\/}\nolimits\!\left(n\right)=\sum_{\left(m,n\right)=1}m^{k}," display="block"><mrow><mrow><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></munder><msup><mi href="./27.1#p2.t1.r1">m</mi><mi href="./27.1#p2.t1.r1">k</mi></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.1#p2.t1.r3" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-7px" altimg-width="58px" alttext="\left(\NVar{m},\NVar{n}\right)" display="inline"><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi class="ltx_nvar" href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow></math>: greatest common divisor (gcd)</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="13px" altimg-valign="-2px" altimg-width="22px" alttext="m" display="inline"><mi href="./27.1#p2.t1.r1">m</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E6" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E6.tex">TeX</a>, <a href="./27.2.E6.pmml">pMML</a>, <a href="./27.2.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">the sum of the <math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>th powers of the positive integers <math class="ltx_Math" altimg="m45.png" altimg-height="19px" altimg-valign="-5px" altimg-width="60px" alttext="m\leq n" display="inline"><mrow><mi href="./27.1#p2.t1.r1">m</mi><mo>≤</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></math> that are
+relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>.</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)=\mathop{\phi_{0}\/}\nolimits\!\left(n%
+\right)." display="block"><mrow><mrow><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./27.2#E6">ϕ</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E7" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E7.tex">TeX</a>, <a href="./27.2.E7.pmml">pMML</a>, <a href="./27.2.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">This is the number of positive integers <math class="ltx_Math" altimg="m7.png" altimg-height="19px" altimg-valign="-5px" altimg-width="37px" alttext="\leq n" display="inline"><mrow><mi></mi><mo>≤</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></math> that are relatively prime to
+<math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>; <math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> is <em class="ltx_emph">Euler’s totient</em>.</p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-7px" altimg-width="88px" alttext="\left(a,n\right)=1" display="inline"><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi href="./27.2#SS1.p4">a</mi><mo>,</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>, then the <em class="ltx_emph">Euler–Fermat theorem</em> states that</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="29px" altimg-valign="-7px" altimg-width="181px" alttext="a^{\mathop{\phi\/}\nolimits\!\left(n\right)}\equiv 1\pmod{n}," display="block"><mrow><mrow><msup><mi href="./27.2#SS1.p4">a</mi><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./27.2#SS1.p4">a</mi></math>: primitive root</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.2 II.B</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.16#p4" title="§27.16 Cryptography ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.16</span></a>,
+<a href="./27.8#p3" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.8</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E8" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E8.tex">TeX</a>, <a href="./27.2.E8.pmml">pMML</a>, <a href="./27.2.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">and if <math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> is the smallest positive integer <math class="ltx_Math" altimg="m41.png" altimg-height="21px" altimg-valign="-6px" altimg-width="16px" alttext="f" display="inline"><mi>f</mi></math> such that
+<math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="143px" alttext="a^{f}\equiv 1\pmod{n}" display="inline"><mrow><msup><mi href="./27.2#SS1.p4">a</mi><mi>f</mi></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, then <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./27.2#SS1.p4">a</mi></math> is a <em class="ltx_emph">primitive root</em> mod <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. The
+<math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> numbers <math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-6px" altimg-width="128px" alttext="a,a^{2},\dots,a^{\mathop{\phi\/}\nolimits\!\left(n\right)}" display="inline"><mrow><mi href="./27.2#SS1.p4">a</mi><mo>,</mo><msup><mi href="./27.2#SS1.p4">a</mi><mn>2</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi href="./27.2#SS1.p4">a</mi><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msup></mrow></math> are
+relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> and distinct (mod <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>). Such a set is a <em class="ltx_emph">reduced
+residue system</em> modulo <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>.
+</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="57px" altimg-valign="-32px" altimg-width="113px" alttext="\mathop{d\/}\nolimits\!\left(n\right)=\sum_{d\divides n}1" display="block"><mrow><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{d_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">d</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: divisor function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.3 I.A</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E9" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E9.tex">TeX</a>, <a href="./27.2.E9.pmml">pMML</a>, <a href="./27.2.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is the number of divisors of <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> and is the <em class="ltx_emph">divisor function</em>. It is the
+special case <math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="52px" alttext="k=2" display="inline"><mrow><mi href="./27.1#p2.t1.r1">k</mi><mo>=</mo><mn>2</mn></mrow></math> of the function <math class="ltx_Math" altimg="m31.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{d_{k}\/}\nolimits\!\left(n\right)" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">d</mi><mi href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> that counts the
+number of ways of expressing <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> as the product of <math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math> factors, with the order
+of factors taken into account.</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="57px" altimg-valign="-32px" altimg-width="142px" alttext="\mathop{\sigma_{\alpha}\/}\nolimits\!\left(n\right)=\sum_{d\divides n}d^{%
+\alpha}," display="block"><mrow><mrow><mrow><msub><mi href="./27.2#E10">σ</mi><mi href="./27.2#SS1.p4">α</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi href="./27.1#p2.t1.r1">d</mi><mo>|</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></munder><msup><mi href="./27.1#p2.t1.r1">d</mi><mi href="./27.2#SS1.p4">α</mi></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\mathop{\sigma_{\NVar{\alpha}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E10">σ</mi><mi class="ltx_nvar" href="./27.2#SS1.p4">α</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of divisors of <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\alpha" display="inline"><mi href="./27.2#SS1.p4">α</mi></math>: parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.3 I.A</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.14#SS2.p2" title="§27.14(ii) Generating Functions and Recursions ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.14(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E10" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E10.tex">TeX</a>, <a href="./27.2.E10.pmml">pMML</a>, <a href="./27.2.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is the sum of the <math class="ltx_Math" altimg="m3.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\alpha" display="inline"><mi href="./27.2#SS1.p4">α</mi></math>th powers of the divisors of <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>, where the exponent
+<math class="ltx_Math" altimg="m3.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\alpha" display="inline"><mi href="./27.2#SS1.p4">α</mi></math> can be real or complex. Note that
+<math class="ltx_Math" altimg="m26.png" altimg-height="23px" altimg-valign="-7px" altimg-width="116px" alttext="\mathop{\sigma_{0}\/}\nolimits\!\left(n\right)=\mathop{d\/}\nolimits\!\left(n\right)" display="inline"><mrow><mrow><msub><mi href="./27.2#E10">σ</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></math>.</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="57px" altimg-valign="-32px" altimg-width="216px" alttext="\mathop{J_{k}\/}\nolimits\!\left(n\right)=\sum_{\left(\left(d_{1},\dots,d_{k}%
+\right),n\right)=1}1," display="block"><mrow><mrow><mrow><msub><mi href="./27.2#E11">J</mi><mi href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><msub><mi href="./27.1#p2.t1.r1">d</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r1">d</mi><mi href="./27.1#p2.t1.r1">k</mi></msub></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>,</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></munder><mn>1</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{J_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E11">J</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Jordan’s function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.1#p2.t1.r3" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-7px" altimg-width="58px" alttext="\left(\NVar{m},\NVar{n}\right)" display="inline"><mrow><mo href="./27.1#p2.t1.r3">(</mo><mrow><mi class="ltx_nvar" href="./27.1#p2.t1.r1">m</mi><mo>,</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi></mrow><mo href="./27.1#p2.t1.r3">)</mo></mrow></math>: greatest common divisor (gcd)</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi href="./27.1#p2.t1.r1">d</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.2(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E11" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E11.tex">TeX</a>, <a href="./27.2.E11.pmml">pMML</a>, <a href="./27.2.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">is the number of <math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="k" display="inline"><mi href="./27.1#p2.t1.r1">k</mi></math>-tuples of integers <math class="ltx_Math" altimg="m7.png" altimg-height="19px" altimg-valign="-5px" altimg-width="37px" alttext="\leq n" display="inline"><mrow><mi></mi><mo>≤</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></math> whose greatest common divisor
+is relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. This is <em class="ltx_emph">Jordan’s function</em>. Note that
+<math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-7px" altimg-width="118px" alttext="\mathop{J_{1}\/}\nolimits\!\left(n\right)=\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mrow><msub><mi href="./27.2#E11">J</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">In the following examples, <math class="ltx_Math" altimg="m38.png" altimg-height="20px" altimg-valign="-9px" altimg-width="108px" alttext="a_{1},\dots,a_{\mathop{\nu\/}\nolimits\!\left(n\right)}" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./27.2#SS1.p4">a</mi><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msub></mrow></math> are the exponents
+in the factorization of <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> in (<a href="./27.2#E1" title="(27.2.1) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.1</span></a>).</p>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="92px" altimg-valign="-40px" altimg-width="412px" alttext="\mathop{\mu\/}\nolimits\!\left(n\right)=\begin{cases}1,&amp;n=1,\\
+(-1)^{\mathop{\nu\/}\nolimits\!\left(n\right)},&amp;a_{1}=a_{2}=\dots=a_{\mathop{%
+\nu\/}\nolimits\!\left(n\right)}=1,\\
+0,&amp;\mbox{otherwise}.\end{cases}" display="block"><mrow><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mn>1</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msup><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><msub><mi href="./27.2#SS1.p4">a</mi><mn>1</mn></msub><mo>=</mo><msub><mi href="./27.2#SS1.p4">a</mi><mn>2</mn></msub><mo>=</mo><mi mathvariant="normal">…</mi><mo>=</mo><msub><mi href="./27.2#SS1.p4">a</mi><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msub><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mtext>otherwise</mtext><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\mu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E12">μ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Möbius function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#SS1.p1" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\nu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: number of distinct primes dividing <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./27.2#SS1.p4">a</mi></math>: primitive root</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">24.3.1 I.A</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E12" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E12.tex">TeX</a>, <a href="./27.2.E12.pmml">pMML</a>, <a href="./27.2.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">This is the <em class="ltx_emph">Möbius function</em>.</p>
+</div>
+<div id="SS1.p7" class="ltx_para">
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="65px" altimg-valign="-27px" altimg-width="301px" alttext="\mathop{\lambda\/}\nolimits\!\left(n\right)=\begin{cases}1,&amp;n=1,\\
+(-1)^{a_{1}+\dots+a_{\mathop{\nu\/}\nolimits\!\left(n\right)}},&amp;n&gt;1.\end{cases}" display="block"><mrow><mrow><mi href="./27.2#E13">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mn>1</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><msub><mi href="./27.2#SS1.p4">a</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi href="./27.2#SS1.p4">a</mi><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msub></mrow></msup><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>&gt;</mo><mn>1</mn></mrow><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m12.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\lambda\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E13">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Liouville’s function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#SS1.p1" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="\mathop{\nu\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#SS1.p1">ν</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: number of distinct primes dividing <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./27.2#SS1.p4">a</mi></math>: primitive root</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E13" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E13.tex">TeX</a>, <a href="./27.2.E13.pmml">pMML</a>, <a href="./27.2.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">This is <em class="ltx_emph">Liouville’s function</em>.</p>
+</div>
+<div id="SS1.p8" class="ltx_para">
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">27.2.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="109px" alttext="\mathop{\Lambda\/}\nolimits\!\left(n\right)=\mathop{\ln\/}\nolimits p," display="block"><mrow><mrow><mrow><mi href="./27.2#E14" mathvariant="normal">Λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi href="./27.1#p2.t1.r7">p</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="3"><span class="ltx_constraint"><math class="ltx_Math" altimg="m47.png" altimg-height="21px" altimg-valign="-6px" altimg-width="62px" alttext="n=p^{a}" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><msup><mi href="./27.1#p2.t1.r7">p</mi><mi href="./27.2#SS1.p4">a</mi></msup></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m10.png" altimg-height="23px" altimg-valign="-7px" altimg-width="46px" alttext="\mathop{\Lambda\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><mi href="./27.2#E14" mathvariant="normal">Λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: Mangoldt’s function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\mathop{\ln\/}\nolimits\NVar{z}" display="inline"><mrow><mi href="./4.2#E2">ln</mi><mo>⁡</mo><mi class="ltx_nvar" href="./4.1#p2.t1.r4">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>,
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a> and
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./27.2#SS1.p4">a</mi></math>: primitive root</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.E14" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./27.2.E14.tex">TeX</a>, <a href="./27.2.E14.pmml">pMML</a>, <a href="./27.2.E14.png">png</a>
+</dd>
+<dt>Change of Notation (effective with 1.0.10):</dt>
+<dd>
+The notation for logarithm has been changed to <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathop{\ln\/}\nolimits" display="inline"><mi href="./4.2#E2">ln</mi></math> from <math class="ltx_Math" altimg="m32.png" altimg-height="21px" altimg-valign="-6px" altimg-width="30px" alttext="\mathrm{log}" display="inline"><mi>log</mi></math>.
+
+<p><span class="ltx_font_italic">Reported 2015-06-08</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS1.info" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(i)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m54.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="p^{a}" display="inline"><msup><mi href="./27.1#p2.t1.r7">p</mi><mi href="./27.2#SS1.p4">a</mi></msup></math> is a prime power with <math class="ltx_Math" altimg="m36.png" altimg-height="19px" altimg-valign="-5px" altimg-width="51px" alttext="a\geq 1" display="inline"><mrow><mi href="./27.2#SS1.p4">a</mi><mo>≥</mo><mn>1</mn></mrow></math>; otherwise
+<math class="ltx_Math" altimg="m11.png" altimg-height="23px" altimg-valign="-7px" altimg-width="82px" alttext="\mathop{\Lambda\/}\nolimits\!\left(n\right)=0" display="inline"><mrow><mrow><mi href="./27.2#E14" mathvariant="normal">Λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. This is <em class="ltx_emph">Mangoldt’s function</em>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§27.2(ii) </span>Tables</h2>
+<div id="SS2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Tables <a href="./27.2#T1" title="Table 27.2.1 ‣ §27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.1</span></a> and <a href="./27.2#T2" title="Table 27.2.2 ‣ §27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.2</span></a> are
+from <cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Tables 24.9 and 24.6)</cite>.</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./idx/P#primenumbers">prime numbers</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.ii" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.ii</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#info" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Table <a href="./27.2#T1" title="Table 27.2.1 ‣ §27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.1</span></a> lists the first 100 prime numbers <math class="ltx_Math" altimg="m65.png" altimg-height="16px" altimg-valign="-6px" altimg-width="25px" alttext="p_{n}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mi href="./27.1#p2.t1.r1">n</mi></msub></math>.
+Table <a href="./27.2#T2" title="Table 27.2.2 ‣ §27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.2</span></a> tabulates the Euler totient function
+<math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>, the divisor function <math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{d\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>
+(<math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="73px" alttext="=\mathop{\sigma_{0}\/}\nolimits(n)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./27.2#E10">σ</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>), and the sum of the divisors
+<math class="ltx_Math" altimg="m24.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\sigma\/}\nolimits(n)" display="inline"><mrow><mi href="./27.2#E10">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></math> (<math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-7px" altimg-width="73px" alttext="=\mathop{\sigma_{1}\/}\nolimits(n)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./27.2#E10">σ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>), for <math class="ltx_Math" altimg="m46.png" altimg-height="23px" altimg-valign="-7px" altimg-width="98px" alttext="n=1(1)52" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>52</mn></mrow></mrow></math>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 27.2.1: </span>Primes.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m65.png" altimg-height="16px" altimg-valign="-6px" altimg-width="25px" alttext="p_{n}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mi href="./27.1#p2.t1.r1">n</mi></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m56.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+10}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>10</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m57.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+20}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>20</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m58.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+30}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>30</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+40}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>40</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m60.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+50}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>50</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m61.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+60}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>60</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m62.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+70}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>70</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m63.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+80}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>80</mn></mrow></msub></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m64.png" altimg-height="17px" altimg-valign="-7px" altimg-width="53px" alttext="p_{n+90}" display="inline"><msub><mi href="./27.1#p2.t1.r7">p</mi><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>+</mo><mn>90</mn></mrow></msub></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">31</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">73</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">127</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">179</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">233</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">283</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">353</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">419</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">467</td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">37</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">79</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">131</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">181</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">239</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">293</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">359</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">421</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">479</td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">5</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">41</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">83</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">137</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">191</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">241</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">307</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">367</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">431</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">487</td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">43</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">89</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">139</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">193</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">251</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">311</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">373</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">433</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">491</td>
+</tr>
+<tr id="T1.t1.r6" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">5</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">11</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">47</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">97</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">149</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">197</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">257</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">313</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">379</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">439</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">499</td>
+</tr>
+<tr id="T1.t1.r7" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">13</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">53</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">101</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">151</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">199</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">263</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">317</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">383</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">443</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">503</td>
+</tr>
+<tr id="T1.t1.r8" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">17</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">59</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">103</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">157</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">211</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">269</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">331</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">389</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">449</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">509</td>
+</tr>
+<tr id="T1.t1.r9" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">19</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">61</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">107</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">163</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">223</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">271</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">337</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">397</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">457</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">521</td>
+</tr>
+<tr id="T1.t1.r10" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">9</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">23</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">67</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">109</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">167</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">227</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">277</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">347</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">401</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">461</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">523</td>
+</tr>
+<tr id="T1.t1.r11" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">10</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">29</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">71</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">113</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">173</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">229</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">281</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">349</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">409</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">463</td>
+<td class="ltx_td ltx_align_right ltx_border_B" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">541</td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a> and
+<a href="./27.1#p2.t1.r7" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="16px" altimg-valign="-6px" altimg-width="74px" alttext="p,p_{1},\ldots" display="inline"><mrow><mi href="./27.1#p2.t1.r7">p</mi><mo>,</mo><msub><mi href="./27.1#p2.t1.r7">p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>: prime numbers</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.2#SS2.info" title="§27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.2(ii)</span></a>,
+<a href="./27.2#SS2.p1" title="§27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.2(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.T1" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.T1</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS2.info" title="§27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="T2" class="ltx_table">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 27.2.2: </span>Functions related to division.
+</figcaption>
+<table id="T2.t1" class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T2.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{d\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_r ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\sigma\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E10">σ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{d\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_r ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\sigma\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E10">σ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{d\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_r ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\sigma\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E10">σ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m20.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-7px" altimg-width="42px" alttext="\mathop{d\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#SS1.p4">d</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;"><math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\sigma\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E10">σ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T2.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_r ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">14</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">27</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">18</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">40</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">40</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">16</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">90</td>
+</tr>
+<tr id="T2.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">15</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">28</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">56</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">41</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">40</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">42</td>
+</tr>
+<tr id="T2.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">16</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">31</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">29</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">28</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">30</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">42</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">96</td>
+</tr>
+<tr id="T2.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">17</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">16</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">18</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">30</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">72</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">43</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">42</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">44</td>
+</tr>
+<tr id="T2.t1.r6" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">5</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">18</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">39</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">31</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">30</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">32</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">44</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">20</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">84</td>
+</tr>
+<tr id="T2.t1.r7" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_T ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">19</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">18</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_T ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">20</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">32</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">16</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_T ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">63</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">45</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">78</td>
+</tr>
+<tr id="T2.t1.r8" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">20</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">42</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">33</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">20</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">48</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">46</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">22</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">72</td>
+</tr>
+<tr id="T2.t1.r9" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">15</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">21</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">32</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">34</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">16</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">54</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">47</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">46</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">48</td>
+</tr>
+<tr id="T2.t1.r10" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">9</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">13</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">22</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">10</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">36</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">35</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">48</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">48</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">16</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">10</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">124</td>
+</tr>
+<tr id="T2.t1.r11" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">10</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">18</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">23</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">22</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">36</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">9</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">91</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">49</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">42</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">57</td>
+</tr>
+<tr id="T2.t1.r12" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">11</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">10</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_T ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">8</td>
+<td class="ltx_td ltx_align_right ltx_border_T ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">60</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">37</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">36</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_T ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">38</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">50</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">20</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">93</td>
+</tr>
+<tr id="T2.t1.r13" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">28</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">25</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">20</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">3</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">31</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">38</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">18</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">60</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">51</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">32</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">72</td>
+</tr>
+<tr id="T2.t1.r14" class="ltx_tr">
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">13</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">2</td>
+<td class="ltx_td ltx_align_right ltx_border_b ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">14</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">26</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">12</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_b ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">42</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">39</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_b ltx_border_r" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">56</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">52</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">24</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-top:1.388888888888889px;padding-bottom:1.388888888888889px;">98</td>
+</tr>
+</tbody>
+</table>
+<div id="T2.info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.2#E6" title="(27.2.6) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="23px" altimg-valign="-7px" altimg-width="53px" alttext="\mathop{\phi_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E6">ϕ</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of integers relatively prime to <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a>,
+<a href="./27.2#SS1.p4" title="§27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{d_{\NVar{k}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#SS1.p4">d</mi><mi class="ltx_nvar" href="./27.1#p2.t1.r1">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: divisor function</a>,
+<a href="./27.2#E10" title="(27.2.10) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-7px" altimg-width="54px" alttext="\mathop{\sigma_{\NVar{\alpha}}\/}\nolimits\!\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./27.2#E10">σ</mi><mi class="ltx_nvar" href="./27.2#SS1.p4">α</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>: sum of powers of divisors of <math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math></a> and
+<a href="./27.1#p2.t1.r1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>: positive integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./27.2#SS2.info" title="§27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.2(ii)</span></a>,
+<a href="./27.2#SS2.p1" title="§27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.2(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.2.T2" title="" class="ltx_ref">http://dlmf.nist.gov/27.2.T2</a></dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27.2#SS2.info" title="§27.2(ii) Tables ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2(ii)</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.1 </span>Special Notation</span></a><a href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.3 </span>Multiplicative Properties</span></a>
+</div>
+</div>
+</body>
+</html>

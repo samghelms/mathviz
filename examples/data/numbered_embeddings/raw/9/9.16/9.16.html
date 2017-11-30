@@ -1,0 +1,248 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 9.16 Physical Applications</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/9.16";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./9#PT4" title="Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="up up" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="next" href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.1" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.3" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.5" title="§9.5 Integral Representations ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.6" title="§9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.8" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.10" title="§9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.11" title="§9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.12" title="§9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.13" title="§9.13 Generalized Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.14" title="§9.14 Incomplete Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.18" title="§9.18 Tables ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.19" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.20" title="§9.20 Software ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB1" title="Sidebar 9.SB1: Supernumerary Rainbows ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB2" title="Sidebar 9.SB2: Interference Patterns in Caustics ‣ Chapter 9 Airy and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Airy functions, Euler–Tricomi equation, KdV equation, Korteweg–de Vries equation, Orr–Sommerfeld equation, Schrödinger equation, Scorer functions, applications, caustics, physical, rainbow">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./9" title="Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>Airy and Related Functions</span></a><a href="./9#PT4" title="Applications ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.15 </span>Mathematical Applications</span></a><a href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.17 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§9.16 </span>Physical Applications</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/#Airyfunctions">Airy functions</a>, <a class="ltx_keyword" href="./idx/E#EulerTricomiequation">Euler–Tricomi equation</a>, <a class="ltx_keyword" href="./idx/K#KdVequation">KdV equation</a>, <a class="ltx_keyword" href="./idx/K#KortewegdeVriesequation">Korteweg–de Vries equation</a>, <a class="ltx_keyword" href="./idx/O#OrrSommerfeldequation">Orr–Sommerfeld equation</a>, <a class="ltx_keyword" href="./idx/S#Schrodingerequation">Schrödinger equation</a>, <a class="ltx_keyword" href="./idx/S#Scorerfunctions">Scorer functions</a>, <a class="ltx_keyword" href="./idx/C#caustics">caustics</a>, <a class="ltx_keyword" href="./idx/R#rainbow">rainbow</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>,
+<a href="./errata/#Sx5.I8.I1.i5.p1" title="Other Changes ‣ Version 1.0.9 (August 29, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.16" title="" class="ltx_ref">http://dlmf.nist.gov/9.16</a></dd>
+<dt>Addition (effective with 1.0.9):</dt>
+<dd>
+The sentence with references to <cite class="ltx_cite ltx_citemacro_citet">Nussenzveig (<a href="./bib/N#bib2826" title="Diffraction Effects in Semiclassical Scattering" class="ltx_ref">1992</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Adam (<a href="./bib/#bib2825" title="The mathematical physics of rainbows and glories" class="ltx_ref">2002</a>)</cite> has been added toward the end of the second paragraph
+in this section.
+
+<p><span class="ltx_font_italic">Reported 2014-08-06</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Airy functions are applied in many branches of both classical and quantum
+physics. The function <math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math> first appears as an integral in two articles by
+G.B. Airy on the intensity of light in the neighborhood of a caustic
+(<cite class="ltx_cite ltx_citemacro_citet">Airy (<a href="./bib/#bib45" title="On the intensity of light in the neighbourhood of a caustic" class="ltx_ref">1838</a>, <a href="./bib/#bib46" title="Supplement to a paper “On the intensity of light in the neighbourhood of a caustic”" class="ltx_ref">1849</a>)</cite>). Details of the Airy theory are given in
+<cite class="ltx_cite ltx_citemacro_citet">van de Hulst (<a href="./bib/V#bib2300" title="Light Scattering by Small Particles" class="ltx_ref">1957</a>)</cite> in the chapter on the optics of a raindrop.
+See also <cite class="ltx_cite ltx_citemacro_citet">Berry (<a href="./bib/B#bib247" title="Uniform approximation for potential scattering involving a rainbow" class="ltx_ref">1966</a>, <a href="./bib/B#bib248" title="Uniform approximation: A new concept in wave theory" class="ltx_ref">1969</a>)</cite>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The frequent appearances of the Airy functions in both classical and quantum
+physics is associated with wave equations with turning points, for which
+asymptotic (WKBJ) solutions are exponential on one side and oscillatory on the
+other. The Airy functions constitute uniform approximations whose region of validity
+includes the turning point and its neighborhood. Within classical physics, they
+appear prominently in physical optics, electromagnetism, radiative transfer,
+fluid mechanics, and nonlinear wave propagation. Examples dealing with the
+propagation of light and with radiation of electromagnetic waves are given in
+<cite class="ltx_cite ltx_citemacro_citet">Landau and Lifshitz (<a href="./bib/L#bib1370" title="The Classical Theory of Fields" class="ltx_ref">1962</a>)</cite>. Extensive use is made of Airy functions in
+investigations in the theory of electromagnetic diffraction and radiowave
+propagation (<cite class="ltx_cite ltx_citemacro_citet">Fock (<a href="./bib/F#bib812" title="Electromagnetic Diffraction and Propagation Problems" class="ltx_ref">1965</a>)</cite>).
+The use of Airy function and related uniform asymptotic techniques to
+calculate amplitudes of polarized rainbows can be found in
+<cite class="ltx_cite ltx_citemacro_citet">Nussenzveig (<a href="./bib/N#bib2826" title="Diffraction Effects in Semiclassical Scattering" class="ltx_ref">1992</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Adam (<a href="./bib/#bib2825" title="The mathematical physics of rainbows and glories" class="ltx_ref">2002</a>)</cite>.
+A quite different application
+is made in the study of the diffraction of sound pulses by a circular
+cylinder (<cite class="ltx_cite ltx_citemacro_citet">Friedlander (<a href="./bib/F#bib840" title="Sound Pulses" class="ltx_ref">1958</a>)</cite>).</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In fluid dynamics, Airy functions enter several topics. In the study of the
+stability of a two-dimensional viscous fluid, the flow is governed by the
+Orr–Sommerfeld equation (a fourth-order differential equation). Again, the quest
+for asymptotic approximations that are uniformly valid solutions to this equation
+in the neighborhoods of critical points leads (after choosing solvable equations
+with similar asymptotic properties) to Airy functions. Other applications appear
+in the study of instability of Couette flow of an inviscid fluid. These examples
+of transitions to turbulence are presented in detail in <cite class="ltx_cite ltx_citemacro_citet">Drazin and Reid (<a href="./bib/D#bib681" title="Hydrodynamic Stability" class="ltx_ref">1981</a>)</cite>
+with the problem of hydrodynamic stability. The investigation of the transition
+between subsonic and supersonic of a two-dimensional gas flow leads to the
+Euler–Tricomi equation (<cite class="ltx_cite ltx_citemacro_citet">Landau and Lifshitz (<a href="./bib/L#bib1372" title="Fluid Mechanics" class="ltx_ref">1987</a>)</cite>). An application of Airy
+functions to the solution of this equation is given in <cite class="ltx_cite ltx_citemacro_citet">Gramtcheff (<a href="./bib/G#bib971" title="An application of Airy functions to the Tricomi problem" class="ltx_ref">1981</a>)</cite>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Airy functions play a prominent role in problems defined by nonlinear wave
+equations. These first appeared in connection with the equation governing the
+evolution of long shallow water waves of permanent form, generally called
+solitons, and are predicted by the Korteweg–de Vries (KdV) equation (a
+third-order nonlinear partial differential equation). The KdV equation and
+solitons have applications in many branches of physics, including plasma physics
+lattice dynamics, and quantum mechanics. (<cite class="ltx_cite ltx_citemacro_citet">Ablowitz and Segur (<a href="./bib/#bib5" title="Solitons and the Inverse Scattering Transform" class="ltx_ref">1981</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Ablowitz and Clarkson (<a href="./bib/#bib3" title="Solitons, Nonlinear Evolution Equations and Inverse Scattering" class="ltx_ref">1991</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Whitham (<a href="./bib/W#bib2393" title="Linear and Nonlinear Waves" class="ltx_ref">1974</a>)</cite>.)</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Reference to many of these applications as well as to the theory of elasticity
+and to the heat equation are given in <cite class="ltx_cite ltx_citemacro_citet">Vallée and Soares (<a href="./bib/V#bib2295" title="Airy Functions and Applications to Physics" class="ltx_ref">2010</a>)</cite>: a book devoted
+specifically to the Airy and Scorer functions and their applications in physics.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">An example from quantum mechanics is given in <cite class="ltx_cite ltx_citemacro_citet">Landau and Lifshitz (<a href="./bib/L#bib1371" title="Quantum Mechanics: Non-relativistic Theory" class="ltx_ref">1965</a>)</cite>, in
+which the exact solution of the Schrödinger equation for the motion of a
+particle in a homogeneous external field is expressed in terms of <math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>.
+Solutions of the Schrödinger equation involving the Airy functions are given
+for other potentials in <cite class="ltx_cite ltx_citemacro_citet">Vallée and Soares (<a href="./bib/V#bib2295" title="Airy Functions and Applications to Physics" class="ltx_ref">2010</a>)</cite>. This reference provides several
+examples of applications to problems in quantum mechanics in which Airy
+functions give uniform asymptotic approximations, valid in the neighborhood of
+a turning point. A study of the semiclassical description of quantum-mechanical
+scattering is given in <cite class="ltx_cite ltx_citemacro_citet">Ford and Wheeler (<a href="./bib/F#bib818" title="Semiclassical description of scattering" class="ltx_ref">1959a</a>, <a href="./bib/F#bib819" title="Application of semiclassical scattering analysis" class="ltx_ref">b</a>)</cite>. In the case of the
+rainbow, the scattering amplitude is expressed in terms of <math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-7px" altimg-width="52px" alttext="\mathop{\mathrm{Ai}\/}\nolimits\!\left(x\right)" display="inline"><mrow><mi href="./9.2#i">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#p2.t1.r2">x</mi><mo>)</mo></mrow></mrow></math>, the
+analysis being similar to that given originally by <cite class="ltx_cite ltx_citemacro_citet">Airy (<a href="./bib/#bib45" title="On the intensity of light in the neighbourhood of a caustic" class="ltx_ref">1838</a>)</cite> for the
+corresponding problem in optics.
+</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">An application of the Scorer functions is to the problem of the uniform loading
+of infinite plates (<cite class="ltx_cite ltx_citemacro_citet">Rothman (<a href="./bib/R#bib1971" title="The problem of an infinite plate under an inclined loading, with tables of the integrals of Ai ( ± x ) and Bi ( ± x )" class="ltx_ref">1954b</a>, <a href="./bib/R#bib1972" title="Tables of the integrals and differential coefficients of Gi ( + x ) and Hi ( - x )" class="ltx_ref">a</a>)</cite>).</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.15 </span>Mathematical Applications</span></a><a href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.17 </span>Methods of Computation</span></a>
+</div>
+</div>
+</body>
+</html>

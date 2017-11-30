@@ -1,0 +1,226 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 15 Hypergeometric Function</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/15";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./14.34" title="§14.34 Software ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="next" href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="section" href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.2" title="§15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.3" title="§15.3 Graphics ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.4" title="§15.4 Special Cases ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.6" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.8" title="§15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.9" title="§15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.10" title="§15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.12" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.14" title="§15.14 Integrals ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.15" title="§15.15 Sums ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.17" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.19" title="§15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="section" href="./15.20" title="§15.20 Software ‣ Computation ‣ Chapter 15 Hypergeometric Function">
+<link rel="author" href="./about/bio/ABOldeDaalhuis" title="A. B. Olde Daalhuis">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<section class="ltx_chapter ltx_leqno">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 15 </span>Hypergeometric Function</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><a href="./about/bio/ABOldeDaalhuis">A. B. Olde Daalhuis</a>
+</span><span class="ltx_author_notes"><span>
+<span class="ltx_contact ltx_role_affiliation">School of Mathematics,
+Edinburgh University,
+Edinburgh, United Kingdom.
+</span></span></span></span>
+</div>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Acknowledgements:</dt>
+<dd class="ltx_acknowledgements">This chapter is based in part on Chapter 15 of
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>)</cite> by Fritz Oberhettinger. The
+author thanks Richard Askey and Simon Ruijsenaars for many helpful recommendations.</dd>
+<dt>Notes:</dt>
+<dd>The main references used in writing this chapter are <cite class="ltx_cite ltx_citemacro_citet">Andrews<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib102" title="Special Functions" class="ltx_ref">1999</a>)</cite>
+and <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2224" title="Special Functions: An Introduction to the Classical Functions of Mathematical Physics" class="ltx_ref">1996b</a>)</cite>. For additional bibliographic reading see
+<cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib749" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Hochstadt (<a href="./bib/H#bib1090" title="The Functions of Mathematical Physics" class="ltx_ref">1971</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1489" title="The Special Functions and their Approximations, Vol. 1" class="ltx_ref">1969a</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1803" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Slater (<a href="./bib/S#bib2093" title="Generalized Hypergeometric Functions" class="ltx_ref">1966</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Wang and Guo (<a href="./bib/W#bib2355" title="Special Functions" class="ltx_ref">1989</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Whittaker and Watson (<a href="./bib/W#bib2396" title="A Course of Modern Analysis" class="ltx_ref">1927</a>)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./16.18#p1" title="§16.18 Special Cases ‣ Meijer G -Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.18</span></a>,
+<a href="./about/bio/ABOldeDalhuis#I1.ix2.p1" title="Profile Adri B. Olde Daalhuis ‣ About the Project" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_text ltx_font_italic">Profile<span class="ltx_text"> </span></span>Adri B. Olde Daalhuis</span></a>,
+<a href="./about/staff#I2.ix16.p1" title="§ Chapter Authors ‣ Project Staff ‣ About the Project" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Chapter Authors</span></a>,
+<a href="./about/staff#I4.ix13.p1" title="§ Associate Editors ‣ Project Staff ‣ About the Project" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Associate Editors</span></a>,
+<a href="./software/#S1.t1.r62" title="§ Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">§ </span>Software Cross Index</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./15" title="" class="ltx_ref">http://dlmf.nist.gov/15</a></dd>
+</dl>
+</div>
+</div>
+
+<div class="ltx_gallery">
+    <span style="height:100px">  </span>
+  </div>
+<div class="ltx_page_columns">
+<div class="ltx_page_column1">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li id="PT1" class="ltx_tocentry">
+<span class="ltx_text">Notation</span>
+<ul class="ltx_toclist ltx_toclist_part">
+<li class="ltx_tocentry"><a href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.1 </span>Special Notation</span></a></li>
+</ul>
+</li>
+<li id="PT2" class="ltx_tocentry">
+<span class="ltx_text">Properties</span>
+<ul class="ltx_toclist ltx_toclist_part">
+<li class="ltx_tocentry"><a href="./15.2" title="§15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.2 </span>Definitions and Analytical Properties</span></a></li>
+<li class="ltx_tocentry"><a href="./15.3" title="§15.3 Graphics ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.3 </span>Graphics</span></a></li>
+<li class="ltx_tocentry"><a href="./15.4" title="§15.4 Special Cases ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.4 </span>Special Cases</span></a></li>
+<li class="ltx_tocentry"><a href="./15.5" title="§15.5 Derivatives and Contiguous Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.5 </span>Derivatives and Contiguous Functions</span></a></li>
+<li class="ltx_tocentry"><a href="./15.6" title="§15.6 Integral Representations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.6 </span>Integral Representations</span></a></li>
+<li class="ltx_tocentry"><a href="./15.7" title="§15.7 Continued Fractions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.7 </span>Continued Fractions</span></a></li>
+<li class="ltx_tocentry"><a href="./15.8" title="§15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.8 </span>Transformations of Variable</span></a></li>
+<li class="ltx_tocentry"><a href="./15.9" title="§15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.9 </span>Relations to Other Functions</span></a></li>
+<li class="ltx_tocentry"><a href="./15.10" title="§15.10 Hypergeometric Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.10 </span>Hypergeometric Differential Equation</span></a></li>
+<li class="ltx_tocentry"><a href="./15.11" title="§15.11 Riemann’s Differential Equation ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.11 </span>Riemann’s Differential Equation</span></a></li>
+<li class="ltx_tocentry"><a href="./15.12" title="§15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.12 </span>Asymptotic Approximations</span></a></li>
+<li class="ltx_tocentry"><a href="./15.13" title="§15.13 Zeros ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.13 </span>Zeros</span></a></li>
+<li class="ltx_tocentry"><a href="./15.14" title="§15.14 Integrals ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.14 </span>Integrals</span></a></li>
+<li class="ltx_tocentry"><a href="./15.15" title="§15.15 Sums ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.15 </span>Sums</span></a></li>
+<li class="ltx_tocentry"><a href="./15.16" title="§15.16 Products ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.16 </span>Products</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="ltx_page_column2">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li id="PT3" class="ltx_tocentry">
+<span class="ltx_text">Applications</span>
+<ul class="ltx_toclist ltx_toclist_part">
+<li class="ltx_tocentry"><a href="./15.17" title="§15.17 Mathematical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.17 </span>Mathematical Applications</span></a></li>
+<li class="ltx_tocentry"><a href="./15.18" title="§15.18 Physical Applications ‣ Applications ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.18 </span>Physical Applications</span></a></li>
+</ul>
+</li>
+<li id="PT4" class="ltx_tocentry">
+<span class="ltx_text">Computation</span>
+<ul class="ltx_toclist ltx_toclist_part">
+<li class="ltx_tocentry"><a href="./15.19" title="§15.19 Methods of Computation ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.19 </span>Methods of Computation</span></a></li>
+<li class="ltx_tocentry"><a href="./15.20" title="§15.20 Software ‣ Computation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref ltx_toc"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.20 </span>Software</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./14.34" title="§14.34 Software ‣ Computation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.34 </span>Software</span></a><a href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15.1 </span>Special Notation</span></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html><html>
+<head>
+<title>DLMF: 27.16 Cryptography</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/27.16";
+	var ROOT="./";
+      //--></script>
+
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script><script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true"><!-- non-empty so ie6 will accept it --></script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<link rel="stylesheet" type="text/css" href="./style/mobile.css" media="only screen and (max-width:640px)">
+<script src="./style/LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" href="./help/" title="Help">
+<link rel="up" href="./27#PT4" title="Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="up up" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="next" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.1" title="§27.1 Special Notation ‣ Notation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.3" title="§27.3 Multiplicative Properties ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.4" title="§27.4 Euler Products and Dirichlet Series ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.5" title="§27.5 Inversion Formulas ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.6" title="§27.6 Divisor Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.7" title="§27.7 Lambert Series as Generating Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.9" title="§27.9 Quadratic Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.10" title="§27.10 Periodic Number-Theoretic Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.11" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.12" title="§27.12 Asymptotic Formulas: Primes ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.13" title="§27.13 Functions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.18" title="§27.18 Methods of Computation: Primes ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.19" title="§27.19 Methods of Computation: Factorization ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.20" title="§27.20 Methods of Computation: Other Number-Theoretic Functions ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.21" title="§27.21 Tables ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="section" href="./27.22" title="§27.22 Software ‣ Computation ‣ Chapter 27 Functions of Number Theory">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer G -Function">
+<link rel="chapter" href="./17" title="Chapter 17 q -Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 ⁢ 3 j , ⁢ 6 j , ⁢ 9 j Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Euler–Fermat theorem, applications, cryptography, number theory, prime numbers, public key codes">
+<script type='text/javascript' id='_fed_an_js_tag' src='http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=dlmf&amp;pua=UA-37115410-44&amp;yt=true'></script><!--GOOGLE BOOTSTRAP--></head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./"><img src="./style/DLMFLogo.png" width="105" height="82" alt="Digital Library of Mathematical Functions"></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/">Need Help?</a></li>
+<li><a href="./help/cite">How to Cite</a></li>
+<li><a href="./help/customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/news/" class="ltx_page_navwhatsnew">What's New</a></div>
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+<a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="100" height="38" alt="NIST"></a>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./27" title="Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27 </span>Functions of Number Theory</span></a><a href="./27#PT4" title="Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.15 </span>Chinese Remainder Theorem</span></a><a href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.17 </span>Other Applications</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§27.16 </span>Cryptography</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<a href="" class="ltx_infoicon"><img class="ltx_infoiconimg" src="./style/info-blank.png" width="18" height="18" alt="Show Annotations"></a>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./idx/E#EulerFermattheorem">Euler–Fermat theorem</a>, <a class="ltx_keyword" href="./idx/C#cryptography">cryptography</a>, <a class="ltx_keyword" href="./idx/N#numbertheory">number theory</a>, <a class="ltx_keyword" href="./idx/P#primenumbers">prime numbers</a>, <a class="ltx_keyword" href="./idx/P#publickeycodes">public key codes</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./23.20#SS3.p1" title="§23.20(iii) Factorization ‣ §23.20 Mathematical Applications ‣ Applications ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.20(iii)</span></a>,
+<a href="./errata/#Sx13.I19.I1.i2.p2" title="Other Changes ‣ Version 1.0.1 (June 27, 2011) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Other Changes</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./27.16" title="" class="ltx_ref">http://dlmf.nist.gov/27.16</a></dd>
+<dt>Update (effective with 1.0.1):</dt>
+<dd>
+The data in the second paragraph of this section was updated to 2010.
+
+<p><span class="ltx_font_italic">Reported 2011-01-07 by Francois Grieu</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>info for <a href="./27#info" title="Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Applications to cryptography rely on the disparity in computer time required to
+find large primes and to factor large integers.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">For example, a code maker chooses two large primes <math class="ltx_Math" altimg="m11.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="p" display="inline"><mi href="./27.16#p2">p</mi></math> and <math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./27.16#p2">q</mi></math> of about 400
+decimal digits each. Procedures for finding such primes require very little
+computer time. The primes are kept secret but their product <math class="ltx_Math" altimg="m8.png" altimg-height="16px" altimg-valign="-6px" altimg-width="62px" alttext="n=pq" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mrow><mi href="./27.16#p2">p</mi><mo>⁢</mo><mi href="./27.16#p2">q</mi></mrow></mrow></math>, an
+800-digit number, is made public. For this reason, these are often called
+public key codes.
+Messages are coded by a method (described below) that
+requires only the knowledge of <math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. But to decode, both factors <math class="ltx_Math" altimg="m11.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="p" display="inline"><mi href="./27.16#p2">p</mi></math> and <math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./27.16#p2">q</mi></math>
+must be known. With the most efficient computer techniques devised to date
+(2010), factoring an 800-digit number may require billions of years on a
+single computer. For this reason, the codes are considered unbreakable, at
+least with the current state of knowledge on factoring large numbers.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">To code a message by this method, we replace each letter by two digits, say
+<math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="66px" alttext="A=01" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>01</mn></mrow></math>, <math class="ltx_Math" altimg="m4.png" altimg-height="18px" altimg-valign="-2px" altimg-width="67px" alttext="B=02" display="inline"><mrow><mi>B</mi><mo>=</mo><mn>02</mn></mrow></math>, <math class="ltx_Math" altimg="m6.png" altimg-height="6px" altimg-valign="-2px" altimg-width="28px" alttext="\dots" display="inline"><mi mathvariant="normal">…</mi></math>, <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="66px" alttext="Z=26" display="inline"><mrow><mi>Z</mi><mo>=</mo><mn>26</mn></mrow></math>, and divide the message into pieces of
+convenient length smaller than the public value <math class="ltx_Math" altimg="m8.png" altimg-height="16px" altimg-valign="-6px" altimg-width="62px" alttext="n=pq" display="inline"><mrow><mi href="./27.1#p2.t1.r1">n</mi><mo>=</mo><mrow><mi href="./27.16#p2">p</mi><mo>⁢</mo><mi href="./27.16#p2">q</mi></mrow></mrow></math>. Choose a prime <math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./27.16#p3">r</mi></math>
+that does not divide either <math class="ltx_Math" altimg="m10.png" altimg-height="20px" altimg-valign="-6px" altimg-width="49px" alttext="p-1" display="inline"><mrow><mi href="./27.16#p2">p</mi><mo>-</mo><mn>1</mn></mrow></math> or <math class="ltx_Math" altimg="m12.png" altimg-height="20px" altimg-valign="-6px" altimg-width="48px" alttext="q-1" display="inline"><mrow><mi href="./27.16#p2">q</mi><mo>-</mo><mn>1</mn></mrow></math>. Like <math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>, the prime <math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./27.16#p3">r</mi></math> is made
+public. To code a piece <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>, raise <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math> to the power <math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./27.16#p3">r</mi></math> and reduce <math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="25px" alttext="x^{r}" display="inline"><msup><mi href="./27.1#p2.t1.r9">x</mi><mi href="./27.16#p3">r</mi></msup></math> modulo
+<math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math> to obtain an integer <math class="ltx_Math" altimg="m22.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./27.1#p2.t1.r9">y</mi></math> (the coded form of <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math>) between <math class="ltx_Math" altimg="m1.png" altimg-height="17px" altimg-valign="-2px" altimg-width="14px" alttext="1" display="inline"><mn>1</mn></math> and <math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. Thus,
+<math class="ltx_Math" altimg="m23.png" altimg-height="23px" altimg-valign="-7px" altimg-width="143px" alttext="y\equiv x^{r}\pmod{n}" display="inline"><mrow><mi href="./27.1#p2.t1.r9">y</mi><mo>≡</mo><mrow><msup><mi href="./27.1#p2.t1.r9">x</mi><mi href="./27.16#p3">r</mi></msup><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-6px" altimg-width="90px" alttext="1\leq y&lt;n" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi href="./27.1#p2.t1.r9">y</mi><mo>&lt;</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">To decode, we must recover <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math> from <math class="ltx_Math" altimg="m22.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./27.1#p2.t1.r9">y</mi></math>. To do this, let <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi>s</mi></math> denote the
+reciprocal of <math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./27.16#p3">r</mi></math> modulo <math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math>, so that
+<math class="ltx_Math" altimg="m15.png" altimg-height="23px" altimg-valign="-7px" altimg-width="134px" alttext="rs=1+t\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mrow><mi href="./27.16#p3">r</mi><mo>⁢</mo><mi>s</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>t</mi><mo>⁢</mo><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math> for some integer <math class="ltx_Math" altimg="m17.png" altimg-height="17px" altimg-valign="-2px" altimg-width="11px" alttext="t" display="inline"><mi>t</mi></math>. (Here
+<math class="ltx_Math" altimg="m7.png" altimg-height="23px" altimg-valign="-7px" altimg-width="44px" alttext="\mathop{\phi\/}\nolimits\!\left(n\right)" display="inline"><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></math> is Euler’s totient (§<a href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2</span></a>).) By the
+Euler–Fermat theorem (<a href="./27.2#E8" title="(27.2.8) ‣ §27.2(i) Definitions ‣ §27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2.8</span></a>),
+<math class="ltx_Math" altimg="m19.png" altimg-height="26px" altimg-valign="-7px" altimg-width="164px" alttext="x^{\mathop{\phi\/}\nolimits\!\left(n\right)}\equiv 1\pmod{n}" display="inline"><mrow><msup><mi href="./27.1#p2.t1.r9">x</mi><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>; hence
+<math class="ltx_Math" altimg="m21.png" altimg-height="26px" altimg-valign="-7px" altimg-width="172px" alttext="x^{t\mathop{\phi\/}\nolimits\!\left(n\right)}\equiv 1\pmod{n}" display="inline"><mrow><msup><mi href="./27.1#p2.t1.r9">x</mi><mrow><mi>t</mi><mo>⁢</mo><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. But
+<math class="ltx_Math" altimg="m25.png" altimg-height="26px" altimg-valign="-7px" altimg-width="294px" alttext="y^{s}\equiv x^{rs}\equiv x^{1+t\mathop{\phi\/}\nolimits\!\left(n\right)}\equiv
+x%
+\pmod{n}" display="inline"><mrow><msup><mi href="./27.1#p2.t1.r9">y</mi><mi>s</mi></msup><mo>≡</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mrow><mi href="./27.16#p3">r</mi><mo>⁢</mo><mi>s</mi></mrow></msup><mo>≡</mo><msup><mi href="./27.1#p2.t1.r9">x</mi><mrow><mn>1</mn><mo>+</mo><mrow><mi>t</mi><mo>⁢</mo><mrow><mi href="./27.2#E6">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./27.1#p2.t1.r1">n</mi><mo>)</mo></mrow></mrow></mrow></mrow></msup><mo>≡</mo><mrow><mi href="./27.1#p2.t1.r9">x</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi href="./27.1#p2.t1.r1">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+so <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="23px" alttext="y^{s}" display="inline"><msup><mi href="./27.1#p2.t1.r9">y</mi><mi>s</mi></msup></math> is the same as <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math> modulo <math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. In other words, to recover <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math> from <math class="ltx_Math" altimg="m22.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./27.1#p2.t1.r9">y</mi></math>
+we simply raise <math class="ltx_Math" altimg="m22.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./27.1#p2.t1.r9">y</mi></math> to the power <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi>s</mi></math> and reduce modulo <math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>. If <math class="ltx_Math" altimg="m11.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="p" display="inline"><mi href="./27.16#p2">p</mi></math> and <math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./27.16#p2">q</mi></math> are
+known, <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi>s</mi></math> and <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="23px" alttext="y^{s}" display="inline"><msup><mi href="./27.1#p2.t1.r9">y</mi><mi>s</mi></msup></math> can be determined (mod <math class="ltx_Math" altimg="m9.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="n" display="inline"><mi href="./27.1#p2.t1.r1">n</mi></math>) by straightforward
+calculations that require only a few minutes of machine time. But if <math class="ltx_Math" altimg="m11.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="p" display="inline"><mi href="./27.16#p2">p</mi></math> and
+<math class="ltx_Math" altimg="m13.png" altimg-height="16px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./27.16#p2">q</mi></math> are not known, the problem of recovering <math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./27.1#p2.t1.r9">x</mi></math> from <math class="ltx_Math" altimg="m22.png" altimg-height="16px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./27.1#p2.t1.r9">y</mi></math> seems insurmountable.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">For further information see <cite class="ltx_cite ltx_citemacro_citet">Apostol and Niven (<a href="./bib/#bib119" title="Number Theory" class="ltx_ref">1994</a>, p. 24)</cite>, and for other
+applications to cryptography see <cite class="ltx_cite ltx_citemacro_citet">Menezes<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/M#bib1594" title="Handbook of Applied Cryptography" class="ltx_ref">1997</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Schroeder (<a href="./bib/S#bib2014" title="Number Theory in Science and Communication: With Applications in Cryptography, Physics, Digital Information, Computing, and Self-Similarity" class="ltx_ref">2006</a>)</cite>.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<span><a href="./about/notices">© 2010–2016 NIST</a> / <a href="./about/notices#S3">Privacy Policy</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="mailto:DLMF-feedback@nist.gov">Feedback</a>;
+ Version 1.0.13;
+Release date 2016-09-16.
+	A <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521192255">printed companion</a> is available.<span id="pagesettings"></span></span>
+<a href="./27.15" title="§27.15 Chinese Remainder Theorem ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.15 </span>Chinese Remainder Theorem</span></a><a href="./27.17" title="§27.17 Other Applications ‣ Applications ‣ Chapter 27 Functions of Number Theory" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">27.17 </span>Other Applications</span></a>
+</div>
+</div>
+</body>
+</html>
