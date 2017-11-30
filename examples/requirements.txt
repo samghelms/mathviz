@@ -30,7 +30,7 @@ jupyter-client==5.1.0
 jupyter-console==5.2.0
 jupyter-core==4.4.0
 MarkupSafe==1.0
-mathviz-hopper-dev==0.2.2
+mathviz-hopper==0.2
 mistune==0.8.1
 nbconvert==5.3.1
 nbformat==4.4.0
