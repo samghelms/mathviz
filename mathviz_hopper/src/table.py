@@ -158,7 +158,7 @@ class Table:
         shutil.copytree(self.html_path, 'viz')
         pth = "viz/index.html"
         html = open(pth).read()
-        html = html.replace("__SERVER_DATA__", "http://localhost:"+str(self.port))
+        html = html.replace("__SERVER_DATA__", '"http://localhost:'+str(self.port)+'"')
         display(HTML(html))
 
     def _listen(self):
