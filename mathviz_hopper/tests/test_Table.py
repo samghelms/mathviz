@@ -3,12 +3,12 @@ from mathviz_hopper.src.indices import GensimMathIndex
 from setup_test_data import Data
 
 class TestTable:
- 	"""
- 	Unit tests for the table
- 	"""
+    """
+    Unit tests for the table
+    """
     def __init__(self):
-    	self.data = Data()
-    	self.index = GensimMathIndex(self.data.index, self.data.docs, self.data.dictionary)
+        self.data = Data()
+        self.index = GensimMathIndex(self.data.index, self.data.docs, self.data.dictionary)
         self.table = Table(self.index)
  
     def test_init(self):
